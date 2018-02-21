@@ -1,6 +1,10 @@
 ---
 title: 'Oregon Extended Analyses: 2018'
-author: "Brock Rowley"
+author: 
+- "Brock Rowley"
+- "Daniel Anderson"
+- "Gerald Tindal"
+affiliation: "University of Oregon"
 date: "2/20/2018"
 output: 
   pdf_document:
@@ -1453,38 +1457,37 @@ g8ela <- import("./amos/ELA_2018/ELA2017_AMO_G8.csv", setclass = "tbl_df")
 g11ela <- import("./amos/ELA_2018/ELA2017_AMO_G11.csv", setclass = "tbl_df")
 
 ## Reading
-g3Read <- read.csv("./ELA_2017/ReadingSubscores/Rdg1617_Grade3_FinalPfile.csv")
-g4Read <- read.csv("./ELA_2017/ReadingSubscores/Rdg1617_Grade4_FinalPfile.csv")
-g5Read <- read.csv("./ELA_2017/ReadingSubscores/Rdg1617_Grade5_FinalPfile.csv")
-g6Read <- read.csv("./ELA_2017/ReadingSubscores/Rdg1617_Grade6_FinalPfile.csv")
-g7Read <- read.csv("./ELA_2017/ReadingSubscores/Rdg1617_Grade7_FinalPfile.csv")
-g8Read <- read.csv("./ELA_2017/ReadingSubscores/Rdg1617_Grade8_FinalPfile.csv")
-g11Read <- read.csv("./ELA_2017/ReadingSubscores/Rdg1617_Grade11_FinalPfile.csv")
+g3Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade3_FinalPfile.csv")
+g4Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade4_FinalPfile.csv")
+g5Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade5_FinalPfile.csv")
+g6Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade6_FinalPfile.csv")
+g7Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade7_FinalPfile.csv")
+g8Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade8_FinalPfile.csv")
+g11Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade11_FinalPfile.csv")
 
 
 ## Writing
-g3wri <- read.csv("./ELA_2017/WritingSubscores/Wri1617_Grade3_FinalPfile.csv")
-g4wri <- read.csv("./ELA_2017/WritingSubscores/Wri1617_Grade4_FinalPfile.csv")
-g5wri <- read.csv("./ELA_2017/WritingSubscores/Wri1617_Grade5_FinalPfile.csv")
-g6wri <- read.csv("./ELA_2017/WritingSubscores/Wri1617_Grade6_FinalPfile.csv")
-g7wri <- read.csv("./ELA_2017/WritingSubscores/Wri1617_Grade7_FinalPfile.csv")
-g8wri <- read.csv("./ELA_2017/WritingSubscores/Wri1617_Grade8_FinalPfile.csv")
-g11wri <- read.csv("./ELA_2017/WritingSubscores/Wri1617_Grade11_FinalPfile.csv")
+g3wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade3_FinalPfile.csv")
+g4wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade4_FinalPfile.csv")
+g5wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade5_FinalPfile.csv")
+g6wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade6_FinalPfile.csv")
+g7wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade7_FinalPfile.csv")
+g8wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade8_FinalPfile.csv")
+g11wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade11_FinalPfile.csv")
 
 ## Math
-g3math <- read.csv("./Math_2017/Math2017_AMO_G3.csv")
-g4math <- read.csv("./Math_2017/Math2017_AMO_G4.csv")
-g5math <- read.csv("./Math_2017/Math2017_AMO_G5.csv")
-g6math <- read.csv("./Math_2017/Math2017_AMO_G6.csv")
-g7math <- read.csv("./Math_2017/Math2017_AMO_G7.csv")
-g8math <- read.csv("./Math_2017/Math2017_AMO_G8.csv")
-g11math <- read.csv("./Math_2017/Math2017_AMO_G11.csv")
+g3math <- read.csv("./amos/Math_2018/Math2017_AMO_G3.csv")
+g4math <- read.csv("./amos/Math_2018/Math2017_AMO_G4.csv")
+g5math <- read.csv("./amos/Math_2018/Math2017_AMO_G5.csv")
+g6math <- read.csv("./amos/Math_2018/Math2017_AMO_G6.csv")
+g7math <- read.csv("./amos/Math_2018/Math2017_AMO_G7.csv")
+g8math <- read.csv("./amos/Math_2018/Math2017_AMO_G8.csv")
+g11math <- read.csv("./amos/Math_2018/Math2017_AMO_G11.csv")
 
 ## Science
-g5sci <- read.csv("./Science_2017/Sci2017_AMO_G5.csv")
-g8sci <- read.csv("./Science_2017/Sci2017_AMO_G8.csv")
-g11sci <- read.csv("./Science_2017/Sci2017_AMO_G11.csv")
-
+g5sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G5.csv")
+g8sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G8.csv")
+g11sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G11.csv")
 ```
 
 
