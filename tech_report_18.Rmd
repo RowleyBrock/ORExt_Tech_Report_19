@@ -25,6 +25,8 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE)
 ```
 
+![State of Oregon](stateofOR.png)
+
 # Oregon Department of Education
 
 
