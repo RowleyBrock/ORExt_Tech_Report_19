@@ -12,7 +12,7 @@ output:
     toc_float: true
     toc_depth: 4
   pdf_document:
-    toc: true
+    toc: trued
     toc_depth: 4
 ---
 
@@ -25,7 +25,7 @@ knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE)
 ```
 
-![State of Oregon](stateofOR.png)
+![](stateofOR.png)
 
 # Oregon Department of Education
 
@@ -1628,6 +1628,7 @@ tested was more consistent.
 
 ```{r, load_amo_data}
 library(rio)
+
 ## ELA
 g3ela <- import("./amos/ELA_2018/ELA2017_AMO_G3.csv", setclass = "tbl_df")
 g4ela <- import("./amos/ELA_2018/ELA2017_AMO_G4.csv", setclass = "tbl_df")
@@ -1670,8 +1671,6 @@ g5sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G5.csv")
 g8sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G8.csv")
 g11sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G11.csv")
 ```
-
-
 
 #### Observed Means Reported by Sex 
 
@@ -1737,6 +1736,104 @@ fully describe the severity and range of concomitant disabilities that students
 whose primary label is OI conveys.
 
 Average (All Grade) ELA RIT Scores By Exceptionality here:
+```{r, dataprep}
+library(tidyverse)
+library(fs)
+library(purrr)
+
+files <- dir_ls("data/FINAL_ODEPfiles_G3_11", glob = "*.csv")
+files <- files[is.na(str_extract(files, "Rdg|Wri"))]
+
+read_sub_files <- function(file) {
+  out <- read_csv(file) %>% 
+    mutate(content_area = str_extract(file, "ELA|Rdg|Wri|Math|Sci"),
+           grade = parse_number(gsub(".+_(.+)_.+", "\\1", file))) %>% 
+    select(content_area, grade, everything())  %>% 
+    janitor::clean_names()
+  names(out)[grep("rit", names(out))] <- "rit"
+  out
+}
+
+d <- map_df(files, read_sub_files)
+######## analyze percent proficient based on RIT scores
+cuts <- data_frame(content_area = 
+                     c(rep(c("ELA", "Math"), each = 7), rep("Sci", 3)),
+                   grade = c(rep(c(3:8, 11), 2), c(5, 8, 11)),
+                   c1      = c(192, 200, 202, 205, 208, 213, 899,
+                               192, 193, 193, 204, 207, 208, 901,
+                               506, 810, 901),
+                   c2      = c(213, 213, 220, 220, 222, 224, 920,
+                               201, 206, 206, 208, 209, 212, 907,
+                               517, 820, 914),
+                   c3      = c(228, 228, 232, 233, 236, 236, 927,
+                               218, 219, 220, 222, 223, 226, 922,
+                               530, 831, 929))
+# left_join(d, cuts) %>%
+#   mutate(amo_lvl = case_when(rit < c1 ~ 1,
+#                              rit >= c1 & rit < c2 ~ 2,
+#                              rit >= c2 & rit < c3 ~ 3,
+#                              rit >= c3 ~ 4)) %>%
+#   select(-c1, -c2, -c3) %>%
+#   group_by(amo_lvl, grade, content_area) %>%
+#   summarize(min = min(rit, na.rm = TRUE),
+#             max = max(rit, na.rm = TRUE)) %>%
+#   unite(range, c("min", "max"), sep = "-") %>%
+#   spread(amo_lvl, range) %>%
+#   arrange(content_area, grade) %>%
+#   split(.$content_area)
+
+d <- left_join(d, cuts) %>% 
+  mutate(amo_lvl = case_when(rit < c1 ~ 1,
+                             rit >= c1 & rit < c2 ~ 2,
+                             rit >= c2 & rit < c3 ~ 3,
+                             rit >= c3 ~ 4)) %>% 
+  select(-c1, -c2, -c3)
+
+
+
+
+g3elaAMO <- table(g3ela$AMO_lvl)
+g4elaAMO <- table(g4ela$AMO_lvl)
+g5elaAMO <- table(g5ela$AMO_lvl)
+g6elaAMO <- table(g6ela$AMO_lvl)
+g7elaAMO <- table(g7ela$AMO_lvl)
+g8elaAMO <- table(g8ela$AMO_lvl)
+g11elaAMO <- table(g11ela$AMO_lvl)
+
+g3elaAMO <- as.data.frame(g3elaAMO)
+g4elaAMO <- as.data.frame(g4elaAMO)
+g5elaAMO <- as.data.frame(g5elaAMO)
+g6elaAMO <- as.data.frame(g6elaAMO)
+g7elaAMO <- as.data.frame(g7elaAMO)
+g8elaAMO <- as.data.frame(g8elaAMO)
+g11elaAMO <- as.data.frame(g11elaAMO)
+
+
+perc_prof <- function(x, y) {
+	n <- count(x$y)
+		for (i in levels(x)) {
+		lvl_ct <- count(x[i])
+		pp <- (lvl_ct/n)
+		return(table(pp))
+	}
+}
+	
+
+pFun <- function(tbl, color, grade, contentArea) {
+	p <- ggplot(tbl, aes(Var1, Freq)) + geom_bar(stat = "identity", fill = color) 
+	p +	geom_text(aes(label = sprintf("%.2f%%", Freq / sum(Freq) * 100)), vjust = -0.5) + 
+		labs(x = "AMO Performance Level", y = "Frequency", title = paste("Grade", grade, contentArea)) +
+		theme_classic()
+}
+
+pFun(g3elaAMO, "steelblue", 3, "ELA")
+pFun(g4elaAMO, "steelblue", 4, "ELA")
+pFun(g5elaAMO, "steelblue", 5, "ELA")
+pFun(g6elaAMO, "steelblue", 6, "ELA")
+pFun(g7elaAMO, "steelblue", 7, "ELA")
+pFun(g8elaAMO, "steelblue", 8, "ELA")
+pFun(g11elaAMO, "steelblue", 11, "ELA")
+```
 
 Average (Grade 11) ELA RIT Scores By Exceptionality here:
 
@@ -1751,20 +1848,6 @@ Average (Grade 8) Science RIT Scores By Exceptionality here:
 Average (Grade 11) Science RIT Scores By Exceptionality here:
 
 #### Grades 3-8 Observed and Unconditional Growth Expectations 
-
-```{r, growth_modeling, fig.width = 6.5, fig.height = 7}
-library(ggplot2)
-ggplot(mpg, aes(displ, cty, color = factor(cyl))) +
-  geom_point() +
-  geom_smooth() +
-  theme_minimal() +
-  labs(x = "Engine Displacement",
-       y = "City Miles Per Gallon",
-       title = "City Miles Per Gallon",
-       subtitle = "By Engine Size and Number of Cylinder") +
-  scale_color_brewer("Number of Cylinders", palette = "Set3") +
-  theme(legend.position = "bottom")
-```
 
 The ORExt was redesigned in 2014-15 to support growth determinations in Grades
 3-8 in English language arts and mathematics. A vertical scale using a balanced
