@@ -1,7 +1,9 @@
 data/*
 amos/*
-.docx
-.doc
+*~.docx
+*~.doc
+*.docx
+*.doc
 .Rproj.user
 .Rhistory
 .RData
