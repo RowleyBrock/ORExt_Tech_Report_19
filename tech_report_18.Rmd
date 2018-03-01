@@ -141,16 +141,13 @@ Similarly, the SBE adopted the Next Generation Science Standards (NGSS) on March
 schools in Grades K-12. The ODE and the Oregon Science Content and Assessment
 Panel provided direct feedback related to the NGSS. The NGSS are being phased in
 over time instructionally, so students are being assessed relative to the Oregon
-Science (ORSci) standards that were adopted in 2009. For state content
-standards,[link](http://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx.)
+Science (ORSci) standards that were adopted in 2009. [State content Standards](http://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx.)
 
 The table below provides examples of essentialized standards in grades 5, 8, &
 11 in the subject areas of English language arts (ELA), mathematics, and
 science. Complete EAF spreadsheets are available at the link provided here, as
 well. In the right column are designations for estimated difficulty of an item:
-L (low), M (medium), and H (high).
-
-[link](http://www.brtprojects.org/publications/training-modules)
+L (low), M (medium), and H (high). [Complete EAF Spreadsheets](http://www.brtprojects.org/publications/training-modules)
 
 See *Appendix* 1.1 for a User Guide that explains the development process and
 intended uses for the EAFs.
@@ -170,7 +167,7 @@ particularly here in Oregon. The new ORExt is linked directly to the content in
 the CCSS in English language arts (reading, writing, & language) and
 mathematics. The ORExt is dually linked to the ORSci as well as the NGSS. The
 NGSS are widely accepted by most relevant science instruction organizations as
-reflective of rigorous and coherent science concepts [link](http://www.nextgenscience.org/support-scientific-engineering-and-education-communities).
+reflective of rigorous and coherent science concepts [NGSS Link](http://www.nextgenscience.org/support-scientific-engineering-and-education-communities).
 
 The new Essentialized Assessment Frameworks (EAFs) are publicly available at the
 link on page 16 above in the Essentialized Assessment Frameworks section. A User
@@ -253,7 +250,7 @@ subgroup did not meet minimum participation requirements in 2015-16, the most
 current data available at the time of this report, in English language arts or
 mathematics, with rates at 92.3% and 91.5%, respectively. See the table below
 for a summary of participation. For complete reports, see
-[link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-Group-Reports-for-2014-2015-and-2015-2016.aspx.)
+[Complete reports link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-Group-Reports-for-2014-2015-and-2015-2016.aspx.)
 
 Documentation of this requirement is provided within the Annual Performance
 Report, Indicator B3, which is submitted to the United States Department of
@@ -402,7 +399,7 @@ The ORExt assessments are administered according to the administration, scoring,
 analysis, and reporting criteria established in the ORExt General Administration
 Manual (see *Appendix* 2.3). Important updates to the testing process are
 distributed via the Assessment and Accountability Updates listserve, as well
-[link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-and-Accountability-Update.aspx)).
+[Updates link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-and-Accountability-Update.aspx)).
 ODE uses this system to communicate information that is relevant for the
 statewide assessment system, including the ORExt. Announcements are sent to the
 listserv by email and are also posted to the ODE website. The standardization of
@@ -458,7 +455,7 @@ principles and utilize a simplified language approach (see *Appendix* 2.3A.3).
 In the 2013-2014 school year, the state developed a training and proficiency
 program for sign language interpretation of its assessments and has updated the
 site annually since that time. The training process
-[link](http://lms.brtprojects.org) included videos of interpreters administering
+[Training link](http://lms.brtprojects.org) included videos of interpreters administering
 items to students, materials that support appropriate administration (i.e.,
 transcripts and PowerPoint slides that supplement the video administrations and
 the current ODE accommodations manual), and proficiency testing to support
@@ -486,12 +483,13 @@ well-defined answers.
 Comprehensive information for ongoing training for all qualified assessors (QAs)
 and Qualified Trainers (QTs) is provided in Appendices 2.3B.1-2.3B.8. Training
 and QA/QT proficiency is determined annually via an online distribution and
-assessment system located at [link](https://or.k12test.com.) This website hosts
-all resources and information needed to administer, score, report, and interpret
-the results from the ORExt. The website also includes proficiency assessments
-that are required for all QAs and QTs who may administer the ORExt. QTs are
-directly trained by ODE and BRT staff as part of a train the trainers model. QTs
-then provide direct trainings for new QAs in their respective regions.
+assessment system located at [QA/QT website link](https://or.k12test.com.) This
+website hosts all resources and information needed to administer, score, report,
+and interpret the results from the ORExt. The website also includes proficiency
+assessments that are required for all QAs and QTs who may administer the ORExt.
+QTs are directly trained by ODE and BRT staff as part of a train the trainers
+model. QTs then provide direct trainings for new QAs in their respective
+regions.
 
 The Oregon Department of Education (ODE) provided four direct statewide
 trainings for new Qualified Trainers (QTs) and Qualified Assessors (QAs) in
@@ -509,8 +507,8 @@ certifications for any given year must re-train if they choose to enter the
 system again.
 
 The tables below contain data from the Oregon Extended Assessment Training and
-Proficiency Website [link](http://or.k12test.com/). All assessors need to
-complete some form of training each year to retain their status for
+Proficiency Website [QA/QT website link](http://or.k12test.com/). All assessors
+need to complete some form of training each year to retain their status for
 administering the Extended Assessments.
 
 New assessors and returning assessors who needed further training in 2016-17
@@ -772,13 +770,13 @@ development are stored in secure file servers managed by Behavioral Research &
 Teaching at the University of Oregon, the test vendor for the ORExt. Item
 reviews necessary to provide alignment, bias, and sensitivity information are
 conducted online using the secure Distributed Item Review (DIR) platform
-[link](http://brtitemreview.com) (secure website, but see Appendix 3.1B for a
+[DIR link](http://brtitemreview.com) (secure website, but see Appendix 3.1B for a
 system overview).
 
 For the 2016-2017 school year, all secure test distribution and data entry was
 hosted by ODE's secure file transfer system, which is a password-protected test
-distribution and data entry system located at
-[link](https://district.ode.state.or.us/apps/login/) (secure website, but see
+distribution and data entry system located at [Secure file
+link](https://district.ode.state.or.us/apps/login/) (secure website, but see
 screenshot below for reference). A data entry guide is provided in Appendix 2.6.
 
 Screenshot for secure website login page here:
@@ -790,8 +788,7 @@ assessment system Peer Review evidence submission.
 
 Student level data is protected by relevant training and through a secure data
 system in which all data entry is conducted online using password-protected,
-secure procedures on the [Oregon K12 website](https://or.k12test.com) or
-[link](https://district.ode.state.or.us/apps/login/) websites, as identified
+secure procedures on the [Oregon K12 website](https://or.k12test.com) or [Secure data link](https://district.ode.state.or.us/apps/login/) websites, as identified
 above. Only trained users with a vested educational interest who have signed
 test security agreements are authorized to access to online data entry systems.
 See *Appendix* 2.6 for additional data entry expectations for 2016-17.
@@ -1027,7 +1024,9 @@ finding was used to infer that the process undertaken to essentialize a given
 Source Standard did not fundamentally or critically alter the knowledge or skill
 set intended by the source standard for this population of students (further
 confirming that the content selected for assessment is comparable). 
-  Conclusion:This review, with a range of 1.5 - 1.9 (on a scale of 2) permits     the inference: the Essentialized Standards were found to link sufficiently to   the source standards on average beyond the "sufficient" average of 1.0.
+  Conclusion:This review, with a range of 1.5 - 1.9 (on a scale of 2) permits
+  the inference: the Essentialized Standards were found to link sufficiently to
+  the source standards on average beyond the "sufficient" average of 1.0.
 Third, reviewers were asked to identify the strength of the alignment between
 the Essentialized Standards and the items and to review the items developed
 using the Essentialized Standards for bias, and accessibility. The finding from
@@ -1053,7 +1052,8 @@ the Achievement Level Descriptors for each subject and grade level are aligned
 with the content standard being measured.
   Conclusion: The reviews ranging from .68* - 1.0 permit the inference that the
   descriptions made regarding student skillset are an accurate reflection of the
-  standards from which the assessment was developed at all three levels           evaluated. (*One outlier for ELA-Grade 4 provided a review of a .52 average).
+  standards from which the assessment was developed at all three levels
+  evaluated. (*One outlier for ELA-Grade 4 provided a review of a .52 average).
 Fifth, and finally, reviewers were asked to review the alignment of the
 Achievement Level Descriptors to the items. The finding from this review was
 used to infer that each item in the developed assessment(s) was appropriately
@@ -1464,10 +1464,10 @@ The average SEM associated with each cut score for 2016-17 student data are
 presented in the table below, supported by a KEY. The SEMs decreased in almost
 all cases compared to last year, suggesting that the measures are more reliable
 when student eligibility is more strictly controlled. See Section 4.2 below for
-means and standard deviations by grade and subject area. SEM	= Standard Error of
+means and standard deviations by grade and subject area. SEM = Standard Error of
 Measure associated with the cut score to the left; averaged to the tenths'
-place. Level 1	= Does Not Yet Meet (not included as the lowest level of
-proficiency) Level 2	= Nearly Meets Level 3	= Meets Level 4	= Exceeds
+place. Level 1 = Does Not Yet Meet (not included as the lowest level of
+proficiency) Level 2 = Nearly Meets Level 3	= Meets Level 4	= Exceeds
 
 English Language Arts table here:
 
@@ -1942,12 +1942,11 @@ language arts (Reading, Writing, and Language) and Mathematics, as well as the
 Oregon Science Standards and Next Generation Science Standards in science in a
 purposive, validated manner. The ORExt test blueprints convey the balance of
 representation exhibited by the assessment (see *Appendix* 2.1B). These test
-blueprints are supported by the ORExt Extended Assessment Frameworks
-[link](http://www.brtprojects.org/publications/training-modules), which define
-the assessable content on the ORExt that has been reduced in depth, breadth, and
-complexity (RDBC) using our defined process (see *Appendix* 2.3A.3). The
-decisions regarding which standards to target for essentialization, as well as
-the strength of linkage between the Essentialized Standards and the
+blueprints are supported by the ORExt Extended Assessment Frameworks [Test blueprints link](http://www.brtprojects.org/publications/training-modules),
+which define the assessable content on the ORExt that has been reduced in depth,
+breadth, and complexity (RDBC) using our defined process (see *Appendix*
+2.3A.3). The decisions regarding which standards to target for essentialization,
+as well as the strength of linkage between the Essentialized Standards and the
 CCSS/ORSci/NGSS has been validated by Oregon teachers, as well (see *Appendix*
 3.1A).
 
@@ -2158,7 +2157,7 @@ Individualized Education Program (IEP) goals and objectives that are aligned
 with the Essentialized Standards. It is also expected that the essentialization
 process will generalize to many students who are performing off grade level, not
 merely to SWSCD. All resources are published on a BRT-sponsored website at
-[link](http://lms.brtprojects.org).
+[BRT link](http://lms.brtprojects.org).
 
 ### 5.2A - 5.2C Procedures for Including ELs 
 
@@ -2169,7 +2168,7 @@ Though the ORExt is currently published in English, an appropriately qualified
 interpreter can provide the assessment to any SWSCD from diverse language
 backgrounds, including American Sign Language. ODE has developed a training
 module to increase the standardization of ASL administration for its statewide
-assessments, available at [link](http://lms.brtprojects.org).
+assessments, available at [ASL link](http://lms.brtprojects.org).
 
 Additional information regarding the inclusion of ELs in Oregon's general
 assessments is provided in the general assessment Peer Review evidence.
@@ -2702,11 +2701,11 @@ used the package to train New Qualified Assessors for the 2016-17 school year.
 The training provides participants with the information needed to pass
 proficiency tests as part of the requirements to become a QA for the Oregon
 Extended Assessments and was delivered by QTs throughout the state. The training
-package addresses the following topics: "	What's new in 2016-17 "	2017 Test
-Window "	Eligibility - which students take AA-AAAS? "	Test administration
-"	Student Confidentiality & Test Security "	Test Administration (Physical &
-Logistic) "	Scoring & Data Entry "	Reports & Sharing Results with Parents
-"	Navigating the Training and Proficiency website "	Resources
+package addresses the following topics: "What's new in 2016-17?",	"2017 Test
+Window",	"Eligibility - which students take AA-AAAS?",	"Test administration",
+"Student Confidentiality & Test Security", "Test Administration (Physical &
+Logistic)",	"Scoring & Data Entry",	"Reports & Sharing Results with Parents",
+"Navigating the Training and Proficiency website", and "Resources."
 
 #### Appendix 2.3B.4 
 
