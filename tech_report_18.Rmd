@@ -27,10 +27,11 @@ header-includes:
 knitr::opts_chunk$set(echo = FALSE, 
                       warning = FALSE, 
                       error = FALSE, 
-                      message = FALSE)
+                      message = FALSE,
+                      fig.pos = '!h')
 ```
 
-![](stateofOR.png)
+![](Figures/stateofOR.png)
 
 # Oregon Department of Education
 
@@ -58,26 +59,26 @@ comprehensive documentation of the development, procedures, technical adequacy,
 and results of the system.*
 
 \newpage
-![](peer_rev/PeerReview1.pdf)
+![](Figures/peer_rev/PeerReview1.pdf)
 
 \newpage
-![](peer_rev/PeerReview2.pdf)
-
-\newpage
-
-![](peer_rev/PeerReview3.pdf)
+![](Figures/peer_rev/PeerReview2.pdf)
 
 \newpage
 
-![](peer_rev/PeerReview4.pdf)
+![](Figures/peer_rev/PeerReview3.pdf)
 
 \newpage
 
-![](peer_rev/PeerReview5.pdf)
+![](Figures/peer_rev/PeerReview4.pdf)
 
 \newpage
 
-![](peer_rev/PeerReview6.pdf)
+![](Figures/peer_rev/PeerReview5.pdf)
+
+\newpage
+
+![](Figures/peer_rev/PeerReview6.pdf)
 
 # Overview
 
@@ -182,13 +183,13 @@ Spreadsheets](http://www.brtprojects.org/publications/training-modules)
 See *Appendix* 1.1 for a User Guide that explains the development process and
 intended uses for the EAFs.
 
-![](Standards/Grade5.pdf)
+![](Figures/Standards/Grade5.pdf)
+
+![](Figures/Standards/Grade8.pdf)
+
+![](Figures/Standards/Grade11.pdf)
 
 \newpage
-![](Standards/Grade8.pdf)
-
-\newpage
-![](Standards/Grade11.pdf)
 
 ### 1.2 Coherent and rigorous Academic Content Standards 
 
@@ -215,9 +216,7 @@ employed to generate essentialized standards and write aligned items for the
 ORExt is outlined below. The process can also be used to support the development
 of curricular and instructional materials, founded in research-based pedagogy.
 
-\newpage
-
-![](Essentialization/Essentialization.pdf)
+![](Figures/Essentialization/Essentialization.pdf)
 
 ### 1.3 Required Assessments 
 
@@ -228,8 +227,30 @@ Grades 3-8 and once in high school (Grades 10-12) for ELA and mathematics, while
 science is assessed once in the 3-5 grade band, once in the 6-9 grade band, and
 once in the 10-12 grade band:
 
-Assessment table here:
+![](Figures/TestedGrade/ContentArea.pdf)
 
+```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+tabl <- "  
+          | ElA   | Mathematics | Science |
+________________________________________________________________________________
+Grade 3   |   X   |     X       |         |
+________________________________________________________________________________
+Grade 4   |   X   |     X       |         |
+________________________________________________________________________________
+Grade 5   |   X   |     X       |   X     |
+________________________________________________________________________________
+Grade 6   |   X   |     X       |         |
+________________________________________________________________________________
+Grade 7   |   X   |     X       |         |
+________________________________________________________________________________
+Grade 8   |   X   |     X       |   X     |
+________________________________________________________________________________
+Grade 11  |   X   |     X       |   X     |
+________________________________________________________________________________
+"
+cat(tabl) 
+```
+          
 ### 1.4 Policies for Including All Students in Assessments 
 
 Originally, Oregon statute required that all students participate in statewide
@@ -298,9 +319,7 @@ state performance is published in the 2015-16 State Report Card (see *Appendix*
 1.5, pages 1-11 for student and teacher demographics and pages 21-48 for
 assessment information).
 
-Participation Details table for ELA here:
-
-Participation Details table for Math here:
+![](Figures/Participation/Participation.pdf)
 
 ## Critical Element 2 - Assessment System Operations
 
@@ -395,7 +414,7 @@ Math \$900. Item development will focus primarily on writing the stem and 3
 options, with no need to produce graphics (rather use labels for a BRT graphic
 designer to produce).
 
-Item development needs table here:
+![](Figures/ItemDev/ItemDev.pdf)
 
 ### Contact:
 
@@ -439,12 +458,11 @@ Manual (see *Appendix* 2.3). Important updates to the testing process are
 distributed via the Assessment and Accountability Updates listserve, as well
 \color{link} [Updates
 link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-and-Accountability-Update.aspx)
-\color{black}
-ODE uses this system to communicate information that is relevant for the
-statewide assessment system, including the ORExt. Announcements are sent to the
-listserv by email and are also posted to the ODE website. The standardization of
-test administration is supported by a comprehensive training process described
-below in Section 2.3B.
+\color{black} ODE uses this system to communicate information that is relevant
+for the statewide assessment system, including the ORExt. Announcements are sent
+to the listserv by email and are also posted to the ODE website. The
+standardization of test administration is supported by a comprehensive training
+process described below in Section 2.3B.
 
 #### 2.3A Administration and Accommodations
 
@@ -536,7 +554,7 @@ trainings for new Qualified Trainers (QTs) and Qualified Assessors (QAs) in
 face-to-face regional trainings. The schedule for the regional trainings, as
 well as relevant training information, is provided below: 
 
-Regional training schedule/table here: 
+![](Figures/TrainingSched/TraingSched.pdf)
 
 Only trained Qualified Assessors (QAs) can administer the Oregon Extended
 assessment. Qualified Assessors who also receive direct instruction from ODE and
@@ -565,15 +583,7 @@ An analysis of the Oregon Extended Assessment Training and Proficiency Website
 showed 353 Assessors in-Training, 1,030 Qualified Assessors, and 137 Qualified
 Trainers.
 
-Administration Proficiency table here:
-
-English Language Arts Proficiency table here:
-
-Mathematics Proficiency table here:
-
-Science Proficiency table here:
-
-Refresher Proficiency table here:
+![](Figures/TestPartic/TestParticipants.pdf)
 
 A higher number of assessors completed the Refresher Proficiency test than the
 subject area proficiency tests reflecting a greater number of return assessors
@@ -737,7 +747,7 @@ administration for the ORExt, located at \color{link}
 [link](https://or.k12test.com)\color{black} (secure website, but see screenshot
 below for an example of training content).
 
-Screenshot for an example of training content here:
+![](Figures/TrainingSite/TrainingSite.pdf)
 
 The or.k12test.com website includes a training section that addresses any
 systems updates, the process for becoming a Qualified Assessor or Qualified
@@ -754,7 +764,7 @@ training materials used on the website. In addition to these materials, QTs have
 access to all training materials necessary to provide annual training to QAs in
 their purview (see screenshot below):
 
-Screenshot for Materials to Download page here:
+![](Figures/TrainingSite/Downloads.pdf)
 
 In addition, monitoring and reporting related to test administration issues for
 the ORExt is addressed via general ODE reporting systems. Information regarding
@@ -821,7 +831,7 @@ link](https://district.ode.state.or.us/apps/login/) \color{black} (secure
 website, but see screenshot below for reference). A data entry guide is provided
 in Appendix 2.6.
 
-Screenshot for secure website login page here:
+![](Figures/TrainingSite/SecureSite.pdf)
 
 Additional information regarding test security can be located in the general
 assessment system Peer Review evidence submission.
@@ -1173,11 +1183,7 @@ link to multiple grade level content standards. However, the blueprints below
 reflect only the written EsSt and are thus an underrepresentation of the breadth
 of grade level content addressed by the ORExt.
 
-English Language Arts table here:
-
-Mathematics table here:
-
-Science table here:
+![](Figures/EsSt/EsSt.pdf)
 
 The primary purpose of the ORExt assessment is to yield technically adequate
 performance data on grade level state content standards for students with
