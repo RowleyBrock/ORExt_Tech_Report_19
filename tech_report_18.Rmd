@@ -7,13 +7,18 @@ author:
 affiliation: "University of Oregon"
 date: "2/20/2018"
 output: 
-  html_document:
-    toc: true
-    toc_float: true
-    toc_depth: 4
+  # html_document:
+  #   toc: true
+  #   toc_float: true
+  #   toc_depth: 4
   pdf_document:
-    toc: trued
+    toc: true
     toc_depth: 4
+header-includes:
+  - \usepackage{caption}
+  - \captionsetup[figure]{labelformat = empty}
+  - \usepackage{xcolor}
+  - \definecolor{link}{rgb}{0, 0, 238}
 ---
 
 \newpage
@@ -52,11 +57,28 @@ Oregon's Statewide Assessment System. The complete set of volumes provides
 comprehensive documentation of the development, procedures, technical adequacy,
 and results of the system.*
 
+\newpage
+![](peer_rev/PeerReview1.pdf)
 
-```{r}
-list.files()
-read.csv("PeerReviewTables.csv")
-```
+\newpage
+![](peer_rev/PeerReview2.pdf)
+
+\newpage
+
+![](peer_rev/PeerReview3.pdf)
+
+\newpage
+
+![](peer_rev/PeerReview4.pdf)
+
+\newpage
+
+![](peer_rev/PeerReview5.pdf)
+
+\newpage
+
+![](peer_rev/PeerReview6.pdf)
+
 # Overview
 
 This document provides updated technical adequacy documentation for the Oregon
@@ -146,20 +168,27 @@ Similarly, the SBE adopted the Next Generation Science Standards (NGSS) on March
 schools in Grades K-12. The ODE and the Oregon Science Content and Assessment
 Panel provided direct feedback related to the NGSS. The NGSS are being phased in
 over time instructionally, so students are being assessed relative to the Oregon
-Science (ORSci) standards that were adopted in 2009. [State content Standards](http://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx.)
-
-The table below provides examples of essentialized standards in grades 5, 8, &
+Science (ORSci) standards that were adopted in 2009. \color{link} [State content
+Standards](http://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx.)
+\color{black}
+The tables below provide examples of essentialized standards in grades 5, 8, &
 11 in the subject areas of English language arts (ELA), mathematics, and
 science. Complete EAF spreadsheets are available at the link provided here, as
 well. In the right column are designations for estimated difficulty of an item:
-L (low), M (medium), and H (high). [Complete EAF Spreadsheets](http://www.brtprojects.org/publications/training-modules)
+L (low), M (medium), and H (high). \color{link} [Complete EAF
+Spreadsheets](http://www.brtprojects.org/publications/training-modules)
+\color{black}
 
 See *Appendix* 1.1 for a User Guide that explains the development process and
 intended uses for the EAFs.
 
-GRADE 5 table with examples of essentialized standards here:
-GRADE 8 table with examples of essentialized standards here:
-GRADE 11 table with examples of essentialized standards here:
+![](Standards/Grade5.pdf)
+
+\newpage
+![](Standards/Grade8.pdf)
+
+\newpage
+![](Standards/Grade11.pdf)
 
 ### 1.2 Coherent and rigorous Academic Content Standards 
 
@@ -172,7 +201,9 @@ particularly here in Oregon. The new ORExt is linked directly to the content in
 the CCSS in English language arts (reading, writing, & language) and
 mathematics. The ORExt is dually linked to the ORSci as well as the NGSS. The
 NGSS are widely accepted by most relevant science instruction organizations as
-reflective of rigorous and coherent science concepts [NGSS Link](http://www.nextgenscience.org/support-scientific-engineering-and-education-communities).
+reflective of rigorous and coherent science concepts \color{link}[NGSS
+Link](http://www.nextgenscience.org/support-scientific-engineering-and-education-communities)
+\color{black}
 
 The new Essentialized Assessment Frameworks (EAFs) are publicly available at the
 link on page 16 above in the Essentialized Assessment Frameworks section. A User
@@ -184,7 +215,9 @@ employed to generate essentialized standards and write aligned items for the
 ORExt is outlined below. The process can also be used to support the development
 of curricular and instructional materials, founded in research-based pedagogy.
 
-Behavioral Research and Teaching Essentialization Process flow-chart here:
+\newpage
+
+![](Essentialization/Essentialization.pdf)
 
 ### 1.3 Required Assessments 
 
@@ -202,17 +235,16 @@ Assessment table here:
 Originally, Oregon statute required that all students participate in statewide
 assessments, with exceptions allowed for district-approved parent request for
 assessment waivers (parent opt-out requests) related to student disability or
-religious beliefs (see Oregon Administrative Rule, OAR § 581-022-0612):
+religious beliefs (see Oregon Administrative Rule, OAR § 581-022-0612)
 
-    Exception of Students with Disabilities from State Assessment Testing
-    (1) For the purposes of this rule a "student with a disability" is a student
-    identified under the Individuals with Disabilities Education Act, consistent
-    with OAR chapter 581, division 015, or a student with a disability under 
-    Section 504 of the Rehabilitation Act of 1973. 
-    (2) A public agency shall not exempt a student with a disability from
-    participation in the Oregon State Assessment System or any district wide
-    assessments to accommodate the student's disability unless the parent has
-    requested such an exemption.
+Exception of Students with Disabilities from State Assessment Testing (1) For
+the purposes of this rule a "student with a disability" is a student identified
+under the Individuals with Disabilities Education Act, consistent with OAR
+chapter 581, division 015, or a student with a disability under Section 504 of
+the Rehabilitation Act of 1973. (2) A public agency shall not exempt a student
+with a disability from participation in the Oregon State Assessment System or
+any district wide assessments to accommodate the student's disability unless the
+parent has requested such an exemption.
     
 However, House Bill 2655 established a Student Bill of Rights on January 1,
 2016, which permitted parents or adult students to annually opt-out of Oregon's
@@ -254,8 +286,9 @@ levels are included in our assessment system. The students with disabilities
 subgroup did not meet minimum participation requirements in 2015-16, the most
 current data available at the time of this report, in English language arts or
 mathematics, with rates at 92.3% and 91.5%, respectively. See the table below
-for a summary of participation. For complete reports, see
-[Complete reports link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-Group-Reports-for-2014-2015-and-2015-2016.aspx.)
+for a summary of participation. For complete reports, see \color{link} [Complete
+reports link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-Group-Reports-for-2014-2015-and-2015-2016.aspx.)
+\color{black}
 
 Documentation of this requirement is provided within the Annual Performance
 Report, Indicator B3, which is submitted to the United States Department of
@@ -381,8 +414,8 @@ developing items for the ORExt, as did all of the BRT researchers. The five PhD
 candidates within the COE had no prior item development experience. All item
 development was reviewed by BRT researchers and the Project Manager.
 
-The item development process followed is elaborated in *Appendix* 2.2.1, which is
-the PowerPoint used in training all Oregon item writers. The item development
+The item development process followed is elaborated in *Appendix* 2.2.1, which
+is the PowerPoint used in training all Oregon item writers. The item development
 process was structured with the following steps. Item writers were first
 oriented to the student population, as the pool of item writers included both
 content and special education experts. The Essentialization Process used to RDBC
@@ -395,8 +428,8 @@ High (H) levels of complexity to convey the different performance expectations
 at each level. The balanced vertical scaling design provided an overall
 form-to-form and grade-to-grade level framework for the test formation process
 once items were developed (see *Appendix* 2.2.2). Sample items are provided in
-*Appendix* 2.2.3 for stakeholder reference, demonstrating the format and style of
-typical items on the ORExt.
+*Appendix* 2.2.3 for stakeholder reference, demonstrating the format and style
+of typical items on the ORExt.
 
 ### 2.3 Test Administration
 
@@ -404,7 +437,9 @@ The ORExt assessments are administered according to the administration, scoring,
 analysis, and reporting criteria established in the ORExt General Administration
 Manual (see *Appendix* 2.3). Important updates to the testing process are
 distributed via the Assessment and Accountability Updates listserve, as well
-[Updates link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-and-Accountability-Update.aspx)).
+\color{link} [Updates
+link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-and-Accountability-Update.aspx)
+\color{black}
 ODE uses this system to communicate information that is relevant for the
 statewide assessment system, including the ORExt. Announcements are sent to the
 listserv by email and are also posted to the ODE website. The standardization of
@@ -459,16 +494,16 @@ principles and utilize a simplified language approach (see *Appendix* 2.3A.3).
 
 In the 2013-2014 school year, the state developed a training and proficiency
 program for sign language interpretation of its assessments and has updated the
-site annually since that time. The training process
-[Training link](http://lms.brtprojects.org) included videos of interpreters administering
-items to students, materials that support appropriate administration (i.e.,
-transcripts and PowerPoint slides that supplement the video administrations and
-the current ODE accommodations manual), and proficiency testing to support
-standardized interpretation for Oregon's assessments, including the ORExt. A
-10-item proficiency test was administered, with an 80% required for passing
-(8/10 items correct). In 2016-17, the site was used to train 60 participants.
-All participants passed the assessment on the first attempt. The overall average
-score on the proficiency test was 97.6%.
+site annually since that time. The training process \color{link}[Training
+link](http://lms.brtprojects.org) \color{black} included videos of interpreters
+administering items to students, materials that support appropriate
+administration (i.e., transcripts and PowerPoint slides that supplement the
+video administrations and the current ODE accommodations manual), and
+proficiency testing to support standardized interpretation for Oregon's
+assessments, including the ORExt. A 10-item proficiency test was administered,
+with an 80% required for passing (8/10 items correct). In 2016-17, the site was
+used to train 60 participants. All participants passed the assessment on the
+first attempt. The overall average score on the proficiency test was 97.6%.
 
 The ORExt assessments provide an appropriate variety of linguistic
 accommodations for students with limited English proficiency. They also use a
@@ -488,13 +523,13 @@ well-defined answers.
 Comprehensive information for ongoing training for all qualified assessors (QAs)
 and Qualified Trainers (QTs) is provided in Appendices 2.3B.1-2.3B.8. Training
 and QA/QT proficiency is determined annually via an online distribution and
-assessment system located at [QA/QT website link](https://or.k12test.com.) This
-website hosts all resources and information needed to administer, score, report,
-and interpret the results from the ORExt. The website also includes proficiency
-assessments that are required for all QAs and QTs who may administer the ORExt.
-QTs are directly trained by ODE and BRT staff as part of a train the trainers
-model. QTs then provide direct trainings for new QAs in their respective
-regions.
+assessment system located at \color{link} [QA/QT website
+link](https://or.k12test.com.) \color{black}This website hosts all resources and
+information needed to administer, score, report, and interpret the results from
+the ORExt. The website also includes proficiency assessments that are required
+for all QAs and QTs who may administer the ORExt. QTs are directly trained by
+ODE and BRT staff as part of a train the trainers model. QTs then provide direct
+trainings for new QAs in their respective regions.
 
 The Oregon Department of Education (ODE) provided four direct statewide
 trainings for new Qualified Trainers (QTs) and Qualified Assessors (QAs) in
@@ -512,9 +547,9 @@ certifications for any given year must re-train if they choose to enter the
 system again.
 
 The tables below contain data from the Oregon Extended Assessment Training and
-Proficiency Website [QA/QT website link](http://or.k12test.com/). All assessors
-need to complete some form of training each year to retain their status for
-administering the Extended Assessments.
+Proficiency Website \color{link} [QA/QT website link](http://or.k12test.com/)
+\color{black} All assessors need to complete some form of training each year to
+retain their status for administering the Extended Assessments.
 
 New assessors and returning assessors who needed further training in 2016-17
 were required to pass four proficiencies with a score of 80% or higher. These
@@ -698,8 +733,9 @@ access a tablet administration.
 ### 2.4 Monitoring Test Administration
 
 The ODE maintains a rigorous training system to support standardized test
-administration for the ORExt, located at [link](https://or.k12test.com) (secure
-website, but see screenshot below for an example of training content).
+administration for the ORExt, located at \color{link}
+[link](https://or.k12test.com)\color{black} (secure website, but see screenshot
+below for an example of training content).
 
 Screenshot for an example of training content here:
 
@@ -775,14 +811,15 @@ development are stored in secure file servers managed by Behavioral Research &
 Teaching at the University of Oregon, the test vendor for the ORExt. Item
 reviews necessary to provide alignment, bias, and sensitivity information are
 conducted online using the secure Distributed Item Review (DIR) platform
-[DIR link](http://brtitemreview.com) (secure website, but see Appendix 3.1B for a
-system overview).
+\color{link} [DIR link](http://brtitemreview.com) \color{black} (secure website,
+but see Appendix 3.1B for a system overview).
 
 For the 2016-2017 school year, all secure test distribution and data entry was
 hosted by ODE's secure file transfer system, which is a password-protected test
-distribution and data entry system located at [Secure file
-link](https://district.ode.state.or.us/apps/login/) (secure website, but see
-screenshot below for reference). A data entry guide is provided in Appendix 2.6.
+distribution and data entry system located at \color{link} [Secure file
+link](https://district.ode.state.or.us/apps/login/) \color{black} (secure
+website, but see screenshot below for reference). A data entry guide is provided
+in Appendix 2.6.
 
 Screenshot for secure website login page here:
 
@@ -793,10 +830,12 @@ assessment system Peer Review evidence submission.
 
 Student level data is protected by relevant training and through a secure data
 system in which all data entry is conducted online using password-protected,
-secure procedures on the [Oregon K12 website](https://or.k12test.com) or [Secure data link](https://district.ode.state.or.us/apps/login/) websites, as identified
-above. Only trained users with a vested educational interest who have signed
-test security agreements are authorized to access to online data entry systems.
-See *Appendix* 2.6 for additional data entry expectations for 2016-17.
+secure procedures on the \color{link} [Oregon K12
+website](https://or.k12test.com) \color{black} or \color{link} [Secure data
+link](https://district.ode.state.or.us/apps/login/) \color{black} websites, as
+identified above. Only trained users with a vested educational interest who have
+signed test security agreements are authorized to access to online data entry
+systems. See *Appendix* 2.6 for additional data entry expectations for 2016-17.
 
 #### 2.6C Protecting Personally Identifiable Information
 
@@ -1023,12 +1062,12 @@ can be considered justifiable for the population for the subject area.
   de-selected (for inaccessibility or for being covered elsewhere) were strongly
   identified for re- inclusion, nor were identified as a critical hole for this
   population of students. 
-Second, reviewers were asked to identify the strength of
-the link between the source standard and the Essentialized Standard. This
-finding was used to infer that the process undertaken to essentialize a given
-Source Standard did not fundamentally or critically alter the knowledge or skill
-set intended by the source standard for this population of students (further
-confirming that the content selected for assessment is comparable). 
+Second, reviewers were asked to identify the strength of the link between the
+source standard and the Essentialized Standard. This finding was used to infer
+that the process undertaken to essentialize a given Source Standard did not
+fundamentally or critically alter the knowledge or skill set intended by the
+source standard for this population of students (further confirming that the
+content selected for assessment is comparable).
   Conclusion:This review, with a range of 1.5 - 1.9 (on a scale of 2) permits
   the inference: the Essentialized Standards were found to link sufficiently to
   the source standards on average beyond the "sufficient" average of 1.0.
@@ -1047,7 +1086,7 @@ with significant cognitive disabilities.
   can be accessed by students with the most significant cognitive disabilities.
   (**Note: this range was skewed by feedback from one reviewer --ELA-Grade 3 -
   whose comments were noted in this study. Removing that individual's comments
-  would result in a      range of .90 - 1.0 accessibility range and .89 - 1.0
+  would result in a range of .90 - 1.0 accessibility range and .89 - 1.0
   freedom from bias range respectively.)
 Fourth, reviewers were asked to review the statements used to describe student
 achievement on the test (the Achievement Level Descriptors) and their alignment
@@ -1947,7 +1986,9 @@ language arts (Reading, Writing, and Language) and Mathematics, as well as the
 Oregon Science Standards and Next Generation Science Standards in science in a
 purposive, validated manner. The ORExt test blueprints convey the balance of
 representation exhibited by the assessment (see *Appendix* 2.1B). These test
-blueprints are supported by the ORExt Extended Assessment Frameworks [Test blueprints link](http://www.brtprojects.org/publications/training-modules),
+blueprints are supported by the ORExt Extended Assessment Frameworks
+\color{link} [Test blueprints
+link](http://www.brtprojects.org/publications/training-modules) \color{black},
 which define the assessable content on the ORExt that has been reduced in depth,
 breadth, and complexity (RDBC) using our defined process (see *Appendix*
 2.3A.3). The decisions regarding which standards to target for essentialization,
@@ -2162,7 +2203,7 @@ Individualized Education Program (IEP) goals and objectives that are aligned
 with the Essentialized Standards. It is also expected that the essentialization
 process will generalize to many students who are performing off grade level, not
 merely to SWSCD. All resources are published on a BRT-sponsored website at
-[BRT link](http://lms.brtprojects.org).
+\color{link} [BRT link](http://lms.brtprojects.org) \color{black}
 
 ### 5.2A - 5.2C Procedures for Including ELs 
 
@@ -2173,7 +2214,8 @@ Though the ORExt is currently published in English, an appropriately qualified
 interpreter can provide the assessment to any SWSCD from diverse language
 backgrounds, including American Sign Language. ODE has developed a training
 module to increase the standardization of ASL administration for its statewide
-assessments, available at [ASL link](http://lms.brtprojects.org).
+assessments, available at \color{link} [ASL
+link](http://lms.brtprojects.org).\color{black}
 
 Additional information regarding the inclusion of ELs in Oregon's general
 assessments is provided in the general assessment Peer Review evidence.
@@ -2846,4 +2888,3 @@ setting procedure employed for the ORExt on June 15-17, 2015.
 that ODE publishes for students who participate in the ORExt. The mock-up
 includes cut scores and achievement level descriptors (ALDs), as well as links
 to the ODE website for additional information.
-
