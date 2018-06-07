@@ -1,24 +1,27 @@
 ---
-title: 'Oregon Extended Analyses: 2018'
-author: 
-- "Brock Rowley"
-- "Daniel Anderson"
-- "Gerald Tindal"
-affiliation: "University of Oregon"
-date: "2/20/2018"
-output: 
-  # html_document:
-  #   toc: true
-  #   toc_float: true
-  #   toc_depth: 4
-  pdf_document:
-    toc: true
+title: 'Oregon Extended Assessment Analyses: 2018'
+author:
+- Brock Rowley
+- Daniel Anderson
+- Gerald Tindal
+date: "6/30/2018"
+output:
+  word_document:
+    toc: yes
+    toc_depth: '4'
+  html_document:
+    toc: yes
     toc_depth: 4
-header-includes:
+    toc_float: yes
+  pdf_document:
+    toc: yes
+    toc_depth: 4
+  header-includes:
   - \usepackage{caption}
   - \captionsetup[figure]{labelformat = empty}
   - \usepackage{xcolor}
   - \definecolor{link}{rgb}{0, 0, 238}
+affiliation: University of Oregon
 ---
 
 \newpage
@@ -176,9 +179,8 @@ The tables below provide examples of essentialized standards in grades 5, 8, &
 11 in the subject areas of English language arts (ELA), mathematics, and
 science. Complete EAF spreadsheets are available at the link provided here, as
 well. In the right column are designations for estimated difficulty of an item:
-L (low), M (medium), and H (high). \color{link} [Complete EAF
-Spreadsheets](http://www.brtprojects.org/publications/training-modules)
-\color{black}
+L (low), M (medium), and H (high). \color{link} [Complete EAF Spreadsheets]
+(http://www.brtprojects.org/publications/training-modules) \color{black}
 
 See *Appendix* 1.1 for a User Guide that explains the development process and
 intended uses for the EAFs.
@@ -227,30 +229,12 @@ Grades 3-8 and once in high school (Grades 10-12) for ELA and mathematics, while
 science is assessed once in the 3-5 grade band, once in the 6-9 grade band, and
 once in the 10-12 grade band:
 
-![](Figures/TestedGrade/ContentArea.pdf)
+| **Content Area**      | **Grade 3** | **Grade 4** | **Grade 5** | **Grade 7** | **Grade 8** | **Grade 11** |
+| :-------------------- | :---------- | :---------- | :---------- | :---------- | :---------- | :----------- |
+| English Language Arts | X           | X           | X           | X           | X           | X            |
+| Mathematics           | X           | X           | X           | X           | X           | X            |
+| Science               |             |             | X           |             | X           | X            |
 
-```{r table2, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
-tabl <- "  
-          | ElA   | Mathematics | Science |
-________________________________________________________________________________
-Grade 3   |   X   |     X       |         |
-________________________________________________________________________________
-Grade 4   |   X   |     X       |         |
-________________________________________________________________________________
-Grade 5   |   X   |     X       |   X     |
-________________________________________________________________________________
-Grade 6   |   X   |     X       |         |
-________________________________________________________________________________
-Grade 7   |   X   |     X       |         |
-________________________________________________________________________________
-Grade 8   |   X   |     X       |   X     |
-________________________________________________________________________________
-Grade 11  |   X   |     X       |   X     |
-________________________________________________________________________________
-"
-cat(tabl) 
-```
-          
 ### 1.4 Policies for Including All Students in Assessments 
 
 Originally, Oregon statute required that all students participate in statewide
@@ -304,11 +288,12 @@ translated into a student's home language.
 
 Oregon's participation data indicate that most students in the tested grade
 levels are included in our assessment system. The students with disabilities
-subgroup did not meet minimum participation requirements in 2015-16, the most
+subgroup did not meet minimum participation requirements in 2016-17, the most
 current data available at the time of this report, in English language arts or
-mathematics, with rates at 92.3% and 91.5%, respectively. See the table below
+mathematics, with rates at 90.2% and 89.4%, respectively. See the table below
 for a summary of participation. For complete reports, see \color{link} [Complete
-reports link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-Group-Reports-for-2014-2015-and-2015-2016.aspx.)
+reports
+link](http://www.oregon.gov/ode/schools-and-districts/reportcards/Documents/rptcard2017.pdf)
 \color{black}
 
 Documentation of this requirement is provided within the Annual Performance
@@ -332,7 +317,7 @@ level content standards, an overview of the essentialization process and EAF
 documents, the planned test design for the ORExt, test development
 considerations, sample test items, item specifications, and universal
 tools/designated supports/accommodations. No new items were developed in
-2016-17, so the 2014-15 test specifications are the most current available.
+2017-18, so the 2014-15 test specifications are the most current available.
 
 #### 2.1A ORExt Purpose
 
@@ -569,10 +554,10 @@ Proficiency Website \color{link} [QA/QT website link](http://or.k12test.com/)
 \color{black} All assessors need to complete some form of training each year to
 retain their status for administering the Extended Assessments.
 
-New assessors and returning assessors who needed further training in 2016-17
+New assessors and returning assessors who needed further training in 2017-18
 were required to pass four proficiencies with a score of 80% or higher. These
 four proficiencies were in Administration, English Language Arts (ELA),
-Mathematics, and Science. Returning QAs or QTs for the 2016-17 school year only
+Mathematics, and Science. Returning QAs or QTs for the 2017-18 school year only
 needed to pass a Refresher Proficiency, again with a score of 80% or higher. The
 tables below contain data on the number of assessors (participants) in each of
 the four proficiencies, as well as the Refresher Proficiency. Included in the
@@ -580,7 +565,7 @@ data is the number of attempts needed to attain a passing score as well as the
 average passing score of the participants.
 
 An analysis of the Oregon Extended Assessment Training and Proficiency Website
-showed 353 Assessors in-Training, 1,030 Qualified Assessors, and 137 Qualified
+showed 409 Assessors in-Training, 947 Qualified Assessors, and 143 Qualified
 Trainers.
 
 ![](Figures/TestPartic/TestParticipants.pdf)
@@ -589,10 +574,10 @@ A higher number of assessors completed the Refresher Proficiency test than the
 subject area proficiency tests reflecting a greater number of return assessors
 compared to new assessors. Administration Proficiency continued to be the most
 challenging to new assessors, but most were able to pass on the first or second
-attempt with less than 2% of assessors requiring more than two attempts. The
+attempt with less than 1% of assessors requiring more than two attempts. The
 majority of assessors passed the ELA, Math, Science, and the Refresher
-proficiency tests on the first attempt with less than 4% requiring a second or
-third attempt. There were 73 fewer Qualified Assessors but 8 more Qualified
+proficiency tests on the first attempt with less than 2% requiring a second or
+third attempt. There were 83 fewer Qualified Assessors but 6 more Qualified
 Trainers compared to last year.
 
 Evaluations are collected at each QT training in November. The results reflect
@@ -605,8 +590,8 @@ Strongly Agree.
 The first section evaluated the state-level information and the knowledge of the
 ODE presenters, the participants' level of comfort with the training provided,
 the participants' ability to carry this training and materials back to train
-district staff, and the overall utility of the training. Seventy-eight percent
-of participants strongly agreed with these statements, 19% agreed, and less than
+district staff, and the overall utility of the training. Seventy-six percent
+of participants strongly agreed with these statements, 24% agreed, and less than
 3% disagreed and strongly disagreed, collectively. In the second section,
 participants were asked to evaluate the BRT trainers and their guidelines
 regarding how to use the training and proficiency website and related resources.
@@ -644,6 +629,7 @@ was expected. The process is complex, particularly given the understanding that
 this was the first time they had received such training.
 
 Confidence Scale Percentages table here:
+![](Figures/QTQAtraining/TrainingConfidenceScale.pdf)
 
 In addition, all technical assistance questions that we receive from the field
 as part of our *HelpDesk* are documented. The log of the technical assistance
@@ -667,14 +653,14 @@ vertically-scaled anchor items. It was important in many cases to maintain
 anchor items. Items with clear design flaws were removed from subsequent
 analyses and reporting. The following flagging criteria were employed:
 
-* **CTT**: A unique item was flagged if it had a p-value of .10 or lower, .90 
-or higher, or a point biserial < .15. Anchor items were flagged if they 
-had a p-value of .10 or lower or .95 and higher on all forms or a point 
-biserial < .45 on any form.
-* **Rasch**: Unique items were flagged if their outfit mean square values were 
-between 0 and .25 or >      1.5. Anchor items were flagged if their outfit 
-mean square values were < .5, > 1.8 for horizontal     items, or > 2.0 for 
-vertical anchor items.
+* **CTT**: A unique item was flagged if it had a p-value of .10 or lower, .90 or
+higher, or a point biserial < .15. Anchor items were flagged if they had a
+p-value of .10 or lower or .95 and higher on all forms or a point biserial < .45
+on any form.
+* **Rasch**: Unique items were flagged if their outfit mean square values were
+between 0 and .25 or > 1.5. Anchor items were flagged if their outfit mean
+square values were < .5, > 1.8 for horizontal items, or > 2.0 for vertical
+anchor items.
 
 Out of a total of 5,929 items developed in 2014-15, 166 were removed (2.8%).
 
@@ -689,21 +675,21 @@ ODE implemented a research survey program to address the need to document the
 consequences, both intended and unintended, of the ORExt Assessments. The
 research questions have been framed based upon current consequential validity
 approaches for alternate assessments in the literature, as well as issues that
-are of specific value in Oregon. The survey included 344 respondents. This was
-25% of the solicited respondents, who were all Qualified Assessors (QAs) and
-Qualified Trainers (QTs) in the or.k12test.com database. The sample was 84%
+are of specific value in Oregon. The survey included 121 respondents. This was
+11% of the solicited respondents, who were all Qualified Assessors (QAs) and
+Qualified Trainers (QTs) in the or.k12test.com database. The sample was 83%
 female and represented all regions of the state, as well as age ranges. The
 survey included a range of quantitative and qualitative components. The
 quantitative results demonstrate that QAs and QTs continue to feel that the
-ORExt test items were easy to administer and score (58% Strongly Agree) and felt
-confident in their ability to interpret scaled scores and Achievement Level
-Descriptors for the ORExt (54% Agree). They also felt that the items were
-accessible for students who participated (53% Agree) and that the ORExt
-reflected the academic content that SWSCD should be learning (57% Agree). QAs
-and QTs felt marginally positive about the educational impacts of the ORExt and
-marginally negative about its social impacts. The results again demonstrate that
-the ORExt content area assessments generally require up to one hour to
-administer.
+ORExt test items were easy to administer and score (64.2% Strongly Agree) and
+felt confident in their ability to interpret scaled scores and Achievement Level
+Descriptors for the ORExt (69.8% Strongly Agree and Agree). They also felt that
+the items were accessible for students who participated (78% Strongly Agree and
+Agree) and that the ORExt reflected the academic content that SWSCD should be
+learning (68.4% Strongly Agree and Agree). QAs and QTs felt marginally positive
+about the educational impacts of the ORExt and marginally negative about its
+social impacts. The results again demonstrate that the ORExt content area
+assessments generally require up to one hour to administer.
 
 The qualitative results revealed two areas in which educators appreciated the
 ORExt and four areas of needed improvement. QAs and QTs said that they
@@ -1413,37 +1399,40 @@ were composed of 36 operational and 12 embedded field-test items.
 ### English Language Arts 
 
 The test reliabilities for ELA were in the high range, from .? to .?.
-Grade       |   Marginal Reliability
-__________  |   ____________________
-  3         |         0.92
-  4         |         0.92
-  5         |         0.91
-  6         |         0.91
-  7         |         0.90
-  8         |         0.91
-  11        |         0.87
+| Grade      | Marginal Reliability |
+| :--------- | :------------------- |
+| __________ | ____________________ |
+| 3          | 0.92                 |
+| 4          | 0.92                 |
+| 5          | 0.91                 |
+| 6          | 0.91                 |
+| 7          | 0.90                 |
+| 8          | 0.91                 |
+| 11         | 0.87                 |
 
 ### Mathematics 
 
 The test reliabilities for mathematics were in the high range, from .? to .?.
-Grade       |   Marginal Reliability
-__________  |   ____________________
-  3         |         0.91
-  4         |         0.91
-  5         |         0.90
-  6         |         0.90
-  7         |         0.91
-  8         |         0.88
-  11        |         0.90
+| Grade      | Marginal Reliability |
+| :--------- | :------------------- |
+| __________ | ____________________ |
+| 3          | 0.91                 |
+| 4          | 0.91                 |
+| 5          | 0.90                 |
+| 6          | 0.90                 |
+| 7          | 0.91                 |
+| 8          | 0.88                 |
+| 11         | 0.90                 |
 
 ### Science 
 
 The test reliabilities for science were in the high range, from .? to .?.
-Grade       |   Marginal Reliability
-__________  |   ____________________
-  5         |         0.91
-  8         |         0.88
-  11        |         0.87
+| Grade      | Marginal Reliability |
+| :--------- | :------------------- |
+| __________ | ____________________ |
+| 5          | 0.91                 |
+| 8          | 0.88                 |
+| 11         | 0.87                 |
 
 ### Test Information Functions 
 
@@ -1791,7 +1780,7 @@ library(tidyverse)
 library(fs)
 library(purrr)
 
-files <- dir_ls("data/FINAL_ODEPfiles_G3_11", glob = "*.csv")
+files <- dir_ls("data/ode18", glob = "*.csv")
 files <- files[is.na(str_extract(files, "Rdg|Wri"))]
 
 read_sub_files <- function(file) {
