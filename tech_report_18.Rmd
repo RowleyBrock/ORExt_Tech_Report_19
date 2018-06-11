@@ -6,16 +6,16 @@ author:
 - Gerald Tindal
 date: "6/30/2018"
 output:
-  word_document:
+  pdf_document:
     toc: yes
-    toc_depth: '4'
+    toc_depth: 4
   html_document:
     toc: yes
     toc_depth: 4
     toc_float: yes
-  pdf_document:
+  word_document:
     toc: yes
-    toc_depth: 4
+    toc_depth: '4'
   header-includes:
   - \usepackage{caption}
   - \captionsetup[figure]{labelformat = empty}
@@ -1303,12 +1303,12 @@ Respondents to the survey generally agree that, "The items in the Oregon
 Extended Assessment accurately reflect the academic content (what the student
 should know) that my students with significant cognitive disabilities should be
 learning, as defined by grade level content standards (CCSS/NGSS) and the
-Essentialized Assessment Frameworks" (11% Strongly Agree & 54% Agree). In
+Essentialized Assessment Frameworks" (17% Strongly Agree & 51% Agree). In
 addition, they also agreed with the statement that, "The items in the Oregon
 Extended Assessment, which primarily ask students to match, identify, or
 recognize academic content, are appropriate  behaviors to review to determine
-what my students with significant cognitive disabilities are able to do" (18%
-Strongly Agree & 64% Agree). The consequential validity results demonstrate that
+what my students with significant cognitive disabilities are able to do" (22%
+Strongly Agree & 63% Agree). The consequential validity results demonstrate that
 the ORExt is sampling academic domains that the field of QAs and QTs deem
 appropriate in the area of academics.
 
@@ -1398,41 +1398,41 @@ were composed of 36 operational and 12 embedded field-test items.
 
 ### English Language Arts 
 
-The test reliabilities for ELA were in the high range, from .? to .?.
+The test reliabilities for ELA were in the high range, from .87 to .92
+
 | Grade      | Marginal Reliability |
 | :--------- | :------------------- |
-| __________ | ____________________ |
-| 3          | 0.92                 |
-| 4          | 0.92                 |
-| 5          | 0.91                 |
-| 6          | 0.91                 |
-| 7          | 0.90                 |
-| 8          | 0.91                 |
-| 11         | 0.87                 |
+| 3          |    0.92              |
+| 4          |    0.92              |
+| 5          |    0.91              |
+| 6          |    0.91              |
+| 7          |    0.90              |
+| 8          |    0.91              |
+| 11         |    0.87              |
 
 ### Mathematics 
 
-The test reliabilities for mathematics were in the high range, from .? to .?.
+The test reliabilities for mathematics were in the high range, from .88 to .91
+
 | Grade      | Marginal Reliability |
 | :--------- | :------------------- |
-| __________ | ____________________ |
-| 3          | 0.91                 |
-| 4          | 0.91                 |
-| 5          | 0.90                 |
-| 6          | 0.90                 |
-| 7          | 0.91                 |
-| 8          | 0.88                 |
-| 11         | 0.90                 |
+| 3          |    0.91              |
+| 4          |    0.91              |
+| 5          |    0.90              |
+| 6          |    0.90              |
+| 7          |    0.91              |
+| 8          |    0.88              |
+| 11         |    0.90              |
 
 ### Science 
 
-The test reliabilities for science were in the high range, from .? to .?.
+The test reliabilities for science were in the high range, from .87 to .91
+
 | Grade      | Marginal Reliability |
 | :--------- | :------------------- |
-| __________ | ____________________ |
-| 5          | 0.91                 |
-| 8          | 0.88                 |
-| 11         | 0.87                 |
+| 5          |    0.91              |
+| 8          |    0.88              |
+| 11         |    0.87              |
 
 ### Test Information Functions 
 
