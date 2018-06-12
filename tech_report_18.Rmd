@@ -113,6 +113,8 @@ Sections 1.1, 1.2, 6.1, and 6.3 for additional information related to the
 comprehensive grade level standards to EsSt linkage, as well as alignment of
 items to the EsSt.
 
+Hi Brock!
+
 The ORExt test design supports student access, including access to read aloud
 for directions and prompts, presentation of one item per page, and items
 designed at three levels of complexity where the low level complexity items
