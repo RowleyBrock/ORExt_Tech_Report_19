@@ -16,7 +16,7 @@ output:
   word_document:
     toc: yes
     toc_depth: '4'
-  header-includes:
+header-includes:
   - \usepackage{caption}
   - \captionsetup[figure]{labelformat = empty}
   - \usepackage{xcolor}
