@@ -912,7 +912,7 @@ that the alternate assessment judged against alternate achievement standards
 allows valid inferences to be made on state accountability proficiency
 standards.
 
-#### 3.1A Alignment Between AA-AAAS and Academic Content Standards
+#### 3.1A Alignment Between AA-AAAS and Academic Content Standards (DELETED)
 
 Our foundation of validity evidence from content coverage for the ORExt comes in
 the form of test specifications (see *Appendix* 2.1) and test blueprints (see
@@ -2592,6 +2592,7 @@ Appendix Table here:
 ## Appendix Descriptions
 
 #### Appendix 1.1 
+<!-- "/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py" -o merged.pdf Figures/TechReport_Appendices/*.pdf -->
 
 *Appendix* 1.1 explains the development process and intended uses for the
 Essentialized Assessment Frameworks (EAFs). The EAFs are the essentialized
@@ -2792,7 +2793,7 @@ consequential validity study conducted by BRT. The report provides documentation
 of the perceptions in the field related to both intended and unintended academic
 and social consequences of the ORExt. 
 
-#### Appendix 2.3C 
+#### Appendix 2.3C (DELETED) 
 
 *Appendix* 2.3C is the
 ORExt Pilot Tablet Administration report for the spring 2017 tablet
@@ -2809,7 +2810,7 @@ procedures regarding how students are included in AMO reporting, including how
 achievement, growth, and graduation rates are reported for student groups and
 subgroups.
 
-#### Appendix 3.1A 
+#### Appendix 3.1A (DELETED)
 
 *Appendix* 3.1A is a document that summarizes the independent alignment study
 process and participants used to review the linkage between the Essentialized
