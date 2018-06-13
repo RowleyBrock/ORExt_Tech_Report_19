@@ -271,6 +271,8 @@ grade, including students re-enrolled in the same grade as in the prior year,
 unless the student receives a parent-requested exemption..." (see *Appendix*
 1.4.2, p. 96).
 
+minor merge conflict
+
 
 #### 1.4A English Learners 
 
