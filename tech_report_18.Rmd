@@ -16,7 +16,7 @@ output:
   word_document:
     toc: yes
     toc_depth: '4'
-  header-includes:
+header-includes:
   - \usepackage{caption}
   - \captionsetup[figure]{labelformat = empty}
   - \usepackage{xcolor}
@@ -2885,3 +2885,50 @@ setting procedure employed for the ORExt on June 15-17, 2015.
 that ODE publishes for students who participate in the ORExt. The mock-up
 includes cut scores and achievement level descriptors (ALDs), as well as links
 to the ODE website for additional information.
+```{r}
+library(tidyverse)
+library(fs)
+library(rio)
+
+##Inter-Rater-Reliability data anaylsis
+
+d <- import(dir_ls("data"), setclass = "tbl_df") %>% 
+  janitor::clean_names()
+
+# Counts for responses
+d %>% 
+  gather(var, response, test_security:minimum_participation) %>% 
+  group_by(var) %>%
+  count(response) %>%
+  spread(response, n, fill = 0) %>% 
+  select(Exemplary, Appropriate, `Somewhat Appropriate`, Inappropriate) 
+
+# Percentage for responses    
+d %>% 
+  gather(var, response, test_security:minimum_participation) %>% 
+  group_by(var) %>%
+  count(response)%>%
+  mutate(tot = sum(n),
+         percent = (n/tot)*100) %>% 
+  select(-n, -tot) %>% 
+  spread(response, percent, fill = 0) %>% 
+  select(Exemplary, Appropriate, `Somewhat Appropriate`, Inappropriate) 
+
+# Counts for responses by subject_area and student_grade
+d %>% 
+  gather(var, response, test_security:minimum_participation) %>% 
+  group_by(var, subject_area, student_grade) %>% 
+  count(response) %>% 
+  spread(response, n, fill = 0) %>%
+  select(Exemplary, Appropriate, `Somewhat Appropriate`, Inappropriate)
+
+# Proportion of respondents who provide a rating of "Mark As Disagree"
+d %>% 
+  select(starts_with("item")) %>% 
+  gather(item, response) %>% 
+  count(response) %>% 
+  mutate(tot = sum(n),
+         percent = (n/tot)*100)
+
+```
+
