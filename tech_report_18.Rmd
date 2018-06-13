@@ -86,6 +86,9 @@ and results of the system.*
 
 # Overview
 
+Here's something new
+
+
 This document provides updated technical adequacy documentation for the Oregon
 Extended Assessment (ORExt), which is Oregon's alternate assessment based on
 alternate academic achievement standards (AA-AAAS). The documentation includes
@@ -267,6 +270,7 @@ must take the required Oregon Statewide Assessments offered at their enrolled
 grade, including students re-enrolled in the same grade as in the prior year,
 unless the student receives a parent-requested exemption..." (see *Appendix*
 1.4.2, p. 96).
+
 
 #### 1.4A English Learners 
 
