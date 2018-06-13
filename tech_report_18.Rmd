@@ -4,6 +4,7 @@ author:
 - Brock Rowley
 - Daniel Anderson
 - Gerald Tindal
+- Sev Tindal
 date: "6/30/2018"
 output:
   pdf_document:
