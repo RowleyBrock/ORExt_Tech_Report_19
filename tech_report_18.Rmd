@@ -1,10 +1,11 @@
 ---
 title: 'Oregon Extended Assessment Analyses: 2018'
 author:
-- Brock Rowley
-- Daniel Anderson
-- Gerald Tindal
-- Sevrina Tindal
+  - Brock Rowley
+  - Daniel Anderson
+  - Gerald Tindal
+  - Sevrina Tindal
+affiliation: University of Oregon
 date: "6/30/2018"
 output:
   pdf_document:
@@ -22,7 +23,6 @@ header-includes:
   - \captionsetup[figure]{labelformat = empty}
   - \usepackage{xcolor}
   - \definecolor{link}{rgb}{0, 0, 238}
-affiliation: University of Oregon
 ---
 
 \newpage
@@ -1666,50 +1666,50 @@ tested was more consistent.
 
 2016-17 RIT Scores table here:
 
-```{r, load_amo_data}
+```{r load_amo_data}
 library(rio)
 
 ## ELA
-g3ela <- import("./amos/ELA_2018/ELA2017_AMO_G3.csv", setclass = "tbl_df")
-g4ela <- import("./amos/ELA_2018/ELA2017_AMO_G4.csv", setclass = "tbl_df")
-g5ela <- import("./amos/ELA_2018/ELA2017_AMO_G5.csv", setclass = "tbl_df")
-g6ela <- import("./amos/ELA_2018/ELA2017_AMO_G6.csv", setclass = "tbl_df")
-g7ela <- import("./amos/ELA_2018/ELA2017_AMO_G7.csv", setclass = "tbl_df")
-g8ela <- import("./amos/ELA_2018/ELA2017_AMO_G8.csv", setclass = "tbl_df")
-g11ela <- import("./amos/ELA_2018/ELA2017_AMO_G11.csv", setclass = "tbl_df")
+g3ela <- import("./data/amos/ELA_2018/ELA2017_AMO_G3.csv", setclass = "tbl_df")
+g4ela <- import("./data/amos/ELA_2018/ELA2017_AMO_G4.csv", setclass = "tbl_df")
+g5ela <- import("./data/amos/ELA_2018/ELA2017_AMO_G5.csv", setclass = "tbl_df")
+g6ela <- import("./data/amos/ELA_2018/ELA2017_AMO_G6.csv", setclass = "tbl_df")
+g7ela <- import("./data/amos/ELA_2018/ELA2017_AMO_G7.csv", setclass = "tbl_df")
+g8ela <- import("./data/amos/ELA_2018/ELA2017_AMO_G8.csv", setclass = "tbl_df")
+g11ela <- import("./data/amos/ELA_2018/ELA2017_AMO_G11.csv", setclass = "tbl_df")
 
 ## Reading
-g3Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade3_FinalPfile.csv")
-g4Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade4_FinalPfile.csv")
-g5Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade5_FinalPfile.csv")
-g6Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade6_FinalPfile.csv")
-g7Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade7_FinalPfile.csv")
-g8Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade8_FinalPfile.csv")
-g11Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade11_FinalPfile.csv")
+g3Read <- read.csv("./data/amos/ELA_2018/ReadingSubscores/Rdg1617_Grade3_FinalPfile.csv")
+g4Read <- read.csv("./data/amos/ELA_2018/ReadingSubscores/Rdg1617_Grade4_FinalPfile.csv")
+g5Read <- read.csv("./data/amos/ELA_2018/ReadingSubscores/Rdg1617_Grade5_FinalPfile.csv")
+g6Read <- read.csv("./data/amos/ELA_2018/ReadingSubscores/Rdg1617_Grade6_FinalPfile.csv")
+g7Read <- read.csv("./data/amos/ELA_2018/ReadingSubscores/Rdg1617_Grade7_FinalPfile.csv")
+g8Read <- read.csv("./data/amos/ELA_2018/ReadingSubscores/Rdg1617_Grade8_FinalPfile.csv")
+g11Read <- read.csv("./data/amos/ELA_2018/ReadingSubscores/Rdg1617_Grade11_FinalPfile.csv")
 
 
 ## Writing
-g3wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade3_FinalPfile.csv")
-g4wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade4_FinalPfile.csv")
-g5wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade5_FinalPfile.csv")
-g6wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade6_FinalPfile.csv")
-g7wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade7_FinalPfile.csv")
-g8wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade8_FinalPfile.csv")
-g11wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade11_FinalPfile.csv")
+g3wri <- read.csv("./data/amos/ELA_2018/WritingSubscores/Wri1617_Grade3_FinalPfile.csv")
+g4wri <- read.csv("./data/amos/ELA_2018/WritingSubscores/Wri1617_Grade4_FinalPfile.csv")
+g5wri <- read.csv("./data/amos/ELA_2018/WritingSubscores/Wri1617_Grade5_FinalPfile.csv")
+g6wri <- read.csv("./data/amos/ELA_2018/WritingSubscores/Wri1617_Grade6_FinalPfile.csv")
+g7wri <- read.csv("./data/amos/ELA_2018/WritingSubscores/Wri1617_Grade7_FinalPfile.csv")
+g8wri <- read.csv("./data/amos/ELA_2018/WritingSubscores/Wri1617_Grade8_FinalPfile.csv")
+g11wri <- read.csv("./data/amos/ELA_2018/WritingSubscores/Wri1617_Grade11_FinalPfile.csv")
 
 ## Math
-g3math <- read.csv("./amos/Math_2018/Math2017_AMO_G3.csv")
-g4math <- read.csv("./amos/Math_2018/Math2017_AMO_G4.csv")
-g5math <- read.csv("./amos/Math_2018/Math2017_AMO_G5.csv")
-g6math <- read.csv("./amos/Math_2018/Math2017_AMO_G6.csv")
-g7math <- read.csv("./amos/Math_2018/Math2017_AMO_G7.csv")
-g8math <- read.csv("./amos/Math_2018/Math2017_AMO_G8.csv")
-g11math <- read.csv("./amos/Math_2018/Math2017_AMO_G11.csv")
+g3math <- read.csv("./data/amos/Math_2018/Math2017_AMO_G3.csv")
+g4math <- read.csv("./data/amos/Math_2018/Math2017_AMO_G4.csv")
+g5math <- read.csv("./data/amos/Math_2018/Math2017_AMO_G5.csv")
+g6math <- read.csv("./data/amos/Math_2018/Math2017_AMO_G6.csv")
+g7math <- read.csv("./data/amos/Math_2018/Math2017_AMO_G7.csv")
+g8math <- read.csv("./data/amos/Math_2018/Math2017_AMO_G8.csv")
+g11math <- read.csv("./data/amos/Math_2018/Math2017_AMO_G11.csv")
 
 ## Science
-g5sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G5.csv")
-g8sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G8.csv")
-g11sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G11.csv")
+g5sci <- read.csv("./data/amos/Science_2018/Sci2017_AMO_G5.csv")
+g8sci <- read.csv("./data/amos/Science_2018/Sci2017_AMO_G8.csv")
+g11sci <- read.csv("./data/amos/Science_2018/Sci2017_AMO_G11.csv")
 ```
 
 #### Observed Means Reported by Sex 
@@ -1776,7 +1776,7 @@ fully describe the severity and range of concomitant disabilities that students
 whose primary label is OI conveys.
 
 Average (All Grade) ELA RIT Scores By Exceptionality here:
-```{r, dataprep}
+```{r dataprep}
 library(tidyverse)
 library(fs)
 library(purrr)
@@ -2588,9 +2588,8 @@ Appendix Table here:
 *Appendix* Descriptions
 
 ## Appendix Descriptions
-
-#### Appendix 1.1 
 <!-- "/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py" -o merged.pdf Figures/TechReport_Appendices/*.pdf -->
+#### Appendix 1.1 
 
 *Appendix* 1.1 explains the development process and intended uses for the
 Essentialized Assessment Frameworks (EAFs). The EAFs are the essentialized
@@ -2885,50 +2884,3 @@ setting procedure employed for the ORExt on June 15-17, 2015.
 that ODE publishes for students who participate in the ORExt. The mock-up
 includes cut scores and achievement level descriptors (ALDs), as well as links
 to the ODE website for additional information.
-```{r}
-library(tidyverse)
-library(fs)
-library(rio)
-
-##Inter-Rater-Reliability data anaylsis
-
-d <- import(dir_ls("data"), setclass = "tbl_df") %>% 
-  janitor::clean_names()
-
-# Counts for responses
-d %>% 
-  gather(var, response, test_security:minimum_participation) %>% 
-  group_by(var) %>%
-  count(response) %>%
-  spread(response, n, fill = 0) %>% 
-  select(Exemplary, Appropriate, `Somewhat Appropriate`, Inappropriate) 
-
-# Percentage for responses    
-d %>% 
-  gather(var, response, test_security:minimum_participation) %>% 
-  group_by(var) %>%
-  count(response)%>%
-  mutate(tot = sum(n),
-         percent = (n/tot)*100) %>% 
-  select(-n, -tot) %>% 
-  spread(response, percent, fill = 0) %>% 
-  select(Exemplary, Appropriate, `Somewhat Appropriate`, Inappropriate) 
-
-# Counts for responses by subject_area and student_grade
-d %>% 
-  gather(var, response, test_security:minimum_participation) %>% 
-  group_by(var, subject_area, student_grade) %>% 
-  count(response) %>% 
-  spread(response, n, fill = 0) %>%
-  select(Exemplary, Appropriate, `Somewhat Appropriate`, Inappropriate)
-
-# Proportion of respondents who provide a rating of "Mark As Disagree"
-d %>% 
-  select(starts_with("item")) %>% 
-  gather(item, response) %>% 
-  count(response) %>% 
-  mutate(tot = sum(n),
-         percent = (n/tot)*100)
-
-```
-
