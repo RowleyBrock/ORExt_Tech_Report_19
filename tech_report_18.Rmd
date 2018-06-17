@@ -97,14 +97,18 @@ standards as part of the mandates from the Every Student Succeeds Act of 2015
 
 The ORExt assessments were redesigned in 2014-15, including a vertical scale in
 Grades 3-8 in English language arts and mathematics to support eventual
-determinations of student growth over time. The test is aligned to Essentialized
+determinations of student growth over time. The test is aligned to
+Essentialized
 Standards (EsSt) that are part of comprehensive Essentialized Assessment
 Frameworks (EAFs) that were written at three levels of complexity (low, medium,
 and high). The EsSt have been linked to grade level content and expectations,
 but systematically reduced in terms of depth, breadth, and complexity (RDBC).
-All ORExt items employed in the 2016-17 ORExt administration were developed in
-2014-15. An alignment study was conducted at that time and it was determined
-that all items were aligned to the new EsSt.
+All ORExt items employed in the 2017-18 ORExt administration, with the
+exception of Grade 7 Math field test items, were developed in
+2014-15. Based on student performance from the 2016-2017 testing year, new and
+Grade 7 Math field test items were written in fall 2017. An alignment study was
+conducted in 2016-17 and it was determined that all items were aligned to
+the new EsSt.
 
 A statewide sample of Oregon general and special education teachers have
 reviewed all test items for: 1) alignment to the EAFs, 2) accessibility for
@@ -122,10 +126,10 @@ include graphic and/or object support. For assessors, the scoring process has
 also been simplified, with answers being either correct (1) or incorrect (0).
 Partial credit is no longer part of the scoring metric for the ORExt. In
 addition, the one item per page format not only increases student ability to
-focus attention, but also reduces the burden on assessors to mask items that are
-not being tested. The field appears to have been appreciative of the redesign,
-particularly the Essentialized Standards and new access and efficiency features.
-
+focus attention, but also reduces the burden on assessors to mask items that 
+are not being tested. The field appears to have been appreciative of the
+redesign, particularly the Essentialized Standards and new access and 
+efficiency features.
 In addition to developing and reviewing/editing over 5,000 new items, conducting
 an operational field test, and developing a vertical scale, the development of a
 new ORExt required that new Alternate Academic Achievement Standards (AAAAS) be
@@ -140,21 +144,21 @@ Non-Regulatory Guidance from the U.S. Department of Education, published on
 September 25, 2015, included an expectation that all alignment studies must be
 independent (see Critical Element 3.1). An independent contractor, Dr. Dianna
 Carrizales, was therefore hired to perform an additional alignment study in the
-spring of 2017. Complete results are presented in this technical report (see
-Section 3.1A-B & 3.2).
+spring of 2017. 
 
 In addition to the independent alignment study, a pilot tablet administration
-study was also conducted in the 2016-17 school year. This is the second phase of
-a three-year plan to make tablet administration of the ORExt available by the
-2017-18 school year. A summary of the pilot tablet administration study is
-provided in Section 2.3C. Complete results from the pilot tablet administration
-study, phase two, are presented in *Appendix* 2.3C.
+study was also conducted in the 2016-17 school year. This was the second phase
+of a three-year plan. The 2017-18 school year marked the third year in which
+tablet administration of the ORExt for all grades and subject areas was
+available. 
 
-The independent alignment study and pilot tablet administration study are part
-of our five- year technical documentation plan. Future plans include an
-inter-rater reliability study, as well as analyses of the impact of
-accommodations.
-
+As part of our five-year technical documentation plan, which included the
+independent alignment study, pilot tablet administration study, and launch
+of the full tablet administration, we also conducted an inter-rater reliability
+study in 2017-18. BROCK - add sentence or two about inter-rater reliability
+study and list appendix if we have one. Included in the future of the
+five-year plan is continuation of the inter-rater reliability study, and
+analyses of the impact of accommodations.
 
 ## Critical Element 1: Statewide System of Standards and Assessments
 
@@ -244,11 +248,11 @@ assessments, with exceptions allowed for district-approved parent request for
 assessment waivers (parent opt-out requests) related to student disability or
 religious beliefs (see Oregon Administrative Rule, OAR § 581-022-0612)
 
-Exception of Students with Disabilities from State Assessment Testing (1) For
+Exception of Students with Disabilities from State Assessment Testing: (1) For
 the purposes of this rule a "student with a disability" is a student identified
 under the Individuals with Disabilities Education Act, consistent with OAR
 chapter 581, division 015, or a student with a disability under Section 504 of
-the Rehabilitation Act of 1973. (2) A public agency shall not exempt a student
+the Rehabilitation Act of 1973; (2) A public agency shall not exempt a student
 with a disability from participation in the Oregon State Assessment System or
 any district wide assessments to accommodate the student's disability unless the
 parent has requested such an exemption.
@@ -267,7 +271,7 @@ where it states that, "All students enrolled in grades 3-8 and in high school
 must take the required Oregon Statewide Assessments offered at their enrolled
 grade, including students re-enrolled in the same grade as in the prior year,
 unless the student receives a parent-requested exemption..." (see *Appendix*
-1.4.2, p. 96).
+1.4.2, p. 93).
 
 #### 1.4A English Learners 
 
@@ -318,8 +322,9 @@ our approach to reducing the depth, breadth, and complexity (RDBC) of grade
 level content standards, an overview of the essentialization process and EAF
 documents, the planned test design for the ORExt, test development
 considerations, sample test items, item specifications, and universal
-tools/designated supports/accommodations. No new items were developed in
-2017-18, so the 2014-15 test specifications are the most current available.
+tools/designated supports/accommodations. Only Grade 7 Math field test items
+were developed in 2017-18 which were in accordance with the 2014-15 test
+specifications, and are the most current available.
 
 #### 2.1A ORExt Purpose
 
@@ -361,6 +366,7 @@ Oregon Qualified Assessors.
 #### 2.1D Computer-Adaptive Considerations
 
 The ORExt is not a computer-adaptive instrument, so these concerns do not apply.
+BROCK - Now that we have the tablet/online tests should this section change?
 
 ### 2.2 Item Development
 
@@ -709,24 +715,27 @@ in *Appendix* 2.3B.10.
 
 #### 2.3C Technology-based Assessments
 
-The ORExt was implemented on a small scale using a technology-based platform as
-part of Phase 2 of the ORExt Pilot Tablet Administration study conducted in the
-spring 2017. The current plan is to make the tablet-based administration of the
-ORExt available statewide next year, 2017-18. A complete report of the results
-of the study, including the research plan and the lessons learned, is provided
-in Appendix 2.3C. In short, this year's tablet administration study demonstrated
-that QAs support a tablet administration of the ORExt at the statewide level.
-The study results also demonstrated that additional training must be provided
-for the manual writing scoring process. In addition, the administration of the
-ORora for students whose ORExt testing is discontinued after they have met the
-minimum participation rule will be incorporated into the tablet administration
-next year. To support training and understanding of the system by both teachers
-and students, practice items in a tablet format will be provided for
-stakeholders to prepare for future tablet-based administrations. This year's
-study addressed issues related to database communication systems to ensure data
-security and accurate data storage and access at the district level. The
-paper/pencil version will continue to be available for students who cannot
-access a tablet administration.
+The ORExt was implemented using a technology-based platform as Phase 3 of the
+ORExt Tablet Administration. The 2017-18 testing window was the first
+year all grade level and subject area assessments were available
+on a tablet application/web-based platform. Administration of the tablet
+application mirrors paper/pencil administration with each item read aloud to
+the student, and the student asked to select one of three answer choices. 
+Tablet functionality includes optional discontinuation if the student misses 10
+out of the first 15 items, directing the assessor to administer the
+ORora. To support understanding of the system by both teachers and students, a
+separate practice test tablet application is available. Helpdesk inquiries and
+feedback from the field indicated much preference of the tablet administration
+via paper/pencil. Qualified Trainers and Qualified Assessors reported their
+students' were more focused during tablet administration, and because the tablet
+application scores automatically it was much more efficient for assessors. 
+Based on data and feedback from the field, improvements will be made to the
+tablet application/web-based platform, and additional training will be provided
+for the 2018-19 testing year. The paper/pencil version will continue to be
+available for students who cannot access a tablet administration. For the
+2017-18 testing window, data entry for the paper/pencil version was maintained
+by ODE. Beginning in 2018-19, all test platforms and data entry will be through
+the BRT servers, monitored by BRT. 
 
 ### 2.4 Monitoring Test Administration
 
