@@ -3,8 +3,9 @@ title: 'Oregon Extended Assessment Analyses: 2018'
 author:
   - Brock Rowley
   - Daniel Anderson
-  - Gerald Tindal
   - Sevrina Tindal
+  - Gerald Tindal
+  
 affiliation: University of Oregon
 date: "6/30/2018"
 output:
@@ -2886,12 +2887,13 @@ includes cut scores and achievement level descriptors (ALDs), as well as links
 to the ODE website for additional information.
 ```{r eval = FALSE, echo = FALSE} 
 library(tidyverse) 
-library(fs) 
+library(fs)
 library(rio) 
  
 ##Inter-Rater-Reliability data anaylsis 
- 
-d <- import(dir_ls("data"), setclass = "tbl_df") %>%  
+ IntRateReli <- read.csv("./data/irr/RaterReliability.csv")
+
+ d <- import("./data/irr/RaterReliability.csv", setclass = "tbl_df") %>%  
   janitor::clean_names() 
  
 # Counts for responses 
