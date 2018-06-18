@@ -448,7 +448,7 @@ of typical items on the ORExt.
 The ORExt assessments are administered according to the administration, scoring,
 analysis, and reporting criteria established in the ORExt General Administration
 Manual (see *Appendix* 2.3). Important updates to the testing process are
-distributed via the Assessment and Accountability Updates listserve, as well
+distributed via the Assessment and Accountability Updates listserve, as well.
 \color{link} [Updates
 link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-and-Accountability-Update.aspx)
 \color{black} ODE uses this system to communicate information that is relevant
@@ -535,12 +535,12 @@ Comprehensive information for ongoing training for all qualified assessors (QAs)
 and Qualified Trainers (QTs) is provided in Appendices 2.3B.1-2.3B.8. Training
 and QA/QT proficiency is determined annually via an online distribution and
 assessment system located at \color{link} [QA/QT website
-link](https://or.k12test.com.) \color{black}This website hosts all resources and
-information needed to administer, score, report, and interpret the results from
-the ORExt. The website also includes proficiency assessments that are required
-for all QAs and QTs who may administer the ORExt. QTs are directly trained by
-ODE and BRT staff as part of a train the trainers model. QTs then provide direct
-trainings for new QAs in their respective regions.
+link](https://or.k12test.com.) \color{black}. This website hosts all resources
+and information needed to administer, score, report, and interpret the results
+from the ORExt. The website also includes proficiency assessments that are
+required for all QAs and QTs who may administer the ORExt. QTs are directly
+trained by ODE and BRT staff as part of a train the trainers model. QTs then
+provide direct trainings for new QAs in their respective regions.
 
 The Oregon Department of Education (ODE) provided four direct statewide
 trainings for new Qualified Trainers (QTs) and Qualified Assessors (QAs) in
@@ -559,7 +559,7 @@ system again.
 
 The tables below contain data from the Oregon Extended Assessment Training and
 Proficiency Website \color{link} [QA/QT website link](http://or.k12test.com/)
-\color{black} All assessors need to complete some form of training each year to
+\color{black}. All assessors need to complete some form of training each year to
 retain their status for administering the Extended Assessments.
 
 New assessors and returning assessors who needed further training in 2017-18
@@ -674,7 +674,7 @@ Out of a total of 5,929 items developed in 2014-15, 166 were removed (2.8%).
 
 We also implement a consequential validity study each year that surveys QAs and
 QTs regarding the academic and social consequences of the ORExt, both intended
-and unintended. The Consequential Validity report is published in Appendix
+and unintended. The Consequential Validity report is published in *Appendix*
 2.3B.10. ODE and BRT staff review the results of the survey annually to
 determine what program improvements are needed. A summary of the results is
 provided below.
@@ -726,7 +726,7 @@ out of the first 15 items, directing the assessor to administer the
 ORora. To support understanding of the system by both teachers and students, a
 separate practice test tablet application is available. Helpdesk inquiries and
 feedback from the field indicated much preference of the tablet administration
-via paper/pencil. Qualified Trainers and Qualified Assessors reported their
+versus paper/pencil. Qualified Trainers and Qualified Assessors reported their
 students' were more focused during tablet administration, and because the tablet
 application scores automatically it was much more efficient for assessors. 
 Based on data and feedback from the field, improvements will be made to the
@@ -773,13 +773,13 @@ evidence submission.
 #### 2.5A Prevention of Assessment Irregularities
 
 Test security policies and consequences for violation are addressed in the Test
-Administration Manual on an annual basis (see Appendix 1.4.2, p. 29-33). These
+Administration Manual on an annual basis (see *Appendix* 1.4.2, p. 29-33). These
 policies include test material security, proper test preparation guidelines and
 administration procedures, consequences for confirmed violations of test
 security, and annual training requirements at the district and school levels for
 all individuals involved in test administration. Consequences for
 adult-initiated test irregularities may be severe, including placing teaching
-licenses in jeopardy (see Appendix 1.4.2, p. 31-33).
+licenses in jeopardy (see *Appendix* 1.4.2, p. 31-33).
 
 #### 2.5B Detection of Test Irregularities
 
@@ -787,7 +787,7 @@ The ODE utilizes a localized monitoring system where school test coordinators
 oversee building-level administration by trained, Qualified Assessors, and
 report to centralized district test coordinators, who are then responsible for
 reporting any confirmed violations to ODE. Improprieties are defined as
-adult-initiated or student-initiated and investigated accordingly (see Appendix
+adult-initiated or student-initiated and investigated accordingly (see *Appendix*
 1.4.2, p. 29-31).
 
 #### 2.5C Remediation Following Test Security Incidents
@@ -802,7 +802,7 @@ in the general assessment system Peer Review evidence submission.
 School and district test coordinators conduct initial investigations into all
 alleged test irregularities. Once reported to ODE, all alleged test
 irregularities are investigated in consultation with district test coordinators
-and the test vendor, as appropriate (see Appendix 1.4.2, p. 31-33). In the event
+and the test vendor, as appropriate (see *Appendix* 1.4.2, p. 31-33). In the event
 that a test irregularity is determined to be factual, consequences are
 determined based upon contextual issues that are brought to light during the
 investigation. Additional information regarding this process can be located in
@@ -819,14 +819,21 @@ Teaching at the University of Oregon, the test vendor for the ORExt. Item
 reviews necessary to provide alignment, bias, and sensitivity information are
 conducted online using the secure Distributed Item Review (DIR) platform
 \color{link} [DIR link](http://brtitemreview.com) \color{black} (secure website,
-but see Appendix 3.1B for a system overview).
+but see *Appendix* 3.1B for a system overview).
 
-For the 2016-2017 school year, all secure test distribution and data entry was
-hosted by ODE's secure file transfer system, which is a password-protected test
-distribution and data entry system located at \color{link} [Secure file
-link](https://district.ode.state.or.us/apps/login/) \color{black} (secure
-website, but see screenshot below for reference). A data entry guide is provided
-in Appendix 2.6.
+For the 2017-2018 school year, all paper/pencil secure test distribution and
+data entry was hosted by ODE's secure file transfer system, which is a
+password-protected test distribution and data entry system located at \color
+{link} [Secure file link](https://district.ode.state.or.us/apps/login/) \color
+{black} (secure website, but see screenshot below for reference). A data entry 
+guide is provided in *Appendix* 2.6.
+
+The secure tablet application and web-based platform distribution and data entry
+were hosted by BRT servers. All technology based secure administration and data
+entry was password-protected. Download of the tablet app was dependent on the
+type of device, all instructions and download links were available in the Test
+App User Guide (see *Appendix* 2.6A)
+
 
 ![](Figures/TrainingSite/SecureSite.pdf)
 
@@ -842,7 +849,7 @@ website](https://or.k12test.com) \color{black} or \color{link} [Secure data
 link](https://district.ode.state.or.us/apps/login/) \color{black} websites, as
 identified above. Only trained users with a vested educational interest who have
 signed test security agreements are authorized to access to online data entry
-systems. See *Appendix* 2.6 for additional data entry expectations for 2016-17.
+systems. See *Appendix* 2.6 for additional data entry expectations for 2017-18.
 
 #### 2.6C Protecting Personally Identifiable Information
 
@@ -850,7 +857,7 @@ All confidential, personally identifiable student information is protected by
 policy and supported by training (see *Appendix* 1.4.2, p. 26). The minimum
 number of students necessary to allow reporting of students and student
 subgroups varies by rating (i.e., achievement, growth, graduation, and school
-size) by level (i.e., school/district/state), and by number of years of
+size), by level (i.e., school/district/state), and by number of years of
 assessment data available. For example, to receive an achievement rating,
 schools must have at least 40 tests for the two most recent school years in
 reading or mathematics. Alternatively, small schools receive an achievement
@@ -926,11 +933,11 @@ Our foundation of validity evidence from content coverage for the ORExt comes in
 the form of test specifications (see *Appendix* 2.1) and test blueprints (see
 *Appendix* 2.1B). Among other things, the Standards (AERA et al., 2014)2 suggest
 specifications should "define the content of the test, the proposed test length,
-the item formats…" (Standard 4.2, p. 85).^2
+the item formats…" (Standard 4.2, p. 85)^2^.
 
 All items are linked to grade level standards and a prototype was developed
 using principles of universal design  with traditional, content-referenced
-multiple-choice item writing techniques . The most important component in these
+multiple-choice item writing techniques. The most important component in these
 initial steps addressed language complexity and access to students using both
 receptive, as well as expressive, communication. Additionally, both content
 breadth and depth were addressed. We developed one test form for the ORExt that
@@ -957,7 +964,7 @@ functioning and test design factors, generating data used to replace items on an
 annual basis, incorporating the new items that fill a needed gap with regard to
 categorical concurrence, or provide for a wider range of functioning with regard
 to complexity levels: low - medium - high, comparable to Webb's DOK (see
-*Section* 3.1A).
+Section 3.1A).
 
 BRT employed a multi-stage development process in 2014-15 to ensure that test
 items were linked to relevant content standards, were accessible for students
@@ -966,8 +973,9 @@ eliminated. The item review process included 51 reviewers with an average of 22
 years of experience in education. The ORExt assessments have been determined to
 demonstrate strong linkage to grade level academic content, overall. Full
 documentation of the initial 2014 linkage study and a new, independent alignment
-study conducted in spring, 2017 is provided in *Appendix* 3.1A. No item
-development was required in 2016-17.
+study conducted in spring, 2017 is provided in *Appendix* 3.1A. Based on student 
+performance from the 2016-2017 testing year, new and Grade 7 Math field test 
+items were written in fall 2017.
 
 The summary section of the independent alignment study report states that,
 "Oregon's Extended Assessments (ORExt) in English Language Arts, Mathematics,
@@ -1124,13 +1132,13 @@ standard).
 
 Evidence of content coverage is concerned with judgments about "the extent to
 which the content domain of a test represents the domain defined in the test
-specifications" (AERA et al., 2014, Standard 4.12, p. 89)7. As a whole, the
+specifications" (AERA et al., 2014, Standard 4.12, p. 89)^7^. As a whole, the
 ORExt is comprised of sets of items that sample student performance on the
 intended domains. The expectation is that the items cover the full range of
 intended domains, with a sufficient number of items so that scores credibly
 represent student knowledge and skills in those areas. Without a sufficient
 number of items, the potential exists for a validity threat due to construct
-under-representation (Messick, 1989)6.
+under-representation (Messick, 1989)^6^.
 
 The ORExt assessment is built upon a variety of items that address a wide range
 of performance expectations rooted in the CCSS, NGSS, and ORSci content
@@ -1147,7 +1155,7 @@ Rating Assessment (ORora) was first implemented in 2015-16. The ORora is
 completed by teachers and documents the student's level of communication
 complexity (expressive and receptive), as well as level of independence in the
 domains of attention/joint attention and mathematics. A complete report of ORora
-results from 2016-17 is provided in *Appendix* 5.1D.
+results from 2017-18 is provided in *Appendix* 5.1D.
 
 Fifty-one reviewers analyzed all ORExt items for bias, sensitivity,
 accessibility to the student population, and alignment to the Essentialized
@@ -1196,7 +1204,7 @@ Distributions of point measure correlations and outfit mean square statistics
 for operational items are provided below, by content area and grade. Point
 measure correlations display how the item scores correlate with the latent
 overall score, while outfit mean square statistics closer to 1.0 denote minimal
-distortion of the measurement system. All items included in the 2016-17
+distortion of the measurement system. All items included in the 2017-18
 operational assessment are represented. Point measure correlations in ELA ranged
 from 0.42 to 0.74. All data visualizations were conducted with ggplot in the
 tidyverse package (Wickham, H., 2017).
@@ -1225,7 +1233,7 @@ Outfit Mean Square for Science here:
 
 Annual Measurable Objective (AMO) calculations were conducted based upon student
 performance on the ORExt tied to the vertical scale using Rasch modeling.
-Overall results are largely consistent with 2015-16, with approximately 50% of
+Overall results are largely consistent with 2016-17, with approximately 50% of
 students with significant cognitive disabilities achieving proficiency across
 grades and content areas. ELA results are presented in blue, mathematics in dark
 green, and science in red. The data visualizations presented below were
@@ -1347,7 +1355,7 @@ individual student is thus captured.
 
 #### Correlational Analyses Results 
 
-Full results of the Pearson's product-momentcorrelation analysis by content area
+Full results of the Pearson's product-moment correlation analysis by content area
 and grade level are reported below. The results are significant, yet the overall
 correlations across content areas suggest that we are indeed measuring
 different, though strongly related constructs, with between-test scaled score
@@ -1510,7 +1518,7 @@ Test Characteristic Curve for Math here:
 
 #### 4.1B Overall and Conditional Standard Errors of Measure
 
-The average SEM associated with each cut score for 2016-17 student data are
+The average SEM associated with each cut score for 2017-18 student data are
 presented in the table below, supported by a KEY. The SEMs decreased in almost
 all cases compared to last year, suggesting that the measures are more reliable
 when student eligibility is more strictly controlled. See Section 4.2 below for
@@ -1527,7 +1535,7 @@ Science table here:
 
 #### 4.1C Classification Accuracy & Consistency
 
-Results from the 2016-17 ORExt test administration were analyzed using Rudner's
+Results from the 2017-18 ORExt test administration were analyzed using Rudner's
 classification index (Rudner, 2005). Results closer to 1.0 indicate the
 likelihood that a student was appropriately classified as proficient or not
 proficient (accuracy) and the likelihood that the student would be classified in
@@ -1589,11 +1597,11 @@ Items that were flagged as "C" level items were reviewed by BRT researchers for
 potential biases. If biases are identified, the item is removed from the item
 pool. DIF analyses were performed ex post facto on the 2015-16 ORExt operational
 items to address longitudinal trends. Only three ELA items were identified as
-exhibiting a "C" level DIF across both 2016 and 2017. Those three ELA items, one
+exhibiting a "C" level DIF across both 2017 and 2018. Those three ELA items, one
 in Grade 5 that exhibited DIF that privileged White examinees, one in Grade 4
 that privileged Female examinees, and one in Grade 8  that privileged Female
-examinees, were removed and will not be used in 2017-18 or thereafter. DIF
-analyses will also be performed in the 2017-18 school year to continue to
+examinees, were removed and were not used in 2017-18 or thereafter. DIF
+analyses was also be performed in the 2017-18 school year to continue to
 address DIF longitudinally. All items, including field test items, were included
 in the analyses. There are a total of 48 items on each assessment.
 
@@ -2083,18 +2091,17 @@ small n-sizes of the samples involved in the alternative versions.
 
 The ORExt technical analyses that document reliability and validity are included
 in this technical report (see Sections 3 and 4, respectively). ODE and BRT staff
-reviews these analyses annually. Necessary adjustments to the assessment are
+review these analyses annually. Necessary adjustments to the assessment are
 determined prior to implementation of the subsequent year's work plan, which
 elaborates the areas of improvement as well as aspects of the testing program
 that will be maintained. This decision-making is supported by input from the
 field gathered from the Consequential Validity study (see *Appendix* 2.3B.10).
 
-One noteworthy example of the impact of our system of ongoing improvement this
-year is the development of additional curricular and instructional resources,
-which addresses an area of concern expressed by stakeholders. The training
-modules we developed to connect the assessment results garnered from the ORExt
-and ORora with curricular resources and instructional strategies that are
-aligned.
+Within our system of ongoing improvement is continuation of the development of
+additional curricular and instructional resources. This addresses an area of
+concern expressed by stakeholders. Training modules and templates continue to be
+developed to connect assessment results from the ORExt and ORora with curricular
+resources and instructional strategies aligned to the standards. 
 
 ## Critical Element 5 - Inclusion of All Students
 
@@ -2158,7 +2165,7 @@ Assessment (ORora) was implemented in 2015-16. The ORora is completed by
 teachers and documents the student's level of communication complexity
 (expressive and receptive), as well as level of independence in the domains of
 attention/joint attention and mathematics. The administration instructions and
-2015-16 results for the ORora are included in *Appendix* 5.1D.
+2017-18 results for the ORora are included in *Appendix* 5.1D.
 
 #### 5.1E Guidance Regarding Appropriate Accommodations 
 
@@ -2438,7 +2445,7 @@ reveal personally identifiable information about an individual student. The
 calculation rule followed is that the number of students in the subgroup must
 meet the minimum cell size requirement for each AMO decision: participation,
 achievement in English language arts and math, attendance, and graduation, where
-appropriate (see *Appendix* 2.6C)
+appropriate (see *Appendix* 2.6C).
 
 #### 6.4B State Reports Interpretable Results 
 

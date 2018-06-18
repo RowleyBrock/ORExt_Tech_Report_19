@@ -41,7 +41,7 @@
 \contentsline {subsection}{Critical Element 3 - Technical Quality: Validity}{36}{section*.60}
 \contentsline {subsubsection}{3.1 Overall Validity, Including Validity Based on Content}{36}{section*.61}
 \contentsline {paragraph}{3.1A Alignment Between AA-AAAS and Academic Content Standards (DELETED)}{36}{section*.62}
-\contentsline {paragraph}{3.1B AA-AAAS Linkage to General Content Standards}{37}{section*.63}
+\contentsline {paragraph}{3.1B AA-AAAS Linkage to General Content Standards}{38}{section*.63}
 \contentsline {subsubsection}{3.2 Validity Based on Cognitive Processes}{39}{section*.64}
 \contentsline {subsubsection}{3.3 Validity Based on Internal Structure (Content and Function)}{40}{section*.65}
 \contentsline {paragraph}{Point Measure Correlations}{40}{section*.67}
