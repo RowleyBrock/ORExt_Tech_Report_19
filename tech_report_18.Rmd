@@ -155,8 +155,8 @@ available.
 As part of our five-year technical documentation plan, which included the
 independent alignment study, pilot tablet administration study, and launch
 of the full tablet administration, we also conducted an inter-rater reliability
-study in 2017-18. BROCK - add sentence or two about inter-rater reliability
-study and list appendix if we have one. Included in the future of the
+study in 2017-18. The inter-rater reliability study included 33 Qualified Trainers from around the state who participated by doing at least one Qualified Assesor observation on the Oregon Extended Assessment via paper/pencil administration. 
+(List in appendix). Included in the future of the
 five-year plan is continuation of the inter-rater reliability study, and
 analyses of the impact of accommodations.
 
@@ -367,6 +367,7 @@ Oregon Qualified Assessors.
 
 The ORExt is not a computer-adaptive instrument, so these concerns do not apply.
 BROCK - Now that we have the tablet/online tests should this section change?
+Sev - The tablet version of our assessment is not considered Adaptive. If we designed a way to present items based on the student's previous response to items, that would make us adaptive. Like, answer correctly and get a more difficult item, answer incorrect and get a less difficult item. Or... if we used our bank of H, M, L items and had the Assesor decide which test bank to administer, that MIGHT be considered adaptive? Not positive on the last example but, it might be Adaptive?
 
 ### 2.2 Item Development
 
