@@ -8,16 +8,16 @@ author:
 affiliation: University of Oregon
 date: "6/30/2018"
 output:
-  word_document:
+  pdf_document:
     toc: yes
-    toc_depth: '4'
+    toc_depth: 4
   html_document:
     toc: yes
     toc_depth: 4
     toc_float: yes
-  pdf_document:
+  word_document:
     toc: yes
-    toc_depth: 4
+    toc_depth: '4'
 header-includes:
   - \usepackage{caption}
   - \captionsetup[figure]{labelformat = empty}
@@ -97,8 +97,7 @@ standards as part of the mandates from the Every Student Succeeds Act of 2015
 The ORExt assessments were redesigned in 2014-15, including a vertical scale in
 Grades 3-8 in English language arts and mathematics to support eventual
 determinations of student growth over time. The test is aligned to
-Essentialized
-Standards (EsSt) that are part of comprehensive Essentialized Assessment
+Essentialized Standards (EsSt) that are part of comprehensive Essentialized Assessment
 Frameworks (EAFs) that were written at three levels of complexity (low, medium,
 and high). The EsSt have been linked to grade level content and expectations,
 but systematically reduced in terms of depth, breadth, and complexity (RDBC).
