@@ -5,20 +5,19 @@ author:
   - Daniel Anderson
   - Sevrina Tindal
   - Gerald Tindal
-  
 affiliation: University of Oregon
 date: "6/30/2018"
 output:
-  pdf_document:
+  word_document:
     toc: yes
-    toc_depth: 4
+    toc_depth: '4'
   html_document:
     toc: yes
     toc_depth: 4
     toc_float: yes
-  word_document:
+  pdf_document:
     toc: yes
-    toc_depth: '4'
+    toc_depth: 4
 header-includes:
   - \usepackage{caption}
   - \captionsetup[figure]{labelformat = empty}
@@ -366,55 +365,46 @@ Oregon Qualified Assessors.
 #### 2.1D Computer-Adaptive Considerations
 
 The ORExt is not a computer-adaptive instrument, so these concerns do not apply.
-BROCK - Now that we have the tablet/online tests should this section change?
-Sev - The tablet version of our assessment is not considered Adaptive. If we designed a way to present items based on the student's previous response to items, that would make us adaptive. Like, answer correctly and get a more difficult item, answer incorrect and get a less difficult item. Or... if we used our bank of H, M, L items and had the Assesor decide which test bank to administer, that MIGHT be considered adaptive? Not positive on the last example but, it might be Adaptive?
 
 ### 2.2 Item Development
 
-Item writers were recruited by ODE staff on May 20, 2014 using an existing
-Qualified Assessor/Qualified Trainer listserv program, using the following text:
+Item writers were recruited by ODE staff using an existing
+Qualified Assessor/Qualified Trainer listserv program.
 
-### Project Description:
+####Project Description:
 
-Behavioral Research and Teaching at the University of Oregon is recruiting
+Behavioral Research and Teaching at the University of Oregon recruited
 Oregon teachers to participate in item development for a new alternate
-assessment, to be field tested in the spring of 2015. Selected teachers will be
-asked to develop 360 items in English Language Arts, Mathematics, or Science
-over the course of the summer, from mid-June through end of August 2014. The
-Project Director will work with lead item developers to provide training,
-ongoing review and feedback, and quality assurance. All participants will be
+assessment. Selected teachers were asked to develop 360 items in English Language Arts, Mathematics, or Science
+over the course of the summer, from mid-June through end of August. The
+Project Director worked with lead item developers to provide training,
+ongoing review and feedback, and quality assurance. All participants were
 expected to provide documentation of their qualifications and sign test security
-agreements. In addition, all item developers will be expected to participate in
+agreements. In addition, all item developers were expected to participate in
 a half-day item development training based upon the following schedule: 
-    "	ELA - Tuesday, June 17, 2014 from 8 AM to 12 PM 
-    "	Math - Wednesday, June 18, 2014 from 8 AM to 12 PM 
-    "	Science - Thursday, June 19, 2014 from 8 AM to 12 PM
+    "	ELA - Tuesday, from 8 AM to 12 PM 
+    "	Math - Wednesday, from 8 AM to 12 PM 
+    "	Science - Thursday, from 8 AM to 12 PM
     
-### Minimum Qualifications:
+#### Minimum Qualifications:
 
 All licensed Oregon public school teachers with at least three years of teaching
 in a life skills/severe needs program (SPED) or a general education classroom
-(GEN-ED), respectively, are encouraged to apply. Preference will be given for
+(GEN-ED), respectively, were encouraged to apply. Preference was given for
 item writing experience, additional years of teaching experience, and higher
 education degree status.
 
-### Compensation:
+#### Compensation:
 
-Teachers who participate in this process will be compensated at a rate of
-\$20/hr via professional service contracts. It is anticipated that teachers will
-produce 4 ELA items/hr, 6 Science items/hr, and 8 Math items/hr. As such, the
-maximum contract amount for ELA will be \$1,800, for Science \$1,440, and for
-Math \$900. Item development will focus primarily on writing the stem and 3
+Teachers who participate in this process were compensated at a rate of
+\$20/hr via professional service contracts. It was anticipated that teachers would produce 4 ELA items/hr, 6 Science items/hr, and 8 Math items/hr. As such, the maximum contract amount for ELA was \$1,800, for Science \$1,440, and for
+Math \$900. Item development focused primarily on writing the stem and 3
 options, with no need to produce graphics (rather use labels for a BRT graphic
 designer to produce).
 
 ![](Figures/ItemDev/ItemDev.pdf)
 
-### Contact:
-
-If you meet the above qualifications and are interested in applying to assist on
-this project, please contact Dan Farley at dfarley@uoregon.edu or at
-541-346-3133. The deadline to apply is June 13, 2014. Thank you.
+#### Contact:
 
 Because the timeline required work over the summer, Oregon teacher recruitment
 was challenging. BRT researchers thus performed an additional on-campus
