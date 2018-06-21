@@ -151,12 +151,14 @@ tablet administration of the ORExt for all grades and subject areas was
 available. 
 
 As part of our five-year technical documentation plan, which included the
-independent alignment study, pilot tablet administration study, and launch
-of the full tablet administration, we also conducted an inter-rater reliability
-study in 2017-18. The inter-rater reliability study included 33 Qualified Trainers from around the state who participated by doing at least one Qualified Assesor observation on the Oregon Extended Assessment via paper/pencil administration. 
-(List in appendix). Included in the future of the
-five-year plan is continuation of the inter-rater reliability study, and
-analyses of the impact of accommodations.
+independent alignment study, pilot tablet administration study, and launch of
+the full tablet administration, we also conducted an inter-rater reliability
+study in 2017-18. The inter-rater reliability study included 33 Qualified
+Trainers from around the state who participated by doing at least one Qualified
+Assesor observation on the Oregon Extended Assessment via paper/pencil
+administration. (List in appendix). Included in the future of the five-year plan
+is continuation of the inter-rater reliability study, and analyses of the impact
+of accommodations.
 
 ## Critical Element 1: Statewide System of Standards and Assessments
 
@@ -304,7 +306,7 @@ Documentation of this requirement is provided within the Annual Performance
 Report, Indicator B3, which is submitted to the United States Department of
 Education's (USED's) Office of Special Education Programs (OSEP). Participation
 and performance summaries are provided below. Additional information regarding
-state performance is published in the 2015-16 State Report Card (see *Appendix*
+state performance is published in the 2016-17 State Report Card (see *Appendix*
 1.5, pages 1-11 for student and teacher demographics and pages 21-48 for
 assessment information).
 
@@ -372,15 +374,16 @@ Qualified Assessor/Qualified Trainer listserv program.
 
 ####Project Description:
 
-Behavioral Research and Teaching at the University of Oregon recruited
-Oregon teachers to participate in item development for a new alternate
-assessment. Selected teachers were asked to develop 360 items in English Language Arts, Mathematics, or Science
-over the course of the summer, from mid-June through end of August. The
-Project Director worked with lead item developers to provide training,
-ongoing review and feedback, and quality assurance. All participants were
-expected to provide documentation of their qualifications and sign test security
-agreements. In addition, all item developers were expected to participate in
-a half-day item development training based upon the following schedule: 
+Behavioral Research and Teaching at the University of Oregon recruited Oregon
+teachers to participate in item development for a new alternate assessment.
+Selected teachers were asked to develop 360 items in English Language Arts,
+Mathematics, or Science over the course of the summer, from mid-June through end
+of August. The Project Director worked with lead item developers to provide
+training, ongoing review and feedback, and quality assurance. All participants
+were expected to provide documentation of their qualifications and sign test
+security agreements. In addition, all item developers were expected to
+participate in a half-day item development training based upon the following
+schedule:
     "	ELA - Tuesday, from 8 AM to 12 PM 
     "	Math - Wednesday, from 8 AM to 12 PM 
     "	Science - Thursday, from 8 AM to 12 PM
@@ -395,11 +398,13 @@ education degree status.
 
 #### Compensation:
 
-Teachers who participate in this process were compensated at a rate of
-\$20/hr via professional service contracts. It was anticipated that teachers would produce 4 ELA items/hr, 6 Science items/hr, and 8 Math items/hr. As such, the maximum contract amount for ELA was \$1,800, for Science \$1,440, and for
-Math \$900. Item development focused primarily on writing the stem and 3
-options, with no need to produce graphics (rather use labels for a BRT graphic
-designer to produce).
+Teachers who participate in this process were compensated at a rate of \$20/hr
+via professional service contracts. It was anticipated that teachers would
+produce 4 ELA items/hr, 6 Science items/hr, and 8 Math items/hr. As such, the
+maximum contract amount for ELA was \$1,800, for Science \$1,440, and for Math
+\$900. Item development focused primarily on writing the stem and 3 options,
+with no need to produce graphics (rather use labels for a BRT graphic designer
+to produce).
 
 ![](Figures/ItemDev/ItemDev.pdf)
 
@@ -502,9 +507,9 @@ administration (i.e., transcripts and PowerPoint slides that supplement the
 video administrations and the current ODE accommodations manual), and
 proficiency testing to support standardized interpretation for Oregon's
 assessments, including the ORExt. A 10-item proficiency test was administered,
-with an 80% required for passing (8/10 items correct). In 2016-17, the site was
-used to train 60 participants. All participants passed the assessment on the
-first attempt. The overall average score on the proficiency test was 97.6%.
+with an 80% required for passing (8/10 items correct). In 2017-18, the site was
+used to train 61 participants. All participants passed the assessment on the
+first attempt. The overall average score on the proficiency test was 95.9%.
 
 The ORExt assessments provide an appropriate variety of linguistic
 accommodations for students with limited English proficiency. They also use a
@@ -605,28 +610,18 @@ standards for students who are functioning off grade level, with a focus on
 students with significant cognitive disabilities (SWSCD). We asked participants
 to rate their confidence in using the knowledge acquired during the session as
 well as to evaluate the quality of the presentation and materials. A four-point
-scale was employed (Strongly Disagree, Disagree, Agree, Strongly Agree). The
-survey for the afternoon session was conducted online with *Qualtrics* software.
+scale was employed (Strongly Disagree, Disagree, Agree, Strongly Agree).
 Percentages of responses for each statement used in the survey are provided
-below. The first table provides a summary of the data related to participant
-confidence, while the second provides their evaluation of the quality of the
+below. The table provides a summary of the data related to participant
+confidence and their evaluation of the quality of the
 presentation. The respondent n-sizes ranged from 26-30, depending upon the
-question. A bar graph of study results is provided below, followed by tables of
-descriptive statistics. The data visualization below was conducted with *ggplot*
-in the *tidyverse* package (Wickham, H., 2017).
+question. 
 
-A bar graph of study results here:
+Note: Results are very positive, with some reviewers feeling less confident
+about their abilities to train others about the essentialization process. This
+outcome was expected. The process is complex, particularly given the
+understanding that this was the first time they had received such training.
 
-Note: The first two graphs present participants' confidence in their ability to
-use the information presented in the areas of essentialization and curriculum
-and assessment, respectively. The next four graphs convey evaluations of the
-presenters for the curricular and instruction and essentialization trainings.
-Results are very positive, with some reviewers feeling less confident about
-their abilities to train others about the essentialization process. This outcome
-was expected. The process is complex, particularly given the understanding that
-this was the first time they had received such training.
-
-Confidence Scale Percentages table here:
 ![](Figures/QTQAtraining/TrainingConfidenceScale.pdf)
 
 In addition, all technical assistance questions that we receive from the field
