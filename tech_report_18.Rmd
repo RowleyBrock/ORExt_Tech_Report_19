@@ -134,7 +134,7 @@ new ORExt required that new Alternate Academic Achievement Standards (AAAAS) be
 developed and approved. Comprehensive Standard Setting meetings were conducted
 on June 15-17, 2015, which were then approved by the Oregon State Board of
 Education on June 25, 2015, including new achievement level descriptors (ALDs)
-and cut scores for the assessments. Comprehensive Annual Measureable Objective
+and cut scores for the assessments. Comprehensive Annual Measurable Objective
 (AMO) reports were finalized on July 10, 2015.
 
 Though an alignment study was conducted in the fall of 2014 as described above,
@@ -155,7 +155,7 @@ independent alignment study, pilot tablet administration study, and launch of
 the full tablet administration, we also conducted an inter-rater reliability
 study in 2017-18. The inter-rater reliability study included 33 Qualified
 Trainers from around the state who participated by doing at least one Qualified
-Assesor observation on the Oregon Extended Assessment via paper/pencil
+Assessor observation on the Oregon Extended Assessment via paper/pencil
 administration. (List in appendix). Included in the future of the five-year plan
 is continuation of the inter-rater reliability study, and analyses of the impact
 of accommodations.
@@ -1198,7 +1198,7 @@ Point measure correlations for ELA (Grade 3-11) here:
 
 Point measure correlations for Math (Grade 3-11) here:
 
-Point measure correlations for Secience (Grades 5, 8, & 11) here:
+Point measure correlations for Science (Grades 5, 8, & 11) here:
 
 #### Outfit Mean Square Distributions 
 
@@ -2036,7 +2036,7 @@ Grade 5 Science here: Grade 8 Science here: Grade 11 Science here:
 
 ### Person Ability and Item Difficulty Tables
 
-Engllish Language Arts here:
+English Language Arts here:
 
 Mathematics here:
 
@@ -2292,7 +2292,7 @@ mathematics in Grades 3-8 and 11. The ORExt is administered in science in Grades
 mathematics. The new ORExt is dually linked to Oregon's former science
 standards, as well as to the NGSS. Results from the English language arts and
 math administrations are included in calculations of participation and
-performance for Annual Measureable Objectives (AMO) - a provision of the No
+performance for Annual Measurable Objectives (AMO) - a provision of the No
 Child Left Behind Act (NCLB). Science participation is also included as part of
 the Title 1 Assessment System requirements, and is administered in grades 5, 8,
 & 11.
