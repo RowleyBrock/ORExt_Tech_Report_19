@@ -19,15 +19,26 @@ header-includes:
   - \captionsetup[figure]{labelformat = empty}
   - \usepackage{xcolor}
   - \definecolor{link}{rgb}{0, 0, 238}
+  - \usepackage{booktabs}
 ---
 
 \newpage
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, 
-                      warning = FALSE, 
-                      error = FALSE, 
-                      message = FALSE)
+library(tidyverse)
+library(fs)
+library(purrr)
+library(janitor)
+library(knitr)
+library(kableExtra)
+library(corrr)
+
+opts_chunk$set(echo = FALSE, 
+               warning = FALSE, 
+               error = FALSE, 
+               message = FALSE,
+               results = "asis")
+options(knitr.kable.NA = '')
 ```
 
 ![](stateofOR.png)
@@ -1198,6 +1209,48 @@ operational assessment are represented. Point measure correlations in ELA ranged
 from 0.42 to 0.74. All data visualizations were conducted with ggplot in the
 tidyverse package (Wickham, H., 2017).
 
+\newpage
+
+##### Point Measure Correlations Tables
+
+```{r ifiles}
+ifiles <- dir_ls(file.path("data", "ifiles18"))
+
+read_sub_files <- function(file) {
+  read_csv(file) %>% 
+    mutate(content_area = str_extract(file, "ELA|Math|Sci"),
+           grade = gsub(".+g(\\d\\d*).+", "\\1", file),
+           grade = as.numeric(grade)) %>% 
+    select(content_area, grade, everything())  %>% 
+    clean_names()
+}
+
+ifiles <- map_df(ifiles, read_sub_files)
+
+ptm_tbls <- ifiles %>% 
+  group_by(content_area, grade) %>% 
+  summarize(mean_ptm = mean(point_measure_corr),
+            min_ptm  = min(point_measure_corr),
+            max_ptm  = max(point_measure_corr)) %>% 
+  ungroup() %>% 
+  nest(-content_area)
+
+ptm_tbls$content_area <- c("English/Language Arts", "Math", "Science")
+
+walk2(ptm_tbls$data, 
+      paste0("Point Measure Correlations: ", 
+             ptm_tbls$content_area), 
+      ~kable(.x, 
+             "latex", 
+             booktabs = TRUE, 
+             caption = .y,
+             digits = 2) %>% 
+        kable_styling(full_width = TRUE) %>% 
+        print())
+```
+
+
+
 Point measure correlations for ELA (Grade 3-11) here:
 
 Point measure correlations for Math (Grade 3-11) here:
@@ -1212,6 +1265,31 @@ above 2.0 are deemed insufficient for measurement purposes and flagged for
 replacement. While most OMS values in ELA were between 0.5 and 1.5, one item in
 Grade 6 was above 2.0 and was removed.
 
+\newpage
+
+##### Mean Square Outfit Tables
+```{r outfit}
+outfit_tbls <- ifiles %>% 
+  group_by(content_area, grade) %>% 
+  summarize(mean_ptm = mean(outfit),
+            min_ptm  = min(outfit),
+            max_ptm  = max(outfit)) %>% 
+  ungroup() %>% 
+  nest(-content_area)
+
+outfit_tbls$content_area <- c("English/Language Arts", "Math", "Science")
+
+walk2(outfit_tbls$data, 
+      paste0("Mean Square Outfit: ", 
+             outfit_tbls$content_area), 
+      ~kable(.x, 
+             "latex", 
+             booktabs = TRUE, 
+             caption = .y,
+             digits = 2) %>% 
+        kable_styling(full_width = TRUE) %>% 
+        print())
+```
 Outfit Mean Square for ELA here:
 
 Outfit Mean Square for Math here:
@@ -1227,6 +1305,65 @@ students with significant cognitive disabilities achieving proficiency across
 grades and content areas. ELA results are presented in blue, mathematics in dark
 green, and science in red. The data visualizations presented below were
 conducted with ggplot in the tidyverse package (Wickham, H., 2017).
+
+```{r ode_data}
+files <- dir_ls("data/ode18", glob = "*.csv")
+files <- files[is.na(str_extract(files, "Rdg|Wri"))]
+
+read_sub_files <- function(file) {
+  read_csv(file) %>% 
+    mutate(content_area = str_extract(file, "ela|rdg|wri|math|sci"),
+           grade = gsub(".+g(\\d\\d*).+", "\\1", file),
+           grade = as.numeric(grade)) %>% 
+    select(content_area, grade, everything())  %>% 
+    clean_names()
+}
+
+ode <- map_df(files, read_sub_files)
+
+theme_set(theme_minimal())
+nested_perc <- ode %>% 
+  ungroup() %>% 
+  mutate(grade = factor(grade, 
+                        levels = c(3:8, 11, 12),
+                        labels = paste0("Grade ", c(3:8, 11, 12)))) %>% 
+  nest(-content_area) %>% 
+  mutate(content_area = c("English/Language Arts", "Math", 
+                          "Reading", "Science", "Writing"),
+         perc_overall = map(data, 
+                            ~group_by(., grade) %>% 
+                              count(amo_lvl) %>% 
+                              mutate(percent = round((n / sum(n))*100)) %>% 
+                              select(-n)),
+         perc_disab   = map(data, 
+                            ~group_by(., grade, asmtprmrydsbltycd) %>% 
+                              count(amo_lvl) %>% 
+                              mutate(percent = round((n / sum(n))*100)) %>% 
+                              select(-n)),
+         perc_overall_p = map2(perc_overall,
+                               paste0(content_area, " Percent Proficient"),
+                              ~ggplot(.x, aes(amo_lvl, percent)) +
+                                geom_col(fill = "cornflowerblue") +
+                                facet_wrap(~grade) +
+                                geom_text(aes(label = paste0(percent, "%")), 
+                                          vjust = -0.5,
+                                          color = "gray40") +
+                                ylim(0, 100) +
+                                labs(x = "AMO Level",
+                                     y = "Percentage",
+                                     title = .y)))
+
+  walk2(nested_perc$perc_overall,
+        nested_perc$content_area, 
+        ~spread(.x, amo_lvl, percent) %>% 
+          knitr::kable("latex", 
+                       booktabs = TRUE,
+                       caption = paste0(stringr::str_to_title(.y),
+                                        " Percent Proficient By Grade"),
+                       digits = 2) %>% 
+        kable_styling(full_width = TRUE) %>% 
+          print())
+```
 
 AMO for ELA Grade 3 here:
 
@@ -1261,6 +1398,10 @@ AMO for Science Grade 5 here:
 AMO for Science Grade 8 here:
 
 AMO for Science Grade 11 here:
+
+```{r amo_plot}
+walk(nested_perc$perc_overall_p, print)
+```
 
 Some concerns are noted in mathematics, where relatively higher percentages of
 students are scoring at Level 1 and very few at Level 2. However, this finding
@@ -1344,11 +1485,31 @@ individual student is thus captured.
 
 #### Correlational Analyses Results 
 
-Full results of the Pearson's product-momentcorrelation analysis by content area
+Full results of the Pearson's product-moment correlation analysis by content area
 and grade level are reported below. The results are significant, yet the overall
 correlations across content areas suggest that we are indeed measuring
 different, though strongly related constructs, with between-test scaled score
 correlations ranging from 0.81 to 0.89.
+
+```{r by_sub_corr}
+cors <- ode %>% 
+  select(content_area, grade, ssid, theta) %>% 
+  spread(content_area, theta) %>% 
+  select(-ssid) %>% 
+  nest(-grade) %>% 
+  mutate(data = map(data, ~remove_empty(., "cols")),
+         cor  = map(data, ~correlate(.) %>% shave()))
+
+walk2(cors$cor,
+      cors$grade, 
+      ~knitr::kable(.x, "latex", booktabs = TRUE,
+                     caption = paste0("Grade ", 
+                                      .y, 
+                                      " Content Area Correlations"),
+                    digits = 2) %>% 
+        kable_styling(full_width = TRUE) %>% 
+        print())
+```
 
 Grade 3 Content Area Correlations table here:
 
@@ -1606,7 +1767,7 @@ Mathematics, and 8 out of 11 flagged items privileged Females in Science.
 Overall, DIF flagging based on sex was relatively balanced, with 22 privileging
 Females and 14 privileging Males.
 
-Male/Female DIF Analyses Results table here:
+**Male/Female DIF Analyses Results table here:**
 
 #### Race - Ethnicity Percentages and Totals by Content Area and Grade Level 
 
@@ -1669,52 +1830,6 @@ tested was more consistent.
 2015-16 RIT Scores table here:
 
 2016-17 RIT Scores table here:
-
-```{r, load_amo_data}
-library(rio)
-
-## ELA
-g3ela <- import("./amos/ELA_2018/ELA2017_AMO_G3.csv", setclass = "tbl_df")
-g4ela <- import("./amos/ELA_2018/ELA2017_AMO_G4.csv", setclass = "tbl_df")
-g5ela <- import("./amos/ELA_2018/ELA2017_AMO_G5.csv", setclass = "tbl_df")
-g6ela <- import("./amos/ELA_2018/ELA2017_AMO_G6.csv", setclass = "tbl_df")
-g7ela <- import("./amos/ELA_2018/ELA2017_AMO_G7.csv", setclass = "tbl_df")
-g8ela <- import("./amos/ELA_2018/ELA2017_AMO_G8.csv", setclass = "tbl_df")
-g11ela <- import("./amos/ELA_2018/ELA2017_AMO_G11.csv", setclass = "tbl_df")
-
-## Reading
-g3Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade3_FinalPfile.csv")
-g4Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade4_FinalPfile.csv")
-g5Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade5_FinalPfile.csv")
-g6Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade6_FinalPfile.csv")
-g7Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade7_FinalPfile.csv")
-g8Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade8_FinalPfile.csv")
-g11Read <- read.csv("./amos/ELA_2018/ReadingSubscores/Rdg1617_Grade11_FinalPfile.csv")
-
-
-## Writing
-g3wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade3_FinalPfile.csv")
-g4wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade4_FinalPfile.csv")
-g5wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade5_FinalPfile.csv")
-g6wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade6_FinalPfile.csv")
-g7wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade7_FinalPfile.csv")
-g8wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade8_FinalPfile.csv")
-g11wri <- read.csv("./amos/ELA_2018/WritingSubscores/Wri1617_Grade11_FinalPfile.csv")
-
-## Math
-g3math <- read.csv("./amos/Math_2018/Math2017_AMO_G3.csv")
-g4math <- read.csv("./amos/Math_2018/Math2017_AMO_G4.csv")
-g5math <- read.csv("./amos/Math_2018/Math2017_AMO_G5.csv")
-g6math <- read.csv("./amos/Math_2018/Math2017_AMO_G6.csv")
-g7math <- read.csv("./amos/Math_2018/Math2017_AMO_G7.csv")
-g8math <- read.csv("./amos/Math_2018/Math2017_AMO_G8.csv")
-g11math <- read.csv("./amos/Math_2018/Math2017_AMO_G11.csv")
-
-## Science
-g5sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G5.csv")
-g8sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G8.csv")
-g11sci <- read.csv("./amos/Science_2018/Sci2017_AMO_G11.csv")
-```
 
 #### Observed Means Reported by Sex 
 
@@ -1780,104 +1895,8 @@ fully describe the severity and range of concomitant disabilities that students
 whose primary label is OI conveys.
 
 Average (All Grade) ELA RIT Scores By Exceptionality here:
-```{r, dataprep}
-library(tidyverse)
-library(fs)
-library(purrr)
-
-files <- dir_ls("data/FINAL_ODEPfiles_G3_11", glob = "*.csv")
-files <- files[is.na(str_extract(files, "Rdg|Wri"))]
-
-read_sub_files <- function(file) {
-  out <- read_csv(file) %>% 
-    mutate(content_area = str_extract(file, "ELA|Rdg|Wri|Math|Sci"),
-           grade = parse_number(gsub(".+_(.+)_.+", "\\1", file))) %>% 
-    select(content_area, grade, everything())  %>% 
-    janitor::clean_names()
-  names(out)[grep("rit", names(out))] <- "rit"
-  out
-}
-
-d <- map_df(files, read_sub_files)
-######## analyze percent proficient based on RIT scores
-cuts <- data_frame(content_area = 
-                     c(rep(c("ELA", "Math"), each = 7), rep("Sci", 3)),
-                   grade = c(rep(c(3:8, 11), 2), c(5, 8, 11)),
-                   c1      = c(192, 200, 202, 205, 208, 213, 899,
-                               192, 193, 193, 204, 207, 208, 901,
-                               506, 810, 901),
-                   c2      = c(213, 213, 220, 220, 222, 224, 920,
-                               201, 206, 206, 208, 209, 212, 907,
-                               517, 820, 914),
-                   c3      = c(228, 228, 232, 233, 236, 236, 927,
-                               218, 219, 220, 222, 223, 226, 922,
-                               530, 831, 929))
-# left_join(d, cuts) %>%
-#   mutate(amo_lvl = case_when(rit < c1 ~ 1,
-#                              rit >= c1 & rit < c2 ~ 2,
-#                              rit >= c2 & rit < c3 ~ 3,
-#                              rit >= c3 ~ 4)) %>%
-#   select(-c1, -c2, -c3) %>%
-#   group_by(amo_lvl, grade, content_area) %>%
-#   summarize(min = min(rit, na.rm = TRUE),
-#             max = max(rit, na.rm = TRUE)) %>%
-#   unite(range, c("min", "max"), sep = "-") %>%
-#   spread(amo_lvl, range) %>%
-#   arrange(content_area, grade) %>%
-#   split(.$content_area)
-
-d <- left_join(d, cuts) %>% 
-  mutate(amo_lvl = case_when(rit < c1 ~ 1,
-                             rit >= c1 & rit < c2 ~ 2,
-                             rit >= c2 & rit < c3 ~ 3,
-                             rit >= c3 ~ 4)) %>% 
-  select(-c1, -c2, -c3)
 
 
-
-
-g3elaAMO <- table(g3ela$AMO_lvl)
-g4elaAMO <- table(g4ela$AMO_lvl)
-g5elaAMO <- table(g5ela$AMO_lvl)
-g6elaAMO <- table(g6ela$AMO_lvl)
-g7elaAMO <- table(g7ela$AMO_lvl)
-g8elaAMO <- table(g8ela$AMO_lvl)
-g11elaAMO <- table(g11ela$AMO_lvl)
-
-g3elaAMO <- as.data.frame(g3elaAMO)
-g4elaAMO <- as.data.frame(g4elaAMO)
-g5elaAMO <- as.data.frame(g5elaAMO)
-g6elaAMO <- as.data.frame(g6elaAMO)
-g7elaAMO <- as.data.frame(g7elaAMO)
-g8elaAMO <- as.data.frame(g8elaAMO)
-g11elaAMO <- as.data.frame(g11elaAMO)
-
-
-perc_prof <- function(x, y) {
-	n <- count(x$y)
-		for (i in levels(x)) {
-		lvl_ct <- count(x[i])
-		pp <- (lvl_ct/n)
-		return(table(pp))
-	}
-}
-	
-
-pFun <- function(tbl, color, grade, contentArea) {
-	p <- ggplot(tbl, aes(Var1, Freq)) + geom_bar(stat = "identity", fill = color) 
-	p +	geom_text(aes(label = sprintf("%.2f%%", Freq / sum(Freq) * 100)), vjust = -0.5) + 
-		labs(x = "AMO Performance Level", y = "Frequency", title = paste("Grade", grade, contentArea)) +
-		theme_classic()
-}
-
-pFun(g3elaAMO, "steelblue", 3, "ELA")
-pFun(g4elaAMO, "steelblue", 4, "ELA")
-pFun(g5elaAMO, "steelblue", 5, "ELA")
-pFun(g6elaAMO, "steelblue", 6, "ELA")
-pFun(g7elaAMO, "steelblue", 7, "ELA")
-pFun(g8elaAMO, "steelblue", 8, "ELA")
-pFun(g11elaAMO, "steelblue", 11, "ELA")
-```
 
 Average (Grade 11) ELA RIT Scores By Exceptionality here:
 
@@ -1891,93 +1910,6 @@ Average (Grade 8) Science RIT Scores By Exceptionality here:
 
 Average (Grade 11) Science RIT Scores By Exceptionality here:
 
-#### Grades 3-8 Observed and Unconditional Growth Expectations 
-
-The ORExt was redesigned in 2014-15 to support growth determinations in Grades
-3-8 in English language arts and mathematics. A vertical scale using a balanced
-design was used to develop the initial scale. Now that we are in the third year
-of administration, it became possible to model growth expectations for ELA and
-Math for SWSCD who took the ORExt. The following graphs convey the average
-growth expectations for SWSCD in Oregon and should provide some context for
-understanding typical performance and average growth in Individualized Education
-Program (IEP) meetings.
-
-The ODE changed the eligibility criteria for SWSCD to participate in the ORExt
-in the 2015-16 school year. This had an impact on the tested population, as the
-expectations were more prescriptive, and student populations decreased by an
-average of 40% in each content area and grade level tested. This change also
-affected ORExt test results, as the students who participated in the first
-administration but not in subsequent administrations were generally very high
-achieving. To generate growth estimates that matched the intended student
-population for the ORExt, namely students who did not exit the assessment after
-the 2015 administration, all datasets for growth modeling excluded the group of
-students who participated in only the 2015 administration. Students whose grade
-level advancement was not typical were also excluded (n = 18 exclusions in ELA
-and math, respectively). All other participants were maintained.
-
-The observed cohort means are represented below for comparison purposes. In ELA,
-the scores at Grade 3 average a RIT score of 205.72. By Grade 8, the average RIT
-score in ELA is 218.99. In terms of observed means, students thus grow a total
-of 13.27 RIT score points from Grades 3 to 8 in ELA, for an average annual
-growth rate of 2.21 RIT score points per year. In mathematics, the average Grade
-3 RIT score was 193.20. By Grade 8, the average score was 205.78. Students'
-observed means thus increased by 12.58 RIT score points, for an average annual
-growth rate of 2.10 RIT score points per year.
-
-English Language Arts Observed Means 2015 - 2017 by Cohort table here:
-
-Mathematics Observed Means 2015-2017 by Cohort table here:
-
-Observed means hide a substantial amount of information, however, as they do not
-account for the variance in scores that exists in the population. We thus
-conducted unconditional growth models to parse out the variance associated with
-each intercept and slope estimate. We included multiple cohorts to address the
-observed non-linearity in the growth estimates. All data preparation and
-analyses were conducted in the R software 3.3.2 environment (R Core Team, 2016)
-using the lme4 package (Bates, Maechler, Bolker, & Walker, 2015). In addition,
-the data visualizations below were conducted with ggplot in the tidyverse
-package (Wickham, H., 2017). Cohort effects were addressed by averaging across
-overlapping grades; however, the process of averaging over cohorts should
-continue annually.
-
-Unconditional Model-Predicted ELA Means 2015 - 2017 by Cohort table here:
-
-English Language Arts Growth (RIT Score by Grade) Cohort here:
-
-Unconditional Model-Predicted Mathematics Means 2015 - 2017 by Cohort table
-here:
-
-Mathematics Growth (RIT Score by Grade) Cohort here:
-
-The unconditional growth estimates show that there were interesting cohort
-effects, with Cohort 3 a very high achieving cohort in both ELA and mathematics.
-These cohort effects are worthy of further study and imply that caution should
-be used when interpreting growth estimates for the ORExt for specific
-applications. When averaging across cohorts, students in ELA achieved a RIT
-score of 206.21 points in Grade 3 and grew to a RIT score of 219.38 by Grade 8.
-The average growth was 2.10 RIT score points per year. When averaging across
-cohorts, students in Math achieved a RIT score of 193.72 points in Grade 3 and
-grew to a RIT score of 205.51 by the Grade 8. The average growth was 2.19 RIT
-score points per year. Curvilinearity is noted in the ELA data, however, with
-more growth occurring at the earlier grades than at the later grades.
-Mathematics growth appears to be more linear.
-
-ORora Change Scores from 2016 to 2017 The ORora total raw scores from 2016 and
-2017 were compared to determine how much change was exhibited from the first
-administration of the ORora in 2016 to the second administration in 2017. A
-total of 849 students participated in the ORora in 2016 and a total of 772
-participated in 2017. Only 473 of those students participated in the ORora for
-both years of the administration. The n-size for the plots below includes those
-473 students. The range of possible scores on the ORora is from 20 to 80. The
-mean score in 2016 was 46.12, while in 2017 the mean was 48.08. The average
-change from 2016 to 2017 on the ORora was 1.827 points, but there was great
-variation in change scores (min = -60, max = +40).
-
-2016 ORora Results here:
-
-2017 ORora Results here:
-
-2016-17 ORora Change Scores here:
 
 ### 4.3 Full Performance Continuum 
 
