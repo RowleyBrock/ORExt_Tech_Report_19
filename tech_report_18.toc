@@ -1,0 +1,157 @@
+\contentsline {section}{Oregon Department of Education}{5}{section*.3}
+\contentsline {section}{2017-2018 Technical Report}{5}{section*.4}
+\contentsline {subsection}{Oregon's Alternate Assessment System}{5}{section*.5}
+\contentsline {subsection}{Peer Review Documentation: Critical Elements 1-6}{5}{section*.6}
+\contentsline {subsubsection}{Oregon's Alternate Assessment System Technical Report:}{5}{section*.7}
+\contentsline {subsubsection}{Peer Review Documentation: Critical Elements 1-6}{5}{section*.8}
+\contentsline {section}{Overview}{6}{section*.15}
+\contentsline {subsection}{Critical Element 1: Statewide System of Standards and Assessments}{13}{section*.16}
+\contentsline {subsubsection}{1.1 State Adoption of Academic Content Standards for All Students}{13}{section*.17}
+\contentsline {subsubsection}{1.2 Coherent and rigorous Academic Content Standards}{17}{section*.21}
+\contentsline {subsubsection}{1.3 Required Assessments}{18}{section*.23}
+\contentsline {subsubsection}{1.4 Policies for Including All Students in Assessments}{18}{section*.24}
+\contentsline {paragraph}{1.4A English Learners}{18}{section*.25}
+\contentsline {paragraph}{1.4B Native Language Assessments}{18}{section*.26}
+\contentsline {subsubsection}{1.5 Participation Data}{19}{section*.27}
+\contentsline {subsection}{Critical Element 2 - Assessment System Operations}{19}{section*.29}
+\contentsline {subsubsection}{2.1 Test Design and Development}{19}{section*.30}
+\contentsline {paragraph}{2.1A ORExt Purpose}{19}{section*.31}
+\contentsline {paragraph}{2.1B ORExt Test Blueprint}{19}{section*.32}
+\contentsline {paragraph}{2.1C Test Development Processes}{19}{section*.33}
+\contentsline {paragraph}{2.1D Computer-Adaptive Considerations}{21}{section*.34}
+\contentsline {subsubsection}{2.2 Item Development}{21}{section*.35}
+\contentsline {paragraph}{Project Description:}{21}{section*.36}
+\contentsline {paragraph}{Minimum Qualifications:}{21}{section*.37}
+\contentsline {paragraph}{Compensation:}{21}{section*.38}
+\contentsline {paragraph}{Contact:}{21}{section*.40}
+\contentsline {subsubsection}{2.3 Test Administration}{23}{section*.41}
+\contentsline {paragraph}{2.3A Administration and Accommodations}{23}{section*.42}
+\contentsline {paragraph}{2.3B Comprehensive Training System}{24}{section*.43}
+\contentsline {paragraph}{2.3C Technology-based Assessments}{29}{section*.47}
+\contentsline {subsubsection}{2.4 Monitoring Test Administration}{30}{section*.48}
+\contentsline {subsubsection}{2.5 Test Security}{30}{section*.51}
+\contentsline {paragraph}{2.5A Prevention of Assessment Irregularities}{30}{section*.52}
+\contentsline {paragraph}{2.5B Detection of Test Irregularities}{30}{section*.53}
+\contentsline {paragraph}{2.5C Remediation Following Test Security Incidents}{30}{section*.54}
+\contentsline {paragraph}{2.5D Investigation of Test Irregularities}{30}{section*.55}
+\contentsline {subsubsection}{2.6 Systems for Protecting Data Integrity and Privacy}{33}{section*.56}
+\contentsline {paragraph}{2.6A Integrity of Test Materials}{33}{section*.57}
+\contentsline {paragraph}{2.6B Secure Student-Level Assessment Data}{33}{section*.59}
+\contentsline {paragraph}{2.6C Protecting Personally Identifiable Information}{33}{section*.60}
+\contentsline {subsection}{Critical Element 3 - Technical Quality: Validity}{33}{section*.61}
+\contentsline {subsubsection}{3.1 Overall Validity, Including Validity Based on Content}{33}{section*.62}
+\contentsline {paragraph}{3.1A Alignment Between AA-AAAS and Academic Content Standards (DELETED)}{35}{section*.63}
+\contentsline {paragraph}{3.1B AA-AAAS Linkage to General Content Standards}{36}{section*.64}
+\contentsline {subsubsection}{3.2 Validity Based on Cognitive Processes}{38}{section*.65}
+\contentsline {subsubsection}{3.3 Validity Based on Internal Structure (Content and Function)}{39}{section*.66}
+\contentsline {paragraph}{Point Measure Correlations}{39}{section*.68}
+\contentsline {paragraph}{Outfit Mean Square Distributions}{39}{section*.69}
+\contentsline {paragraph}{Annual Measureable Objectives Frequencies \& Percentages}{39}{section*.70}
+\contentsline {subsubsection}{3.4 Validity Based on Relations to Other Variables}{41}{section*.71}
+\contentsline {paragraph}{Convergent and Divergent Validity Documentation}{41}{section*.72}
+\contentsline {paragraph}{Analyses Within and Across Subject Areas}{42}{section*.73}
+\contentsline {paragraph}{Correlational Analyses Results}{42}{section*.74}
+\contentsline {subsection}{Critical Element 4 - Technical Quality: Other}{43}{section*.75}
+\contentsline {subsubsection}{4.1 Reliability}{43}{section*.76}
+\contentsline {paragraph}{4.1A Test Reliability}{43}{section*.77}
+\contentsline {subsubsection}{English Language Arts}{43}{section*.78}
+\contentsline {subsubsection}{Mathematics}{43}{section*.79}
+\contentsline {subsubsection}{Science}{44}{section*.80}
+\contentsline {subsubsection}{Test Information Functions}{44}{section*.81}
+\contentsline {subsubsection}{English Language Arts TIFs}{44}{section*.82}
+\contentsline {subsubsection}{Mathematics TIFs}{44}{section*.83}
+\contentsline {subsubsection}{Science TIFs}{45}{section*.84}
+\contentsline {subsubsection}{Validation of ORExt Vertical Scales}{45}{section*.85}
+\contentsline {paragraph}{4.1B Overall and Conditional Standard Errors of Measure}{45}{section*.86}
+\contentsline {paragraph}{4.1C Classification Accuracy \& Consistency}{45}{section*.87}
+\contentsline {subsubsection}{4.2 Fairness and Accessibility}{46}{section*.88}
+\contentsline {paragraph}{Differential Item Functioning Analyses}{46}{section*.89}
+\contentsline {paragraph}{Race - Ethnicity Percentages and Totals by Content Area and Grade Level}{46}{section*.90}
+\contentsline {paragraph}{Exceptionality Percentages By Content Area and Grade Level}{47}{section*.91}
+\contentsline {paragraph}{Observed Means and Standard Deviations}{47}{section*.92}
+\contentsline {paragraph}{Observed Means Reported by Sex}{47}{section*.93}
+\contentsline {paragraph}{Observed Means Reported by Race}{48}{section*.94}
+\contentsline {paragraph}{Observed Means Reported by Exceptionality Status}{48}{section*.95}
+\contentsline {paragraph}{Graphs of Observed Means By Disability}{48}{section*.96}
+\contentsline {paragraph}{Grades 3-8 Observed and Unconditional Growth Expectations}{52}{section*.97}
+\contentsline {subsubsection}{4.3 Full Performance Continuum}{53}{section*.98}
+\contentsline {subsubsection}{English Language Arts Person/Item Distributions}{54}{section*.99}
+\contentsline {subsubsection}{Mathematics Person/Item Distributions}{54}{section*.100}
+\contentsline {subsubsection}{Science Person/Item Distributions}{54}{section*.101}
+\contentsline {subsubsection}{Person Ability and Item Difficulty Tables}{54}{section*.102}
+\contentsline {subsubsection}{4.4 Scoring}{54}{section*.103}
+\contentsline {subsubsection}{4.5 Multiple Assessment Forms}{55}{section*.104}
+\contentsline {subsubsection}{4.6 Multiple Versions of An Assessment}{55}{section*.105}
+\contentsline {subsubsection}{4.7 Technical Analyses and Ongoing Maintenance}{55}{section*.106}
+\contentsline {subsection}{Critical Element 5 - Inclusion of All Students}{55}{section*.107}
+\contentsline {subsubsection}{5.1 Procedures for Including SWDs}{55}{section*.108}
+\contentsline {paragraph}{5.1A Clear Explanations of the Differences Between Assessments}{55}{section*.109}
+\contentsline {paragraph}{5.1B Eligibility Decisions Made by IEP Teams}{56}{section*.110}
+\contentsline {paragraph}{5.1C Guidelines for Assessment Selection}{56}{section*.111}
+\contentsline {paragraph}{5.1D Information on Accessibility Options}{56}{section*.112}
+\contentsline {paragraph}{5.1E Guidance Regarding Appropriate Accommodations}{56}{section*.113}
+\contentsline {paragraph}{5.1F All SWDs Eligible for the ORExt}{56}{section*.114}
+\contentsline {paragraph}{5.1G Parents Informed of AA-AAAS Consequences}{56}{section*.115}
+\contentsline {paragraph}{5.1H State Ensures ORExt Promotes Access to the General Education Curriculum}{57}{section*.116}
+\contentsline {subsubsection}{5.2A - 5.2C Procedures for Including ELs}{57}{section*.117}
+\contentsline {subsubsection}{5.3 Accommodations}{57}{section*.118}
+\contentsline {paragraph}{5.3A Appropriate Accommodations are Available for SWD/ Section 504}{57}{section*.119}
+\contentsline {paragraph}{5.3B Appropriate Accommodations are Available for ELs}{58}{section*.120}
+\contentsline {paragraph}{5.3C Accommodations are Appropriate and Effective}{58}{section*.121}
+\contentsline {paragraph}{5.3D Accommodations are Appropriate and Effective}{58}{section*.122}
+\contentsline {subsubsection}{5.4A - 5.4E Monitoring Test Administration for Special Populations}{58}{section*.123}
+\contentsline {subsection}{Critical Element 6 - Academic Achievement Standards and reporting}{58}{section*.124}
+\contentsline {subsubsection}{6.1 State Adoption of Alternate Academic Achievement Standards for SWSCD}{58}{section*.125}
+\contentsline {paragraph}{6.1A State Formally Adopted Alternate Academic Achievement Standards}{58}{section*.126}
+\contentsline {paragraph}{6.1B State Applies AAAS to All Public School SWSCD in Tested Grades}{59}{section*.127}
+\contentsline {paragraph}{6.1C State's AAAS Include At Least Three Levels, ALDs, and Cut Scores}{59}{section*.128}
+\contentsline {subsubsection}{6.2 Achievement Standard Setting}{59}{section*.129}
+\contentsline {subsubsection}{6.3 Challenging and Aligned Academic Achievement Standards}{60}{section*.130}
+\contentsline {subsubsection}{6.4 Reporting}{60}{section*.131}
+\contentsline {paragraph}{6.4A Public Reporting}{60}{section*.132}
+\contentsline {paragraph}{6.4B State Reports Interpretable Results}{60}{section*.133}
+\contentsline {paragraph}{6.4C1 - C5 State Provides Individual Student Reports}{61}{section*.134}
+\contentsline {subsection}{Conclusions and Next Steps}{61}{section*.135}
+\contentsline {subsubsection}{Appendix Table and Descriptions}{63}{section*.136}
+\contentsline {subsection}{Appendix Table}{63}{section*.137}
+\contentsline {subsection}{Appendix Descriptions}{63}{section*.138}
+\contentsline {paragraph}{Appendix 1.1}{63}{section*.139}
+\contentsline {paragraph}{Appendix 1.2}{63}{section*.140}
+\contentsline {paragraph}{Appendix 1.4.1}{63}{section*.141}
+\contentsline {paragraph}{Appendix 1.4.2}{63}{section*.142}
+\contentsline {paragraph}{Appendix 1.4A.1}{63}{section*.143}
+\contentsline {paragraph}{Appendix 1.4A.2}{63}{section*.144}
+\contentsline {paragraph}{Appendix 1.5}{63}{section*.145}
+\contentsline {paragraph}{Appendix 2.1}{64}{section*.146}
+\contentsline {paragraph}{Appendix 2.1A}{64}{section*.147}
+\contentsline {paragraph}{Appendix 2.1B}{64}{section*.148}
+\contentsline {paragraph}{Appendix 2.1C}{64}{section*.149}
+\contentsline {paragraph}{Appendix 2.2.1}{64}{section*.150}
+\contentsline {paragraph}{Appendix 2.2.2}{64}{section*.151}
+\contentsline {paragraph}{Appendix 2.2.3}{64}{section*.152}
+\contentsline {paragraph}{Appendix 2.3}{64}{section*.153}
+\contentsline {paragraph}{Appendix 2.3A.1}{65}{section*.154}
+\contentsline {paragraph}{Appendix 2.3A.2}{65}{section*.155}
+\contentsline {paragraph}{Appendix 2.3A.3}{65}{section*.156}
+\contentsline {paragraph}{Appendices 2.3B.1-2.3B.2}{65}{section*.157}
+\contentsline {paragraph}{Appendix 2.3B.4}{65}{section*.158}
+\contentsline {paragraph}{Appendix 2.3B.5}{65}{section*.159}
+\contentsline {paragraph}{Appendix 2.3B.6}{65}{section*.160}
+\contentsline {paragraph}{Appendix 2.3B.7}{66}{section*.161}
+\contentsline {paragraph}{Appendix 2.3B.8}{66}{section*.162}
+\contentsline {paragraph}{Appendix 2.3B.9}{66}{section*.163}
+\contentsline {paragraph}{Appendix 2.3B.10}{66}{section*.164}
+\contentsline {paragraph}{Appendix 2.3C (DELETED)}{66}{section*.165}
+\contentsline {paragraph}{Appendices 2.6}{66}{section*.166}
+\contentsline {paragraph}{Appendix 2.6C}{66}{section*.167}
+\contentsline {paragraph}{Appendix 3.1A (DELETED)}{66}{section*.168}
+\contentsline {paragraph}{Appendix 3.1B}{66}{section*.169}
+\contentsline {paragraph}{Appendix 4.1B}{67}{section*.170}
+\contentsline {paragraph}{Appendix 4.2}{67}{section*.171}
+\contentsline {paragraph}{Appendix 5.1B}{67}{section*.172}
+\contentsline {paragraph}{Appendix 5.1D}{67}{section*.173}
+\contentsline {paragraph}{Appendix 6.1A.1}{67}{section*.174}
+\contentsline {paragraph}{Appendix 6.1A.2}{67}{section*.175}
+\contentsline {paragraph}{Appendix 6.2.1}{67}{section*.176}
+\contentsline {paragraph}{Appendix 6.2.2}{67}{section*.177}
+\contentsline {paragraph}{Appendix 6.4C}{67}{section*.178}
