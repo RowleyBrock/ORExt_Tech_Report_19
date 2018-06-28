@@ -6,6 +6,7 @@ author:
 - "Gerald Tindal"
 affiliation: "University of Oregon"
 date: "2/20/2018"
+bibliography: references.bib
 output: 
   # html_document:
   #   toc: true
@@ -32,16 +33,19 @@ library(janitor)
 library(knitr)
 library(kableExtra)
 library(corrr)
+library(cacIRT)
 
-opts_chunk$set(echo = FALSE, 
+opts_chunk$set(echo    = FALSE, 
                warning = FALSE, 
-               error = FALSE, 
+               error   = FALSE, 
                message = FALSE,
-               results = "asis")
+               results = "asis",
+               cache   = TRUE)
 options(knitr.kable.NA = '')
+dep_auto()
 ```
 
-![](stateofOR.png)
+![](img/stateofOR.png)
 
 # Oregon Department of Education
 
@@ -1209,16 +1213,13 @@ operational assessment are represented. Point measure correlations in ELA ranged
 from 0.42 to 0.74. All data visualizations were conducted with ggplot in the
 tidyverse package (Wickham, H., 2017).
 
-\newpage
-
-##### Point Measure Correlations Tables
-
 ```{r ifiles}
 ifiles <- dir_ls(file.path("data", "ifiles18"))
 
 read_sub_files <- function(file) {
   read_csv(file) %>% 
-    mutate(content_area = str_extract(file, "ELA|Math|Sci"),
+    mutate(content_area = 
+             str_extract(file, "[Ee][Ll][Aa]|[Rr]dg|[Ww]ri|[Mm]ath|[Ss]ci"),
            grade = gsub(".+g(\\d\\d*).+", "\\1", file),
            grade = as.numeric(grade)) %>% 
     select(content_area, grade, everything())  %>% 
@@ -1232,6 +1233,10 @@ ptm_tbls <- ifiles %>%
   summarize(mean_ptm = mean(point_measure_corr),
             min_ptm  = min(point_measure_corr),
             max_ptm  = max(point_measure_corr)) %>% 
+  rename(Grade = grade,
+         Mean  = mean_ptm, 
+         Min   = min_ptm,
+         Max   = max_ptm) %>% 
   ungroup() %>% 
   nest(-content_area)
 
@@ -1245,17 +1250,10 @@ walk2(ptm_tbls$data,
              booktabs = TRUE, 
              caption = .y,
              digits = 2) %>% 
-        kable_styling(full_width = TRUE) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
         print())
 ```
-
-
-
-Point measure correlations for ELA (Grade 3-11) here:
-
-Point measure correlations for Math (Grade 3-11) here:
-
-Point measure correlations for Secience (Grades 5, 8, & 11) here:
 
 #### Outfit Mean Square Distributions 
 
@@ -1265,15 +1263,16 @@ above 2.0 are deemed insufficient for measurement purposes and flagged for
 replacement. While most OMS values in ELA were between 0.5 and 1.5, one item in
 Grade 6 was above 2.0 and was removed.
 
-\newpage
-
-##### Mean Square Outfit Tables
 ```{r outfit}
 outfit_tbls <- ifiles %>% 
   group_by(content_area, grade) %>% 
   summarize(mean_ptm = mean(outfit),
             min_ptm  = min(outfit),
             max_ptm  = max(outfit)) %>% 
+  rename(Grade = grade,
+         Mean  = mean_ptm, 
+         Min   = min_ptm,
+         Max   = max_ptm) %>% 
   ungroup() %>% 
   nest(-content_area)
 
@@ -1287,14 +1286,10 @@ walk2(outfit_tbls$data,
              booktabs = TRUE, 
              caption = .y,
              digits = 2) %>% 
-        kable_styling(full_width = TRUE) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
         print())
 ```
-Outfit Mean Square for ELA here:
-
-Outfit Mean Square for Math here:
-
-Outfit Mean Square for Science here:
 
 #### Annual Measureable Objectives Frequencies & Percentages 
 
@@ -1309,15 +1304,6 @@ conducted with ggplot in the tidyverse package (Wickham, H., 2017).
 ```{r ode_data}
 files <- dir_ls("data/ode18", glob = "*.csv")
 files <- files[is.na(str_extract(files, "Rdg|Wri"))]
-
-read_sub_files <- function(file) {
-  read_csv(file) %>% 
-    mutate(content_area = str_extract(file, "ela|rdg|wri|math|sci"),
-           grade = gsub(".+g(\\d\\d*).+", "\\1", file),
-           grade = as.numeric(grade)) %>% 
-    select(content_area, grade, everything())  %>% 
-    clean_names()
-}
 
 ode <- map_df(files, read_sub_files)
 
@@ -1355,49 +1341,19 @@ nested_perc <- ode %>%
 
   walk2(nested_perc$perc_overall,
         nested_perc$content_area, 
-        ~spread(.x, amo_lvl, percent) %>% 
+        ~mutate(.x, amo_lvl = paste0("AMO Level ", amo_lvl)) %>% 
+          rename(Grade = grade) %>% 
+          spread(amo_lvl, percent) %>% 
           knitr::kable("latex", 
                        booktabs = TRUE,
                        caption = paste0(stringr::str_to_title(.y),
                                         " Percent Proficient By Grade"),
                        digits = 2) %>% 
-        kable_styling(full_width = TRUE) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
           print())
 ```
 
-AMO for ELA Grade 3 here:
-
-AMO for ELA Grade 4 here:
-
-AMO for ELA Grade 5 here:
-
-AMO for ELA Grade 6 here:
-
-AMO for ELA Grade 7 here:
-
-AMO for ELA Grade 8 here:
-
-AMO for ELA Grade 11 here:
-
-AMO for Math Grade 3 here:
-
-AMO for Math Grade 4 here:
-
-AMO for Math Grade 5 here:
-
-AMO for Math Grade 6 here:
-
-AMO for Math Grade 7 here:
-
-AMO for Math Grade 8 here:
-
-AMO for Math Grade 11 here:
-
-AMO for Science Grade 5 here:
-
-AMO for Science Grade 8 here:
-
-AMO for Science Grade 11 here:
 
 ```{r amo_plot}
 walk(nested_perc$perc_overall_p, print)
@@ -1494,11 +1450,18 @@ correlations ranging from 0.81 to 0.89.
 ```{r by_sub_corr}
 cors <- ode %>% 
   select(content_area, grade, ssid, theta) %>% 
+  mutate(content_area = case_when(content_area == "ela" ~ "ELA",
+                                  content_area == "math" ~ "Math",
+                                  content_area == "rdg" ~ "Reading",
+                                  content_area == "wri" ~ "Writing",
+                                  content_area == "sci" ~ "Science")) %>% 
   spread(content_area, theta) %>% 
   select(-ssid) %>% 
   nest(-grade) %>% 
   mutate(data = map(data, ~remove_empty(., "cols")),
-         cor  = map(data, ~correlate(.) %>% shave()))
+         cor  = map(data, ~correlate(.) %>% shave()),
+         cor  = map(cor, ~rename(., Variable = rowname)))
+
 
 walk2(cors$cor,
       cors$grade, 
@@ -1507,23 +1470,10 @@ walk2(cors$cor,
                                       .y, 
                                       " Content Area Correlations"),
                     digits = 2) %>% 
-        kable_styling(full_width = TRUE) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
         print())
 ```
-
-Grade 3 Content Area Correlations table here:
-
-Grade 4 Content Area Correlations table here:
-
-Grade 5 Content Area Correlations table here:
-
-Grade 6 Content Area Correlations table here:
-
-Grade 7 Content Area Correlations table here:
-
-Grade 8 Content Area Correlations table here:
-
-Grade 11 Content Area Correlations table here:
 
 Results of the Pearson's product-moment correlation analysis within English
 language arts (ELA:Reading:Writing) are reported below and suggest high
@@ -1565,40 +1515,33 @@ reliabilities were quite high, ranging from .87 to .92. Each table below
 provides the content area, grade, and the marginal reliabilities. All test forms
 were composed of 36 operational and 12 embedded field-test items.
 
-### English Language Arts 
+```{r marginal_rel}
+marg_rel <- function(theta, se) {
+  s <- var(theta)
+  e <- mean((se)^2)
+  s/(s+e)
+}
+tbls <- ode %>% 
+  group_by(content_area, grade) %>% 
+  summarize(marg_rel = marg_rel(theta, se)) %>% 
+  rename(Grade = grade, 
+         `Marginal Reliability Estimate` = marg_rel) %>% 
+  split(.$content_area) %>% 
+  map(~ungroup(.) %>% select(-content_area))
 
-The test reliabilities for ELA were in the high range, from .? to .?.
-Grade       |   Marginal Reliability
-__________  |   ____________________
-  3         |         0.92
-  4         |         0.92
-  5         |         0.91
-  6         |         0.91
-  7         |         0.90
-  8         |         0.91
-  11        |         0.87
+walk2(tbls,
+      paste0(c("ELA", "Math", "Reading", "Science", "Writing"),
+             " Marginal Reliabilities"), 
+      ~knitr::kable(.x, "latex", booktabs = TRUE,
+                     caption = .y,
+                    digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
+        print())
+```
 
-### Mathematics 
 
-The test reliabilities for mathematics were in the high range, from .? to .?.
-Grade       |   Marginal Reliability
-__________  |   ____________________
-  3         |         0.91
-  4         |         0.91
-  5         |         0.90
-  6         |         0.90
-  7         |         0.91
-  8         |         0.88
-  11        |         0.90
-
-### Science 
-
-The test reliabilities for science were in the high range, from .? to .?.
-Grade       |   Marginal Reliability
-__________  |   ____________________
-  5         |         0.91
-  8         |         0.88
-  11        |         0.87
+\clearpage
 
 ### Test Information Functions 
 
@@ -1608,44 +1551,43 @@ for all proficient-level cutscores.
 
 ### English Language Arts TIFs
 
-Grade 3 ELA TIF here:
+![](tifs/ela3tif.pdf){height=400px}
 
-Grade 4 ELA TIF here:
+![](tifs/ela4tif.pdf){height=400px}
 
-Grade 5 ELA TIF here:
+![](tifs/ela5tif.pdf){height=400px}
 
-Grade 6 ELA TIF here:
+![](tifs/ela6tif.pdf){height=400px}
 
-Grade 7 ELA TIF here:
+![](tifs/ela7tif.pdf){height=400px}
 
-Grade 8 ELA TIF here:
+![](tifs/ela8tif.pdf){height=400px}
 
-Grade 11 ELA TIF here:
-
+![](tifs/ela11tif.pdf){height=400px}
 
 ### Mathematics TIFs
 
-Grade 3 Math TIF here:
+![](tifs/ela3tif.pdf){height=400px}
 
-Grade 4 Math TIF here:
+![](tifs/ela4tif.pdf){height=400px}
 
-Grade 5 Math TIF here:
+![](tifs/ela5tif.pdf){height=400px}
 
-Grade 6 Math TIF here:
+![](tifs/ela6tif.pdf){height=400px}
 
-Grade 7 Math TIF here:
+![](tifs/ela7tif.pdf){height=400px}
 
-Grade 8 Math TIF here:
+![](tifs/ela8tif.pdf){height=400px}
 
-Grade 11 Math TIF here:
+![](tifs/ela11tif.pdf){height=400px}
 
 ### Science TIFs
 
-Grade 5 Science TIF here:
+![](tifs/science5tif.pdf){height=400px}
 
-Grade 8 Science TIF here:
+![](tifs/science8tif.pdf){height=400px}
 
-Grade 11 Science TIF here:
+![](tifs/science11tif.pdf){height=400px}
 
 ### Validation of ORExt Vertical Scales
 
@@ -1657,11 +1599,11 @@ elaboration of this effort is needed to address its location on the TCC. Grade
 11 and science tests are not vertically scaled; TCCs are thus not presented for
 Grade 11 or science. All Rasch model scaling, as well as the data visualizations
 for the TCCs were conducted in the R software 3.3.2 environment (R Core Team,
-2016) using the r2Winsteps package (Anderson, D., 2017).
+2016) using the r2Winsteps package [@anderson15].
 
-Test Characteristic Curve for ELA here:
+![](tccs/ela_tccs.pdf){height=400px}
 
-Test Characteristic Curve for Math here:
+![](tccs/math_tccs.pdf){height=400px}
 
 #### 4.1B Overall and Conditional Standard Errors of Measure
 
@@ -1674,11 +1616,34 @@ Measure associated with the cut score to the left; averaged to the tenths'
 place. Level 1 = Does Not Yet Meet (not included as the lowest level of
 proficiency) Level 2 = Nearly Meets Level 3	= Meets Level 4	= Exceeds
 
-English Language Arts table here:
+```{r cut_score_se}
+se_tbls <- ode %>% 
+  filter(content_area == "ela" |
+         content_area == "math" |
+         content_area == "sci") %>% 
+  group_by(content_area, grade, amo_lvl) %>% 
+  sundry::filter_by_funs(rit, min) %>% 
+  select(content_area, grade, amo_lvl, rit, rit_se) %>% 
+  distinct() %>% 
+  arrange(content_area, grade, amo_lvl) %>% 
+  filter(amo_lvl > 1) %>% 
+  rename(Grade = grade,
+         AMO   = amo_lvl, 
+         RIT   = rit, 
+         SE    = rit_se) %>% 
+  split(.$content_area) %>% 
+  map(~ungroup(.) %>% select(-content_area))
 
-Mathematics table here:
-
-Science table here:
+walk2(se_tbls,
+      paste0(c("ELA", "Math", "Science"),
+             " Cut Score Standard Errors"), 
+      ~knitr::kable(.x, "latex", booktabs = TRUE,
+                     caption = .y,
+                    digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
+        print())
+```
 
 #### 4.1C Classification Accuracy & Consistency
 
@@ -1693,9 +1658,53 @@ test administration. Complete results, generated from the cacIRT package in R,
 are provided below. Results denote very high levels of classification accuracy
 and consistency.
 
-ELA Test Classification Accuracy table here:
+```{r class_acc}
+cuts <- ode %>% 
+  group_by(content_area, grade, amo_lvl) %>% 
+  summarize(cut = min(theta)) %>% 
+  filter(amo_lvl > 1)
 
-ELA Test Classification Consistency table here:
+diffs <- map_df(dir_ls(file.path("data", "ifiles18")), read_sub_files)
+
+cuts <- diffs %>% 
+  select(content_area, grade, difficulty) %>% 
+  nest(-content_area, -grade) %>% 
+  mutate(ip = map(data, ~as.matrix(data.frame(1, .$difficulty, 0))),
+         content_area = tolower(content_area)) %>% 
+  left_join(cuts)
+
+abils <- ode %>% 
+  nest(-content_area, -grade) %>% 
+  rename(persons = data)
+
+cuts <- left_join(cuts, abils)
+
+acc_con_tbls <- cuts %>% 
+  mutate(theta = map(persons, "theta"),
+         se    = map(persons, "se"),
+         marginal = pmap(list(cut, ip, theta, se), 
+                         function(cut, ip, theta, se)
+                         class.Rud(cut, ip, theta, se, D = 1)$Marginal),
+         accuracy = map_dbl(marginal, 1),
+         consistency = map_dbl(marginal, 2)) %>% 
+  select(content_area, grade, amo_lvl, accuracy, consistency) %>% 
+  rename(Grade = grade,
+         AMO   = amo_lvl,
+         Accuracy = accuracy,
+         Consistency = consistency) %>% 
+  split(.$content_area) %>% 
+  map(~ungroup(.) %>% select(-content_area))
+
+walk2(acc_con_tbls,
+      paste0(c("ELA", "Math", "Science"),
+             " Accuracy/Consistency"), 
+      ~knitr::kable(.x, "latex", booktabs = TRUE,
+                     caption = .y,
+                    digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
+        print())
+```
 
 The ORExt is not a computer-adaptive instrument so estimate precision
 documentation based upon that test design is not provided.
@@ -1711,6 +1720,7 @@ that students are receiving instruction in areas reflected in the assessment,
 and also that the items are not biased toward a particular demographic or
 sub-group.
 
+\clearpage
 #### Differential Item Functioning Analyses 
 
 To investigate Differential Item Functioning (DIF), the Mantel-Haenszel test
@@ -1759,7 +1769,101 @@ test participants in Science. Overall, DIF flagging bases on race was relatively
 balanced, with 14 privileging students who were Non-White and 16 privileging
 students who were White.
 
-White/Non-White DIF Analyses Results table here:
+```{r dif1}
+raw <- dir_ls("data/raw", glob = "*.txt")
+raw <- raw[-grep("XO", raw)]
+
+d <- map_df(raw, read_delim, delim = "|", na = "N", .id = "content") %>%
+  clean_names("old_janitor") %>% 
+  mutate(content = str_extract(content, "XE|XM|XS"),
+         content = case_when(content == "XE" ~ "ELA",
+                             content == "XM" ~ "Math",
+                             TRUE ~ "Science"),
+         grade_for_match = parse_number(enrlgrattst),
+         grade_for_match = ifelse(grade_for_match == 12, 
+                                  11, 
+                                  grade_for_match)) %>% 
+  gather(item, response, starts_with("item")) %>% 
+  mutate(item = parse_number(item)) 
+
+item_ids <- map_df(dir_ls("data/tests"), 
+                     ~read_csv(.) %>% select(Item, `Item ID`), 
+                     .id = "file") %>% 
+  janitor::clean_names() %>% 
+  mutate(content = str_extract(file, "ELA|Math|Science"),
+         grade_for_match = as.numeric(gsub(".+/G(\\d.?)(_.+)", "\\1", file))) %>% 
+  select(-file)
+
+d <- left_join(d, item_ids) %>% 
+  select(-item) %>% 
+  group_by(grade_for_match, content) %>% 
+  nest() %>% 
+  mutate(data = map(data, ~spread(., item_id, response))) %>% 
+  mutate(data  = map(data, ~remove_empty(., "cols")),
+         white = map(data, ~ifelse(.[["ethniccd"]] == "W", 1, 0)),
+         male = map(data, ~ifelse(.[["gndr"]] == "M", 1, 0)),
+         items = map(data, ~select(., -testeventid:-tstcmpltdt)),
+         items = map(items, ~map_df(., ~ifelse(is.na(.), 0, .))))
+
+library(difR)
+dif <- d %>% 
+  mutate(gndr_dif = map2(items, male, ~difMH(.x, .y, 1, purify = TRUE)),
+         eth_dif  = map2(items, white, ~difMH(.x, .y, 1, purify = TRUE)))
+
+extract_grades <- function(dif_mod, items) {
+  item_names <- names(items)
+  delta  <- -2.35*(log(dif_mod$alphaMH))
+  grades <- symnum(abs(delta), 
+                   c(0, 1, 1.5, Inf), 
+                   symbols = c("A", "B", "C"))
+  tibble(item = item_names, delta, grades) %>% 
+    mutate(grades = as.character(grades))
+}
+#dir.create("dif")
+dif %>% 
+  mutate(gndr_grades = map2(gndr_dif, items, extract_grades)) %>% 
+  select(grade_for_match, content, gndr_grades) %>% 
+  unnest() %>% 
+  write_csv("dif/gender_dif.csv")
+
+dif %>% 
+  mutate(eth_grades = map2(eth_dif, items, extract_grades)) %>% 
+  select(grade_for_match, content, eth_grades) %>% 
+  unnest() %>% 
+  write_csv("dif/minority_dif.csv")
+
+gndr_tbls <- dif %>% 
+  mutate(gndr_grades = map2(gndr_dif, items, extract_grades)) %>% 
+  select(grade_for_match, content, gndr_grades) %>% 
+  unnest() %>% 
+  group_by(grade_for_match, content) %>% 
+  count(grades) %>% 
+  spread(grades, n, fill = 0) %>% 
+  rename(Grade = grade_for_match) %>% 
+  split(.$content) %>% 
+  map(~ungroup(.) %>% select(-content))
+
+minority_tbls <- dif %>% 
+  mutate(eth_grades = map2(eth_dif, items, extract_grades)) %>% 
+  select(grade_for_match, content, eth_grades) %>% 
+  unnest() %>% 
+  group_by(grade_for_match, content) %>% 
+  count(grades) %>% 
+  spread(grades, n, fill = 0) %>% 
+  rename(Grade = grade_for_match) %>% 
+  split(.$content) %>% 
+  map(~ungroup(.) %>% select(-content))
+
+walk2(minority_tbls,
+      paste0(c("ELA", "Math", "Science"),
+             " Differential Item Functioning Grades: White/Non-White"), 
+      ~knitr::kable(.x, "latex", booktabs = TRUE,
+                     caption = .y,
+                    digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
+        print())
+```
 
 In terms of the Male/Female analyses, 10 out of 16 items flagged as "C" level
 items privileged Females in ELA, 4 out of 9 flagged items privileged Females in
@@ -1767,7 +1871,19 @@ Mathematics, and 8 out of 11 flagged items privileged Females in Science.
 Overall, DIF flagging based on sex was relatively balanced, with 22 privileging
 Females and 14 privileging Males.
 
-**Male/Female DIF Analyses Results table here:**
+```{r gndr_dif}
+walk2(gndr_tbls,
+      paste0(c("ELA", "Math", "Science"),
+             " Differential Item Functioning Grades: Male/Female"), 
+      ~knitr::kable(.x, "latex", booktabs = TRUE,
+                     caption = .y,
+                    digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
+        print())
+```
+
+\clearpage
 
 #### Race - Ethnicity Percentages and Totals by Content Area and Grade Level 
 
@@ -1781,11 +1897,33 @@ for the general assessments, though percentages taking the ORExt are slightly
 higher for most students of color and generally lower for students who are Asian
 or White (see *Appendix* 4.2).
 
-English Language Arts (Ethnicity Race) table here:
-
-Mathematics (Ethnicity Race) table here:
-
-Science (Ethnicity Race) table here:
+```{r eth_perc}
+d %>% 
+  mutate(grade = map(data, "ssidenrlgrdcd"),
+         ethniccd = map(data, "ethniccd")) %>% 
+  select(grade, content, ethniccd) %>% 
+  unnest() %>% 
+  group_by(grade, content) %>% 
+  count(ethniccd) %>% 
+  mutate(percent = (n/sum(n))*100) %>% 
+  select(-n) %>% 
+  spread(ethniccd, percent, fill = 0) %>% 
+  rename(Grade = grade, 
+         Content = content,
+         Asian = A,
+         Black = B,
+         Hispanic = H,
+         `Am Ind` = I,
+         Multiethnic = M,
+         `Pac Isl` = P,
+         White = W) %>% 
+  kable("latex", 
+        booktabs = TRUE,
+        caption = "Race/Ethnicity Proportions",
+        digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
+```
 
 Student reported exceptionalities included Intellectual Disability (ID), Hearing
 Impairment (HI), Visual Impairment (VI), Deaf-Blindness (DB), Communication
@@ -1799,13 +1937,28 @@ in all relevant content areas. There is thus very little change in terms of
 participation percentages across content areas, as evidenced by the total
 n-sizes per grade level displayed below.
 
+\clearpage
+
 #### Exceptionality Percentages By Content Area and Grade Level
 
-English language arts Exceptionality table here:
-
-Mathematics Exceptionality table here:
-
-Science Exceptionality table here:
+```{r disab_perc}
+ode %>% 
+  group_by(grade, content_area) %>% 
+  count(asmtprmrydsbltycd) %>% 
+  mutate(percent = (n/sum(n))*100) %>% 
+  select(-n) %>% 
+  spread(asmtprmrydsbltycd, percent, fill = 0) %>% 
+  filter(content_area != "rdg" &
+         content_area != "wri") %>% 
+  rename(Grade = grade,
+         Content = content_area) %>% 
+  kable("latex", 
+        booktabs = TRUE,
+        caption = "Disability Proportions",
+        digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
+```
 
 #### Observed Means and Standard Deviations 
 
@@ -1831,6 +1984,30 @@ tested was more consistent.
 
 2016-17 RIT Scores table here:
 
+```{r obs_means}
+ode %>% 
+  filter(content_area != "rdg" &
+         content_area != "wri") %>% 
+  mutate(content_area = case_when(content_area == "ela" ~ "ELA",
+                                  content_area == "math" ~ "Math",
+                                  content_area == "sci" ~ "Sci")) %>% 
+  group_by(grade, content_area) %>% 
+  summarize(Mean = mean(rit),
+            SD   = sd(rit)) %>% 
+  gather(stat, val, Mean, SD) %>% 
+  unite(spreader, content_area, stat, sep = " ") %>% 
+  spread(spreader, val) %>% 
+  rename(Grade = grade) %>% 
+  kable("latex", 
+        booktabs = TRUE,
+        caption = "Means/SDs: 2017-18",
+        digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
+```
+
+\clearpage
+
 #### Observed Means Reported by Sex 
 
 The following tables provide information regarding average student performance
@@ -1838,24 +2015,85 @@ by grade level and sex (Female/Male) in each of the content areas assessed on
 the ORExt. Significant differences based on a Welch two sample t-test are noted
 in Grade 4 ELA, Grades 4, 5, and 8 in mathematics and Grades 5 and 8 in science.
 
-English Language Arts table here:
+```{r obs_means_sex}
+eth_gndr <- d %>% 
+  mutate(new = map(data, ~select(., ssidenrlgrdcd, ssid, gndr, ethniccd))) %>% 
+  select(content, new) %>% 
+  unnest() %>% 
+  rename(grade = ssidenrlgrdcd,
+         content_area = content) %>% 
+  mutate(content_area = tolower(content_area),
+         content_area = ifelse(content_area == "science", "sci", content_area),
+         grade = as.numeric(grade)) 
+  
 
-Mathematics table here:
+ode <- left_join(ode, eth_gndr)
 
-Science table here:
+ode %>% 
+  filter(content_area != "rdg" &
+         content_area != "wri") %>% 
+  mutate(content_area = case_when(content_area == "ela" ~ "ELA",
+                                  content_area == "math" ~ "Math",
+                                  content_area == "sci" ~ "Sci")) %>% 
+  group_by(grade, content_area, gndr) %>% 
+  summarize(Mean = mean(rit),
+            SD   = sd(rit)) %>% 
+  gather(stat, val, Mean, SD) %>% 
+  unite(spreader, content_area, stat, sep = " ") %>% 
+  spread(spreader, val) %>% 
+  rename(Grade = grade,
+         Sex   = gndr) %>% 
+  kable("latex", 
+        booktabs = TRUE,
+        caption = "Means/SDs by Gender: 2017-18",
+        digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
+```
+
+\clearpage
 
 #### Observed Means Reported by Race 
 
-The following tables provide information regarding average student performance
-by grade level and race (Non-White/White) in each of the content areas assessed
-on the ORExt. Significant differences are noted by two sample t-tests in ELA
-Grade 3 and 8 and in Grade 8 in Science.
+The following table provides information regarding average student performance
+by grade level and race/ethnicity in each of the content areas assessed
+on the ORExt. 
 
-English Language Arts table here:
+```{r eth_means}
+eth_descrip_tbls <- ode %>% 
+  filter(content_area != "rdg" &
+         content_area != "wri") %>% 
+  mutate(content_area = case_when(content_area == "ela" ~ "ELA",
+                                  content_area == "math" ~ "Math",
+                                  content_area == "sci" ~ "Sci")) %>% 
+  group_by(grade, content_area, ethniccd) %>% 
+  summarize(Mn = mean(rit),
+            SD   = sd(rit)) %>% 
+  gather(stat, val, Mn, SD) %>% 
+  unite(spreader, content_area, stat, sep = " ") %>% 
+  spread(spreader, val) %>% 
+  rename(Grade = grade,
+         `Eth Code` = ethniccd) %>% 
+  split(.$Grade) %>% 
+  map(~ungroup(.) %>% 
+        select(-Grade) %>% 
+        remove_empty("cols"))
 
-Mathematics table here:
+eth_descip_captions <- paste0("Grade ", 
+                              names(eth_descrip_tbls),
+                              " Means/SDs by Race/Ethnicity: 2017-18")
+walk2(eth_descrip_tbls, eth_descip_captions,
+      ~kable(.x, 
+             "latex", 
+             booktabs = TRUE,
+             caption = .y,
+             digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
+        print())
+```
 
-Science table here:
+\clearpage
 
 #### Observed Means Reported by Exceptionality Status 
 
@@ -1866,9 +2104,41 @@ though students with CD and ED performed higher at certain grade levels/content
 areas. The lowest performing group was consistently students with OI, followed
 by students with ID or ASD, depending upon grade level.
 
-English Language Arts table here:
+```{r disab_means}
+disab_descrip_tbls <- ode %>% 
+  filter(content_area != "rdg" &
+         content_area != "wri") %>% 
+  mutate(content_area = case_when(content_area == "ela" ~ "ELA",
+                                  content_area == "math" ~ "Math",
+                                  content_area == "sci" ~ "Sci")) %>% 
+  group_by(grade, content_area, asmtprmrydsbltycd) %>% 
+  summarize(Mean = mean(rit),
+            SD   = sd(rit)) %>% 
+  gather(stat, val, Mean, SD) %>% 
+  unite(spreader, content_area, stat, sep = " ") %>% 
+  spread(spreader, val) %>% 
+  rename(Grade = grade,
+         `Dis Code` = asmtprmrydsbltycd) %>% 
+  split(.$Grade) %>% 
+  map(~ungroup(.) %>% 
+        select(-Grade) %>% 
+        remove_empty("cols"))
 
-Mathematics table here: Science table here:
+disab_descrip_captions <- paste0("Grade ", 
+                              names(disab_descrip_tbls),
+                              " Means/SDs by Race/Ethnicity: 2017-18")
+walk2(disab_descrip_tbls, disab_descrip_captions,
+      ~kable(.x, 
+             "latex", 
+             booktabs = TRUE,
+             caption = .y,
+             digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position") %>% 
+        print())
+```
+
+\clearpage
 
 #### Graphs of Observed Means By Disability 
 
@@ -1894,21 +2164,90 @@ consequential validity study demonstrated that the OI label is insufficient to
 fully describe the severity and range of concomitant disabilities that students
 whose primary label is OI conveys.
 
-Average (All Grade) ELA RIT Scores By Exceptionality here:
+```{r rit_excep_plots}
+excep_plots <- ode %>% 
+  filter(content_area == "ela" |
+         content_area == "math") %>% 
+  group_by(content_area, grade, asmtprmrydsbltycd) %>% 
+  summarize(mean = mean(rit),
+            se   = sundry::se(rit)) %>% 
+  mutate(lower_bound = mean + qnorm(0.025)*se,
+         upper_bound = mean + qnorm(0.975)*se) %>%
+  ungroup() %>% 
+  nest(-content_area) %>% 
+  mutate(
+    content_area = c("English/Language Arts", "Math"),
+    plot38 = map2(data, content_area,
+      ~ggplot(filter(.x, grade < 11), aes(factor(asmtprmrydsbltycd), mean)) +
+        geom_errorbar(aes(ymin = lower_bound, ymax = upper_bound),
+                      color = "gray80") +
+        geom_point(aes(color = factor(asmtprmrydsbltycd))) +
+        facet_wrap(~grade) +
+        scale_color_brewer("Disability Code", palette = "Set3") +
+        labs(y = "Mean",
+             title = paste0("Means by Disability Category"),
+             subtitle = .y) +
+        theme(axis.title.x=element_blank(),
+              axis.text.x=element_blank(),
+              axis.ticks.x=element_blank(),
+              legend.position = "bottom")),
+    plot12 = map2(data, content_area,
+      ~ggplot(filter(.x, grade > 8), aes(factor(asmtprmrydsbltycd), mean)) +
+        geom_errorbar(aes(ymin = lower_bound, ymax = upper_bound),
+                      color = "gray80") +
+        geom_point(aes(color = factor(asmtprmrydsbltycd))) +
+        facet_wrap(~grade) +
+        scale_color_brewer("Disability Code", palette = "Set3") +
+        labs(y = "Mean",
+             title = paste0("Means by Disability Category"),
+             subtitle = .y) +
+        theme(axis.title.x=element_blank(),
+              axis.text.x=element_blank(),
+              axis.ticks.x=element_blank(),
+              legend.position = "bottom")))
+```
 
 
+```{r plots38, fig.height=8}
+walk(excep_plots$plot38, print)
+```
 
-Average (Grade 11) ELA RIT Scores By Exceptionality here:
 
-Average (All Grade) Math RIT Scores By Exceptionality here:
+```{r plots11}
+walk(excep_plots$plot12, print)
+```
 
-Average (Grade 11) Math RIT Scores By Exceptionality here:
 
-Average (Grade 5) Science RIT Scores By Exceptionality here:
+```{r sci_excep_plots}
+sci_excep_plots <- ode %>% 
+  filter(content_area == "sci") %>% 
+  group_by(grade, asmtprmrydsbltycd) %>% 
+  summarize(mean = mean(rit),
+            se   = sundry::se(rit)) %>% 
+  mutate(lower_bound = mean + qnorm(0.025)*se,
+         upper_bound = mean + qnorm(0.975)*se) %>%
+  ungroup() %>% 
+  nest(-grade) %>% 
+  mutate(
+    plot = map2(data, grade,
+      ~ggplot(.x, aes(factor(asmtprmrydsbltycd), mean)) +
+        geom_errorbar(aes(ymin = lower_bound, 
+                          ymax = upper_bound),
+                      color = "gray80") +
+        geom_point(aes(color = factor(asmtprmrydsbltycd))) +
+        scale_color_brewer("Disability Code", palette = "Set3") +
+        labs(y = "Mean",
+             title = paste0("Means by Disability Category"),
+             subtitle = paste0("Science: Grade ", .y)) +
+        theme(axis.title.x=element_blank(),
+              axis.text.x=element_blank(),
+              axis.ticks.x=element_blank(),
+              legend.position = "bottom")))
+```
 
-Average (Grade 8) Science RIT Scores By Exceptionality here:
-
-Average (Grade 11) Science RIT Scores By Exceptionality here:
+```{r sci_plots5811}
+walk(sci_excep_plots$plot, print)
+```
 
 
 ### 4.3 Full Performance Continuum 
@@ -1954,26 +2293,45 @@ the ORExt is providing a performance continuum for students who participate.
 
 ### English Language Arts Person/Item Distributions
 
-Grade 3 ELA here: Grade 4 ELA here: Grade 5 ELA here: Grade 6 ELA here: Grade 7
-ELA here: Grade 8 ELA here: Grade 11 ELA here:
+![](ipdens/ela3ipdens.pdf){height=400px}
+
+![](ipdens/ela4ipdens.pdf){height=400px}
+
+![](ipdens/ela5ipdens.pdf){height=400px}
+
+![](ipdens/ela6ipdens.pdf){height=400px}
+
+![](ipdens/ela7ipdens.pdf){height=400px}
+
+![](ipdens/ela8ipdens.pdf){height=400px}
+
+![](ipdens/ela11ipdens.pdf){height=400px}
+
 
 ### Mathematics Person/Item Distributions
 
-Grade 3 Math here: Grade 4 Math here: Grade 5 Math here: Grade 6 Math here:
+![](ipdens/math3ipdens.pdf){height=400px}
 
-Grade 7 Math here: Grade 8 Math here: Grade 11 Math here:
+![](ipdens/math4ipdens.pdf){height=400px}
+
+![](ipdens/math5ipdens.pdf){height=400px}
+
+![](ipdens/math6ipdens.pdf){height=400px}
+
+![](ipdens/math7ipdens.pdf){height=400px}
+
+![](ipdens/math8ipdens.pdf){height=400px}
+
+![](ipdens/math11ipdens.pdf){height=400px}
 
 ### Science Person/Item Distributions
 
-Grade 5 Science here: Grade 8 Science here: Grade 11 Science here:
+![](ipdens/science5ipdens.pdf){height=400px}
 
-### Person Ability and Item Difficulty Tables
+![](ipdens/science8ipdens.pdf){height=400px}
 
-Engllish Language Arts here:
+![](ipdens/science11ipdens.pdf){height=400px}
 
-Mathematics here:
-
-Science here:
 
 ### 4.4 Scoring 
 
@@ -2820,3 +3178,6 @@ setting procedure employed for the ORExt on June 15-17, 2015.
 that ODE publishes for students who participate in the ORExt. The mock-up
 includes cut scores and achievement level descriptors (ALDs), as well as links
 to the ODE website for additional information.
+
+\newpage
+# References
