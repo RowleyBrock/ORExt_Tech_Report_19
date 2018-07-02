@@ -8,13 +8,13 @@ affiliation: "University of Oregon"
 date: "2/20/2018"
 bibliography: references.bib
 output: 
-  # html_document:
-  #   toc: true
-  #   toc_float: true
-  #   toc_depth: 4
   pdf_document:
     toc: yes
     toc_depth: 4
+  #   toc: true
+  #   toc_float: true
+  #   toc_depth: 4
+  # html_document:
   html_document:
     toc: yes
     toc_depth: 4
@@ -55,7 +55,6 @@ dep_auto()
 ![](img/stateofOR.png)
 
 # Oregon Department of Education
-
 
 # 2017-2018 Technical Report
 
@@ -423,8 +422,6 @@ maximum contract amount for ELA was \$1,800, for Science \$1,440, and for Math
 with no need to produce graphics (rather use labels for a BRT graphic designer
 to produce).
 
-![](Figures/ItemDev/ItemDev.pdf)
-
 #### Contact:
 
 Because the timeline required work over the summer, Oregon teacher recruitment
@@ -454,6 +451,8 @@ form-to-form and grade-to-grade level framework for the test formation process
 once items were developed (see *Appendix* 2.2.2). Sample items are provided in
 *Appendix* 2.2.3 for stakeholder reference, demonstrating the format and style
 of typical items on the ORExt.
+
+![](Figures/ItemDev/ItemDev.pdf)
 
 ### 2.3 Test Administration
 
