@@ -1537,8 +1537,6 @@ walk2(tbls,
                       latex_options = "hold_position") %>% 
         print())
 ```
-
-
 \clearpage
 
 ### Test Information Functions 
