@@ -1217,7 +1217,7 @@ read_sub_files <- function(file) {
              str_extract(file, "[Ee][Ll][Aa]|[Rr]dg|[Ww]ri|[Mm]ath|[Ss]ci"),
            grade = gsub(".+g(\\d\\d*).+", "\\1", file),
            grade = as.numeric(grade)) %>% 
-    select(content_area, grade, everything())  %>% 
+    select(content_area, grade, everything()) %>% 
     clean_names()
 }
 
