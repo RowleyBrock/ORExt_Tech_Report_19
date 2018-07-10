@@ -1633,9 +1633,9 @@ Grade 11 or science. All Rasch model scaling, as well as the data visualizations
 for the TCCs were conducted in the R software 3.3.2 environment (R Core Team,
 2016) using the r2Winsteps package (Anderson, 2015).
 
-![](tccs/ela_tccs.pdf){height=400px}
+![](tccs/ela_tccs.pdf)
 
-![](tccs/math_tccs.pdf){height=400px}
+![](tccs/math_tccs.pdf)
 
 #### 4.1B Overall and Conditional Standard Errors of Measure
 
