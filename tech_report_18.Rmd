@@ -6,7 +6,6 @@ author:
 - "Gerald Tindal"
 affiliation: "University of Oregon"
 date: "2/20/2018"
-bibliography: references.bib
 output: 
   pdf_document:
     toc: yes
@@ -385,8 +384,9 @@ The ORExt is not a computer-adaptive instrument, so these concerns do not apply.
 
 ### 2.2 Item Development
 
-Item writers were recruited by ODE staff using an existing
-Qualified Assessor/Qualified Trainer listserv program.
+Item writers were recruited by ODE staff using an existing Qualified
+Assessor/Qualified Trainer listserv.
+![](Figures/ItemDev/ItemDev.pdf)
 
 ####Project Description:
 
@@ -451,8 +451,6 @@ form-to-form and grade-to-grade level framework for the test formation process
 once items were developed (see *Appendix* 2.2.2). Sample items are provided in
 *Appendix* 2.2.3 for stakeholder reference, demonstrating the format and style
 of typical items on the ORExt.
-
-![](Figures/ItemDev/ItemDev.pdf)
 
 ### 2.3 Test Administration
 
@@ -546,7 +544,7 @@ Comprehensive information for ongoing training for all qualified assessors (QAs)
 and Qualified Trainers (QTs) is provided in Appendices 2.3B.1-2.3B.8. Training
 and QA/QT proficiency is determined annually via an online distribution and
 assessment system located at \color{link} [QA/QT website
-link](https://or.k12test.com.) \color{black}. This website hosts all resources
+link](https://or.k12test.com/) \color{black}. This website hosts all resources
 and information needed to administer, score, report, and interpret the results
 from the ORExt. The website also includes proficiency assessments that are
 required for all QAs and QTs who may administer the ORExt. QTs are directly
@@ -1491,16 +1489,55 @@ aspects that have been reviewed.
 ### 4.1 Reliability
 
 Test reliability can be viewed through several lenses, all of which document how
-consistently an assessment performs across occasions, contexts, and raters .
+consistently an assessment performs across occasions, contexts, and raters.
 Typical strategies for addressing reliability include documentation of internal
 consistency, split-half reliability, and test-retest reliability. If multiple
 forms are implemented, test form reliability documentation is also requisite.
 The implementation plan for the ORExt includes initial documentation of internal
-consistency (Cronbach's alpha). The 2015-16 technical report will include
+consistency (Cronbach's alpha). The 2015-16 technical report included
 internal consistency estimates, split-half reliability analyses, as well as a
 small test-retest assessment of reliability comparisons by means of our pilot
 tablet administration study. There is only one test form for the ORExt, so test
 form comparisons are not possible.
+
+#### Inter-Rater-Reliability
+
+##### Background
+
+ODE’s technical documentation plan (see page 136 in the 2016-17 Technical Report), included an inter-rater reliability study for the 2017-18 school year, pursuant to IRR study here (McHugh, 2012). A sample of Oregon’s Qualified Assessors (QAs) who administer the paper/pencil version of the Oregon Extended Assessment (ORExt) were observed to determine reliability of administration and scoring. We did not include the tablet administration or the Oregon Observational Rating Assessment (ORora). The study was conducted in two manners:
+1)	QTs in districts across the state observed a sample of their respective QAs using the observation protocol and enter their data online.
+2)	Expert reviewers from Behavioral Research & Teaching (BRT) observed district-level QTs and those QAs who give the assessment in more than one school/district.
+The observation protocol was completed for the identified QA, but the student(s) and content area(s) observed were selected by the QT or QA. BRT researchers contacted district-level QTs at the beginning of the test window, which runs from February 15 - April 26, 2018, to arrange observations that could hopefully be completed within one school day. 
+In addition to addressing inter-rater reliability, the study also evaluated test administration procedures. The methods, results, and interpretation are provided below, in addition to recommended next steps. The observation was composed of three sections:
+
+•	First, QT’s reviewed ORExt paper/pencil test preparation and administration using the rubric (*Appendix 4.1 InterRater_Observation_Form*). Test preparation/administration domains were rated on a four-point scale from **Inappropriate (I)** to **Exemplary (E)**:
+
+**o	Inappropriate (I)** denotes a level of concern that could clearly affect the accuracy of the test results gathered from the test administration. Ratings at this level require substantive retraining of the QA involved.
+
+**o	Somewhat Appropriate (SA)** rating denotes a level that includes some minor aspects that could be improved, but the accuracy of the test results are likely not compromised.
+
+**o	Appropriate (A)** denotes a level that is consistent with all test administration requirements.
+
+**o	Exemplary (E)** level performance suggests that the QA incorporated approaches to test administration that could become models for best practice.
+
+•	Second, QT’s scored the student alongside the QA using the scoring sheet (Appendix 4.1 InterRater_Observation_Form). QT’s compared results after this observation to ensure that the QA entered accurate data.
+
+•	Finally, QT’s observed the QA completing the data entry process to ensure that no errors are made during data entry and document the number of errors (*Appendix 4.1 InterRater_Observation_Form*).
+
+Qualified Assessor Testing Preparation and Administration Rubric
+(Record an “X” in the cell that corresponds to your rating)
+
+Domain Definitions
+1.	Test Security – The QA utilized a system to ensure that all test materials were stored in a secure location,. The QA also had a district Assurance of Test Security form on file.
+2.	Printed Materials – the QA had all materials required to administer the ORExt ready for test administration 
+3.	Distraction-Free Environment – the QA arranged to provide the ORExt in a one-on-one test administration in a location that ensured that the student focused attention on the assessment.
+4.	Accessibility Supports – the QA provided all necessary accessibility supports for the student and ensured that all support systems were functional prior to testing.
+5.	Level of Support – The QA provided an appropriate level of support throughout testing that did not compromise the validity of the score.
+6.	Praise – The QA utilized praise appropriately to support student involvement without leading the student to the correct answer.
+7.	Motivation – The QA appropriately maintained the student’s motivation during the assessment using relevant strategies, such as token systems.
+8.	Score Interpretation – The QA demonstrated an appropriate understanding of how to use the cut scores and achievement level descriptors to interpret scores (i.e., ask the QA to describe how they interpret scores for parents).
+9.	Minimum Participation Rule - The QA demonstrated an appropriate understanding of the minimum participation rule (i.e., ask the QA to define the rule if it is not used).
+
 
 #### 4.1A Test Reliability 
 
@@ -1594,7 +1631,7 @@ elaboration of this effort is needed to address its location on the TCC. Grade
 11 and science tests are not vertically scaled; TCCs are thus not presented for
 Grade 11 or science. All Rasch model scaling, as well as the data visualizations
 for the TCCs were conducted in the R software 3.3.2 environment (R Core Team,
-2016) using the r2Winsteps package [@anderson15].
+2016) using the r2Winsteps package (Anderson, 2015).
 
 ![](tccs/ela_tccs.pdf){height=400px}
 
@@ -1973,11 +2010,60 @@ student population as a result of ODE eligibility guidelines. The scale from
 2015-16 to 2016-17 appears to have stabilized because the student population
 tested was more consistent.
 
-2014-15 RIT Scores table here:
+```{r}
+library(datapasta)
+rit_15 <- tibble::tribble(
+  ~Grade, ~ELA.Mean, ~ELA.SD, ~Math.Mean, ~Math.SD, ~Sci.Mean, ~Sci.SD,
+      3L,     219.3,    24.6,      201.5,     20.8,        NA,      NA,
+      4L,     222.8,    23.6,      204.8,     19.8,        NA,      NA,
+      5L,     224.9,      25,      205.3,     18.1,     517.6,    25.6,
+      6L,     226.3,      24,      207.7,     17.7,        NA,      NA,
+      7L,     226.4,      25,      207.9,       19,        NA,      NA,
+      8L,     225.4,    24.1,      207.8,     17.3,     822.1,    25.8,
+     11L,     922.5,    28.5,      903.8,     21.1,     920.8,    27.7
+  )
+knitr::kable(rit_15, "latex", 
+        booktabs = TRUE,
+        caption = "Means/SDs: 2014-15",
+        digits = 2) %>%  
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
 
-2015-16 RIT Scores table here:
+rit_16 <- tibble::tribble(
+  ~Grade, ~ElA.Mean, ~ELA.SD, ~Math.Mean, ~Math.SD, ~Science.Mean, ~Science.SD,
+      3L,     210.3,      23,      197.6,     20.2,            NA,          NA,
+      4L,     212.3,    22.9,      198.1,     18.7,            NA,          NA,
+      5L,     217.1,    24.5,      201.2,     17.2,         514.2,        22.1,
+      6L,     220.1,    25.5,      204.8,     17.6,            NA,          NA,
+      7L,     223.6,    28.9,      205.4,       19,            NA,          NA,
+      8L,     221.2,    24.8,      206.7,     17.2,           819,        25.6,
+     11L,     920.7,    27.7,      902.3,       20,           918,        24.9
+  )
+knitr::kable(rit_16, "latex", 
+        booktabs = TRUE,
+        caption = "Means/SDs: 2015-16",
+        digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
 
-2016-17 RIT Scores table here:
+rit_17 <- tibble::tribble(
+  ~Grade, ~ELA.Mean, ~ELA.SD, ~Math.Mean, ~Math.SD, ~Science.Mean, ~Science.SD,
+      3L,    209.64,   21.73,     196.16,    18.96,            NA,          NA,
+      4L,    213.13,   23.38,     198.45,    17.98,            NA,          NA,
+      5L,    213.85,   25.01,     198.37,    19.54,        513.65,       24.59,
+      6L,    216.65,   23.76,     203.29,    17.43,            NA,          NA,
+      7L,    220.53,   23.88,     205.13,    19.87,            NA,          NA,
+      8L,    219.48,   24.28,     205.92,    16.26,        817.96,       24.36,
+     11L,    922.05,   26.37,     903.07,    17.57,        919.41,       24.25
+  )
+knitr::kable(rit_16, "latex", 
+        booktabs = TRUE,
+        caption = "Means/SDs: 2016-17",
+        digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
+
+```
 
 ```{r obs_means}
 ode %>% 
