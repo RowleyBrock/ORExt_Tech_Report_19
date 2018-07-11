@@ -54,7 +54,7 @@ orora %>%
   summarize(mean = mean(score),
             perc = mean/mean(tot_poss))
 
-# LOI attention 6-10
+# LOI Basic Math 6-10
 orora %>% 
   gather(item, response, starts_with("item")) %>% 
   mutate(item = parse_number(item)) %>% 
@@ -148,3 +148,4 @@ orora %>%
   mutate(item = parse_number(item)) %>% 
   filter(item > 15) %>% 
   summarize(mean = mean(response))
+
