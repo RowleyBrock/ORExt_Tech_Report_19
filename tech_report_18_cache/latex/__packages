@@ -15,5 +15,7 @@ kableExtra
 corrr
 cacIRT
 bindrcpp
+rio
+RColorBrewer
 difR
 datapasta

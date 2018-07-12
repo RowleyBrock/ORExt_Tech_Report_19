@@ -10,6 +10,7 @@ output:
   pdf_document:
     toc: yes
     toc_depth: 4
+    keep_tex: yes
   #   toc: true
   #   toc_float: true
   #   toc_depth: 4
@@ -22,6 +23,8 @@ output:
     toc: yes
     toc_depth: '4'
 header-includes:
+  - \usepackage{placeins}
+  - \usepackage{float}
   - \usepackage{caption}
   - \captionsetup[figure]{labelformat = empty}
   - \usepackage{xcolor}
@@ -46,7 +49,8 @@ opts_chunk$set(echo    = FALSE,
                error   = FALSE, 
                message = FALSE,
                results = "asis",
-               cache   = TRUE)
+               cache   = TRUE,
+               fig.pos = "H")
 options(knitr.kable.NA = '')
 dep_auto()
 ```
@@ -205,14 +209,14 @@ L (low), M (medium), and H (high). \color{link} [Complete EAF Spreadsheets]
 
 See *Appendix* 1.1 for a User Guide that explains the development process and
 intended uses for the EAFs.
+\FloatBarrier
+![](Figures/Standards/Grade5.png)
 
-![](Figures/Standards/Grade5.pdf)
-
-![](Figures/Standards/Grade8.pdf)
+![](Figures/Standards/Grade8.png)
 
 ![](Figures/Standards/Grade11.pdf)
 
-\newpage
+\clearpage
 
 ### 1.2 Coherent and rigorous Academic Content Standards 
 
@@ -238,8 +242,9 @@ Education Program (IEP) goals and objectives. The basic essentialization process
 employed to generate essentialized standards and write aligned items for the
 ORExt is outlined below. The process can also be used to support the development
 of curricular and instructional materials, founded in research-based pedagogy.
-
+\FloatBarrier
 ![](Figures/Essentialization/Essentialization.pdf)
+\newpage
 
 ### 1.3 Required Assessments 
 
@@ -313,19 +318,16 @@ subgroup did not meet minimum participation requirements in 2016-17, the most
 current data available at the time of this report, in English language arts or
 mathematics, with rates at 90.2% and 89.4%, respectively. See the table below
 for a summary of participation. For complete reports, see \color{link} [Complete
-reports
-link](http://www.oregon.gov/ode/schools-and-districts/reportcards/Documents/rptcard2017.pdf)
+reports link](http://www.oregon.gov/ode/schools-and-districts/reportcards/Documents/rptcard2017.pdf)
 \color{black}
-
 Documentation of this requirement is provided within the Annual Performance
 Report, Indicator B3, which is submitted to the United States Department of
 Education's (USED's) Office of Special Education Programs (OSEP). Participation
 and performance summaries are provided below. Additional information regarding
 state performance is published in the 2016-17 State Report Card (see *Appendix*
 1.5, pages 1-11 for student and teacher demographics and pages 21-48 for
-assessment information).
-
-![](Figures/Participation/Participation.pdf)
+assessment information).\FloatBarrier
+![](Figures/Participation/Participation.png)
 
 ## Critical Element 2 - Assessment System Operations
 
@@ -386,7 +388,8 @@ The ORExt is not a computer-adaptive instrument, so these concerns do not apply.
 
 Item writers were recruited by ODE staff using an existing Qualified
 Assessor/Qualified Trainer listserv.
-![](Figures/ItemDev/ItemDev.pdf)
+\FloatBarrier
+![](Figures/ItemDev/ItemDev.png)
 
 ####Project Description:
 
@@ -555,8 +558,8 @@ The Oregon Department of Education (ODE) provided four direct statewide
 trainings for new Qualified Trainers (QTs) and Qualified Assessors (QAs) in
 face-to-face regional trainings. The schedule for the regional trainings, as
 well as relevant training information, is provided below: 
-
-![](Figures/TrainingSched/TraingSched.pdf)
+\FloatBarrier
+![](Figures/TrainingSched/TraingSched.png)
 
 Only trained Qualified Assessors (QAs) can administer the Oregon Extended
 assessment. Qualified Assessors who also receive direct instruction from ODE and
@@ -584,8 +587,8 @@ average passing score of the participants.
 An analysis of the Oregon Extended Assessment Training and Proficiency Website
 showed 409 Assessors in-Training, 947 Qualified Assessors, and 143 Qualified
 Trainers.
-
-![](Figures/TestPartic/TestParticipants.pdf)
+\FloatBarrier
+![](Figures/TestPartic/TestParticipants.png)
 
 A higher number of assessors completed the Refresher Proficiency test than the
 subject area proficiency tests reflecting a greater number of return assessors
@@ -635,8 +638,8 @@ Note: Results are very positive, with some reviewers feeling less confident
 about their abilities to train others about the essentialization process. This
 outcome was expected. The process is complex, particularly given the
 understanding that this was the first time they had received such training.
-
-![](Figures/QTQAtraining/TrainingConfidenceScale.pdf)
+\FloatBarrier
+![](Figures/QTQAtraining/TrainingConfidenceScale.png)
 
 In addition, all technical assistance questions that we receive from the field
 as part of our *HelpDesk* are documented. The log of the technical assistance
@@ -742,8 +745,8 @@ The ODE maintains a rigorous training system to support standardized test
 administration for the ORExt, located at \color{link}
 [link](https://or.k12test.com)\color{black} (secure website, but see screenshot
 below for an example of training content).
-
-![](Figures/TrainingSite/TrainingSite.pdf)
+\FloatBarrier
+![](Figures/TrainingSite/TrainingSite.png)
 
 The or.k12test.com website includes a training section that addresses any
 systems updates, the process for becoming a Qualified Assessor or Qualified
@@ -759,8 +762,8 @@ prepare both themselves and students for the annual assessment and all of the
 training materials used on the website. In addition to these materials, QTs have
 access to all training materials necessary to provide annual training to QAs in
 their purview (see screenshot below):
-
-![](Figures/TrainingSite/Downloads.pdf)
+\FloatBarrier 
+![](Figures/TrainingSite/Downloads.png)
 
 In addition, monitoring and reporting related to test administration issues for
 the ORExt is addressed via general ODE reporting systems. Information regarding
@@ -1503,42 +1506,133 @@ form comparisons are not possible.
 #### Inter-Rater-Reliability
 
 ##### Background
+ODE’s technical documentation plan (see page 136 in the 2016-17 Technical Report), included an Inter-Rater Reliability (IRR) study for the 2017-18 school year. Pursuant to Hallgren, K. A. (2012) the assessment of IRR may be necessary to demonstrate consistency among observational ratings provided by multiple assessors. The results of the study will be used to address the requirements within the USED’s Peer Review process (Critical Element 4.1). A sample of Oregon’s Qualified Assessors (QAs) who administer the paper/pencil version of the Oregon Extended Assessment (ORExt) were observed to determine reliability of administration and scoring. We did not include the tablet administration or the Oregon Observational Rating.
 
-ODE’s technical documentation plan (see page 136 in the 2016-17 Technical Report), included an inter-rater reliability study for the 2017-18 school year, pursuant to IRR study here (McHugh, 2012). A sample of Oregon’s Qualified Assessors (QAs) who administer the paper/pencil version of the Oregon Extended Assessment (ORExt) were observed to determine reliability of administration and scoring. We did not include the tablet administration or the Oregon Observational Rating Assessment (ORora). The study was conducted in two manners:
-1)	QTs in districts across the state observed a sample of their respective QAs using the observation protocol and enter their data online.
-2)	Expert reviewers from Behavioral Research & Teaching (BRT) observed district-level QTs and those QAs who give the assessment in more than one school/district.
+##### Methods
+QTs in districts across the state observe a sample of their respective QAs using the observation protocol (see *Appendix* 4.1 InterRater_Observation_Form)and enter their data online. The QA reads the item stem and the student selects from three possible answer choices (A, B, or C) then, the QA records the answer choice. QTs (observer) records the students answer choice, then records the answer choice recorded by the QA for agreement. Only the English Language Arts Writing porting of the ORExt requires additional analysis by the assessor to determine if the written response (answer) meets (1) or doesn’t meet (0)provided critera. Districts from across the state of Oregon participated in the study, matching the state’s student population demographics, including large, medium, and small districts, across all regions.
 The observation protocol was completed for the identified QA, but the student(s) and content area(s) observed were selected by the QT or QA. BRT researchers contacted district-level QTs at the beginning of the test window, which runs from February 15 - April 26, 2018, to arrange observations that could hopefully be completed within one school day. 
-In addition to addressing inter-rater reliability, the study also evaluated test administration procedures. The methods, results, and interpretation are provided below, in addition to recommended next steps. The observation was composed of three sections:
+In addition to addressing inter-rater reliability, the study also evaluated test administration procedures. The methods, results, and interpretation are provided here, in addition to recommended next steps. The observation was composed of three sections:
 
-•	First, QT’s reviewed ORExt paper/pencil test preparation and administration using the rubric (*Appendix 4.1 InterRater_Observation_Form*). Test preparation/administration domains were rated on a four-point scale from **Inappropriate (I)** to **Exemplary (E)**:
+* First, QT’s reviewed ORExt paper/pencil test preparation and administration
+using the rubric (Appendix 4.1 InterRater_Observation_Form). Test
+preparation/administration domains were rated on a four-point scale from
+Inappropriate (I) to Exemplary (E):
 
-**o	Inappropriate (I)** denotes a level of concern that could clearly affect the accuracy of the test results gathered from the test administration. Ratings at this level require substantive retraining of the QA involved.
+    + Inappropriate (I) denotes a level of concern that could clearly affect the        accuracy of the test results gathered from the test administration.               Ratings at this level require substantive retraining of the QA involved.
+    
+    + Somewhat Appropriate (SA) rating denotes a level that includes some minor
+      aspects that could be improved, but the accuracy of the test results are
+      likely not compromised.
+      
+    + Appropriate (A) denotes a level that is consistent with all test
+      administration requirements.
+     
+    + Exemplary (E) level performance suggests that the QA incorporated
+      approaches to test administration that could become models for best
+      practice.
+     
+* Second, QT’s scored the student alongside the QA using the scoring sheet. QT’s
+compared results after this observation to ensure that the QA entered accurate
+data.
 
-**o	Somewhat Appropriate (SA)** rating denotes a level that includes some minor aspects that could be improved, but the accuracy of the test results are likely not compromised.
+* Finally, QT’s observed the QA completing the data entry process to ensure that
+no errors are made during data entry and document the number of errors (Appendix
+4.1 InterRater_Observation_Form).
 
-**o	Appropriate (A)** denotes a level that is consistent with all test administration requirements.
+###### Domain Definitions
 
-**o	Exemplary (E)** level performance suggests that the QA incorporated approaches to test administration that could become models for best practice.
+1.	Test Security – The QA utilized a system to ensure that all test materials were stored in a secure location,. The QA also had a district Assurance of Test Security form on file.
 
-•	Second, QT’s scored the student alongside the QA using the scoring sheet (Appendix 4.1 InterRater_Observation_Form). QT’s compared results after this observation to ensure that the QA entered accurate data.
+2.	Printed Materials – the QA had all materials required to administer the ORExt ready for test administration.
 
-•	Finally, QT’s observed the QA completing the data entry process to ensure that no errors are made during data entry and document the number of errors (*Appendix 4.1 InterRater_Observation_Form*).
+3.	Distraction-Free Environment – the QA arranged to provide the ORExt in a one-on-one test administration in a location that ensured that the student focused attention on the assessment.
+
+4.	Accessibility Supports – the QA provided all necessary accessibility supports for the student and ensured that all support systems were functional prior to testing.
+
+5.	Level of Support – The QA provided an appropriate level of support throughout testing that did not compromise the validity of the score.
+
+6.	Praise – The QA utilized praise appropriately to support student involvement without leading the student to the correct answer.
+
+7.	Motivation – The QA appropriately maintained the student’s motivation during the assessment using relevant strategies, such as token systems.
+
+8.	Score Interpretation – The QA demonstrated an appropriate understanding of how to use the cut scores and achievement level descriptors to interpret scores (i.e., ask the QA to describe how they interpret scores for parents).
+
+9.	Minimum Participation Rule - The QA demonstrated an appropriate understanding of the minimum participation rule (i.e., ask the QA to define the rule if it is not used).
 
 Qualified Assessor Testing Preparation and Administration Rubric
 (Record an “X” in the cell that corresponds to your rating)
 
-Domain Definitions
-1.	Test Security – The QA utilized a system to ensure that all test materials were stored in a secure location,. The QA also had a district Assurance of Test Security form on file.
-2.	Printed Materials – the QA had all materials required to administer the ORExt ready for test administration 
-3.	Distraction-Free Environment – the QA arranged to provide the ORExt in a one-on-one test administration in a location that ensured that the student focused attention on the assessment.
-4.	Accessibility Supports – the QA provided all necessary accessibility supports for the student and ensured that all support systems were functional prior to testing.
-5.	Level of Support – The QA provided an appropriate level of support throughout testing that did not compromise the validity of the score.
-6.	Praise – The QA utilized praise appropriately to support student involvement without leading the student to the correct answer.
-7.	Motivation – The QA appropriately maintained the student’s motivation during the assessment using relevant strategies, such as token systems.
-8.	Score Interpretation – The QA demonstrated an appropriate understanding of how to use the cut scores and achievement level descriptors to interpret scores (i.e., ask the QA to describe how they interpret scores for parents).
-9.	Minimum Participation Rule - The QA demonstrated an appropriate understanding of the minimum participation rule (i.e., ask the QA to define the rule if it is not used).
+\FloatBarrier
+![](Figures/irr/irr_domain.png)
+
+\FloatBarrier
+
+##### Inter-rater Agreement Results
+Thirty-three Qualified Trainers from around Oregon participated in the Inter-Rater-Reliability study by doing at least one observation on the Oregon Extended Assessment via paper/pencil administration. Of the thirty-three observations, 48.5% were English Language Arts, 33.3% were Mathematics, and 18.2% were Science. Observations were done at individual student’s typical testing location. The study found a 99.3 Inter-Rater Reliability percentage agreement between the test observers and test administrators on student item (answer) selection. 
+
+\FloatBarrier
+```{r, fig.width = 8.5, fig.height= 11}
+
+library(tidyverse)
+library(fs)
+library(rio)
+library(RColorBrewer)
 
 
+d <- import("data/irr/RaterReliability.csv", setclass = "tbl_df") %>% 
+  janitor::clean_names()
+
+theme_set(theme_minimal())
+# Counts for responses
+d %>% 
+  gather(var, response, test_security:minimum_participation) %>% 
+  group_by(var) %>%
+  count(response) %>%
+  mutate(response = factor(response, 
+                           levels = c("Exemplary", 
+                                      "Appropriate", 
+                                      "Somewhat Appropriate",
+                                      "Inappropriate"))) %>% 
+  ggplot(aes(response, n)) +
+  geom_col(aes(fill = response)) +
+  scale_fill_brewer(palette = "Set1") +
+  facet_wrap(~var, labeller = label_parsed) +
+  guides(fill = "none") +
+  labs(x = "") +
+  labs(y = "") +
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))
+          
+  # Percentage for responses    
+d %>% 
+  gather(var, response, test_security:minimum_participation) %>% 
+  group_by(var) %>%
+  count(response)%>%
+  mutate(tot = sum(n),
+         percent = (n/tot)*100) %>% 
+  select(-n, -tot) %>% 
+  spread(response, percent, fill = 0) %>% 
+  select(Exemplary, Appropriate, `Somewhat Appropriate`, Inappropriate)%>%
+  kable("latex", 
+        booktabs = TRUE,
+        caption = "Percentage for responses",
+        digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
+# Proportion of respondents who provide a rating of "Mark As Disagree"
+d %>% 
+  select(starts_with("item")) %>% 
+  gather(item, response) %>% 
+  count(response) %>% 
+  mutate(tot = sum(n),
+         percent = (n/tot)*100)%>%
+kable("latex", 
+        booktabs = TRUE,
+        caption = "Mark As Disagree",
+        digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
+```
+\clearpage
 #### 4.1A Test Reliability 
 
 Marginal reliability results (true score variance/true score variance + error
