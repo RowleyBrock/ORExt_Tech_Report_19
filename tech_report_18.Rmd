@@ -779,8 +779,8 @@ in the general assessment system Peer Review evidence submission.
 School and district test coordinators conduct initial investigations into all
 alleged test irregularities. Once reported to ODE, all alleged test
 irregularities are investigated in consultation with district test coordinators
-and the test vendor, as appropriate (see *Appendix* 1.4.2, p. 31-33). In the event
-that a test irregularity is determined to be factual, consequences are
+and the test vendor, as appropriate (see *Appendix* 1.4.2, p. 31-33). In the
+event that a test irregularity is determined to be factual, consequences are
 determined based upon contextual issues that are brought to light during the
 investigation. Additional information regarding this process can be located in
 the general assessment system Peer Review evidence submission.
@@ -906,9 +906,9 @@ standards.
 
 Our foundation of validity evidence from content coverage for the ORExt comes in
 the form of test specifications (see *Appendix* 2.1) and test blueprints (see
-*Appendix* 2.1B). Among other things, the Standards (AERA et al., 2014)^2^ suggest
+*Appendix* 2.1B). Among other things, the Standards (AERA et al., 2014) suggest
 specifications should "define the content of the test, the proposed test length,
-the item formats…" (Standard 4.2, p. 85)^2^.
+the item formats…" (Standard 4.2, p. 85).
 
 All items are linked to grade level standards and a prototype was developed
 using principles of universal design  with traditional, content-referenced
@@ -938,7 +938,8 @@ new items. These items are compared to operational items based on item
 functioning and test design factors, generating data used to replace items on an
 annual basis, incorporating the new items that fill a needed gap with regard to
 categorical concurrence, or provide for a wider range of functioning with regard
-to complexity levels: low - medium - high, comparable to Webb's DOK.
+to complexity levels: low - medium - high, comparable to Webb's DOK (see
+Section 2.2).
 
 BRT employed a multi-stage development process in 2014-15 to ensure that test
 items were linked to relevant content standards, were accessible for students
@@ -947,8 +948,8 @@ eliminated. The item review process included 51 reviewers with an average of 22
 years of experience in education. The ORExt assessments have been determined to
 demonstrate strong linkage to grade level academic content, overall. Full
 documentation of the initial 2014 linkage study and a new, independent alignment
-study conducted in spring, 2017 is provided in *Appendix* 3.1A. Based on student 
-performance from the 2016-2017 testing year, new and Grade 7 Math field test 
+study conducted in spring, 2017 is provided in *Appendix* 3.1A. Based on student
+performance from the 2016-2017 testing year, new and Grade 7 Math field test
 items were written in fall 2017.
 
 The summary section of the independent alignment study report states that,
@@ -1378,12 +1379,12 @@ Respondents to the survey generally agree that, "The items in the Oregon
 Extended Assessment accurately reflect the academic content (what the student
 should know) that my students with significant cognitive disabilities should be
 learning, as defined by grade level content standards (CCSS/NGSS) and the
-Essentialized Assessment Frameworks" (68.4% Strongly Agree & Agree). In
+Essentialized Assessment Frameworks" (85% Strongly Agree or Agree). In
 addition, they also agreed with the statement that, "The items in the Oregon
 Extended Assessment, which primarily ask students to match, identify, or
-recognize academic content, are appropriate  behaviors to review to determine
-what my students with significant cognitive disabilities are able to do" (84.8%
-Strongly Agree & Agree). The consequential validity results demonstrate that
+recognize academic content, are appropriate behaviors to review to determine
+what my students with significant cognitive disabilities are able to do" (85%
+Strongly Agree or Agree). The consequential validity results demonstrate that
 the ORExt is sampling academic domains that the field of QAs and QTs deem
 appropriate in the area of academics. See *Appendix* 2.3B.10 for complete consequential vailidity study results. 
 
@@ -1669,44 +1670,30 @@ also indicate that the scales exhibit a reliability greater than or equal to .80
 for all proficient-level cutscores.
 
 ### English Language Arts TIFs
-
-![](tifs/ela3tif.pdf){height=400px}
-
-![](tifs/ela4tif.pdf){height=400px}
-
-![](tifs/ela5tif.pdf){height=400px}
-
-![](tifs/ela6tif.pdf){height=400px}
-
-![](tifs/ela7tif.pdf){height=400px}
-
-![](tifs/ela8tif.pdf){height=400px}
-
-![](tifs/ela11tif.pdf){height=400px}
+\FloatBarrier
+![](tifs/ela3tif.pdf){height=300px}
+![](tifs/ela4tif.pdf){height=300px}
+![](tifs/ela5tif.pdf){height=300px}
+![](tifs/ela6tif.pdf){height=300px}
+![](tifs/ela7tif.pdf){height=300px}
+![](tifs/ela8tif.pdf){height=300px}
+![](tifs/ela11tif.pdf){height=300px}
 
 ### Mathematics TIFs
-
-![](tifs/ela3tif.pdf){height=400px}
-
-![](tifs/ela4tif.pdf){height=400px}
-
-![](tifs/ela5tif.pdf){height=400px}
-
-![](tifs/ela6tif.pdf){height=400px}
-
-![](tifs/ela7tif.pdf){height=400px}
-
-![](tifs/ela8tif.pdf){height=400px}
-
-![](tifs/ela11tif.pdf){height=400px}
+\FloatBarrier
+![](tifs/ela3tif.pdf){height=300px}
+![](tifs/ela4tif.pdf){height=300px}
+![](tifs/ela5tif.pdf){height=300px}
+![](tifs/ela6tif.pdf){height=300px}
+![](tifs/ela7tif.pdf){height=300px}
+![](tifs/ela8tif.pdf){height=300px}
+![](tifs/ela11tif.pdf){height=300px}
 
 ### Science TIFs
-
-![](tifs/science5tif.pdf){height=400px}
-
-![](tifs/science8tif.pdf){height=400px}
-
-![](tifs/science11tif.pdf){height=400px}
+\FloatBarrier
+![](tifs/science5tif.pdf){height=300px}
+![](tifs/science8tif.pdf){height=300px}
+![](tifs/science11tif.pdf){height=300px}
 
 ### Validation of ORExt Vertical Scales
 
@@ -1719,10 +1706,10 @@ elaboration of this effort is needed to address its location on the TCC. Grade
 Grade 11 or science. All Rasch model scaling, as well as the data visualizations
 for the TCCs were conducted in the R software 3.3.2 environment (R Core Team,
 2016) using the r2Winsteps package (Anderson, 2015).
-
+\FloatBarrier
 ![](tccs/ela_tccs.pdf)
-
 ![](tccs/math_tccs.pdf)
+\clearpage
 
 #### 4.1B Overall and Conditional Standard Errors of Measure
 
@@ -1735,6 +1722,7 @@ Measure associated with the cut score to the left; averaged to the tenths'
 place. Level 1 = Does Not Yet Meet (not included as the lowest level of
 proficiency) Level 2 = Nearly Meets Level 3	= Meets Level 4	= Exceeds
 
+\FloatBarrier
 ```{r cut_score_se}
 se_tbls <- ode %>% 
   filter(content_area == "ela" |
@@ -1763,6 +1751,7 @@ walk2(se_tbls,
                       latex_options = "hold_position") %>% 
         print())
 ```
+\FloatBarrier
 
 #### 4.1C Classification Accuracy & Consistency
 
@@ -1777,6 +1766,7 @@ test administration. Complete results, generated from the cacIRT package in R,
 are provided below. Results denote very high levels of classification accuracy
 and consistency.
 
+\FloatBarrier
 ```{r class_acc}
 cuts <- ode %>% 
   group_by(content_area, grade, amo_lvl) %>% 
@@ -1824,7 +1814,7 @@ walk2(acc_con_tbls,
                       latex_options = "hold_position") %>% 
         print())
 ```
-
+\FloatBarrier
 The ORExt is not a computer-adaptive instrument so estimate precision
 documentation based upon that test design is not provided.
 
@@ -1890,6 +1880,7 @@ test participants in Science. Overall, DIF flagging bases on race was relatively
 balanced, with 14 privileging students who were Non-White and 16 privileging
 students who were White.
 
+\FloatBarrier
 ```{r dif1}
 raw <- dir_ls("data/raw", glob = "*.txt")
 raw <- raw[-grep("XO", raw)]
@@ -1985,6 +1976,7 @@ walk2(minority_tbls,
                       latex_options = "hold_position") %>% 
         print())
 ```
+\FloatBarrier
 
 In terms of the Male/Female analyses, 10 out of 16 items flagged as "C" level
 items privileged Females in ELA, 4 out of 9 flagged items privileged Females in
