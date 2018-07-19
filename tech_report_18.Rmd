@@ -123,9 +123,7 @@ but systematically reduced in terms of depth, breadth, and complexity (RDBC).
 All ORExt items employed in the 2017-18 ORExt administration, with the
 exception of Grade 7 Math field test items, were developed in
 2014-15. Based on student performance from the 2016-2017 testing year, new and
-Grade 7 Math field test items were written in fall 2017. An alignment study was
-conducted in 2016-17 and it was determined that all items were aligned to
-the new EsSt.
+Grade 7 Math field test items were written in fall 2017. 
 
 A statewide sample of Oregon general and special education teachers have
 reviewed all test items for: 1) alignment to the EAFs, 2) accessibility for
@@ -163,19 +161,14 @@ independent (see Critical Element 3.1). An independent contractor, Dr. Dianna
 Carrizales, was therefore hired to perform an additional alignment study in the
 spring of 2017. 
 
-In addition to the independent alignment study, a pilot tablet administration
-study was also conducted in the 2016-17 school year. This was the second phase
-of a three-year plan. The 2017-18 school year marked the third year in which
-tablet administration of the ORExt for all grades and subject areas was
-available. 
+A two year pilot tablet study was conducted in the 2015-2016 and 2016-17 school years. Over the two year study, 26 students were administered all subject areas of the ORExt in tablet format in grades 5, 8, and 11. The 2017-18 school year marked the first year the ORExt was available in tablet/online format for all grades in all subject areas.  
 
 As part of our five-year technical documentation plan, which included the
 independent alignment study, pilot tablet administration study, and launch of
-the full tablet administration, we also conducted an inter-rater reliability
-study in 2017-18. The inter-rater reliability study included 33 Qualified
+the full tablet administration, an inter-rater reliability study was also conducted in 2017-18. The inter-rater reliability study included 33 Qualified
 Trainers from around the state who participated by doing at least one Qualified
 Assessor observation on the Oregon Extended Assessment via paper/pencil
-administration. (List in appendix). Included in the future of the five-year plan
+administration. Included in the future of the five-year plan
 is continuation of the inter-rater reliability study, and analyses of the impact
 of accommodations.
 
@@ -183,8 +176,7 @@ of accommodations.
 
 ### 1.1 State Adoption of Academic Content Standards for All Students
 
-The Oregon State Board of Education (SBE) adopted new, challenging academic
-content standards, the Common Core State Standards (CCSS), in English language
+The Oregon State Board of Education (SBE) adopted new, challenging academic content standards, the \color{link}[Common Core State Standards (CCSS)](https://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx)\color{black}, in English language
 arts and mathematics in Grades K-12 on October 28, 2010. These CCSS are utilized
 for all students in Oregon's public schools. Oregon was actively involved in the
 development of the CCSS, as the Oregon Department of Education (ODE), the
@@ -192,23 +184,23 @@ Educational Enterprise Steering Committee (EESC), Oregon's Education Service
 Districts, and school district representatives provided feedback on the draft
 CCSS standards.
 
-Similarly, the SBE adopted the Next Generation Science Standards (NGSS) on March
+Similarly, the SBE adopted the \color{link}[Next Generation Science Standards (NGSS)](https://www.oregon.gov/ode/educator-resources/standards/science/Pages/Science-Standards.aspx)
+\color{black}  on March
 6, 2014. The NGSS establish learning targets for all students in Oregon's public
 schools in Grades K-12. The ODE and the Oregon Science Content and Assessment
 Panel provided direct feedback related to the NGSS. The NGSS are being phased in
 over time instructionally, so students are being assessed relative to the Oregon
-Science (ORSci) standards that were adopted in 2009. \color{link} [State content
-Standards](http://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx.)
-\color{black}
-The tables below provide examples of essentialized standards in grades 5, 8, &
+Science (ORSci) standards that were adopted in 2009. 
+
+The newly adopted academic content standards were then reduced in depth, breadth, and complexity through a process called essentialization. The new \color{link}[Essentialized Assessment Frameworks (EAFs)](http://www.brtprojects.org/publications/training-modules)
+\color{black}   were then used for item writing for the ORExt. The tables below provide examples of essentialized standards in grades 5, 8, &
 11 in the subject areas of English language arts (ELA), mathematics, and
-science. Complete EAF spreadsheets are available at the link provided here, as
-well. In the right column are designations for estimated difficulty of an item:
-L (low), M (medium), and H (high). \color{link} [Complete EAF Spreadsheets]
-(http://www.brtprojects.org/publications/training-modules) \color{black}
+science. In the right column are designations for estimated difficulty of an item:
+L (low), M (medium), and H (high). More information on the essentialization process can be found in section 1.2. 
 
 See *Appendix* 1.1 for a User Guide that explains the development process and
-intended uses for the EAFs.
+intended uses for the EAFs. 
+
 \FloatBarrier
 ![](Figures/Standards/Grade5.png)
 
@@ -229,13 +221,9 @@ particularly here in Oregon. The new ORExt is linked directly to the content in
 the CCSS in English language arts (reading, writing, & language) and
 mathematics. The ORExt is dually linked to the ORSci as well as the NGSS. The
 NGSS are widely accepted by most relevant science instruction organizations as
-reflective of rigorous and coherent science concepts \color{link}[NGSS
-Link](http://www.nextgenscience.org/support-scientific-engineering-and-education-communities)
-\color{black}
+reflective of rigorous and coherent science concepts.
 
-The new Essentialized Assessment Frameworks (EAFs) are publicly available at the
-link on page 16 above in the Essentialized Assessment Frameworks section. A User
-Guide is provided to instruct educators regarding the intended uses of the
+The new Essentialized Assessment Frameworks (EAFs) are publicly available. A User Guide is provided to instruct educators regarding the intended uses of the
 Essentialized Standards (EsSt), including the development of Present Levels of
 Academic Achievement and Functional Performance (PLAAFP) and Individualized
 Education Program (IEP) goals and objectives. The basic essentialization process
@@ -249,7 +237,7 @@ of curricular and instructional materials, founded in research-based pedagogy.
 ### 1.3 Required Assessments 
 
 The ORExt assessments were administered in the 2017-18 school year in ELA and
-math in Grades 3-8 and once in Grade 11; science is assessed in Grades 5, 8, &
+math in Grades 3-8 and Grade 11; science is assessed in Grades 5, 8, &
 11. This assessment plan meets the requirements for grade level assessment in
 Grades 3-8 and once in high school (Grades 10-12) for ELA and mathematics, while
 science is assessed once in the 3-5 grade band, once in the 6-9 grade band, and
@@ -266,7 +254,7 @@ once in the 10-12 grade band:
 Originally, Oregon statute required that all students participate in statewide
 assessments, with exceptions allowed for district-approved parent request for
 assessment waivers (parent opt-out requests) related to student disability or
-religious beliefs (see Oregon Administrative Rule, OAR § 581-022-0612)
+religious beliefs (see Oregon Administrative Rule, OAR § 581-022-0612).
 
 Exception of Students with Disabilities from State Assessment Testing: (1) For
 the purposes of this rule a "student with a disability" is a student identified
@@ -317,15 +305,13 @@ levels are included in our assessment system. The students with disabilities
 subgroup did not meet minimum participation requirements in 2016-17, the most
 current data available at the time of this report, in English language arts or
 mathematics, with rates at 90.2% and 89.4%, respectively. See the table below
-for a summary of participation. For complete reports, see \color{link} [Complete
-reports link](http://www.oregon.gov/ode/schools-and-districts/reportcards/Documents/rptcard2017.pdf)
-\color{black}
-Documentation of this requirement is provided within the Annual Performance
+for a summary of participation. Documentation of this requirement is provided within the Annual Performance
 Report, Indicator B3, which is submitted to the United States Department of
 Education's (USED's) Office of Special Education Programs (OSEP). Participation
 and performance summaries are provided below. Additional information regarding
-state performance is published in the 2016-17 State Report Card (see *Appendix*
-1.5, pages 1-11 for student and teacher demographics and pages 21-48 for
+state performance is published in the 2016-17 \color{link}[Statewide Report Card](http://www.oregon.gov/ode/schools-and-districts/reportcards/Documents/rptcard2017.pdf)
+\color{black} (see *Appendix*
+1.5, pages 1-11 for student and teacher demographics and pages 20-47 for
 assessment information).\FloatBarrier
 ![](Figures/Participation/Participation.png)
 
@@ -402,10 +388,7 @@ training, ongoing review and feedback, and quality assurance. All participants
 were expected to provide documentation of their qualifications and sign test
 security agreements. In addition, all item developers were expected to
 participate in a half-day item development training based upon the following
-schedule:
-    "	ELA - Tuesday, from 8 AM to 12 PM 
-    "	Math - Wednesday, from 8 AM to 12 PM 
-    "	Science - Thursday, from 8 AM to 12 PM
+schedule: ELA - Tuesday, from 8 AM to 12 PM; Math - Wednesday, from 8 AM to 12 PM; Science - Thursday, from 8 AM to 12 PM.
     
 #### Minimum Qualifications:
 
@@ -417,7 +400,7 @@ education degree status.
 
 #### Compensation:
 
-Teachers who participate in this process were compensated at a rate of \$20/hr
+Teachers who participated in this process were compensated at a rate of \$20/hr
 via professional service contracts. It was anticipated that teachers would
 produce 4 ELA items/hr, 6 Science items/hr, and 8 Math items/hr. As such, the
 maximum contract amount for ELA was \$1,800, for Science \$1,440, and for Math
@@ -460,10 +443,8 @@ of typical items on the ORExt.
 The ORExt assessments are administered according to the administration, scoring,
 analysis, and reporting criteria established in the ORExt General Administration
 Manual (see *Appendix* 2.3). Important updates to the testing process are
-distributed via the Assessment and Accountability Updates listserve, as well.
-\color{link} [Updates
-link](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-and-Accountability-Update.aspx)
-\color{black} ODE uses this system to communicate information that is relevant
+distributed via the \color{link}[Assessment and Accountability Updates](http://www.oregon.gov/ode/educator-resources/assessment/Pages/Assessment-and-Accountability-Update.aspx)
+\color{black} listserve, as well. ODE uses this system to communicate information that is relevant
 for the statewide assessment system, including the ORExt. Announcements are sent
 to the listserv by email and are also posted to the ODE website. The
 standardization of test administration is supported by a comprehensive training
@@ -474,7 +455,7 @@ process described below in Section 2.3B.
 The state has ensured that appropriate universal tools, designated supports, and
 accommodations are available to students with disabilities and students covered
 by Section 504 by providing guidance and technical support on accommodations
-(see Appendices 2.3A.1 and 2.3A.2). Guidelines regarding use of the
+(see *Appendices* 2.3A.1 and 2.3A.2). Guidelines regarding use of the
 accommodations for instructional purposes are included in the document, as all
 students are expected to receive test accommodations that are consistent with
 instructional accommodations.
@@ -517,8 +498,8 @@ principles and utilize a simplified language approach (see *Appendix* 2.3A.3).
 
 In the 2013-2014 school year, the state developed a training and proficiency
 program for sign language interpretation of its assessments and has updated the
-site annually since that time. The training process \color{link}[Training
-link](http://lms.brtprojects.org) \color{black} included videos of interpreters
+site annually since that time. The \color{link}[sign language training](http://lms.brtprojects.org) 
+\color{black} process included videos of interpreters
 administering items to students, materials that support appropriate
 administration (i.e., transcripts and PowerPoint slides that supplement the
 video administrations and the current ODE accommodations manual), and
@@ -544,10 +525,8 @@ well-defined answers.
 #### 2.3B Comprehensive Training System
 
 Comprehensive information for ongoing training for all qualified assessors (QAs)
-and Qualified Trainers (QTs) is provided in Appendices 2.3B.1-2.3B.8. Training
-and QA/QT proficiency is determined annually via an online distribution and
-assessment system located at \color{link} [QA/QT website
-link](https://or.k12test.com/) \color{black}. This website hosts all resources
+and Qualified Trainers (QTs) is provided in *Appendices* 2.3B.1-2.3B.8. Through an online distribution and assessment system, \color{link}[QA/QT Training and Proficiency](https://or.k12test.com/) 
+\color{black} is determined anually. This website hosts all resources
 and information needed to administer, score, report, and interpret the results
 from the ORExt. The website also includes proficiency assessments that are
 required for all QAs and QTs who may administer the ORExt. QTs are directly
@@ -569,8 +548,7 @@ on an annual basis. Assessors who do not maintain their respective
 certifications for any given year must re-train if they choose to enter the
 system again.
 
-The tables below contain data from the Oregon Extended Assessment Training and
-Proficiency Website \color{link} [QA/QT website link](http://or.k12test.com/)
+The tables below contain data from the \color{link}[Oregon Extended Assessment Training and Proficiency Website](http://or.k12test.com/)
 \color{black}. All assessors need to complete some form of training each year to
 retain their status for administering the Extended Assessments.
 
@@ -585,7 +563,7 @@ data is the number of attempts needed to attain a passing score as well as the
 average passing score of the participants.
 
 An analysis of the Oregon Extended Assessment Training and Proficiency Website
-showed 409 Assessors in-Training, 947 Qualified Assessors, and 143 Qualified
+showed 408 Assessors in-Training, 940 Qualified Assessors, and 139 Qualified
 Trainers.
 \FloatBarrier
 ![](Figures/TestPartic/TestParticipants.png)
@@ -594,10 +572,10 @@ A higher number of assessors completed the Refresher Proficiency test than the
 subject area proficiency tests reflecting a greater number of return assessors
 compared to new assessors. Administration Proficiency continued to be the most
 challenging to new assessors, but most were able to pass on the first or second
-attempt with less than 1% of assessors requiring more than two attempts. The
+attempt with about 1% or less of assessors requiring more than two attempts. The
 majority of assessors passed the ELA, Math, Science, and the Refresher
 proficiency tests on the first attempt with less than 2% requiring a second or
-third attempt. There were 83 fewer Qualified Assessors but 6 more Qualified
+third attempt. There were 7 fewer Qualified Assessors and 4 fewer Qualified
 Trainers compared to last year.
 
 Evaluations are collected at each QT training in November. The results reflect
@@ -641,11 +619,9 @@ understanding that this was the first time they had received such training.
 \FloatBarrier
 ![](Figures/QTQAtraining/TrainingConfidenceScale.png)
 
-In addition, all technical assistance questions that we receive from the field
-as part of our *HelpDesk* are documented. The log of the technical assistance
-provision is reviewed each month, as well as annually, in order to determine
-what aspects of our assessment system need further clarification or improvement.
-The *HelpDesk* log is published in *Appendix* 2.3B.9.
+In addition, all technical assistance questions that we receive from the field as part of our *HelpDesk* are documented. The log of the technical assistance provision is reviewed each month, as well as annually, in order to determine what aspects of our assessment system need further clarification or improvement. With the launch of the full tablet app the helpdesk received many more inquiries than in previous years. Around 48% of the inquiries were end user issues such as slow internet connection, trouble with individual tablets, users needing the exit pin, etc. About 29% of inquiries related to the ODE database. This included things like credential verification, districts with no Qualified Trainer, and students registered in different districts not appearing on rosters. About 11% of inquiries were coded as ‘Training’ indicating many of these issues could be solved with more emphasis on certain areas during the fall trainings. Only 9% of inquiries were specific to the BRT tablet system and will be addressed in updates for the 2018-19 testing window. And only 3% of inquiries were related to the paper/pencil administration. 
+
+The *HelpDesk* log is published in *Appendix* 2.3B.9. 
 
 Oregon monitors the quality of its system in several ways in order to support
 continuous improvement. In terms of the assessment quality, item statistics are
@@ -742,8 +718,7 @@ the BRT servers, monitored by BRT.
 ### 2.4 Monitoring Test Administration
 
 The ODE maintains a rigorous training system to support standardized test
-administration for the ORExt, located at \color{link}
-[link](https://or.k12test.com)\color{black} (secure website, but see screenshot
+administration for the \color{link} [Oregon K12 website](https://or.k12test.com)\color{black}, (secure website, but see screenshot
 below for an example of training content).
 \FloatBarrier
 ![](Figures/TrainingSite/TrainingSite.png)
@@ -819,15 +794,14 @@ dissemination, and administration via multiple mechanisms. All items under
 development are stored in secure file servers managed by Behavioral Research &
 Teaching at the University of Oregon, the test vendor for the ORExt. Item
 reviews necessary to provide alignment, bias, and sensitivity information are
-conducted online using the secure Distributed Item Review (DIR) platform
-\color{link} [DIR link](http://brtitemreview.com) \color{black} (secure website,
+conducted online using the secure \color{link}[Distributed Item Review (DIR)](http://brtitemreview.com) 
+\color{black} platform (secure website,
 but see *Appendix* 3.1B for a system overview).
 
 For the 2017-2018 school year, all paper/pencil secure test distribution and
-data entry was hosted by ODE's secure file transfer system, which is a
-password-protected test distribution and data entry system located at \color
-{link} [Secure file link](https://district.ode.state.or.us/apps/login/) \color
-{black} (secure website, but see screenshot below for reference). A data entry 
+data entry was hosted by \color{link}[ODE's secure file transfer system](https://district.ode.state.or.us/apps/login/) \color
+{black}, which is a
+password-protected test distribution and data entry system. A data entry 
 guide is provided in *Appendix* 2.6.
 
 The secure tablet application and web-based platform distribution and data entry
@@ -847,8 +821,7 @@ assessment system Peer Review evidence submission.
 Student level data is protected by relevant training and through a secure data
 system in which all data entry is conducted online using password-protected,
 secure procedures on the \color{link} [Oregon K12
-website](https://or.k12test.com) \color{black} or \color{link} [Secure data
-link](https://district.ode.state.or.us/apps/login/) \color{black} websites, as
+website](https://or.k12test.com) \color{black} or \color{link} [ODE's secure file transfer system](https://district.ode.state.or.us/apps/login/) \color{black} website, as
 identified above. Only trained users with a vested educational interest who have
 signed test security agreements are authorized to access to online data entry
 systems. See *Appendix* 2.6 for additional data entry expectations for 2017-18.
@@ -929,11 +902,11 @@ that the alternate assessment judged against alternate achievement standards
 allows valid inferences to be made on state accountability proficiency
 standards.
 
-#### 3.1A Alignment Between AA-AAAS and Academic Content Standards (DELETED)
+#### 3.1A Alignment Between AA-AAAS and Academic Content Standards
 
 Our foundation of validity evidence from content coverage for the ORExt comes in
 the form of test specifications (see *Appendix* 2.1) and test blueprints (see
-*Appendix* 2.1B). Among other things, the Standards (AERA et al., 2014)2 suggest
+*Appendix* 2.1B). Among other things, the Standards (AERA et al., 2014)^2^ suggest
 specifications should "define the content of the test, the proposed test length,
 the item formats…" (Standard 4.2, p. 85)^2^.
 
@@ -965,8 +938,7 @@ new items. These items are compared to operational items based on item
 functioning and test design factors, generating data used to replace items on an
 annual basis, incorporating the new items that fill a needed gap with regard to
 categorical concurrence, or provide for a wider range of functioning with regard
-to complexity levels: low - medium - high, comparable to Webb's DOK (see
-Section 3.1A).
+to complexity levels: low - medium - high, comparable to Webb's DOK.
 
 BRT employed a multi-stage development process in 2014-15 to ensure that test
 items were linked to relevant content standards, were accessible for students
@@ -1008,7 +980,7 @@ adopted the AAS on June 25, 2015.
 
 #### 3.1B AA-AAAS Linkage to General Content Standards
 
-Complete results of the analysis of the linkage of the new Essentialized
+Results of the analysis of the linkage of the new Essentialized
 Assessment Frameworks, (EAF), composed of Essentialized Standards (EsSt), to
 grade level CCSS in English language arts and mathematics and linked to ORSci
 and NGSS in science, are presented in Section 3.1A. The claim is that the EsSt
@@ -1029,7 +1001,7 @@ in an internal study in 2014 and an independent study in spring 2017 included
 both special and general education experts, with content knowledge and
 experience in addition to special education expertise.
 
-According to the independent linkage study report (see *Appendix* 3.1A), the
+According to the independent linkage study report, the
 spring 2017 review was conducted by expert reviewers with professional
 backgrounds in either Special Education (the population), Assessment, or in
 Oregon's adopted content standards. Reviewers were assigned to review
@@ -1169,8 +1141,7 @@ level teams of two special educators and one content specialist.
 Substantive evidence that has been documented suggests that the ORExt items are
 tapping the intended cognitive processes and that the items are at the
 appropriate grade level through the linkage/alignment studies documented above,
-including reviews of linkage, content coverage, and depth of knowledge. A
-comprehensive report of the item review process is available in *Appendix* 3.1A.
+including reviews of linkage, content coverage, and depth of knowledge.
 
 ### 3.3 Validity Based on Internal Structure (Content and Function)
 
@@ -1406,14 +1377,14 @@ Respondents to the survey generally agree that, "The items in the Oregon
 Extended Assessment accurately reflect the academic content (what the student
 should know) that my students with significant cognitive disabilities should be
 learning, as defined by grade level content standards (CCSS/NGSS) and the
-Essentialized Assessment Frameworks" (17% Strongly Agree & 51% Agree). In
+Essentialized Assessment Frameworks" (68.4% Strongly Agree & Agree). In
 addition, they also agreed with the statement that, "The items in the Oregon
 Extended Assessment, which primarily ask students to match, identify, or
 recognize academic content, are appropriate  behaviors to review to determine
-what my students with significant cognitive disabilities are able to do" (22%
-Strongly Agree & 63% Agree). The consequential validity results demonstrate that
+what my students with significant cognitive disabilities are able to do" (84.8%
+Strongly Agree & Agree). The consequential validity results demonstrate that
 the ORExt is sampling academic domains that the field of QAs and QTs deem
-appropriate in the area of academics.
+appropriate in the area of academics. See *Appendix* 2.3B.10 for complete consequential vailidity study results. 
 
 #### Analyses Within and Across Subject Areas 
 
@@ -1443,7 +1414,7 @@ Full results of the Pearson's product-moment correlation analysis by content are
 and grade level are reported below. The results are significant, yet the overall
 correlations across content areas suggest that we are indeed measuring
 different, though strongly related constructs, with between-test scaled score
-correlations ranging from 0.81 to 0.89.
+correlations ranging from 0.69 to 0.97.
 
 ```{r by_sub_corr}
 cors <- ode %>% 
@@ -1509,7 +1480,7 @@ form comparisons are not possible.
 ODE’s technical documentation plan (see page 136 in the 2016-17 Technical Report), included an Inter-Rater Reliability (IRR) study for the 2017-18 school year. Pursuant to Hallgren, K. A. (2012) the assessment of IRR may be necessary to demonstrate consistency among observational ratings provided by multiple assessors. The results of the study will be used to address the requirements within the USED’s Peer Review process (Critical Element 4.1). A sample of Oregon’s Qualified Assessors (QAs) who administer the paper/pencil version of the Oregon Extended Assessment (ORExt) were observed to determine reliability of administration and scoring. We did not include the tablet administration or the Oregon Observational Rating.
 
 ##### Methods
-QTs in districts across the state observe a sample of their respective QAs using the observation protocol (see *Appendix* 4.1 InterRater_Observation_Form)and enter their data online. The QA reads the item stem and the student selects from three possible answer choices (A, B, or C) then, the QA records the answer choice. QTs (observer) records the students answer choice, then records the answer choice recorded by the QA for agreement. Only the English Language Arts Writing porting of the ORExt requires additional analysis by the assessor to determine if the written response (answer) meets (1) or doesn’t meet (0)provided critera. Districts from across the state of Oregon participated in the study, matching the state’s student population demographics, including large, medium, and small districts, across all regions.
+QTs in districts across the state observe a sample of their respective QAs using the observation protocol (see *Appendix* 4.1 InterRater_Observation_Form) and enter their data online. The QA reads the item stem and the student selects from three possible answer choices (A, B, or C) then, the QA records the answer choice. QTs (observer) records the students answer choice, then records the answer choice recorded by the QA for agreement. Only the English Language Arts Writing porting of the ORExt requires additional analysis by the assessor to determine if the written response (answer) meets (1) or doesn’t meet (0) provided critera. Districts from across the state of Oregon participated in the study, matching the state’s student population demographics, including large, medium, and small districts, across all regions.
 The observation protocol was completed for the identified QA, but the student(s) and content area(s) observed were selected by the QT or QA. BRT researchers contacted district-level QTs at the beginning of the test window, which runs from February 15 - April 26, 2018, to arrange observations that could hopefully be completed within one school day. 
 In addition to addressing inter-rater reliability, the study also evaluated test administration procedures. The methods, results, and interpretation are provided here, in addition to recommended next steps. The observation was composed of three sections:
 
@@ -1633,13 +1604,15 @@ kable("latex",
                       latex_options = "hold_position")
 ```
 \clearpage
-#### 4.1A Test Reliability 
+\FloatBarrier
+
+##### 4.1A Test Reliability 
 
 Marginal reliability results (true score variance/true score variance + error
 variance) demonstrate that the tests are quite reliable at the total test level.
 Full reliability statistics for each of the operational tests administered this
 year are provided below. These results demonstrate that the total test
-reliabilities were quite high, ranging from .87 to .92. Each table below
+reliabilities were quite high, ranging from .67 to .91. Each table below
 provides the content area, grade, and the marginal reliabilities. All test forms
 were composed of 36 operational and 12 embedded field-test items.
 
@@ -1847,7 +1820,9 @@ and also that the items are not biased toward a particular demographic or
 sub-group.
 
 \clearpage
-#### Differential Item Functioning Analyses 
+\FloatBarrier
+
+##### Differential Item Functioning Analyses 
 
 To investigate Differential Item Functioning (DIF), the Mantel-Haenszel test
 using a purification process was conducted (Holland & Thayer, 1988; Kamata &
@@ -2017,8 +1992,8 @@ The full ethnic and disability demographics for students taking the ORExt are
 reported below. Students ethnicity/race was reported in seven categories: (a)
 American Indian/Alaskan Native, (b) Asian, (c) Black or African-American, (d)
 Multi-ethnic, (e) Native Hawaiian or Other Pacific Islander, (f) Hispanic, or
-(g) White. The majority of students were reported as White (55-62%) or Hispanic
-(22-29%). These results are largely consistent with the demographics reported
+(g) White. The majority of students were reported as White (53-68%) or Hispanic
+(12-27%). These results are largely consistent with the demographics reported
 for the general assessments, though percentages taking the ORExt are slightly
 higher for most students of color and generally lower for students who are Asian
 or White (see *Appendix* 4.2).
@@ -2051,11 +2026,11 @@ d %>%
                       latex_options = "hold_position")
 ```
 
-Student reported exceptionalities included Intellectual Disability (ID), Hearing
-Impairment (HI), Visual Impairment (VI), Deaf-Blindness (DB), Communication
-Disorder (CD), Emotional Disturbance (ED), Orthopedic Impairment (OI), Traumatic
-Brain Injury (TBI), Other Health Impairment (OHI), Autism Spectrum Disorder
-(ASD), and Specific Learning Disability (SLD). The majority of students who
+Student reported exceptionalities included Intellectual Disability (ID 10), Hearing
+Impairment (HI 20), Visual Impairment (VI 40), Deaf-Blindness (DB 43), Communication
+Disorder (CD 50), Emotional Disturbance (ED 60), Orthopedic Impairment (OI 70), Traumatic
+Brain Injury (TBI 74), Other Health Impairment (OHI 80), Autism Spectrum Disorder
+(ASD 82), and Specific Learning Disability (SLD 90). The majority of students who
 participated in the ORExt were students with ID (30-45%) and students with ASD
 (28 -34%), followed by students with OHI (11 -16%). ODE policy for 2015-16
 changed to require students who participate in the ORExt to take the assessment
@@ -2094,8 +2069,7 @@ and mathematics scaled scores are centered on 200, while all Grade 11 scores are
 centered on 900 (to reinforce that they are not on the vertical scale). Science
 is centered on 500 at Grade 5 and centered on 800 at Grade 8. The vertically
 scaled scores generally convey incremental gains in achievement across grade
-levels, though the results suggest small losses appearing at Grade 8 in ELA.
-These scales were selected to clearly determine whether scores are on the same
+levels, though the results suggest small losses across grades in math.These scales were selected to clearly determine whether scores are on the same
 scale and also to differentiate among the statewide assessments in use to avoid
 confusion (i.e., SBA, OAKS, ORExt, ELPA, KA). The general pattern is that RIT
 scores decreased from 2014-15 to 2015-16. This decrease is attributed not to the
@@ -2188,7 +2162,7 @@ ode %>%
 The following tables provide information regarding average student performance
 by grade level and sex (Female/Male) in each of the content areas assessed on
 the ORExt. Significant differences based on a Welch two sample t-test are noted
-in Grade 4 ELA, Grades 4, 5, and 8 in mathematics and Grades 5 and 8 in science.
+in Grades 5 and 12 in ELA, and Grade 8 in mathematics.
 
 ```{r obs_means_sex}
 eth_gndr <- d %>% 
@@ -2275,9 +2249,8 @@ walk2(eth_descrip_tbls, eth_descip_captions,
 The following tables provide information regarding average student performance
 by grade level and exceptionality category in each of the content areas assessed
 on the ORExt. Students with SLD were generally the highest performing group,
-though students with CD and ED performed higher at certain grade levels/content
-areas. The lowest performing group was consistently students with OI, followed
-by students with ID or ASD, depending upon grade level.
+though students with ED performed higher at certain grade levels/content
+areas. The lowest performing group was consistently students with VI.
 
 ```{r disab_means}
 disab_descrip_tbls <- ode %>% 
@@ -2323,21 +2296,12 @@ form.
 The graphics include 95% confidence interval error bars, so determining
 which subgroups performed in a manner that is significantly better than others
 is readily apparent by looking at the location of the error bars. Error bars
-that do not overlap in terms of the y-scale are significantly different. Only
-students who generally had more than 10 members at each grade level are
-reported. This required the removal of graphs for students in the HI, VI, DB,
-and TBI categories.
+that do not overlap in terms of the y-scale are significantly different. 
 
-Students with OI are again the lowest performing group, being significantly
-outperformed by all other subgroups. Students with SLD are consistently
-outperforming most peers, with students with ED and CD performing at similarly
-high levels.
+Students with VI are again the lowest performing group. Students with SLD are consistently outperforming most peers.
 
-Students with OI are consistently the lowest performing group, which led to
-concerns regarding test accessibility. However, the results of last year's
-consequential validity study demonstrated that the OI label is insufficient to
-fully describe the severity and range of concomitant disabilities that students
-whose primary label is OI conveys.
+Students with VI are consistently the lowest performing group, which led to
+concerns regarding test accessibility. 
 
 ```{r rit_excep_plots}
 excep_plots <- ode %>% 
@@ -2432,9 +2396,7 @@ language arts (Reading, Writing, and Language) and Mathematics, as well as the
 Oregon Science Standards and Next Generation Science Standards in science in a
 purposive, validated manner. The ORExt test blueprints convey the balance of
 representation exhibited by the assessment (see *Appendix* 2.1B). These test
-blueprints are supported by the ORExt Extended Assessment Frameworks
-\color{link} [Test blueprints
-link](http://www.brtprojects.org/publications/training-modules) \color{black},
+blueprints are supported by the \color{link}[ORExt Extended Assessment Frameworks(http://www.brtprojects.org/publications/training-modules) \color{black},
 which define the assessable content on the ORExt that has been reduced in depth,
 breadth, and complexity (RDBC) using our defined process (see *Appendix*
 2.3A.3). The decisions regarding which standards to target for essentialization,
@@ -2462,8 +2424,7 @@ ability and item difficulty distributions. In general, the descriptive
 statistics suggest that the test had an appropriate range of item difficulties
 represented, from easy to difficult, with item difficulties generally ranging
 from -4.0 to +4.0 on the Rasch scale. The assessments performed as expected
-across all grades and content areas with the exception of Grade 7 mathematics,
-as noted above. The item person distributions provided below demonstrate that
+across all grades and content areas. The item person distributions provided below demonstrate that
 the ORExt is providing a performance continuum for students who participate.
 
 ### English Language Arts Person/Item Distributions
@@ -2525,7 +2486,7 @@ very low performing students (see *Appendix* 2.1A).
 
 ### 4.5 Multiple Assessment Forms 
 
-The ORExt was administered in only one grade level form for the 2016-17 school
+The ORExt was administered in only form per subject area and grade level for the 2017-18 school
 year, with 36 operational items arranged in order of empirical difficulty and 12
 embedded field test items.
 
@@ -2666,8 +2627,7 @@ Present Levels of Academic and Functional Performance (PLAAFP) statements, and
 Individualized Education Program (IEP) goals and objectives that are aligned
 with the Essentialized Standards. It is also expected that the essentialization
 process will generalize to many students who are performing off grade level, not
-merely to SWSCD. All resources are published on a BRT-sponsored website at
-\color{link} [BRT link](http://lms.brtprojects.org) \color{black}
+merely to SWSCD. All resources are published on a \color{link}[BRT-sponsored website](http://lms.brtprojects.org)\color{black}.
 
 ### 5.2A - 5.2C Procedures for Including ELs 
 
@@ -2677,9 +2637,8 @@ the inclusion of ELs in the statewide assessment program in *Appendix* 1.4.2.
 Though the ORExt is currently published in English, an appropriately qualified
 interpreter can provide the assessment to any SWSCD from diverse language
 backgrounds, including American Sign Language. ODE has developed a training
-module to increase the standardization of ASL administration for its statewide
-assessments, available at \color{link} [ASL
-link](http://lms.brtprojects.org).\color{black}
+module to increase the standardization of \color{link}[ASL administration](http://lms.brtprojects.org)
+\color{black} for its statewide assessments.
 
 Additional information regarding the inclusion of ELs in Oregon's general
 assessments is provided in the general assessment Peer Review evidence.
@@ -3166,7 +3125,7 @@ materials documents.
 
 #### Appendix 2.3 
 
-*Appendix* 2.3 is ODE's General Administration and Scoring Manual for 2016-17.
+*Appendix* 2.3 is ODE's General Administration and Scoring Manual for 2017-18.
 The manual establishes ODE's expectations regarding the test window, utilizing
 the ORExt training and proficiency website, using the sign language interpreter
 training and proficiency website, and informing parents. It also provides the
@@ -3178,7 +3137,7 @@ questions and answers, and a glossary.
 
 #### Appendix 2.3A.1 
 
-*Appendix* 2.3A.1 is the 2016-17 accessibility options manual for all
+*Appendix* 2.3A.1 is the 2017-18 accessibility options manual for all
 assessments in the Oregon statewide assessment system, including the SBA, OAKS,
 the ORExt, and the ELPA. Options include Universal Tools, Designated Supports,
 and Accommodations. The manual provides guidance regarding use of these options
@@ -3207,12 +3166,12 @@ addressed during test development.
 
 Appendices 2.3B.1 and 2.3B.2 are the PowerPoint (PPT) trainings that were used
 by ODE and BRT trainers to train new qualified assessors (QAs) and qualified
-trainers (QTs) in four regionally hosted trainings in November 2016. QTs also
-used the package to train New Qualified Assessors for the 2016-17 school year.
+trainers (QTs) in four regionally hosted trainings in November 2017. QTs also
+used the package to train New Qualified Assessors for the 2017-18 school year.
 The training provides participants with the information needed to pass
 proficiency tests as part of the requirements to become a QA for the Oregon
 Extended Assessments and was delivered by QTs throughout the state. The training
-package addresses the following topics: "What's new in 2016-17?",	"2017 Test
+package addresses the following topics: "What's new in 2017-18?",	"2018 Test
 Window",	"Eligibility - which students take AA-AAAS?",	"Test administration",
 "Student Confidentiality & Test Security", "Test Administration (Physical &
 Logistic)",	"Scoring & Data Entry",	"Reports & Sharing Results with Parents",
@@ -3247,7 +3206,7 @@ questions and answers from stakeholders, including parents and teachers.
 
 #### Appendix 2.3B.9 
 
-*Appendix* 2.3B.9 is the report that summarizes all of the technical assistance
+*Appendix* 2.3B.9 is the Helpdesk log report that summarizes all of the technical assistance
 questions garnered from the field this year. Efforts are made to find any
 patterns that our team may use to improve training for the following year.
 
@@ -3258,15 +3217,13 @@ consequential validity study conducted by BRT. The report provides documentation
 of the perceptions in the field related to both intended and unintended academic
 and social consequences of the ORExt. 
 
-#### Appendix 2.3C (DELETED) 
-
-*Appendix* 2.3C is the
-ORExt Pilot Tablet Administration report for the spring 2017 tablet
-administration, Phase 2, study conducted by BRT. The report provides the
-research plan, summaries of results, and lessons learned regarding how to
-approach statewide operational tablet administration planned for next year.
-
 #### Appendices 2.6 
+
+*Appendix* 2.6 is the data entry guide. The guide explains the paper/pencil data entry process located on ODE's secure server. ]
+
+#### Appendices 2.6A
+
+*Appendix* 2.6A is the ORExt Test Application User Guide. With 2017-18 the first year the tablet/web-based platform was available for all grade level and subject area tests, this guide walked through the system requirements, download/login instructions, testing process, and troubleshooting. 
 
 #### Appendix 2.6C 
 
@@ -3275,7 +3232,7 @@ procedures regarding how students are included in AMO reporting, including how
 achievement, growth, and graduation rates are reported for student groups and
 subgroups.
 
-#### Appendix 3.1A (DELETED)
+#### Appendix 3.1A
 
 *Appendix* 3.1A is a document that summarizes the independent alignment study
 process and participants used to review the linkage between the Essentialized
@@ -3294,6 +3251,10 @@ website used by Oregon teachers to evaluate the alignment between test items for
 the ORExt with Essentialized Standards. In addition, reviewers rated the items
 for potential bias and access concerns. All data was gathered using the DIR
 website, supported by a webinar training and ongoing technical assistance.
+
+#### Appendices 4.1
+
+*Appendix* 4.1 is the Inter-rater Reliability Study Observation form completed by study participants. 
 
 #### Appendix 4.1B 
 
