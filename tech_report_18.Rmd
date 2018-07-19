@@ -3,9 +3,10 @@ title: 'Oregon Extended Analyses: 2018'
 author: 
 - "Brock Rowley"
 - "Daniel Anderson"
+- "Sevrina Tindal"
 - "Gerald Tindal"
 affiliation: "University of Oregon"
-date: "2/20/2018"
+date: "6/29/2018"
 output: 
   pdf_document:
     toc: yes
@@ -88,19 +89,15 @@ and results of the system.*
 ![](Figures/peer_rev/PeerReview2.pdf)
 
 \newpage
-
 ![](Figures/peer_rev/PeerReview3.pdf)
 
 \newpage
-
 ![](Figures/peer_rev/PeerReview4.pdf)
 
 \newpage
-
 ![](Figures/peer_rev/PeerReview5.pdf)
 
 \newpage
-
 ![](Figures/peer_rev/PeerReview6.pdf)
 
 # Overview
@@ -115,17 +112,16 @@ standards as part of the mandates from the Every Student Succeeds Act of 2015
 
 The ORExt assessments were redesigned in 2014-15, including a vertical scale in
 Grades 3-8 in English language arts and mathematics to support eventual
-determinations of student growth over time. The test is aligned to
-Essentialized Standards (EsSt) that are part of comprehensive Essentialized Assessment
+determinations of student growth over time. The test is aligned to Essentialized
+Standards (EsSt) that are part of comprehensive Essentialized Assessment
 Frameworks (EAFs) that were written at three levels of complexity (low, medium,
 and high). The EsSt have been linked to grade level content and expectations,
 but systematically reduced in terms of depth, breadth, and complexity (RDBC).
-All ORExt items employed in the 2017-18 ORExt administration, with the
-exception of Grade 7 Math field test items, were developed in
-2014-15. Based on student performance from the 2016-2017 testing year, new and
-Grade 7 Math field test items were written in fall 2017. An alignment study was
-conducted in 2016-17 and it was determined that all items were aligned to
-the new EsSt.
+All ORExt items employed in the 2017-18 ORExt administration, with the exception
+of Grade 7 Math field test items, were developed in 2014-15. Based on student
+performance from the 2016-2017 testing year, new and Grade 7 Math field test
+items were written in fall 2017. An alignment study was conducted in 2016-17 and
+it was determined that all items were aligned to the new EsSt.
 
 A statewide sample of Oregon general and special education teachers have
 reviewed all test items for: 1) alignment to the EAFs, 2) accessibility for
@@ -147,6 +143,7 @@ focus attention, but also reduces the burden on assessors to mask items that
 are not being tested. The field appears to have been appreciative of the
 redesign, particularly the Essentialized Standards and new access and 
 efficiency features.
+
 In addition to developing and reviewing/editing over 5,000 new items, conducting
 an operational field test, and developing a vertical scale, the development of a
 new ORExt required that new Alternate Academic Achievement Standards (AAAAS) be
@@ -198,8 +195,7 @@ schools in Grades K-12. The ODE and the Oregon Science Content and Assessment
 Panel provided direct feedback related to the NGSS. The NGSS are being phased in
 over time instructionally, so students are being assessed relative to the Oregon
 Science (ORSci) standards that were adopted in 2009. \color{link} [State content
-Standards](http://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx.)
-\color{black}
+Standards](http://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx.) \color{black}
 The tables below provide examples of essentialized standards in grades 5, 8, &
 11 in the subject areas of English language arts (ELA), mathematics, and
 science. Complete EAF spreadsheets are available at the link provided here, as
@@ -230,8 +226,7 @@ the CCSS in English language arts (reading, writing, & language) and
 mathematics. The ORExt is dually linked to the ORSci as well as the NGSS. The
 NGSS are widely accepted by most relevant science instruction organizations as
 reflective of rigorous and coherent science concepts \color{link}[NGSS
-Link](http://www.nextgenscience.org/support-scientific-engineering-and-education-communities)
-\color{black}
+Link](http://www.nextgenscience.org/support-scientific-engineering-and-education-communities) \color{black}
 
 The new Essentialized Assessment Frameworks (EAFs) are publicly available at the
 link on page 16 above in the Essentialized Assessment Frameworks section. A User
@@ -318,8 +313,7 @@ subgroup did not meet minimum participation requirements in 2016-17, the most
 current data available at the time of this report, in English language arts or
 mathematics, with rates at 90.2% and 89.4%, respectively. See the table below
 for a summary of participation. For complete reports, see \color{link} [Complete
-reports link](http://www.oregon.gov/ode/schools-and-districts/reportcards/Documents/rptcard2017.pdf)
-\color{black}
+reports link](http://www.oregon.gov/ode/schools-and-districts/reportcards/Documents/rptcard2017.pdf) \color{black}
 Documentation of this requirement is provided within the Annual Performance
 Report, Indicator B3, which is submitted to the United States Department of
 Education's (USED's) Office of Special Education Programs (OSEP). Participation
@@ -403,9 +397,10 @@ were expected to provide documentation of their qualifications and sign test
 security agreements. In addition, all item developers were expected to
 participate in a half-day item development training based upon the following
 schedule:
-    "	ELA - Tuesday, from 8 AM to 12 PM 
-    "	Math - Wednesday, from 8 AM to 12 PM 
-    "	Science - Thursday, from 8 AM to 12 PM
+
+       ELA - Tuesday, from 8 AM to 12 PM 
+       Math - Wednesday, from 8 AM to 12 PM 
+       Science - Thursday, from 8 AM to 12 PM
     
 #### Minimum Qualifications:
 
@@ -663,6 +658,7 @@ vertically-scaled anchor items. It was important in many cases to maintain
 anchor items. Items with clear design flaws were removed from subsequent
 analyses and reporting. The following flagging criteria were employed:
 
+\clearpage
 * **CTT**: A unique item was flagged if it had a p-value of .10 or lower, .90 or
 higher, or a point biserial < .15. Anchor items were flagged if they had a
 p-value of .10 or lower or .95 and higher on all forms or a point biserial < .45
@@ -769,6 +765,7 @@ In addition, monitoring and reporting related to test administration issues for
 the ORExt is addressed via general ODE reporting systems. Information regarding
 this process can be located in the general assessment system Peer Review
 evidence submission.
+\clearpage
 
 ### 2.5 Test Security
 
@@ -1189,9 +1186,12 @@ There are additional grade level standards addressed by the EsSt, as some EsSt
 link to multiple grade level content standards. However, the blueprints below
 reflect only the written EsSt and are thus an underrepresentation of the breadth
 of grade level content addressed by the ORExt.
+\FloatBarrier
+![](Figures/EsSt/EsStELA.png)
+\clearpage
 
-![](Figures/EsSt/EsSt.pdf)
-
+\FloatBarrier
+![](Figures/EsSt/EsStMathScience.png)
 The primary purpose of the ORExt assessment is to yield technically adequate
 performance data on grade level state content standards for students with
 significant cognitive disabilities in English language arts, mathematics, and
@@ -1207,10 +1207,10 @@ for operational items are provided below, by content area and grade. Point
 measure correlations display how the item scores correlate with the latent
 overall score, while outfit mean square statistics closer to 1.0 denote minimal
 distortion of the measurement system. All items included in the 2017-18
-operational assessment are represented. Point measure correlations in ELA ranged
-from 0.42 to 0.74. All data visualizations were conducted with ggplot in the
-tidyverse package (Wickham, H., 2017).
+operational assessment are represented. Point measure correlations ranged from 0.34 to 0.74 in ELA, 0.12 to 0.71 in Math, to 0.25 to 0.74 in Science. All data visualizations were conducted with ggplot in the tidyverse package (Wickham, H., 2017).
 
+\clearpage
+\FloatBarrier
 ```{r ifiles}
 ifiles <- dir_ls(file.path("data", "ifiles18"))
 
@@ -1258,8 +1258,7 @@ walk2(ptm_tbls$data,
 Outfit mean square values below 1.0 demonstrate that values are too predictable
 and perhaps redundant, while values above 1.0 indicate unpredictability. Items
 above 2.0 are deemed insufficient for measurement purposes and flagged for
-replacement. While most OMS values in ELA were between 0.5 and 1.5, one item in
-Grade 6 was above 2.0 and was removed.
+replacement. While most OMS values in ELA were between 0.5 and 1.5, one item in each Grade 6, 7, and 11 was above 2.0 and will be removed. One item in Grade 7 Math and one item in Grade 11 Science will also be removed. 
 
 ```{r outfit}
 outfit_tbls <- ifiles %>% 
@@ -1295,8 +1294,7 @@ Annual Measurable Objective (AMO) calculations were conducted based upon student
 performance on the ORExt tied to the vertical scale using Rasch modeling.
 Overall results are largely consistent with 2016-17, with approximately 50% of
 students with significant cognitive disabilities achieving proficiency across
-grades and content areas. ELA results are presented in blue, mathematics in dark
-green, and science in red. The data visualizations presented below were
+grades and content areas. The data visualizations presented below were
 conducted with ggplot in the tidyverse package (Wickham, H., 2017).
 
 ```{r ode_data}
@@ -1443,7 +1441,7 @@ Full results of the Pearson's product-moment correlation analysis by content are
 and grade level are reported below. The results are significant, yet the overall
 correlations across content areas suggest that we are indeed measuring
 different, though strongly related constructs, with between-test scaled score
-correlations ranging from 0.81 to 0.89.
+correlations ranging from 0.76 to 0.86.
 
 ```{r by_sub_corr}
 cors <- ode %>% 
@@ -1476,9 +1474,7 @@ walk2(cors$cor,
 Results of the Pearson's product-moment correlation analysis within English
 language arts (ELA:Reading:Writing) are reported below and suggest high
 correlations between ELA and Reading, as expected, from .95 to .97. Writing is
-correlated with ELA from .91 to .94 and with reading from .79 to .88.
-
-English Language Arts Subscore Correlations table here:
+correlated with ELA from .90 to .94 and with reading from .96 to .97.
 
 The ORExt assessments appear to be measuring separate constructs, as intended,
 indicated by the correlations. No unexpected and consistent test functioning
@@ -1568,40 +1564,20 @@ Qualified Assessor Testing Preparation and Administration Rubric
 \FloatBarrier
 
 ##### Inter-rater Agreement Results
-Thirty-three Qualified Trainers from around Oregon participated in the Inter-Rater-Reliability study by doing at least one observation on the Oregon Extended Assessment via paper/pencil administration. Of the thirty-three observations, 48.5% were English Language Arts, 33.3% were Mathematics, and 18.2% were Science. Observations were done at individual student’s typical testing location. The study found a 99.3 Inter-Rater Reliability percentage agreement between the test observers and test administrators on student item (answer) selection. 
+Thirty-three Qualified Trainers from around Oregon participated in the Inter-Rater-Reliability study by doing at least one observation on the Oregon Extended Assessment via paper/pencil administration. Of the thirty-three observations, 48.5% were English Language Arts, 33.3% were Mathematics, and 18.2% were Science. Observations were done at individual student’s typical testing location. The study found a 99.3 Inter-Rater Reliability percentage agreement between the test observers and test administrators on student item (answer) selection.
 
+The following two tables (Table 21 and Table 22) display the percentage of reponses in the nine different domains and percentage of agreement between assessors and observers.  
 \FloatBarrier
-```{r, fig.width = 8.5, fig.height= 11}
-
+```{r}
 library(tidyverse)
 library(fs)
 library(rio)
 library(RColorBrewer)
 
-
 d <- import("data/irr/RaterReliability.csv", setclass = "tbl_df") %>% 
   janitor::clean_names()
 
 theme_set(theme_minimal())
-# Counts for responses
-d %>% 
-  gather(var, response, test_security:minimum_participation) %>% 
-  group_by(var) %>%
-  count(response) %>%
-  mutate(response = factor(response, 
-                           levels = c("Exemplary", 
-                                      "Appropriate", 
-                                      "Somewhat Appropriate",
-                                      "Inappropriate"))) %>% 
-  ggplot(aes(response, n)) +
-  geom_col(aes(fill = response)) +
-  scale_fill_brewer(palette = "Set1") +
-  facet_wrap(~var, labeller = label_parsed) +
-  guides(fill = "none") +
-  labs(x = "") +
-  labs(y = "") +
-  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))
-          
   # Percentage for responses    
 d %>% 
   gather(var, response, test_security:minimum_participation) %>% 
@@ -1632,6 +1608,46 @@ kable("latex",
         kable_styling(full_width = TRUE,
                       latex_options = "hold_position")
 ```
+\clearpage
+The following table provides a visual display of the responses from the nine differnt domains observed.
+
+```{r, fig.width = 8.5, fig.height= 11}
+
+library(tidyverse)
+library(fs)
+library(rio)
+library(RColorBrewer)
+
+
+d <- import("data/irr/RaterReliability.csv", setclass = "tbl_df") %>% 
+  janitor::clean_names()
+
+theme_set(theme_minimal())
+# Counts for responses
+d %>% 
+  gather(var, response, test_security:minimum_participation) %>% 
+  group_by(var) %>%
+  count(response) %>%
+  mutate(response = factor(response, 
+                           levels = c("Exemplary", 
+                                      "Appropriate", 
+                                      "Somewhat Appropriate",
+                                      "Inappropriate"))) %>% 
+  ggplot(aes(response, n)) +
+  geom_col(aes(fill = response)) +
+  scale_fill_brewer(palette = "Set1") +
+  facet_wrap(~var, labeller = label_parsed) +
+  guides(fill = "none") +
+  labs(x = "") +
+  labs(y = "") +
+  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))
+
+```
+Interpretation: Provide an interpretation of the results above here.
+
+Next Steps and Recommendations:
+Give ODE action steps to pursue in any areas of concern (writing scoring accuracy/exemplars and score interpretation training)
+
 \clearpage
 #### 4.1A Test Reliability 
 
