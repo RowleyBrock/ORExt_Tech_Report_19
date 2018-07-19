@@ -25,7 +25,7 @@
 \usepackage{hyperref}
 \hypersetup{unicode=true,
             pdftitle={Oregon Extended Analyses: 2018},
-            pdfauthor={Brock Rowley; Daniel Anderson; Gerald Tindal},
+            pdfauthor={Brock Rowley; Daniel Anderson; Sevrina Tindal; Gerald Tindal},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -78,12 +78,12 @@
   \title{Oregon Extended Analyses: 2018}
     \pretitle{\vspace{\droptitle}\centering\huge}
   \posttitle{\par}
-    \author{Brock Rowley \\ Daniel Anderson \\ Gerald Tindal}
+    \author{Brock Rowley \\ Daniel Anderson \\ Sevrina Tindal \\ Gerald Tindal}
     \preauthor{\centering\large\emph}
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{2/20/2018}
+    \date{6/29/2018}
 
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -244,8 +244,9 @@ scoring metric for the ORExt. In addition, the one item per page format
 not only increases student ability to focus attention, but also reduces
 the burden on assessors to mask items that are not being tested. The
 field appears to have been appreciative of the redesign, particularly
-the Essentialized Standards and new access and efficiency features. In
-addition to developing and reviewing/editing over 5,000 new items,
+the Essentialized Standards and new access and efficiency features.
+
+In addition to developing and reviewing/editing over 5,000 new items,
 conducting an operational field test, and developing a vertical scale,
 the development of a new ORExt required that new Alternate Academic
 Achievement Standards (AAAAS) be developed and approved. Comprehensive
@@ -545,8 +546,17 @@ and quality assurance. All participants were expected to provide
 documentation of their qualifications and sign test security agreements.
 In addition, all item developers were expected to participate in a
 half-day item development training based upon the following schedule:
+<<<<<<< HEAD
 ELA - Tuesday, from 8 AM to 12 PM; Math - Wednesday, from 8 AM to 12 PM;
 Science - Thursday, from 8 AM to 12 PM.
+=======
+
+\begin{verbatim}
+   ELA - Tuesday, from 8 AM to 12 PM 
+   Math - Wednesday, from 8 AM to 12 PM 
+   Science - Thursday, from 8 AM to 12 PM
+\end{verbatim}
+>>>>>>> 8fbeb4fa24306c98ec36baac2b6940b455a2855a
 
 \paragraph{Minimum Qualifications:}\label{minimum-qualifications}
 
@@ -840,20 +850,16 @@ maintain anchor items. Items with clear design flaws were removed from
 subsequent analyses and reporting. The following flagging criteria were
 employed:
 
-\begin{itemize}
-\tightlist
-\item
-  \textbf{CTT}: A unique item was flagged if it had a p-value of .10 or
-  lower, .90 or higher, or a point biserial \textless{} .15. Anchor
-  items were flagged if they had a p-value of .10 or lower or .95 and
-  higher on all forms or a point biserial \textless{} .45 on any form.
-\item
-  \textbf{Rasch}: Unique items were flagged if their outfit mean square
-  values were between 0 and .25 or \textgreater{} 1.5. Anchor items were
-  flagged if their outfit mean square values were \textless{} .5,
-  \textgreater{} 1.8 for horizontal items, or \textgreater{} 2.0 for
-  vertical anchor items.
-\end{itemize}
+\clearpage
+* \textbf{CTT}: A unique item was flagged if it had a p-value of .10 or
+lower, .90 or higher, or a point biserial \textless{} .15. Anchor items
+were flagged if they had a p-value of .10 or lower or .95 and higher on
+all forms or a point biserial \textless{} .45 on any form. *
+\textbf{Rasch}: Unique items were flagged if their outfit mean square
+values were between 0 and .25 or \textgreater{} 1.5. Anchor items were
+flagged if their outfit mean square values were \textless{} .5,
+\textgreater{} 1.8 for horizontal items, or \textgreater{} 2.0 for
+vertical anchor items.
 
 Out of a total of 5,929 items developed in 2014-15, 166 were removed
 (2.8\%).
@@ -959,7 +965,7 @@ provide annual training to QAs in their purview (see screenshot below):
 In addition, monitoring and reporting related to test administration
 issues for the ORExt is addressed via general ODE reporting systems.
 Information regarding this process can be located in the general
-assessment system Peer Review evidence submission.
+assessment system Peer Review evidence submission. \clearpage
 
 \subsubsection{2.5 Test Security}\label{test-security}
 
@@ -1432,22 +1438,19 @@ written in each domain within the Essentialized Assessment Frameworks
 by the EsSt, as some EsSt link to multiple grade level content
 standards. However, the blueprints below reflect only the written EsSt
 and are thus an underrepresentation of the breadth of grade level
-content addressed by the ORExt.
+content addressed by the ORExt. \FloatBarrier
+\includegraphics{Figures/EsSt/EsStELA.png} \clearpage
 
-\begin{figure}
-\centering
-\includegraphics{Figures/EsSt/EsSt.pdf}
-\caption{}
-\end{figure}
-
-The primary purpose of the ORExt assessment is to yield technically
-adequate performance data on grade level state content standards for
-students with significant cognitive disabilities in English language
-arts, mathematics, and science at the test level. All scoring and
-reporting structures mirror this design and have been shown to be
-reliable measures at the test level (see Section 4.1). The process of
-addressing any gaps or weaknesses in the system is accomplished via
-field-testing (see Section 3.1A).
+\FloatBarrier
+\includegraphics{Figures/EsSt/EsStMathScience.png} The primary purpose
+of the ORExt assessment is to yield technically adequate performance
+data on grade level state content standards for students with
+significant cognitive disabilities in English language arts,
+mathematics, and science at the test level. All scoring and reporting
+structures mirror this design and have been shown to be reliable
+measures at the test level (see Section 4.1). The process of addressing
+any gaps or weaknesses in the system is accomplished via field-testing
+(see Section 3.1A).
 
 \paragraph{Point Measure Correlations}\label{point-measure-correlations}
 
@@ -1457,9 +1460,12 @@ grade. Point measure correlations display how the item scores correlate
 with the latent overall score, while outfit mean square statistics
 closer to 1.0 denote minimal distortion of the measurement system. All
 items included in the 2017-18 operational assessment are represented.
-Point measure correlations in ELA ranged from 0.42 to 0.74. All data
-visualizations were conducted with ggplot in the tidyverse package
-(Wickham, H., 2017).
+Point measure correlations ranged from 0.34 to 0.74 in ELA, 0.12 to 0.71
+in Math, to 0.25 to 0.74 in Science. All data visualizations were
+conducted with ggplot in the tidyverse package (Wickham, H., 2017).
+
+\clearpage
+\FloatBarrier
 
 \begin{table}[!h]
 
@@ -1519,8 +1525,9 @@ Outfit mean square values below 1.0 demonstrate that values are too
 predictable and perhaps redundant, while values above 1.0 indicate
 unpredictability. Items above 2.0 are deemed insufficient for
 measurement purposes and flagged for replacement. While most OMS values
-in ELA were between 0.5 and 1.5, one item in Grade 6 was above 2.0 and
-was removed.
+in ELA were between 0.5 and 1.5, one item in each Grade 6, 7, and 11 was
+above 2.0 and will be removed. One item in Grade 7 Math and one item in
+Grade 11 Science will also be removed.
 
 \begin{table}[!h]
 
@@ -1580,9 +1587,8 @@ Annual Measurable Objective (AMO) calculations were conducted based upon
 student performance on the ORExt tied to the vertical scale using Rasch
 modeling. Overall results are largely consistent with 2016-17, with
 approximately 50\% of students with significant cognitive disabilities
-achieving proficiency across grades and content areas. ELA results are
-presented in blue, mathematics in dark green, and science in red. The
-data visualizations presented below were conducted with ggplot in the
+achieving proficiency across grades and content areas. The data
+visualizations presented below were conducted with ggplot in the
 tidyverse package (Wickham, H., 2017).
 
 \begin{table}[!h]
@@ -1785,7 +1791,11 @@ content area and grade level are reported below. The results are
 significant, yet the overall correlations across content areas suggest
 that we are indeed measuring different, though strongly related
 constructs, with between-test scaled score correlations ranging from
+<<<<<<< HEAD
 0.69 to 0.97.
+=======
+0.76 to 0.86.
+>>>>>>> 8fbeb4fa24306c98ec36baac2b6940b455a2855a
 
 \begin{table}[!h]
 
@@ -1907,10 +1917,8 @@ Writing & 0.97 & 0.42 & 0.92 & \\
 Results of the Pearson's product-moment correlation analysis within
 English language arts (ELA:Reading:Writing) are reported below and
 suggest high correlations between ELA and Reading, as expected, from .95
-to .97. Writing is correlated with ELA from .91 to .94 and with reading
-from .79 to .88.
-
-English Language Arts Subscore Correlations table here:
+to .97. Writing is correlated with ELA from .90 to .94 and with reading
+from .96 to .97.
 
 The ORExt assessments appear to be measuring separate constructs, as
 intended, indicated by the correlations. No unexpected and consistent
@@ -2073,8 +2081,10 @@ individual student's typical testing location. The study found a 99.3
 Inter-Rater Reliability percentage agreement between the test observers
 and test administrators on student item (answer) selection.
 
+The following two tables (Table 21 and Table 22) display the percentage
+of reponses in the nine different domains and percentage of agreement
+between assessors and observers.\\
 \FloatBarrier
-\includegraphics{tech_report_18_files/figure-latex/unnamed-chunk-1-1.pdf}
 
 \begin{table}[!h]
 
@@ -2115,9 +2125,24 @@ Not Administered & 244 & 1200 & 20.33\\
 \end{table}
 
 \clearpage
+<<<<<<< HEAD
 \FloatBarrier
 
 \subparagraph{4.1A Test Reliability}\label{a-test-reliability}
+=======
+The following table provides a visual display of the responses from the
+nine differnt domains observed.
+
+\includegraphics{tech_report_18_files/figure-latex/unnamed-chunk-2-1.pdf}
+Interpretation: Provide an interpretation of the results above here.
+
+Next Steps and Recommendations: Give ODE action steps to pursue in any
+areas of concern (writing scoring accuracy/exemplars and score
+interpretation training)
+
+\clearpage
+\#\#\#\# 4.1A Test Reliability
+>>>>>>> 8fbeb4fa24306c98ec36baac2b6940b455a2855a
 
 Marginal reliability results (true score variance/true score variance +
 error variance) demonstrate that the tests are quite reliable at the
@@ -2886,7 +2911,7 @@ consistent.
 
 \begin{table}[!h]
 
-\caption{\label{tab:unnamed-chunk-2}Means/SDs: 2014-15}
+\caption{\label{tab:unnamed-chunk-3}Means/SDs: 2014-15}
 \centering
 \begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
 \toprule
@@ -2906,7 +2931,7 @@ Grade & ELA.Mean & ELA.SD & Math.Mean & Math.SD & Sci.Mean & Sci.SD\\
 
 \begin{table}[!h]
 
-\caption{\label{tab:unnamed-chunk-2}Means/SDs: 2015-16}
+\caption{\label{tab:unnamed-chunk-3}Means/SDs: 2015-16}
 \centering
 \begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
 \toprule
@@ -2926,7 +2951,7 @@ Grade & ElA.Mean & ELA.SD & Math.Mean & Math.SD & Science.Mean & Science.SD\\
 
 \begin{table}[!h]
 
-\caption{\label{tab:unnamed-chunk-2}Means/SDs: 2016-17}
+\caption{\label{tab:unnamed-chunk-3}Means/SDs: 2016-17}
 \centering
 \begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
 \toprule
