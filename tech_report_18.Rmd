@@ -1325,6 +1325,7 @@ nested_perc <- ode %>%
           print())
 ```
 
+\clearpage
 
 ```{r amo_plot}
 walk(nested_perc$perc_overall_p, print)
@@ -1418,6 +1419,7 @@ correlations across content areas suggest that we are indeed measuring
 different, though strongly related constructs, with between-test scaled score
 correlations ranging from 0.69 to 0.97.
 
+\FloatBarrier
 ```{r by_sub_corr}
 cors <- ode %>% 
   select(content_area, grade, ssid, theta) %>% 
@@ -1445,6 +1447,7 @@ walk2(cors$cor,
                       latex_options = "hold_position") %>% 
         print())
 ```
+\FloatBarrier
 
 Results of the Pearson's product-moment correlation analysis within English
 language arts (ELA:Reading:Writing) are reported below and suggest high
@@ -2698,10 +2701,7 @@ may also request the addition of an accommodation through a formal process (see
 *Appendix* E: Approval Process for New Accessibility Supports within the manual,
 *Appendix* 2.3A.1, p. 100-102). ODE is collecting accommodations codes for the
 ORExt from Qualified Assessors who opt to enter this information in order to
-make performance comparisons feasible. It is hoped that this process will be
-required by spring 2018. The consequential validity study for 2018 will include
-questions regarding the appropriateness of the available accommodations, as
-well.
+make performance comparisons feasible. Accommodations information was collected in this year's assessment. A study on the effect of the use of different accommodations will be conducted and reported in the 2018-19 technical report. 
 
 #### 5.3D Accommodations are Appropriate and Effective
 
@@ -3018,13 +3018,6 @@ technical documentation plan for the 2016 through 2019 school years is provided
 below:
 
 Technical documentation plan for the 2016 through 2019 table here:
-
-### Appendix Table and Descriptions
-
-## Appendix Table
-
-Appendix Table here:
-*Appendix* Descriptions
 
 ## Appendix Descriptions
 <!-- "/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py" -o merged.pdf Figures/TechReport_Appendices/*.pdf -->
