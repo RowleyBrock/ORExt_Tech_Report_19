@@ -2261,6 +2261,9 @@ walk2(eth_descrip_tbls, eth_descip_captions,
 
 #### Observed Means Reported by Exceptionality Status 
 
+The following table is a key for Elibibility Codes:
+\FloatBarrier
+![](tifs/disabcodes.png)
 The following tables provide information regarding average student performance
 by grade level and exceptionality category in each of the content areas assessed
 on the ORExt. Students with SLD were generally the highest performing group,
@@ -2318,6 +2321,7 @@ Students with VI are again the lowest performing group. Students with SLD are co
 Students with VI are consistently the lowest performing group, which led to
 concerns regarding test accessibility. 
 
+\FloatBarrier
 ```{r rit_excep_plots}
 excep_plots <- ode %>% 
   filter(content_area == "ela" |
