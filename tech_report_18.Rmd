@@ -2970,26 +2970,27 @@ that level.
 The Oregon Observational Rating Assessment (ORora) results demonstrate that
 approximately 17-25% of the SWSCD who participated in the ORExt also took the
 ORora, depending upon grade level. A total of 755 students were administered the
-ORora in the 2016-17 test administration. The participants were primarily
-students with multiple, severe disabilities with very limited communication
-systems. Analyses of missing data patterns for the ORExt demonstrated that QAs
-were generally able to adhere to the discontinuation rules. Quantitative results
-indicate that a total of 755 students across all tested grades were administered
-the ORora. Response patterns on the ORExt were compared to ORora results to
-determine what percentages of QAs were administering the ORora due to the
-minimum participation rule and what percentage were administering the ORora of
-their own volition. Analyses showed that 234 students were eligible to take the
-ORora in English language arts, 241 students were eligible to take the ORora in
-mathematics, and 86 were eligible to take the ORora in science. This means that
-about 30 students per grade, per content area received five or fewer correct
-responses within the first 15 items administered on the ORExt. Of the 561 test
-records that met ORora eligibility requirements, 91 were not administered the
-ORora. In addition, there were 82 students in ELA and Math, respectively, who
-were administered the ORora without having participated in the ORExt (74 of
-those students were the same students, across each content area, with eight
-students unique to each content area, respectively).
+ORora in the 2016-17 test administration and 529 students were administered the
+ORora in 2017-2018 school year. The participants were primarily students with
+multiple, severe disabilities with very limited communication systems. Analyses
+of missing data patterns for the ORExt demonstrated that QAs were generally able
+to adhere to the discontinuation rules. Quantitative results indicate that a
+total of 755 students across all tested grades were administered the ORora.
+Response patterns on the ORExt were compared to ORora results to determine what
+percentages of QAs were administering the ORora due to the minimum participation
+rule and what percentage were administering the ORora of their own volition.
+Analyses showed that 234 students were eligible to take the ORora in English
+language arts, 241 students were eligible to take the ORora in mathematics, and
+86 were eligible to take the ORora in science. This means that about 30 students
+per grade, per content area received five or fewer correct responses within the
+first 15 items administered on the ORExt. Of the 561 test records that met ORora
+eligibility requirements, 91 were not administered the ORora. In addition, there
+were 82 students in ELA and Math, respectively, who were administered the ORora
+without having participated in the ORExt (74 of those students were the same
+students, across each content area, with eight students unique to each content
+area, respectively).
 
-The 2016-17 Oregon Consequential Validity study provides important information
+The 2017-18 Oregon Consequential Validity study provides important information
 for future administrations of the ORExt. The results demonstrate that the test
 continues to be easy to administer and score and is providing an accessible and
 appropriate representation of the knowledge and skills that should be required
@@ -2999,16 +3000,16 @@ development of additional life skills items, which cannot be accomplished while
 maintaining rigorous academic expectations that are linked to Oregon content
 standards.
 
-The 2016-17 Oregon Extended Assessment Pilot Tablet Administration demonstrated
-that Oregon teachers highly value provision of a tablet-based administration of
-the ORExt at the statewide level. Benefits of a tablet-based administration
-included: increased student engagement, improved standardization, ease of use by
-teachers, and resource protection (i.e., time, printing, expense). The results
-also suggest that more robust systems are needed to support user access to the
-testing application via an automatic username and password process. Focus Group
-members also recommended that practice items be developed in a tablet format so
-qualified assessors and students can practice with the tablet administration in
-preparation for the ORExt test window.
+The 2017-18 Oregon Extended Assessment Tablet/Electronic Administration
+demonstrated that Oregon teachers highly value provision of a tablet-based
+administration of the ORExt at the statewide level. Benefits of a tablet-based
+administration included: increased student engagement, improved standardization,
+ease of use by teachers, and resource protection (i.e., time, printing,
+expense). The results also suggest that more robust systems are needed to
+support user access to the testing application via an automatic username and
+password process. Focus Group members also recommended that practice items be
+developed in a tablet format so qualified assessors and students can practice
+with the tablet administration in preparation for the ORExt test window.
 
 Documenting evidence of validity remains an ongoing and continuous process. Our
 efforts to continue to improve the assessment system are outlined below, as well
@@ -3032,13 +3033,16 @@ demographics, and item reviewer training and demographics), ORExt test
 reliability evidence, and ORExt consequential validity evidence. Further
 analyses over the coming years are planned to continue the development of
 technical documentation for overall construct validity of the ORExt. The
-technical documentation plan for the 2016 through 2019 school years is provided
+technical documentation plan for the 2017 through 2019 school years is provided
 below:
 
 Technical documentation plan for the 2016 through 2019 table here:
+\FloatBarrier
+![](tifs/techdocplan.png)
 
 ## Appendix Descriptions
 <!-- "/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py" -o merged.pdf Figures/TechReport_Appendices/*.pdf -->
+
 #### Appendix 1.1 
 
 *Appendix* 1.1 explains the development process and intended uses for the
