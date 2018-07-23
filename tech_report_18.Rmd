@@ -159,42 +159,54 @@ independent (see Critical Element 3.1). An independent contractor, Dr. Dianna
 Carrizales, was therefore hired to perform an additional alignment study in the
 spring of 2017. 
 
-A two year pilot tablet study was conducted in the 2015-2016 and 2016-17 school years. Over the two year study, 26 students were administered all subject areas of the ORExt in tablet format in grades 5, 8, and 11. The 2017-18 school year marked the first year the ORExt was available in tablet/online format for all grades in all subject areas.  
+A two year pilot tablet study was conducted in the 2015-2016 and 2016-17 school
+years. Over the two year study, 26 students were administered all subject areas
+of the ORExt in tablet format in grades 5, 8, and 11. The 2017-18 school year
+marked the first year the ORExt was available in tablet/online format for all
+grades in all subject areas.
 
 As part of our five-year technical documentation plan, which included the
 independent alignment study, pilot tablet administration study, and launch of
-the full tablet administration, an inter-rater reliability study was also conducted in 2017-18. The inter-rater reliability study included 33 Qualified
+the full tablet administration, an inter-rater reliability study was also
+conducted in 2017-18. The inter-rater reliability study included 33 Qualified
 Trainers from around the state who participated by doing at least one Qualified
 Assessor observation on the Oregon Extended Assessment via paper/pencil
-administration. Included in the future of the five-year plan
-is continuation of the inter-rater reliability study, and analyses of the impact
-of accommodations.
+administration. Included in the future of the five-year plan is continuation of
+the inter-rater reliability study, and analyses of the impact of accommodations.
 
 ## Critical Element 1: Statewide System of Standards and Assessments
 
 ### 1.1 State Adoption of Academic Content Standards for All Students
 
-The Oregon State Board of Education (SBE) adopted new, challenging academic content standards, the \color{link}[Common Core State Standards (CCSS)](https://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx)\color{black}, in English language
-arts and mathematics in Grades K-12 on October 28, 2010. These CCSS are utilized
-for all students in Oregon's public schools. Oregon was actively involved in the
-development of the CCSS, as the Oregon Department of Education (ODE), the
-Educational Enterprise Steering Committee (EESC), Oregon's Education Service
-Districts, and school district representatives provided feedback on the draft
-CCSS standards.
+The Oregon State Board of Education (SBE) adopted new, challenging academic
+content standards, the \color{link}[Common Core State Standards
+(CCSS)](https://www.oregon.gov/ode/educator-resources/standards/Pages/default.aspx)\color{black},
+in English language arts and mathematics in Grades K-12 on October 28, 2010.
+These CCSS are utilized for all students in Oregon's public schools. Oregon was
+actively involved in the development of the CCSS, as the Oregon Department of
+Education (ODE), the Educational Enterprise Steering Committee (EESC), Oregon's
+Education Service Districts, and school district representatives provided
+feedback on the draft CCSS standards.
 
-Similarly, the SBE adopted the \color{link}[Next Generation Science Standards (NGSS)](https://www.oregon.gov/ode/educator-resources/standards/science/Pages/Science-Standards.aspx)
-\color{black}  on March
-6, 2014. The NGSS establish learning targets for all students in Oregon's public
-schools in Grades K-12. The ODE and the Oregon Science Content and Assessment
-Panel provided direct feedback related to the NGSS. The NGSS are being phased in
-over time instructionally, so students are being assessed relative to the Oregon
-Science (ORSci) standards that were adopted in 2009. 
+Similarly, the SBE adopted the \color{link}[Next Generation Science Standards
+(NGSS)](https://www.oregon.gov/ode/educator-resources/standards/science/Pages/Science-Standards.aspx)
+\color{black}  on March 6, 2014. The NGSS establish learning targets for all
+students in Oregon's public schools in Grades K-12. The ODE and the Oregon
+Science Content and Assessment Panel provided direct feedback related to the
+NGSS. The NGSS are being phased in over time instructionally, so students are
+being assessed relative to the Oregon Science (ORSci) standards that were
+adopted in 2009.
 
-The newly adopted academic content standards were then reduced in depth, breadth, and complexity through a process called essentialization. The new \color{link}[Essentialized Assessment Frameworks (EAFs)](http://www.brtprojects.org/publications/training-modules)
-\color{black}   were then used for item writing for the ORExt. The tables below provide examples of essentialized standards in grades 5, 8, &
-11 in the subject areas of English language arts (ELA), mathematics, and
-science. In the right column are designations for estimated difficulty of an item:
-L (low), M (medium), and H (high). More information on the essentialization process can be found in section 1.2. 
+The newly adopted academic content standards were then reduced in depth,
+breadth, and complexity through a process called essentialization. The new
+\color{link}[Essentialized Assessment Frameworks
+(EAFs)](http://www.brtprojects.org/publications/training-modules) \color{black}
+were then used for item writing for the ORExt. The tables below provide examples
+of essentialized standards in grades 5, 8, & 11 in the subject areas of English
+language arts (ELA), mathematics, and science. In the right column are
+designations for estimated difficulty of an item: L (low), M (medium), and H
+(high). More information on the essentialization process can be found in section
+1.2.
 
 See *Appendix* 1.1 for a User Guide that explains the development process and
 intended uses for the EAFs. 
@@ -221,7 +233,8 @@ mathematics. The ORExt is dually linked to the ORSci as well as the NGSS. The
 NGSS are widely accepted by most relevant science instruction organizations as
 reflective of rigorous and coherent science concepts.
 
-The new Essentialized Assessment Frameworks (EAFs) are publicly available. A User Guide is provided to instruct educators regarding the intended uses of the
+The new Essentialized Assessment Frameworks (EAFs) are publicly available. A
+User Guide is provided to instruct educators regarding the intended uses of the
 Essentialized Standards (EsSt), including the development of Present Levels of
 Academic Achievement and Functional Performance (PLAAFP) and Individualized
 Education Program (IEP) goals and objectives. The basic essentialization process
