@@ -57,101 +57,101 @@
 \contentsline {subparagraph}{Background}{48}{section*.87}
 \contentsline {subparagraph}{Methods}{48}{section*.88}
 \contentsline {subparagraph}{Inter-rater Agreement Results}{50}{section*.89}
-\contentsline {subparagraph}{4.1A Test Reliability}{53}{section*.92}
-\contentsline {subsubsection}{Test Information Functions}{55}{section*.98}
-\contentsline {subsubsection}{English Language Arts TIFs}{55}{section*.99}
-\contentsline {subsubsection}{Mathematics TIFs}{57}{section*.100}
-\contentsline {subsubsection}{Science TIFs}{59}{section*.101}
-\contentsline {subsubsection}{Validation of ORExt Vertical Scales}{59}{section*.102}
-\contentsline {paragraph}{4.1B Overall and Conditional Standard Errors of Measure}{62}{section*.103}
-\contentsline {paragraph}{4.1C Classification Accuracy \& Consistency}{63}{section*.107}
-\contentsline {subsubsection}{4.2 Fairness and Accessibility}{66}{section*.111}
-\contentsline {subparagraph}{Differential Item Functioning Analyses}{67}{section*.112}
-\contentsline {paragraph}{Race - Ethnicity Percentages and Totals by Content Area and Grade Level}{70}{section*.119}
-\contentsline {paragraph}{Exceptionality Percentages By Content Area and Grade Level}{71}{section*.121}
-\contentsline {paragraph}{Observed Means and Standard Deviations}{71}{section*.123}
-\contentsline {paragraph}{Observed Means Reported by Sex}{73}{section*.128}
-\contentsline {paragraph}{Observed Means Reported by Race}{74}{section*.130}
-\contentsline {paragraph}{Observed Means Reported by Exceptionality Status}{76}{section*.139}
-\contentsline {subparagraph}{Eligibility Codes List}{76}{section*.140}
-\contentsline {paragraph}{Graphs of Observed Means By Disability}{80}{section*.149}
-\contentsline {subsubsection}{4.3 Full Performance Continuum}{85}{section*.150}
-\contentsline {subsubsection}{English Language Arts Person/Item Distributions}{86}{section*.151}
-\contentsline {subsubsection}{Mathematics Person/Item Distributions}{88}{section*.152}
-\contentsline {subsubsection}{Science Person/Item Distributions}{90}{section*.153}
-\contentsline {subsubsection}{4.4 Scoring}{90}{section*.154}
-\contentsline {subsubsection}{4.5 Multiple Assessment Forms}{91}{section*.155}
-\contentsline {subsubsection}{4.6 Multiple Versions of An Assessment}{91}{section*.156}
-\contentsline {subsubsection}{4.7 Technical Analyses and Ongoing Maintenance}{91}{section*.157}
-\contentsline {subsection}{Critical Element 5 - Inclusion of All Students}{91}{section*.158}
-\contentsline {subsubsection}{5.1 Procedures for Including SWDs}{91}{section*.159}
-\contentsline {paragraph}{5.1A Clear Explanations of the Differences Between Assessments}{91}{section*.160}
-\contentsline {paragraph}{5.1B Eligibility Decisions Made by IEP Teams}{91}{section*.161}
-\contentsline {paragraph}{5.1C Guidelines for Assessment Selection}{92}{section*.162}
-\contentsline {paragraph}{5.1D Information on Accessibility Options}{92}{section*.163}
-\contentsline {paragraph}{5.1E Guidance Regarding Appropriate Accommodations}{92}{section*.164}
-\contentsline {paragraph}{5.1F All SWDs Eligible for the ORExt}{92}{section*.165}
-\contentsline {paragraph}{5.1G Parents Informed of AA-AAAS Consequences}{92}{section*.166}
-\contentsline {paragraph}{5.1H State Ensures ORExt Promotes Access to the General Education Curriculum}{93}{section*.167}
-\contentsline {subsubsection}{5.2A - 5.2C Procedures for Including ELs}{93}{section*.168}
-\contentsline {subsubsection}{5.3 Accommodations}{93}{section*.169}
-\contentsline {paragraph}{5.3A Appropriate Accommodations are Available for SWD/ Section 504}{93}{section*.170}
-\contentsline {paragraph}{5.3B Appropriate Accommodations are Available for ELs}{93}{section*.171}
-\contentsline {paragraph}{5.3C Accommodations are Appropriate and Effective}{94}{section*.172}
-\contentsline {paragraph}{5.3D Accommodations are Appropriate and Effective}{94}{section*.173}
-\contentsline {subsubsection}{5.4A - 5.4E Monitoring Test Administration for Special Populations}{94}{section*.174}
-\contentsline {subsection}{Critical Element 6 - Academic Achievement Standards and reporting}{94}{section*.175}
-\contentsline {subsubsection}{6.1 State Adoption of Alternate Academic Achievement Standards for SWSCD}{94}{section*.176}
-\contentsline {paragraph}{6.1A State Formally Adopted Alternate Academic Achievement Standards}{94}{section*.177}
-\contentsline {paragraph}{6.1B State Applies AAAS to All Public School SWSCD in Tested Grades}{94}{section*.178}
-\contentsline {paragraph}{6.1C State's AAAS Include At Least Three Levels, ALDs, and Cut Scores}{95}{section*.179}
-\contentsline {subsubsection}{6.2 Achievement Standard Setting}{95}{section*.180}
-\contentsline {subsubsection}{6.3 Challenging and Aligned Academic Achievement Standards}{96}{section*.181}
-\contentsline {subsubsection}{6.4 Reporting}{96}{section*.182}
-\contentsline {paragraph}{6.4A Public Reporting}{96}{section*.183}
-\contentsline {paragraph}{6.4B State Reports Interpretable Results}{96}{section*.184}
-\contentsline {paragraph}{6.4C1 - C5 State Provides Individual Student Reports}{96}{section*.185}
-\contentsline {subsection}{Conclusions and Next Steps}{97}{section*.186}
-\contentsline {subsection}{Appendix Descriptions}{99}{section*.187}
-\contentsline {paragraph}{Appendix 1.1}{99}{section*.188}
-\contentsline {paragraph}{Appendix 1.2}{99}{section*.189}
-\contentsline {paragraph}{Appendix 1.4.1}{99}{section*.190}
-\contentsline {paragraph}{Appendix 1.4.2}{99}{section*.191}
-\contentsline {paragraph}{Appendix 1.4A.1}{99}{section*.192}
-\contentsline {paragraph}{Appendix 1.4A.2}{100}{section*.193}
-\contentsline {paragraph}{Appendix 1.5}{100}{section*.194}
-\contentsline {paragraph}{Appendix 2.1}{100}{section*.195}
-\contentsline {paragraph}{Appendix 2.1A}{100}{section*.196}
-\contentsline {paragraph}{Appendix 2.1B}{100}{section*.197}
-\contentsline {paragraph}{Appendix 2.1C}{100}{section*.198}
-\contentsline {paragraph}{Appendix 2.2.1}{100}{section*.199}
-\contentsline {paragraph}{Appendix 2.2.2}{100}{section*.200}
-\contentsline {paragraph}{Appendix 2.2.3}{101}{section*.201}
-\contentsline {paragraph}{Appendix 2.3}{101}{section*.202}
-\contentsline {paragraph}{Appendix 2.3A.1}{101}{section*.203}
-\contentsline {paragraph}{Appendix 2.3A.2}{101}{section*.204}
-\contentsline {paragraph}{Appendix 2.3A.3}{101}{section*.205}
-\contentsline {paragraph}{Appendices 2.3B.1-2.3B.2}{101}{section*.206}
-\contentsline {paragraph}{Appendix 2.3B.4}{102}{section*.207}
-\contentsline {paragraph}{Appendix 2.3B.5}{102}{section*.208}
-\contentsline {paragraph}{Appendix 2.3B.6}{102}{section*.209}
-\contentsline {paragraph}{Appendix 2.3B.7}{102}{section*.210}
-\contentsline {paragraph}{Appendix 2.3B.8}{102}{section*.211}
-\contentsline {paragraph}{Appendix 2.3B.9}{102}{section*.212}
-\contentsline {paragraph}{Appendix 2.3B.10}{102}{section*.213}
-\contentsline {paragraph}{Appendices 2.6}{102}{section*.214}
-\contentsline {paragraph}{Appendices 2.6A}{102}{section*.215}
-\contentsline {paragraph}{Appendix 2.6C}{102}{section*.216}
-\contentsline {paragraph}{Appendix 3.1A}{103}{section*.217}
-\contentsline {paragraph}{Appendix 3.1B}{103}{section*.218}
-\contentsline {paragraph}{Appendices 4.1}{103}{section*.219}
-\contentsline {paragraph}{Appendix 4.1B}{103}{section*.220}
-\contentsline {paragraph}{Appendix 4.2}{103}{section*.221}
-\contentsline {paragraph}{Appendix 5.1B}{103}{section*.222}
-\contentsline {paragraph}{Appendix 5.1D}{103}{section*.223}
-\contentsline {paragraph}{Appendix 6.1A.1}{103}{section*.224}
-\contentsline {paragraph}{Appendix 6.1A.2}{103}{section*.225}
-\contentsline {paragraph}{Appendix 6.2.1}{104}{section*.226}
-\contentsline {paragraph}{Appendix 6.2.2}{104}{section*.227}
-\contentsline {paragraph}{Appendix 6.4C}{104}{section*.228}
-\contentsline {section}{References}{105}{section*.229}
+\contentsline {paragraph}{4.1A Test Reliability}{52}{section*.92}
+\contentsline {paragraph}{Test Information Functions}{54}{section*.98}
+\contentsline {paragraph}{English Language Arts TIFs}{54}{section*.99}
+\contentsline {paragraph}{Mathematics TIFs}{55}{section*.100}
+\contentsline {paragraph}{Science TIFs}{57}{section*.101}
+\contentsline {paragraph}{Validation of ORExt Vertical Scales}{58}{section*.102}
+\contentsline {paragraph}{4.1B Overall and Conditional Standard Errors of Measure}{61}{section*.103}
+\contentsline {paragraph}{4.1C Classification Accuracy \& Consistency}{62}{section*.107}
+\contentsline {subsubsection}{4.2 Fairness and Accessibility}{65}{section*.111}
+\contentsline {subparagraph}{Differential Item Functioning Analyses}{65}{section*.112}
+\contentsline {paragraph}{Race - Ethnicity Percentages and Totals by Content Area and Grade Level}{68}{section*.119}
+\contentsline {paragraph}{Exceptionality Percentages By Content Area and Grade Level}{69}{section*.121}
+\contentsline {paragraph}{Observed Means and Standard Deviations}{69}{section*.123}
+\contentsline {paragraph}{Observed Means Reported by Sex}{71}{section*.128}
+\contentsline {paragraph}{Observed Means Reported by Race}{72}{section*.130}
+\contentsline {paragraph}{Observed Means Reported by Exceptionality Status}{74}{section*.139}
+\contentsline {subparagraph}{Eligibility Codes List}{74}{section*.140}
+\contentsline {paragraph}{Graphs of Observed Means By Disability}{78}{section*.149}
+\contentsline {subsubsection}{4.3 Full Performance Continuum}{83}{section*.150}
+\contentsline {paragraph}{English Language Arts Person/Item Distributions}{84}{section*.151}
+\contentsline {paragraph}{Mathematics Person/Item Distributions}{85}{section*.152}
+\contentsline {paragraph}{Science Person/Item Distributions}{87}{section*.153}
+\contentsline {subsubsection}{4.4 Scoring}{88}{section*.154}
+\contentsline {subsubsection}{4.5 Multiple Assessment Forms}{89}{section*.155}
+\contentsline {subsubsection}{4.6 Multiple Versions of An Assessment}{89}{section*.156}
+\contentsline {subsubsection}{4.7 Technical Analyses and Ongoing Maintenance}{89}{section*.157}
+\contentsline {subsection}{Critical Element 5 - Inclusion of All Students}{89}{section*.158}
+\contentsline {subsubsection}{5.1 Procedures for Including SWDs}{89}{section*.159}
+\contentsline {paragraph}{5.1A Clear Explanations of the Differences Between Assessments}{89}{section*.160}
+\contentsline {paragraph}{5.1B Eligibility Decisions Made by IEP Teams}{89}{section*.161}
+\contentsline {paragraph}{5.1C Guidelines for Assessment Selection}{90}{section*.162}
+\contentsline {paragraph}{5.1D Information on Accessibility Options}{90}{section*.163}
+\contentsline {paragraph}{5.1E Guidance Regarding Appropriate Accommodations}{90}{section*.164}
+\contentsline {paragraph}{5.1F All SWDs Eligible for the ORExt}{90}{section*.165}
+\contentsline {paragraph}{5.1G Parents Informed of AA-AAAS Consequences}{90}{section*.166}
+\contentsline {paragraph}{5.1H State Ensures ORExt Promotes Access to the General Education Curriculum}{91}{section*.167}
+\contentsline {subsubsection}{5.2A - 5.2C Procedures for Including ELs}{91}{section*.168}
+\contentsline {subsubsection}{5.3 Accommodations}{91}{section*.169}
+\contentsline {paragraph}{5.3A Appropriate Accommodations are Available for SWD/ Section 504}{91}{section*.170}
+\contentsline {paragraph}{5.3B Appropriate Accommodations are Available for ELs}{91}{section*.171}
+\contentsline {paragraph}{5.3C Accommodations are Appropriate and Effective}{92}{section*.172}
+\contentsline {paragraph}{5.3D Accommodations are Appropriate and Effective}{92}{section*.173}
+\contentsline {subsubsection}{5.4A - 5.4E Monitoring Test Administration for Special Populations}{92}{section*.174}
+\contentsline {subsection}{Critical Element 6 - Academic Achievement Standards and reporting}{92}{section*.175}
+\contentsline {subsubsection}{6.1 State Adoption of Alternate Academic Achievement Standards for SWSCD}{92}{section*.176}
+\contentsline {paragraph}{6.1A State Formally Adopted Alternate Academic Achievement Standards}{92}{section*.177}
+\contentsline {paragraph}{6.1B State Applies AAAS to All Public School SWSCD in Tested Grades}{92}{section*.178}
+\contentsline {paragraph}{6.1C State's AAAS Include At Least Three Levels, ALDs, and Cut Scores}{93}{section*.179}
+\contentsline {subsubsection}{6.2 Achievement Standard Setting}{93}{section*.180}
+\contentsline {subsubsection}{6.3 Challenging and Aligned Academic Achievement Standards}{94}{section*.181}
+\contentsline {subsubsection}{6.4 Reporting}{94}{section*.182}
+\contentsline {paragraph}{6.4A Public Reporting}{94}{section*.183}
+\contentsline {paragraph}{6.4B State Reports Interpretable Results}{94}{section*.184}
+\contentsline {paragraph}{6.4C1 - C5 State Provides Individual Student Reports}{94}{section*.185}
+\contentsline {subsection}{Conclusions and Next Steps}{95}{section*.186}
+\contentsline {subsection}{Appendix Descriptions}{97}{section*.187}
+\contentsline {paragraph}{Appendix 1.1}{97}{section*.188}
+\contentsline {paragraph}{Appendix 1.2}{97}{section*.189}
+\contentsline {paragraph}{Appendix 1.4.1}{97}{section*.190}
+\contentsline {paragraph}{Appendix 1.4.2}{97}{section*.191}
+\contentsline {paragraph}{Appendix 1.4A.1}{97}{section*.192}
+\contentsline {paragraph}{Appendix 1.4A.2}{98}{section*.193}
+\contentsline {paragraph}{Appendix 1.5}{98}{section*.194}
+\contentsline {paragraph}{Appendix 2.1}{98}{section*.195}
+\contentsline {paragraph}{Appendix 2.1A}{98}{section*.196}
+\contentsline {paragraph}{Appendix 2.1B}{98}{section*.197}
+\contentsline {paragraph}{Appendix 2.1C}{98}{section*.198}
+\contentsline {paragraph}{Appendix 2.2.1}{98}{section*.199}
+\contentsline {paragraph}{Appendix 2.2.2}{98}{section*.200}
+\contentsline {paragraph}{Appendix 2.2.3}{99}{section*.201}
+\contentsline {paragraph}{Appendix 2.3}{99}{section*.202}
+\contentsline {paragraph}{Appendix 2.3A.1}{99}{section*.203}
+\contentsline {paragraph}{Appendix 2.3A.2}{99}{section*.204}
+\contentsline {paragraph}{Appendix 2.3A.3}{99}{section*.205}
+\contentsline {paragraph}{Appendices 2.3B.1-2.3B.2}{99}{section*.206}
+\contentsline {paragraph}{Appendix 2.3B.4}{100}{section*.207}
+\contentsline {paragraph}{Appendix 2.3B.5}{100}{section*.208}
+\contentsline {paragraph}{Appendix 2.3B.6}{100}{section*.209}
+\contentsline {paragraph}{Appendix 2.3B.7}{100}{section*.210}
+\contentsline {paragraph}{Appendix 2.3B.8}{100}{section*.211}
+\contentsline {paragraph}{Appendix 2.3B.9}{100}{section*.212}
+\contentsline {paragraph}{Appendix 2.3B.10}{100}{section*.213}
+\contentsline {paragraph}{Appendices 2.6}{100}{section*.214}
+\contentsline {paragraph}{Appendices 2.6A}{100}{section*.215}
+\contentsline {paragraph}{Appendix 2.6C}{100}{section*.216}
+\contentsline {paragraph}{Appendix 3.1A}{101}{section*.217}
+\contentsline {paragraph}{Appendix 3.1B}{101}{section*.218}
+\contentsline {paragraph}{Appendices 4.1}{101}{section*.219}
+\contentsline {paragraph}{Appendix 4.1B}{101}{section*.220}
+\contentsline {paragraph}{Appendix 4.2}{101}{section*.221}
+\contentsline {paragraph}{Appendix 5.1B}{101}{section*.222}
+\contentsline {paragraph}{Appendix 5.1D}{101}{section*.223}
+\contentsline {paragraph}{Appendix 6.1A.1}{101}{section*.224}
+\contentsline {paragraph}{Appendix 6.1A.2}{101}{section*.225}
+\contentsline {paragraph}{Appendix 6.2.1}{102}{section*.226}
+\contentsline {paragraph}{Appendix 6.2.2}{102}{section*.227}
+\contentsline {paragraph}{Appendix 6.4C}{102}{section*.228}
+\contentsline {section}{References}{103}{section*.229}

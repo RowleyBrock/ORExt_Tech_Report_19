@@ -1640,10 +1640,7 @@ Interpretation: Provide an interpretation of the results above here.
 Next Steps and Recommendations:
 Give ODE action steps to pursue in any areas of concern (writing scoring accuracy/exemplars and score interpretation training)
 
-\clearpage
 #### 4.1A Test Reliability 
-
-##### 4.1A Test Reliability 
 
 Marginal reliability results (true score variance/true score variance + error
 variance) demonstrate that the tests are quite reliable at the total test level.
@@ -1679,13 +1676,13 @@ walk2(tbls,
 ```
 \clearpage
 
-### Test Information Functions 
+#### Test Information Functions 
 
 The test information functions published below
 also indicate that the scales exhibit a reliability greater than or equal to .80
 for all proficient-level cutscores.
 
-### English Language Arts TIFs
+#### English Language Arts TIFs
 \FloatBarrier
 ![](tifs/ela3tif.pdf){height=300px}
 ![](tifs/ela4tif.pdf){height=300px}
@@ -1695,7 +1692,7 @@ for all proficient-level cutscores.
 ![](tifs/ela8tif.pdf){height=300px}
 ![](tifs/ela11tif.pdf){height=300px}
 
-### Mathematics TIFs
+#### Mathematics TIFs
 \FloatBarrier
 ![](tifs/ela3tif.pdf){height=300px}
 ![](tifs/ela4tif.pdf){height=300px}
@@ -1705,13 +1702,13 @@ for all proficient-level cutscores.
 ![](tifs/ela8tif.pdf){height=300px}
 ![](tifs/ela11tif.pdf){height=300px}
 
-### Science TIFs
+#### Science TIFs
 \FloatBarrier
 ![](tifs/science5tif.pdf){height=300px}
 ![](tifs/science8tif.pdf){height=300px}
 ![](tifs/science11tif.pdf){height=300px}
 
-### Validation of ORExt Vertical Scales
+#### Validation of ORExt Vertical Scales
 
 The test characteristic curves (TCCs) for the grade-level assessments in ELA and
 mathematics demonstrate incrementally increasing growth and test demands across
@@ -1844,9 +1841,6 @@ race/ethnicity and disability subgroups. This process increases the likelihood
 that students are receiving instruction in areas reflected in the assessment,
 and also that the items are not biased toward a particular demographic or
 sub-group.
-
-\clearpage
-\FloatBarrier
 
 ##### Differential Item Functioning Analyses 
 
@@ -2297,6 +2291,7 @@ on the ORExt. Students with SLD were generally the highest performing group,
 though students with ED performed higher at certain grade levels/content
 areas. The lowest performing group was consistently students with VI.
 
+
 ```{r disab_means}
 disab_descrip_tbls <- ode %>% 
   filter(content_area != "rdg" &
@@ -2336,18 +2331,13 @@ walk2(disab_descrip_tbls, disab_descrip_captions,
 #### Graphs of Observed Means By Disability 
 
 The graphs below convey information similar to that shared above in graphic
-form.
-
-The graphics include 95% confidence interval error bars, so determining
+form. The graphics include 95% confidence interval error bars, so determining
 which subgroups performed in a manner that is significantly better than others
 is readily apparent by looking at the location of the error bars. Error bars
-that do not overlap in terms of the y-scale are significantly different. 
-
-Students with VI are again the lowest performing group. Students with SLD are consistently outperforming most peers.
-
-Students with VI are consistently the lowest performing group, which led to
-concerns regarding test accessibility. 
-
+that do not overlap in terms of the y-scale are significantly different.
+Students with VI are again the lowest performing group. Students with SLD are
+consistently outperforming most peers. Students with VI are consistently the
+lowest performing group, which led to concerns regarding test accessibility.
 \FloatBarrier
 ```{r rit_excep_plots}
 excep_plots <- ode %>% 
@@ -2474,7 +2464,7 @@ across all grades and content areas. The item person distributions provided
 below demonstrate that the ORExt is providing a performance continuum for
 students who participate.
 
-### English Language Arts Person/Item Distributions
+#### English Language Arts Person/Item Distributions
 \FloatBarrier
 ![](ipdens/ela3ipdens.pdf){height=300px}
 ![](ipdens/ela4ipdens.pdf){height=300px}
@@ -2485,7 +2475,7 @@ students who participate.
 ![](ipdens/ela11ipdens.pdf){height=300px}
 
 
-### Mathematics Person/Item Distributions
+#### Mathematics Person/Item Distributions
 \FloatBarrier
 ![](ipdens/math3ipdens.pdf){height=300px}
 ![](ipdens/math4ipdens.pdf){height=300px}
@@ -2495,7 +2485,7 @@ students who participate.
 ![](ipdens/math8ipdens.pdf){height=300px}
 ![](ipdens/math11ipdens.pdf){height=300px}
 
-### Science Person/Item Distributions
+#### Science Person/Item Distributions
 \FloatBarrier
 ![](ipdens/science5ipdens.pdf){height=300px}
 ![](ipdens/science8ipdens.pdf){height=300px}
@@ -3036,7 +3026,6 @@ technical documentation for overall construct validity of the ORExt. The
 technical documentation plan for the 2017 through 2019 school years is provided
 below:
 
-Technical documentation plan for the 2016 through 2019 table here:
 \FloatBarrier
 ![](tifs/techdocplan.png)
 
