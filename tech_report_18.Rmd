@@ -2261,9 +2261,23 @@ walk2(eth_descrip_tbls, eth_descip_captions,
 
 #### Observed Means Reported by Exceptionality Status 
 
-The following table is a key for Elibibility Codes:
-\FloatBarrier
-![](tifs/disabcodes.png)
+The following table is a number key for **Elibibility Codes:**
+
+##### Eligibility Codes List
+*  0  Not Applicable
+* 10	Intellectual Disability
+* 20	Hearing Impairment
+* 40	Vision Impairment
+* 43	Deafblindness
+* 50	Communication Disorder
+* 60	Emotional Disturbance
+* 70	Orthopedic Impairment
+* 74	Traumatic Brain Injury
+* 80	Other Health Impairment
+* 82	Autism Spectrum Disorder
+* 90	Specific Learning Disability
+
+
 The following tables provide information regarding average student performance
 by grade level and exceptionality category in each of the content areas assessed
 on the ORExt. Students with SLD were generally the highest performing group,
