@@ -2470,49 +2470,36 @@ ability and item difficulty distributions. In general, the descriptive
 statistics suggest that the test had an appropriate range of item difficulties
 represented, from easy to difficult, with item difficulties generally ranging
 from -4.0 to +4.0 on the Rasch scale. The assessments performed as expected
-across all grades and content areas. The item person distributions provided below demonstrate that
-the ORExt is providing a performance continuum for students who participate.
+across all grades and content areas. The item person distributions provided
+below demonstrate that the ORExt is providing a performance continuum for
+students who participate.
 
 ### English Language Arts Person/Item Distributions
-
-![](ipdens/ela3ipdens.pdf){height=400px}
-
-![](ipdens/ela4ipdens.pdf){height=400px}
-
-![](ipdens/ela5ipdens.pdf){height=400px}
-
-![](ipdens/ela6ipdens.pdf){height=400px}
-
-![](ipdens/ela7ipdens.pdf){height=400px}
-
-![](ipdens/ela8ipdens.pdf){height=400px}
-
-![](ipdens/ela11ipdens.pdf){height=400px}
+\FloatBarrier
+![](ipdens/ela3ipdens.pdf){height=300px}
+![](ipdens/ela4ipdens.pdf){height=300px}
+![](ipdens/ela5ipdens.pdf){height=300px}
+![](ipdens/ela6ipdens.pdf){height=300px}
+![](ipdens/ela7ipdens.pdf){height=300px}
+![](ipdens/ela8ipdens.pdf){height=300px}
+![](ipdens/ela11ipdens.pdf){height=300px}
 
 
 ### Mathematics Person/Item Distributions
-
-![](ipdens/math3ipdens.pdf){height=400px}
-
-![](ipdens/math4ipdens.pdf){height=400px}
-
-![](ipdens/math5ipdens.pdf){height=400px}
-
-![](ipdens/math6ipdens.pdf){height=400px}
-
-![](ipdens/math7ipdens.pdf){height=400px}
-
-![](ipdens/math8ipdens.pdf){height=400px}
-
-![](ipdens/math11ipdens.pdf){height=400px}
+\FloatBarrier
+![](ipdens/math3ipdens.pdf){height=300px}
+![](ipdens/math4ipdens.pdf){height=300px}
+![](ipdens/math5ipdens.pdf){height=300px}
+![](ipdens/math6ipdens.pdf){height=300px}
+![](ipdens/math7ipdens.pdf){height=300px}
+![](ipdens/math8ipdens.pdf){height=300px}
+![](ipdens/math11ipdens.pdf){height=300px}
 
 ### Science Person/Item Distributions
-
-![](ipdens/science5ipdens.pdf){height=400px}
-
-![](ipdens/science8ipdens.pdf){height=400px}
-
-![](ipdens/science11ipdens.pdf){height=400px}
+\FloatBarrier
+![](ipdens/science5ipdens.pdf){height=300px}
+![](ipdens/science8ipdens.pdf){height=300px}
+![](ipdens/science11ipdens.pdf){height=300px}
 
 
 ### 4.4 Scoring 
