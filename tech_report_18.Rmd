@@ -212,9 +212,9 @@ See *Appendix* 1.1 for a User Guide that explains the development process and
 intended uses for the EAFs. 
 
 \FloatBarrier
-![](Figures/Standards/Grade5.png)
+![](Figures/Standards/Grade5.pdf)
 
-![](Figures/Standards/Grade8.png)
+![](Figures/Standards/Grade8.pdf)
 
 ![](Figures/Standards/Grade11.pdf)
 
@@ -1703,6 +1703,7 @@ for all proficient-level cutscores.
 ![](tifs/ela7tif.pdf){height=300px}
 ![](tifs/ela8tif.pdf){height=300px}
 ![](tifs/ela11tif.pdf){height=300px}
+\newpage
 
 #### Mathematics TIFs
 \FloatBarrier
@@ -1713,6 +1714,7 @@ for all proficient-level cutscores.
 ![](tifs/ela7tif.pdf){height=300px}
 ![](tifs/ela8tif.pdf){height=300px}
 ![](tifs/ela11tif.pdf){height=300px}
+\newpage
 
 #### Science TIFs
 \FloatBarrier
@@ -2348,7 +2350,6 @@ that do not overlap in terms of the y-scale are significantly different.
 Students with VI are again the lowest performing group. Students with SLD are
 consistently outperforming most peers. Students with VI are consistently the
 lowest performing group, which led to concerns regarding test accessibility.
-
 \FloatBarrier
 ```{r rit_excep_plots}
 excep_plots <- ode %>% 
@@ -2487,7 +2488,7 @@ students who participate.
 ![](ipdens/ela7ipdens.pdf){height=300px}
 ![](ipdens/ela8ipdens.pdf){height=300px}
 ![](ipdens/ela11ipdens.pdf){height=300px}
-
+\clearpage
 
 #### Mathematics Person/Item Distributions
 \FloatBarrier
@@ -2498,6 +2499,7 @@ students who participate.
 ![](ipdens/math7ipdens.pdf){height=300px}
 ![](ipdens/math8ipdens.pdf){height=300px}
 ![](ipdens/math11ipdens.pdf){height=300px}
+\clearpage
 
 #### Science Person/Item Distributions
 \FloatBarrier
@@ -2834,12 +2836,10 @@ setter judgments to the greatest possible degree. Six changes were made in ELA
 and Mathematics. Science is not built upon a vertical scale, so no cut score
 adjustments were necessary in Science. The cut scores are listed below.
 
-English language arts (ELA) table here:
-
-Mathematics table here:
-
-Science table here:
-
+\FloatBarrier
+![](tifs/elacutscore.png)
+![](tifs/mathcutscore.png)
+![](tifs/sciencecutscore.png)
 Note: The ELA and Math vertical scales for the ORExt are centered on 200 in
 grades 3-8 and can be used to document year-to-year growth. None of the other
 scales should be used for longitudinal comparisons. All Grade 11 scales are
@@ -2860,11 +2860,8 @@ tables below. A comprehensive essentialized standard to grade level standard
 linkage study, as well as essentialized standard to item alignment study, is
 provided in *Appendix* 3.1A.
 
-English language arts table here:
-
-Mathematics table here:
-
-Science table here:
+\FloatBarrier
+![](tifs/alignstudy.png)
 
 ### 6.4 Reporting 
 
@@ -3055,6 +3052,7 @@ is aligned to the EAFs, as well. While the EAFs primarily guide item
 development, they are also intended to be used in the development of appropriate
 Present Levels of Functional and Academic Performance (PLAAFP) statements and
 Individualized Education Program (IEP) goals and objectives.
+\newpage
 
 #### Appendix 1.2 
 
@@ -3343,6 +3341,3 @@ setting procedure employed for the ORExt on June 15-17, 2015.
 that ODE publishes for students who participate in the ORExt. The mock-up
 includes cut scores and achievement level descriptors (ALDs), as well as links
 to the ODE website for additional information.
-
-\newpage
-# References
