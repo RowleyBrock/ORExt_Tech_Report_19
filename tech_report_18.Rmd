@@ -2,8 +2,8 @@
 title: 'Oregon Extended Analyses: 2018'
 author: 
 - "Brock Rowley"
-- "Daniel Anderson"
 - "Sevrina Tindal"
+- "Daniel Anderson"
 - "Gerald Tindal"
 affiliation: "University of Oregon"
 date: "6/29/2018"
@@ -1117,13 +1117,13 @@ standard).
 
 Evidence of content coverage is concerned with judgments about "the extent to
 which the content domain of a test represents the domain defined in the test
-specifications" (AERA et al., 2014, Standard 4.12, p. 89)^7^. As a whole, the
+specifications" (AERA et al., 2014, Standard 4.12, p. 89). As a whole, the
 ORExt is comprised of sets of items that sample student performance on the
 intended domains. The expectation is that the items cover the full range of
 intended domains, with a sufficient number of items so that scores credibly
 represent student knowledge and skills in those areas. Without a sufficient
 number of items, the potential exists for a validity threat due to construct
-under-representation (Messick, 1989)^6^.
+under-representation (Messick, 1989).
 
 The ORExt assessment is built upon a variety of items that address a wide range
 of performance expectations rooted in the CCSS, NGSS, and ORSci content
@@ -1158,8 +1158,7 @@ including reviews of linkage, content coverage, and depth of knowledge.
 
 The Oregon Extended assessments reflect patterns of emphasis that are supported
 by Oregon educators as indicated by the following three tables that highlight
-the balance of standard representation by grade level for English language arts,
-mathematics, and science on the ORExt. The representation ratios can be
+the balance of standard representation by grade level for English language arts, mathematics, and science on the ORExt. The representation ratios can be
 calculated by dividing the standards by the total within each respective column.
 For example, in Grade 3 Reading, approximately 25% of the items are in the
 Reading Standards for Literature domain, as that domain has 4 written
@@ -1169,11 +1168,8 @@ The test blue prints below directly correspond to the number of ES written in
 each domain within the Essentialized Assessment Frameworks (EAF) spreadsheets.
 There are additional grade level standards addressed by the EsSt, as some EsSt
 link to multiple grade level content standards. However, the blueprints below
-reflect only the written EsSt and are thus an underrepresentation of the breadth
-of grade level content addressed by the ORExt.
-\FloatBarrier
+reflect only the written EsSt and are thus an underrepresentation of the breadth of grade level content addressed by the ORExt.\FloatBarrier
 ![](Figures/EsSt/EsStELA.png)
-
 \FloatBarrier
 ![](Figures/EsSt/EsStMathScience.png)
 The primary purpose of the ORExt assessment is to yield technically adequate
@@ -1191,7 +1187,10 @@ for operational items are provided below, by content area and grade. Point
 measure correlations display how the item scores correlate with the latent
 overall score, while outfit mean square statistics closer to 1.0 denote minimal
 distortion of the measurement system. All items included in the 2017-18
-operational assessment are represented. Point measure correlations ranged from 0.34 to 0.74 in ELA, 0.12 to 0.71 in Math, to 0.25 to 0.74 in Science. All data visualizations were conducted with ggplot in the tidyverse package (Wickham, H., 2017).
+operational assessment are represented. Point measure correlations ranged from
+0.34 to 0.74 in ELA, 0.12 to 0.71 in Math, to 0.25 to 0.74 in Science. All data
+visualizations were conducted with ggplot in the tidyverse package (Wickham, H.,
+2017).
 
 \clearpage
 \FloatBarrier
@@ -1422,13 +1421,13 @@ individual student is thus captured.
 
 #### Correlational Analyses Results 
 
-Full results of the Pearson's product-moment correlation analysis by content area
-and grade level are reported below. The results are significant, yet the overall
-correlations across content areas suggest that we are indeed measuring
+Full results of the Pearson's product-moment correlation analysis by content
+area and grade level are reported below. The results are significant, yet the
+overall correlations across content areas suggest that we are indeed measuring
 different, though strongly related constructs, with between-test scaled score
 correlations ranging from 0.69 to 0.97.
 
-\FloatBarrier
+\newpage
 ```{r by_sub_corr}
 cors <- ode %>% 
   select(content_area, grade, ssid, theta) %>% 
@@ -1485,6 +1484,7 @@ internal consistency estimates, split-half reliability analyses, as well as a
 small test-retest assessment of reliability comparisons by means of our pilot
 tablet administration study. There is only one test form for the ORExt, so test
 form comparisons are not possible.
+\newpage
 
 #### Inter-Rater-Reliability
 
@@ -2960,7 +2960,7 @@ consistent manner. The vertical scale developed in 2014-15 appears to be
 modeling incremental growth across Grades 3-8 in ELA and mathematics, as
 intended. The Grade 7 mathematics test continued to demonstrate insufficient
 item difficulties across the range of low, medium, and high item complexity,
-however, and must again be amended in the 2017-18 school year. The ELA and
+however, and must again be amended in the 2018-19 school year. The ELA and
 science assessments could continue to benefit from the addition of more
 difficult items, as evidenced by comparisons of the average person abilities and
 item difficulties. Mathematics assessments appear to be functioning quite well
@@ -2970,24 +2970,23 @@ that level.
 
 The Oregon Observational Rating Assessment (ORora) results demonstrate that
 approximately 17-25% of the SWSCD who participated in the ORExt also took the
-ORora, depending upon grade level. A total of 755 students were administered the
-ORora in the 2016-17 test administration and 529 students were administered the
+ORora, depending upon grade level. A total of 529 students were administered the
 ORora in 2017-2018 school year. The participants were primarily students with
 multiple, severe disabilities with very limited communication systems. Analyses
 of missing data patterns for the ORExt demonstrated that QAs were generally able
 to adhere to the discontinuation rules. Quantitative results indicate that a
-total of 755 students across all tested grades were administered the ORora.
+total of 529 students across all tested grades were administered the ORora.
 Response patterns on the ORExt were compared to ORora results to determine what
 percentages of QAs were administering the ORora due to the minimum participation
 rule and what percentage were administering the ORora of their own volition.
-Analyses showed that 234 students were eligible to take the ORora in English
-language arts, 241 students were eligible to take the ORora in mathematics, and
+Analyses showed that 480 students were eligible to take the ORora in English
+language arts, 466 students were eligible to take the ORora in mathematics, and
 86 were eligible to take the ORora in science. This means that about 30 students
 per grade, per content area received five or fewer correct responses within the
-first 15 items administered on the ORExt. Of the 561 test records that met ORora
-eligibility requirements, 91 were not administered the ORora. In addition, there
-were 82 students in ELA and Math, respectively, who were administered the ORora
-without having participated in the ORExt (74 of those students were the same
+first 15 items administered on the ORExt. Of the 600 test records that met ORora
+eligibility requirements, 71 were not administered the ORora. In addition, there
+were 62 students in ELA and Math, respectively, who were administered the ORora
+without having participated in the ORExt (54 of those students were the same
 students, across each content area, with eight students unique to each content
 area, respectively).
 
