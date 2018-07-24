@@ -24,6 +24,7 @@ output:
     toc: yes
     toc_depth: '4'
 header-includes:
+  - \pagenumbering{gobble}
   - \usepackage{placeins}
   - \usepackage{float}
   - \usepackage{caption}
@@ -55,6 +56,9 @@ opts_chunk$set(echo    = FALSE,
 options(knitr.kable.NA = '')
 dep_auto()
 ```
+
+\pagenumbering{arabic}
+\setcounter{page}{5}
 
 ![](img/stateofOR.png)
 
