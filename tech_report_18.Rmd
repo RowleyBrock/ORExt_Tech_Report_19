@@ -1553,7 +1553,7 @@ using the rubric (Appendix 4.1 InterRater_Observation_Form). Test
 preparation/administration domains were rated on a four-point scale from
 Inappropriate (I) to Exemplary (E):
 
-    + Inappropriate (I) denotes a level of concern that could clearly affect the               accuracy of the test results gathered from the test administration.                      Ratings at this level require substantive retraining of the QA involved.
+    + Inappropriate (I) denotes a level of concern that could clearly affect the                  accuracy of the test results gathered from the test administration.                         Ratings at this level require substantive retraining of the QA involved.
     
     + Somewhat Appropriate (SA) rating denotes a level that includes some minor
       aspects that could be improved, but the accuracy of the test results are
@@ -1576,23 +1576,37 @@ no errors are made during data entry and document the number of errors (Appendix
 
 ###### Domain Definitions
 
-1.	Test Security – The QA utilized a system to ensure that all test materials were stored in a secure location,. The QA also had a district Assurance of Test Security form on file.
+1.	Test Security – The QA utilized a system to ensure that all test materials
+were stored in a secure location,. The QA also had a district Assurance of Test
+Security form on file.
 
-2.	Printed Materials – the QA had all materials required to administer the ORExt ready for test administration.
+2.	Printed Materials – the QA had all materials required to administer the ORExt
+ready for test administration.
 
-3.	Distraction-Free Environment – the QA arranged to provide the ORExt in a one-on-one test administration in a location that ensured that the student focused attention on the assessment.
+3.	Distraction-Free Environment – the QA arranged to provide the ORExt in a
+one-on-one test administration in a location that ensured that the student
+focused attention on the assessment.
 
-4.	Accessibility Supports – the QA provided all necessary accessibility supports for the student and ensured that all support systems were functional prior to testing.
+4.	Accessibility Supports – the QA provided all necessary accessibility supports
+for the student and ensured that all support systems were functional prior to
+testing.
 
-5.	Level of Support – The QA provided an appropriate level of support throughout testing that did not compromise the validity of the score.
+5.	Level of Support – The QA provided an appropriate level of support throughout
+testing that did not compromise the validity of the score.
 
-6.	Praise – The QA utilized praise appropriately to support student involvement without leading the student to the correct answer.
+6.	Praise – The QA utilized praise appropriately to support student involvement
+without leading the student to the correct answer.
 
-7.	Motivation – The QA appropriately maintained the student’s motivation during the assessment using relevant strategies, such as token systems.
+7.	Motivation – The QA appropriately maintained the student’s motivation during
+the assessment using relevant strategies, such as token systems.
 
-8.	Score Interpretation – The QA demonstrated an appropriate understanding of how to use the cut scores and achievement level descriptors to interpret scores (i.e., ask the QA to describe how they interpret scores for parents).
+8.	Score Interpretation – The QA demonstrated an appropriate understanding of
+how to use the cut scores and achievement level descriptors to interpret scores
+(i.e., ask the QA to describe how they interpret scores for parents).
 
-9.	Minimum Participation Rule - The QA demonstrated an appropriate understanding of the minimum participation rule (i.e., ask the QA to define the rule if it is not used).
+9.	Minimum Participation Rule - The QA demonstrated an appropriate understanding
+of the minimum participation rule (i.e., ask the QA to define the rule if it is
+not used).
 
 Qualified Assessor Testing Preparation and Administration Rubric
 (Record an “X” in the cell that corresponds to your rating)
@@ -1952,7 +1966,7 @@ pool. DIF analyses were performed ex post facto on the 2015-16 ORExt operational
 items to address longitudinal trends. Only three ELA items were identified as
 exhibiting a "C" level DIF across both 2017 and 2018. Those three ELA items, one
 in Grade 5 that exhibited DIF that privileged White examinees, one in Grade 4
-that privileged Female examinees, and one in Grade 8  that privileged Female
+that privileged Female examinees, and one in Grade 8 that privileged Female
 examinees, were removed and were not used in 2017-18 or thereafter. DIF
 analyses was also be performed in the 2017-18 school year to continue to
 address DIF longitudinally. All items, including field test items, were included
@@ -2355,7 +2369,6 @@ The following table is a number key for **Elibibility Codes:**
 * 80	Other Health Impairment
 * 82	Autism Spectrum Disorder
 * 90	Specific Learning Disability
-
 
 The following tables provide information regarding average student performance
 by grade level and exceptionality category in each of the content areas assessed
