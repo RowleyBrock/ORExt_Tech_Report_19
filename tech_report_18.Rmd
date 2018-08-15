@@ -10,7 +10,7 @@ date: "6/29/2018"
 output: 
   pdf_document:
     toc: yes
-    toc_depth: 4
+    toc_depth: 5
     keep_tex: yes
   #   toc: true
   #   toc_float: true
@@ -1528,7 +1528,9 @@ Oregon’s Qualified Assessors (QAs) who administer the paper/pencil version of
 the Oregon Extended Assessment (ORExt) were observed to determine reliability of
 administration and scoring. We did not include the tablet administration or the
 Oregon Observational Rating.
-##### Methods QTs in districts across the state observe a sample of their
+
+##### Methods 
+QTs in districts across the state observe a sample of their
 respective QAs using the observation protocol (see *Appendix* 4.1
 InterRater_Observation_Form) and enter their data online. The QA reads the item
 stem and the student selects from three possible answer choices (A, B, or C)
