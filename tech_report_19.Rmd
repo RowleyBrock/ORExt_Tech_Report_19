@@ -1,5 +1,5 @@
 ---
-title: 'Oregon Extended Analyses: 2018'
+title: 'Oregon Extended Analyses: 2019'
 author: 
 - "Brock Rowley"
 - "Sevrina Tindal"
@@ -64,7 +64,7 @@ dep_auto()
 
 # Oregon Department of Education
 
-# 2017-2018 Technical Report
+# 2018-2019 Technical Report
 
 ## Oregon's Alternate Assessment System 
 
@@ -251,7 +251,7 @@ of curricular and instructional materials, founded in research-based pedagogy.
 
 ### 1.3 Required Assessments 
 
-The ORExt assessments were administered in the 2017-18 school year in ELA and
+The ORExt assessments were administered in the 2018-19 school year in ELA and
 math in Grades 3-8 and Grade 11; science is assessed in Grades 5, 8, &
 11. This assessment plan meets the requirements for grade level assessment in
 Grades 3-8 and once in high school (Grades 10-12) for ELA and mathematics, while
