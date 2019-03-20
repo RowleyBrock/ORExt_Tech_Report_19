@@ -333,9 +333,18 @@ demographics and pages 38-41 for assessment information).\FloatBarrier
 require(pander)
 panderOptions('table.split.table', Inf)
 set.caption("2017-18 Students with Disabilities Participation in ELA by Grade")
-my.data <- data.frame(grade_bands = c("Grade 3-5", "Grade 6-8", "Grade 11"),
+data_ela <- data.frame(grade_bands = c("Grade 3-5", "Grade 6-8", "Grade 11"),
                       participation = c("88.9%","90.1%","83.4%"))
-knitr::kable(my.data)
+knitr::kable(data_ela)
+```
+```{r table-simple, echo=FALSE, message=FALSE, warnings=FALSE, results='asis'}
+require(pander)
+panderOptions('table.split.table', Inf)
+set.caption("2017-18 Students with Disabilities Participation in Math by Grade")
+data_math <- data.frame(grade_bands = c("Grade 3-5", "Grade 6-8", "Grade 11"),
+                      participation = c("88.5%","89.2% ","81.4% "))
+knitr::kable(data_math)
+
 ```
 
 ## Critical Element 2 - Assessment System Operations
@@ -509,7 +518,7 @@ providing any advantage to students with limited English proficiency, nor any
 disadvantage to other participants. Accommodations information was collected
 this year as an option for data entry. Entering accommodations information will
 be required next year. Analyses of the impact of accommodation provision on the
-ORExt should thus be feasible after the spring 2018 administration.
+ORExt should thus be feasible after the spring 2019 administration.
 
 The Oregon Extended assessments can be administered using both Large Print and
 Braille (contracted and non-contracted) versions, as well. Oregon has ensured
