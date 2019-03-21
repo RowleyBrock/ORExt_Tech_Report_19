@@ -24,7 +24,6 @@ output:
     toc: yes
     toc_depth: '4'
 header-includes:
-  - \pagenumbering{gobble}
   - \usepackage{placeins}
   - \usepackage{float}
   - \usepackage{caption}
@@ -165,8 +164,8 @@ spring of 2017.
 
 A two year pilot tablet study was conducted in the 2015-2016 and 2016-17 school
 years. Over the two year study, 26 students were administered all subject areas
-of the ORExt in tablet format in grades 5, 8, and 11. The 2017-18 school year
-marked the first year the ORExt was available in tablet/online format for all
+of the ORExt in tablet format in grades 5, 8, and 11. The 2018-19 school year
+marked the second year the ORExt was available in tablet/online format for all
 grades in all subject areas.
 
 As part of our five-year technical documentation plan, which included the
@@ -420,8 +419,7 @@ training, ongoing review and feedback, and quality assurance. All participants
 were expected to provide documentation of their qualifications and sign test
 security agreements. In addition, all item developers were expected to
 participate in a half-day item development training based upon the following
-schedule: ELA - Tuesday, from 8 AM to 12 PM; Math - Wednesday, from 8 AM to 12
-PM; Science - Thursday, from 8 AM to 12 PM.
+schedule: ELA - Tuesday, from 8 AM to 12 PM; Math - Wednesday, from 8 AM to 12 PM; Science - Thursday, from 8 AM to 12 PM.
     
 #### Minimum Qualifications:
 
@@ -674,32 +672,34 @@ the paper/pencil administration.
 
 The *HelpDesk* log is published in *Appendix* 2.3B.9. 
 
-Oregon monitors the quality of its system in several ways in order to support
-continuous improvement. In terms of the assessment quality, item statistics are
-reviewed each year and items that are not functioning as intended are removed
-and replaced by better functioning field-test items.
-
-In 2014-15, items were reviewed in two phases, first using classical test theory
-(CTT) and second using Rasch analyses. All items flagged as a result of the
-statistical reviews were analyzed, item-by-item, by a team of measurement and
-content experts at BRT. Not all flagged items were removed, as several did not
-have apparent design flaws. Considerations regarding domain representation as
-well as item difficulty range also were considered during the review process. We
-also employed different decision rules for unique items versus horizontally- or
-vertically-scaled anchor items. It was important in many cases to maintain
-anchor items. Items with clear design flaws were removed from subsequent
-analyses and reporting. The following flagging criteria were employed:
-
-* **CTT**: A unique item was flagged if it had a p-value of .10 or lower, .90 or
-higher, or a point biserial < .15. Anchor items were flagged if they had a
-p-value of .10 or lower or .95 and higher on all forms or a point biserial < .45
-on any form.
-* **Rasch**: Unique items were flagged if their outfit mean square values were
-between 0 and .25 or > 1.5. Anchor items were flagged if their outfit mean
-square values were < .5, > 1.8 for horizontal items, or > 2.0 for vertical
-anchor items.
+####Annual Item Selection 
+Based on the initial development of approximately 5,000+ items in 2014-2015, BRT
+researchers developed an initial operational test for vertical scaling across
+grades 3-8 in English language arts (ELA) and Mathematics. Because Science did
+not have contiguous grades, no such vertical scaling was possible. As noted in
+the previous sections on Validity (3.1), item selection was concurrently based
+on a number of dimensions: alignment with standards (academic and content),
+cognitive processes, and internal structure (of domains within subject areas).
+In the first year, these dimensions were the primary considerations until
+sufficient numbers of students had taken the test and item characteristics
+calculated.
 
 Out of a total of 5,929 items developed in 2014-15, 166 were removed (2.8%).
+
+In subsequent years, not only item characteristic curves (ICCs) but also test
+characteristics curves (TCCs) were calculated and used to incorporate field test
+items as operational items and move new field test items into the test. To
+ensure the vertical scale was functioning properly, with successive values
+increasing over grades, the item selection process not only considered item fit
+but also item difficulty. When a grade level was more difficult than a later
+grade, we drew less difficult items from the previous grade and/or more
+difficult items from the later grade.
+
+\FloatBarrier
+![](Figures/ItemDev/ELA_TCC.png)
+
+\FloatBarrier
+![](Figures/ItemDev/Math_TCC.png)
 
 We also implement a consequential validity study each year that surveys QAs and
 QTs regarding the academic and social consequences of the ORExt, both intended
@@ -769,9 +769,8 @@ the BRT servers, monitored by BRT.
 ### 2.4 Monitoring Test Administration
 
 The ODE maintains a rigorous training system to support standardized test
-administration for the \color{link} [Oregon K12
-website](https://or.k12test.com)\color{black}, (secure website, but see
-screenshot below for an example of training content).
+administration for the \color{link} [Oregon K12 website](https://or.k12test.com)\color{black}, (secure website, but see screenshot
+below for an example of training content).
 \FloatBarrier
 ![](Figures/TrainingSite/TrainingSite.png)
 \clearpage
@@ -816,8 +815,8 @@ The ODE utilizes a localized monitoring system where school test coordinators
 oversee building-level administration by trained, Qualified Assessors, and
 report to centralized district test coordinators, who are then responsible for
 reporting any confirmed violations to ODE. Improprieties are defined as
-adult-initiated or student-initiated and investigated accordingly (see
-*Appendix* 1.4.2, p. 29-31).
+adult-initiated or student-initiated and investigated accordingly (see *Appendix*
+1.4.2, p. 29-31).
 
 #### 2.5C Remediation Following Test Security Incidents
 
@@ -1594,37 +1593,23 @@ no errors are made during data entry and document the number of errors (Appendix
 
 ###### Domain Definitions
 
-1.	Test Security – The QA utilized a system to ensure that all test materials
-were stored in a secure location,. The QA also had a district Assurance of Test
-Security form on file.
+1.	Test Security – The QA utilized a system to ensure that all test materials were stored in a secure location,. The QA also had a district Assurance of Test Security form on file.
 
-2.	Printed Materials – the QA had all materials required to administer the ORExt
-ready for test administration.
+2.	Printed Materials – the QA had all materials required to administer the ORExt ready for test administration.
 
-3.	Distraction-Free Environment – the QA arranged to provide the ORExt in a
-one-on-one test administration in a location that ensured that the student
-focused attention on the assessment.
+3.	Distraction-Free Environment – the QA arranged to provide the ORExt in a one-on-one test administration in a location that ensured that the student focused attention on the assessment.
 
-4.	Accessibility Supports – the QA provided all necessary accessibility supports
-for the student and ensured that all support systems were functional prior to
-testing.
+4.	Accessibility Supports – the QA provided all necessary accessibility supports for the student and ensured that all support systems were functional prior to testing.
 
-5.	Level of Support – The QA provided an appropriate level of support throughout
-testing that did not compromise the validity of the score.
+5.	Level of Support – The QA provided an appropriate level of support throughout testing that did not compromise the validity of the score.
 
-6.	Praise – The QA utilized praise appropriately to support student involvement
-without leading the student to the correct answer.
+6.	Praise – The QA utilized praise appropriately to support student involvement without leading the student to the correct answer.
 
-7.	Motivation – The QA appropriately maintained the student’s motivation during
-the assessment using relevant strategies, such as token systems.
+7.	Motivation – The QA appropriately maintained the student’s motivation during the assessment using relevant strategies, such as token systems.
 
-8.	Score Interpretation – The QA demonstrated an appropriate understanding of
-how to use the cut scores and achievement level descriptors to interpret scores
-(i.e., ask the QA to describe how they interpret scores for parents).
+8.	Score Interpretation – The QA demonstrated an appropriate understanding of how to use the cut scores and achievement level descriptors to interpret scores (i.e., ask the QA to describe how they interpret scores for parents).
 
-9.	Minimum Participation Rule - The QA demonstrated an appropriate understanding
-of the minimum participation rule (i.e., ask the QA to define the rule if it is
-not used).
+9.	Minimum Participation Rule - The QA demonstrated an appropriate understanding of the minimum participation rule (i.e., ask the QA to define the rule if it is not used).
 
 Qualified Assessor Testing Preparation and Administration Rubric
 (Record an “X” in the cell that corresponds to your rating)
@@ -2155,13 +2140,17 @@ d %>%
                       latex_options = "hold_position")
 ```
 
-The majority of students who participated in the ORExt were students with
-Intellectual Disability (30-45%) and students with Autism Spectrum Disorder (28
--34%), followed by students with Other Health Impairment (11-16%). ODE policy
-for 2015-16 changed to require students who participate in the ORExt to take the
-assessment in all relevant content areas. There is thus very little change in
-terms of participation percentages across content areas, as evidenced by the
-total n-sizes per grade level displayed below.
+Student reported exceptionalities included Intellectual Disability (ID 10), Hearing
+Impairment (HI 20), Visual Impairment (VI 40), Deaf-Blindness (DB 43), Communication
+Disorder (CD 50), Emotional Disturbance (ED 60), Orthopedic Impairment (OI 70), Traumatic
+Brain Injury (TBI 74), Other Health Impairment (OHI 80), Autism Spectrum Disorder
+(ASD 82), and Specific Learning Disability (SLD 90). The majority of students who
+participated in the ORExt were students with ID (30-45%) and students with ASD
+(28 -34%), followed by students with OHI (11 -16%). ODE policy for 2015-16
+changed to require students who participate in the ORExt to take the assessment
+in all relevant content areas. There is thus very little change in terms of
+participation percentages across content areas, as evidenced by the total
+n-sizes per grade level displayed below.
 
 \clearpage
 
@@ -3327,15 +3316,11 @@ and social consequences of the ORExt.
 
 #### Appendices 2.6 
 
-*Appendix* 2.6 is the data entry guide. The guide explains the paper/pencil data
-entry process located on ODE's secure server.
+*Appendix* 2.6 is the data entry guide. The guide explains the paper/pencil data entry process located on ODE's secure server. ]
 
 #### Appendices 2.6A
 
-*Appendix* 2.6A is the ORExt Test Application User Guide. With 2017-18 the first
-year the tablet/web-based platform was available for all grade level and subject
-area tests, this guide walked through the system requirements, download/login
-instructions, testing process, and troubleshooting.
+*Appendix* 2.6A is the ORExt Test Application User Guide. With 2017-18 the first year the tablet/web-based platform was available for all grade level and subject area tests, this guide walked through the system requirements, download/login instructions, testing process, and troubleshooting. 
 
 #### Appendix 2.6C 
 
@@ -3366,8 +3351,7 @@ website, supported by a webinar training and ongoing technical assistance.
 
 #### Appendices 4.1
 
-*Appendix* 4.1 is the Inter-rater Reliability Study Observation form completed
-by study participants.
+*Appendix* 4.1 is the Inter-rater Reliability Study Observation form completed by study participants. 
 
 #### Appendix 4.1B 
 
