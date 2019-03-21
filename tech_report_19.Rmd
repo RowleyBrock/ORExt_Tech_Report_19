@@ -696,10 +696,10 @@ grade, we drew less difficult items from the previous grade and/or more
 difficult items from the later grade.
 
 \FloatBarrier
-![](Figures/ItemDev/ELA_TCC.png)
+![](tccs/019ELA_TCC.png)
 
 \FloatBarrier
-![](Figures/ItemDev/Math_TCC.png)
+![](tccs/019MathTCC.png)
 
 We also implement a consequential validity study each year that surveys QAs and
 QTs regarding the academic and social consequences of the ORExt, both intended
