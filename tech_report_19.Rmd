@@ -4,6 +4,7 @@ author:
 - "Brock Rowley"
 - "Sevrina Tindal"
 - "Daniel Anderson"
+- "Phillip Irvin"
 - "Gerald Tindal"
 affiliation: "University of Oregon"
 date: "6/29/2019"
