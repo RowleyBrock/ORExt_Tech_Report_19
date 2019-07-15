@@ -5,3 +5,4 @@ amos/*
 .RData
 .Ruserdata
 .DS_Store
+*.Rproj
