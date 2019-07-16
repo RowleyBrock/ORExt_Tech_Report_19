@@ -34,17 +34,25 @@ header-includes:
   - \definecolor{link}{rgb}{0, 0, 238}
   - \usepackage{booktabs}
 ---
-# Oregon Department of Education
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
-# 2018-2019 Technical Report
+# Overview
 
-## Oregon's Alternate Assessment System 
+# Critical Element 1
 
-## Peer Review Documentation: Critical Elements 1-6
+# Critical Element 2
 
-### Oregon's Alternate Assessment System Technical Report: 
-### Peer Review Documentation: Critical Elements 1-6
+# Critical Element 3
 
+# Critical Element 4
+
+# Critical Element 5
+
+# Critical Element 6
+
+# Appendix
 It is the policy of the State Board of Education and a priority of the Oregon
 Department of Education that there will be no discrimination or harassment on
 the grounds of race, color, religion, sex, sexual orientation, national origin,
@@ -142,12 +150,6 @@ marked the first year the ORExt was available in tablet/online format for all
 grades in all subject areas.
 
 As part of our five-year technical documentation plan, which included the
-independent alignment study, pilot tablet administration study, and launch of
-the full tablet administration, an inter-rater reliability study was also
-conducted in 2017-18. The inter-rater reliability study included 33 Qualified
-Trainers from around the state who participated by doing at least one Qualified
-Assessor observation on the Oregon Extended Assessment via paper/pencil
-administration. As part of the five-year plan, following the 2018-19 test administration, an analyses of the impact of accommodations was conducted.
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+independent alignment study, pilot tablet administration study, launch of the
+full tablet administration, inter-rater reliability study, an analyses of the
+impact of accommodations was conducted after the 2017-2018 testing window ended.
