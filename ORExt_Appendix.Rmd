@@ -49,7 +49,6 @@ is aligned to the EAFs, as well. While the EAFs primarily guide item
 development, they are also intended to be used in the development of appropriate
 Present Levels of Functional and Academic Performance (PLAAFP) statements and
 Individualized Education Program (IEP) goals and objectives.
-\newpage
 
 #### Appendix 1.2 
 
