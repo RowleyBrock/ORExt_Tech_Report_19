@@ -435,7 +435,7 @@ administration for the \color{link} [Oregon K12
 website](https://or.k12test.com)\color{black}, (secure website, but see
 screenshot below for an example of training content).
 \FloatBarrier
-![](Figures/TrainingSite/TrainingSite.png)
+![](Figures/TrainingSite/TrainingSiteContentExample.png)
 \clearpage
 The or.k12test.com website includes a training section that addresses any
 systems updates, the process for becoming a Qualified Assessor or Qualified
@@ -452,7 +452,7 @@ training materials used on the website. In addition to these materials, QTs have
 access to all training materials necessary to provide annual training to QAs in
 their purview (see screenshot below):
 \FloatBarrier 
-![](Figures/TrainingSite/Downloads.png)
+![](Figures/TrainingSite/MaterialsToDownload.png)
 
 In addition, monitoring and reporting related to test administration issues for
 the ORExt is addressed via general ODE reporting systems. Information regarding
@@ -511,33 +511,27 @@ reviews necessary to provide alignment, bias, and sensitivity information are
 conducted online using the secure \color{link}[Distributed Item Review (DIR)](http://brtitemreview.com)\color{black} platform (secure website,
 but see *Appendix* 3.1B for a system overview).
 
-For the 2017-2018 school year, all paper/pencil secure test distribution and
-data entry was hosted by \color{link}[ODE's secure file transfer
-system](https://district.ode.state.or.us/apps/login/) \color {black}, which is a
-password-protected test distribution and data entry system. A data entry guide
-is provided in *Appendix* 2.6.
+For the 2018-2019 school year, all paper/pencil secure test distribution and
+data entry was hosted by BRT through the secure training site.
 
 The secure tablet application and web-based platform distribution and data entry
 were hosted by BRT servers. All technology based secure administration and data
 entry was password-protected. Download of the tablet app was dependent on the
 type of device, all instructions and download links were available in the Test
-App User Guide (see *Appendix* 2.6A)Additional information regarding test
+App User Guide (see *Appendix* 2.6A) Additional information regarding test
 security can be located in the general assessment system Peer Review evidence
 submission.
 \FloatBarrier
-![](Figures/TrainingSite/SecureSite.pdf)
+![](Figures/TrainingSite/DataEntryPg.png)
 
 #### 2.6B Secure Student-Level Assessment Data
 
-Student level data is protected by relevant training and through a secure data
+Student level datais protected by relevant training and through a secure data
 system in which all data entry is conducted online using password-protected,
 secure procedures on the \color{link} [Oregon K12
-website](https://or.k12test.com) \color{black} or \color{link} [ODE's secure
-file transfer system](https://district.ode.state.or.us/apps/login/)
-\color{black} website, as identified above. Only trained users with a vested
+website](https://or.k12test.com) \color{black} Only trained users with a vested
 educational interest who have signed test security agreements are authorized to
-access to online data entry systems. See *Appendix* 2.6 for additional data
-entry expectations for 2017-18.
+access to online data entry systems.
 
 #### 2.6C Protecting Personally Identifiable Information
 
