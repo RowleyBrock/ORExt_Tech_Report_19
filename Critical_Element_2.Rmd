@@ -264,7 +264,7 @@ trainings for new Qualified Trainers (QTs) and Qualified Assessors (QAs) in
 face-to-face regional trainings. The schedule for the regional trainings, as
 well as relevant training information, is provided below: 
 \FloatBarrier
-![](Figures/TrainingSched/TraingSched.png)
+![](Figures/TrainingSched/2018_19_TrainingSchedule.png)
 
 Only trained Qualified Assessors (QAs) can administer the Oregon Extended
 assessment. Qualified Assessors who also receive direct instruction from ODE and
@@ -289,21 +289,11 @@ the four proficiencies, as well as the Refresher Proficiency. Included in the
 data is the number of attempts needed to attain a passing score as well as the
 average passing score of the participants.
 
-An analysis of the Oregon Extended Assessment Training and Proficiency Website
-showed 408 Assessors in-Training, 940 Qualified Assessors, and 139 Qualified
-Trainers.
+An analysis of the Oregon Extended Assessment Training and Proficiency Website showed 377 Assessors in-Training, 928 Qualified Assessors, and 137 Qualified Trainers registered with the system.
 \FloatBarrier
-![](Figures/TestPartic/TestParticipants.png)
+![](Figures/TestPartic/QA_QT_TestPartic_1819)
 
-A higher number of assessors completed the Refresher Proficiency test than the
-subject area proficiency tests reflecting a greater number of return assessors
-compared to new assessors. Administration Proficiency continued to be the most
-challenging to new assessors, but most were able to pass on the first or second
-attempt with about 1% or less of assessors requiring more than two attempts. The
-majority of assessors passed the ELA, Math, Science, and the Refresher
-proficiency tests on the first attempt with less than 2% requiring a second or
-third attempt. There were 7 fewer Qualified Assessors and 4 fewer Qualified
-Trainers compared to last year.
+A higher number of assessors completed the Refresher Proficiency test than the subject area proficiency tests reflecting a greater number of return assessors compared to new assessors. Data showed ELA Proficiency to be the most challenging to new assessors, but most were able to pass on the first or second attempt with about 1% or less of assessors requiring more than two attempts and science to be the least challenging with 100% of assessors passing on the first attempt. The majority of assessors passed the Administration and Math proficiency tests on the first and second attempts with less than 1% requiring a third attempt. The majority of returning assessors passed the refresher on the first attempt with less than 2% requiring a seond and third attempt. There were 12 fewer Qualified Assessors and 2 more Qualified Trainers compared to last year.
 
 Evaluations are collected at each QT training in November. The results reflect
 general approval, but also suggest areas of improvement that ODE and BRT work on
@@ -346,21 +336,7 @@ understanding that this was the first time they had received such training.
 \FloatBarrier
 ![](Figures/QTQAtraining/TrainingConfidenceScale.png)
 
-In addition, all technical assistance questions that we receive from the field
-as part of our *HelpDesk* are documented. The log of the technical assistance
-provision is reviewed each month, as well as annually, in order to determine
-what aspects of our assessment system need further clarification or improvement.
-With the launch of the full tablet app the helpdesk received many more inquiries
-than in previous years. Around 48% of the inquiries were end user issues such as
-slow internet connection, trouble with individual tablets, users needing the
-exit pin, etc. About 29% of inquiries related to the ODE database. This included
-things like credential verification, districts with no Qualified Trainer, and
-students registered in different districts not appearing on rosters. About 11%
-of inquiries were coded as ‘Training’ indicating many of these issues could be
-solved with more emphasis on certain areas during the fall trainings. Only 9% of
-inquiries were specific to the BRT tablet system and will be addressed in
-updates for the 2018-19 testing window. And only 3% of inquiries were related to
-the paper/pencil administration.
+In addition, all technical assistance questions that we receive from the field as part of our HelpDesk are documented. The most common inquiries for the 2018-19 test administration window involved credential verification to add schools/students to rosters, selecting appropriate IDEA disability codes for rosters, and manual grading for the electronic ELA writing items. Some other common inquiries included exit PIN, access to monitoring for DTC's, and technical issues with individual tablet. All helpdesk inquiries will be taken into consideration as the training site is updated for the 2019-2020 testing year.
 
 The *HelpDesk* log is published in *Appendix* 2.3B.9. 
 
@@ -435,26 +411,22 @@ in *Appendix* 2.3B.10.
 #### 2.3C Technology-based Assessments
 
 The ORExt was implemented using a technology-based platform as Phase 3 of the
-ORExt Tablet Administration. The 2017-18 testing window was the first
-year all grade level and subject area assessments were available
-on a tablet application/web-based platform. Administration of the tablet
-application mirrors paper/pencil administration with each item read aloud to
-the student, and the student asked to select one of three answer choices. 
-Tablet functionality includes optional discontinuation if the student misses 10
-out of the first 15 items, directing the assessor to administer the
-ORora. To support understanding of the system by both teachers and students, a
-separate practice test tablet application is available. Helpdesk inquiries and
-feedback from the field indicated much preference of the tablet administration
-versus paper/pencil. Qualified Trainers and Qualified Assessors reported their
-students' were more focused during tablet administration, and because the tablet
-application scores automatically it was much more efficient for assessors. 
-Based on data and feedback from the field, improvements will be made to the
-tablet application/web-based platform, and additional training will be provided
-for the 2018-19 testing year. The paper/pencil version will continue to be
-available for students who cannot access a tablet administration. For the
-2017-18 testing window, data entry for the paper/pencil version was maintained
-by ODE. Beginning in 2018-19, all test platforms and data entry will be through
-the BRT servers, monitored by BRT. 
+ORExt Tablet Administration. The 2017-18 testing window was the first year all
+grade level and subject area assessments were available on a tablet
+application/web-based platform. Administration of the tablet application mirrors
+paper/pencil administration with each item read aloud to the student, and the
+student asked to select one of three answer choices. Tablet functionality
+includes optional discontinuation if the student misses 10 out of the first 15
+items, directing the assessor to administer the ORora. To support understanding
+of the system by both teachers and students, a separate practice test tablet
+application is available. Helpdesk inquiries and feedback from the field
+indicated much preference of the tablet administration versus paper/pencil.
+Qualified Trainers and Qualified Assessors reported their students' were more
+focused during tablet administration, and because the tablet application scores
+automatically it was much more efficient for assessors. Improvements will be
+made to the electronic test based on technology improvements and feedback from
+the field. Data entry for all platforms is now maintained and monitored by
+secure BRT servers.
 
 ### 2.4 Monitoring Test Administration
 
