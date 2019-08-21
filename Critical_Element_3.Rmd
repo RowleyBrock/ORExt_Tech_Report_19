@@ -41,7 +41,7 @@ knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
 
 ### 3.1 Overall Validity, Including Validity Based on Content
 
-As elaborated by Messick (1989) , the validity argument involves a claim with
+As elaborated by Messick (1989), the validity argument involves a claim with
 evidence evaluated to make a judgment. Three essential components of assessment
 systems are necessary: (a) constructs (what to measure), (b) the assessment
 instruments and processes (approaches to measurement), and (c) use of the test
