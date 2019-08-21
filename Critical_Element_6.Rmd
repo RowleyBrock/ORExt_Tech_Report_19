@@ -294,8 +294,8 @@ on the 2017-18 testing window, enhancements are in process to improve the
 tablet/web-based administration for the 2018-19 testing window. These
 improvements include updates to make administration/data entry more efficient
 for assessors and additional alerts if devices are no longer online. The 2018-19
-testing window will be the first year all data entry will be held on the BRT
-servers. ODE will no longer provide a paper/pencil data entry platform.
+testing window was the first year all data entry was held on the BRT
+servers. ODE no longer provides a paper/pencil data entry platform.
 
 Documenting evidence of validity remains an ongoing and continuous process. Our
 efforts to continue to improve the assessment system are outlined below, as well
