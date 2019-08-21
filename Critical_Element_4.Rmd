@@ -340,7 +340,7 @@ cutscores.
 
 #### Validation of ORExt Vertical Scales
 
-The test characteristic curves (TCCs) for the grade-level assessments in ELA and
+The Test Characteristic Curves (TCCs) for the grade-level assessments in ELA and
 mathematics demonstrate incrementally increasing growth and test demands across
 Grades 3-8, with the exception of Grade 7 mathematics. The Grade 7 mathematics
 assessment was revised to be more difficult last year, but clearly more
