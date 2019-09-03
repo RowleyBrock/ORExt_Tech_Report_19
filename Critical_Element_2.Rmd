@@ -3,7 +3,7 @@ title: 'Oregon Extended Analyses: 2019'
 author: 
 - "Brock Rowley"
 - "Sevrina Tindal"
-- "Philip Irvin"
+- "Phillip"
 - "Daniel Anderson"
 - "Gerald Tindal"
 affiliation: "University of Oregon"
