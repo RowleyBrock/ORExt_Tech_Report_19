@@ -94,18 +94,17 @@ using the rubric (Appendix 4.1 InterRater_Observation_Form). Test
 preparation/administration domains were rated on a four-point scale from
 Inappropriate (I) to Exemplary (E):
 
-    + Inappropriate (I) denotes a level of concern that could clearly affect the                  accuracy of the test results gathered from the test administration.                         Ratings at this level require substantive retraining of the QA involved.
-    
+    + Inappropriate (I) denotes a level of concern that could clearly affect the
+    accuracy of the test results gathered from the test administration. Ratings
+    at this level require substantive retraining of the QA involved.
     + Somewhat Appropriate (SA) rating denotes a level that includes some minor
-      aspects that could be improved, but the accuracy of the test results are
-      likely not compromised.
-      
+    aspects that could be improved, but the accuracy of the test results are
+    likely not compromised.
     + Appropriate (A) denotes a level that is consistent with all test
-      administration requirements.
-     
+    administration requirements.
     + Exemplary (E) level performance suggests that the QA incorporated
-      approaches to test administration that could become models for best
-      practice.
+    approaches to test administration that could become models for best
+    practice.
      
 * Second, QT’s scored the student alongside the QA using the scoring sheet. QT’s
 compared results after this observation to ensure that the QA entered accurate
@@ -259,13 +258,13 @@ Somewhat Appropriate and 8% were Inappropriate in their understanding of how to
 use cut scores and achievement level descriptors to interpret scores.
 
 ###### Next Steps and Recommendations:
-Additional training should be provided on the QT/QA training site to ensure QT's
+Additional training was provided on the QT/QA training site to ensure QT's
 and QA's and using the scoring rubric provided for ELA Writing items and
 appropriately scoring ELA Writing. Samples from the different types of ELA
-Writing should itme promps should be use during the QT/QA proficiency assessment
+Writing itme promps are use during the QT/QA proficiency assessment
 to ensure consistency between all who administer the ORExt. Score Interpretation
-training should be incoporated into QT training slides and disiminated in QA
-training. Any score interpretation guide section of QT training may need to be
+training is incoporated into QT training slides and disiminated in QA
+training. The score interpretation guide section of QT training has been
 revisited to ensure clarity around achievement level descriptors.
 
 #### 4.1A Test Reliability 
