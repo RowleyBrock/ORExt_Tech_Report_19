@@ -343,7 +343,8 @@ including reviews of linkage, content coverage, and depth of knowledge.
 
 The Oregon Extended assessments reflect patterns of emphasis that are supported
 by Oregon educators as indicated by the following three tables that highlight
-the balance of standard representation by grade level for English language arts, mathematics, and science on the ORExt. The representation ratios can be
+the balance of standard representation by grade level for English language arts,
+mathematics, and science on the ORExt. The representation ratios can be
 calculated by dividing the standards by the total within each respective column.
 For example, in Grade 3 Reading, approximately 25% of the items are in the
 Reading Standards for Literature domain, as that domain has 4 written
