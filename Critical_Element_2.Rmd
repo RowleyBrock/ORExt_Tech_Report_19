@@ -58,7 +58,7 @@ student performance data to ascertain proficiency on grade level state content
 standards for students with significant cognitive disabilities. A long-term goal
 of the program is to also provide information regarding annual student growth
 related to these content standards over Grades 3-8, as measured by vertically
-scaled assessments in ELA and mathematics. The results of the assessment are
+scaled assessments in ELA and Mathematics. The results of the assessment are
 currently reported in comparison to four performance levels: Level 1, Level 2,
 Level 3, and Level 4. Levels 3 and 4 denote a proficient level of performance,
 while Levels 1 and 2 denote performance that is not proficient. BRT and ODE
@@ -99,7 +99,7 @@ Assessor/Qualified Trainer listserv.
 \FloatBarrier
 ![](Figures/ItemDev/ItemDev.png)
 
-####Project Description:
+#### Project Description:
 
 Behavioral Research and Teaching at the University of Oregon recruited Oregon
 teachers to participate in item development for a new alternate assessment.
@@ -289,11 +289,24 @@ the four proficiencies, as well as the Refresher Proficiency. Included in the
 data is the number of attempts needed to attain a passing score as well as the
 average passing score of the participants.
 
-An analysis of the Oregon Extended Assessment Training and Proficiency Website showed 377 Assessors in-Training, 928 Qualified Assessors, and 137 Qualified Trainers registered with the system.
+An analysis of the Oregon Extended Assessment Training and Proficiency Website
+showed 377 Assessors in-Training, 928 Qualified Assessors, and 137 Qualified
+Trainers registered with the system.
 \FloatBarrier
 ![](Figures/TestPartic/QA_QT_TestPartic_1819)
 
-A higher number of assessors completed the Refresher Proficiency test than the subject area proficiency tests reflecting a greater number of return assessors compared to new assessors. Data showed ELA Proficiency to be the most challenging to new assessors, but most were able to pass on the first or second attempt with about 1% or less of assessors requiring more than two attempts and science to be the least challenging with 100% of assessors passing on the first attempt. The majority of assessors passed the Administration and Math proficiency tests on the first and second attempts with less than 1% requiring a third attempt. The majority of returning assessors passed the refresher on the first attempt with less than 2% requiring a seond and third attempt. There were 12 fewer Qualified Assessors and 2 more Qualified Trainers compared to last year.
+A higher number of assessors completed the Refresher Proficiency test than the
+subject area proficiency tests reflecting a greater number of return assessors
+compared to new assessors. Data showed ELA Proficiency to be the most
+challenging to new assessors, but most were able to pass on the first or second
+attempt with about 1% or less of assessors requiring more than two attempts and
+science to be the least challenging with 100% of assessors passing on the first
+attempt. The majority of assessors passed the Administration and Math
+proficiency tests on the first and second attempts with less than 1% requiring a
+third attempt. The majority of returning assessors passed the refresher on the
+first attempt with less than 2% requiring a seond and third attempt. There were
+12 fewer Qualified Assessors and 2 more Qualified Trainers compared to last
+year.
 
 Evaluations are collected at each QT training in November. The results reflect
 general approval, but also suggest areas of improvement that ODE and BRT work on
@@ -336,7 +349,15 @@ understanding that this was the first time they had received such training.
 \FloatBarrier
 ![](Figures/QTQAtraining/TrainingConfidenceScale.png)
 
-In addition, all technical assistance questions that we receive from the field as part of our HelpDesk are documented. The most common inquiries for the 2018-19 test administration window involved credential verification to add schools/students to rosters, selecting appropriate IDEA disability codes for rosters, and manual grading for the electronic ELA writing items. Some other common inquiries included exit PIN, access to monitoring for DTC's, and technical issues with individual tablet. All helpdesk inquiries will be taken into consideration as the training site is updated for the 2019-2020 testing year.
+In addition, all technical assistance questions that we receive from the field
+as part of our HelpDesk are documented. The most common inquiries for the
+2018-19 test administration window involved credential verification to add
+schools/students to rosters, selecting appropriate IDEA disability codes for
+rosters, and manual grading for the electronic ELA writing items. Some other
+common inquiries included exit PIN, access to monitoring for DTC's, and
+technical issues with individual tablet. All helpdesk inquiries will be taken
+into consideration as the training site is updated for the 2019-2020 testing
+year.
 
 The *HelpDesk* log is published in *Appendix* 2.3B.9. 
 
@@ -436,7 +457,7 @@ website](https://or.k12test.com)\color{black}, (secure website, but see
 screenshot below for an example of training content).
 \FloatBarrier
 ![](Figures/TrainingSite/TrainingSiteContentExample.png)
-\clearpage
+
 The or.k12test.com website includes a training section that addresses any
 systems updates, the process for becoming a Qualified Assessor or Qualified
 Trainer, student eligibility expectations, student confidentiality and test
