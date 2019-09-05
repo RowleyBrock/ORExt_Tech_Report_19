@@ -175,7 +175,8 @@ library(tidyverse)
 library(fs)
 library(rio)
 library(RColorBrewer)
-
+library(knitr)
+library(kableExtra)
 d <- import("data/irr/RaterReliability.csv", setclass = "tbl_df") %>% 
   janitor::clean_names()
 
@@ -252,7 +253,7 @@ d %>%
 ORExt's Selected response format provides for a high percentage of inter-rater
 reliability. One resonse out of the 1200 observed where observes disagreed with
 rateres was in the ELA Writing scoring.
-'Score Interpretation' appears to be a domain in need of additional training.
+'Score Interpretation' appeared to be a domain in need of additional training.
 Qualified Trainers indicated that 16% of observed Qualified Assessors were
 Somewhat Appropriate and 8% were Inappropriate in their understanding of how to
 use cut scores and achievement level descriptors to interpret scores.
