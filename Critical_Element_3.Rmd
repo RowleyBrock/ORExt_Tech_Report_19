@@ -378,8 +378,6 @@ operational assessment are represented. Point measure correlations ranged from
 visualizations were conducted with ggplot in the tidyverse package (Wickham, H.,
 2017).
 
-\clearpage
-\FloatBarrier
 ```{r ifiles}
 ifiles <- dir_ls(file.path("data", "ifiles18"))
 
