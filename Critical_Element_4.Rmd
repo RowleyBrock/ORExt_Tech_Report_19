@@ -1,13 +1,4 @@
 ---
-title: 'Oregon Extended Analyses: 2019'
-author: 
-- "Brock Rowley"
-- "Sevrina Tindal"
-- "Phillip Irvin"
-- "Daniel Anderson"
-- "Gerald Tindal"
-affiliation: "University of Oregon"
-date: "6/29/2019"
 output: 
   pdf_document:
     toc: yes
@@ -34,8 +25,25 @@ header-includes:
   - \definecolor{link}{rgb}{0, 0, 238}
   - \usepackage{booktabs}
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+```{r setup, include = FALSE}
+library(tidyverse)
+library(fs)
+library(rio)
+library(RColorBrewer)
+library(cacIRT)
+library(difR)
+library(janitor)
+library(knitr)
+library(kableExtra)
+
+opts_chunk$set(echo    = FALSE, 
+               warning = FALSE, 
+               error   = FALSE, 
+               message = FALSE,
+               results = "asis",
+               cache   = TRUE)
+options(knitr.kable.NA = '')
+dep_auto()
 ```
 ## Critical Element 4 - Technical Quality: Other 
 
@@ -170,18 +178,14 @@ The following two tables (Table 21 and Table 22) display the percentage of
 reponses in the nine different domains and percentage of agreement between
 assessors and observers.
 \FloatBarrier
-```{r}
-library(tidyverse)
-library(fs)
-library(rio)
-library(RColorBrewer)
-library(knitr)
-library(kableExtra)
-d <- import("data/irr/RaterReliability.csv", setclass = "tbl_df") %>% 
-  janitor::clean_names()
+```{r, irr}
+d <- import(here::here("data", "irr", "RaterReliability.csv"), 
+            setclass = "tbl_df") %>% 
+  clean_names()
 
-theme_set(theme_minimal())
-  # Percentage for responses    
+theme_set(theme_minimal(12))
+
+# Percentage for responses    
 d %>% 
   gather(var, response, test_security:minimum_participation) %>% 
   group_by(var) %>%
@@ -217,36 +221,24 @@ The following table provides a visual display of the responses from the nine
 differnt domains observed.
 
 ```{r, fig.width = 8.5, fig.height= 11}
-
-library(tidyverse)
-library(fs)
-library(rio)
-library(RColorBrewer)
-
-
-d <- import("data/irr/RaterReliability.csv", setclass = "tbl_df") %>% 
-  janitor::clean_names()
-
-theme_set(theme_minimal())
-# Counts for responses
 d %>% 
   gather(var, response, test_security:minimum_participation) %>% 
+  mutate(var = stringr::str_to_title(gsub("_", " ", var))) %>%
   group_by(var) %>%
   count(response) %>%
   mutate(response = factor(response, 
-                           levels = c("Exemplary", 
-                                      "Appropriate", 
+                           levels = c("Inappropriate",
                                       "Somewhat Appropriate",
-                                      "Inappropriate"))) %>% 
+                                      "Appropriate",
+                                      "Exemplary"))) %>% 
   ggplot(aes(response, n)) +
   geom_col(aes(fill = response)) +
   scale_fill_brewer(palette = "Set1") +
-  facet_wrap(~var, labeller = label_parsed) +
+  facet_wrap(~var) +
   guides(fill = "none") +
   labs(x = "") +
-  labs(y = "") +
-  theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust=1))
-
+  labs(y = "Counts") +
+  coord_flip()
 ```
 
 ###### Results:
@@ -279,6 +271,27 @@ provides the content area, grade, and the marginal reliabilities. All test forms
 were composed of 36 operational and 12 embedded field-test items.
 
 ```{r marginal_rel}
+read_sub_files <- function(file) {
+  read_csv(file) %>% 
+    mutate(content_area = 
+             str_extract(file, "[Ee][Ll][Aa]|[Rr]dg|[Ww]ri|[Mm]ath|[Ss]ci"),
+           grade = gsub(".+g(\\d?\\d).+", "\\1", file),
+           grade = as.numeric(grade)) %>% 
+    select(content_area, grade, everything()) %>% 
+    clean_names()
+}
+
+files <- dir_ls(here::here("data", "ode19"), glob = "*.csv")
+ode <- map_df(files, read_sub_files)
+
+# join in dems from db-query file
+dems <- read_csv(here::here("data", "db-export", "query_result.csv"),
+                 na = "NULL") %>%
+  clean_names() %>%
+  drop_na(ssid)
+
+ode <- left_join(ode, distinct(select(dems, ssid, idea_elig_code1)))
+
 marg_rel <- function(theta, se) {
   s <- var(theta)
   e <- mean((se)^2)
@@ -350,8 +363,8 @@ Grade 11 or science. All Rasch model scaling, as well as the data visualizations
 for the TCCs were conducted in the R software 3.3.2 environment (R Core Team,
 2016) using the r2Winsteps package (Anderson, 2015).
 \FloatBarrier
-![](tccs/019ELA_TCC.pdf)
-![](tccs/019MathTCC.pdf)
+![](tccs/ela_tccs.pdf)
+![](tccs/math_tccs.pdf)
 \clearpage
 
 #### 4.1B Overall and Conditional Standard Errors of Measure
@@ -416,7 +429,7 @@ cuts <- ode %>%
   summarize(cut = min(theta)) %>% 
   filter(amo_lvl > 1)
 
-diffs <- map_df(dir_ls(file.path("data", "ifiles18")), read_sub_files)
+diffs <- map_df(dir_ls(here::here("data", "ifiles19")), read_sub_files)
 
 cuts <- diffs %>% 
   select(content_area, grade, difficulty) %>% 
@@ -522,43 +535,57 @@ students who were White.
 
 \FloatBarrier
 ```{r dif1}
-raw <- dir_ls("data/raw", glob = "*.txt")
-raw <- raw[-grep("XO", raw)]
+d <- dems %>%
+  filter(form != "ORora") %>%
+  separate(form, c("content", "form_grade"), sep = "_") %>%
+  mutate(grade = parse_number(grade),
+         grade_for_match = ifelse(grade == 12, 11, grade),
+         form_grade = parse_number(form_grade)) %>%
+  filter(grade == form_grade) %>%
+  group_by(ssid, content, item_num) %>% # some students have dup item records
+  arrange(answer_date) %>%
+  slice(n()) %>%
+  ungroup()
 
-d <- map_df(raw, read_delim, delim = "|", na = "N", .id = "content") %>%
-  clean_names("old_janitor") %>% 
-  mutate(content = str_extract(content, "XE|XM|XS"),
-         content = case_when(content == "XE" ~ "ELA",
-                             content == "XM" ~ "Math",
-                             TRUE ~ "Science"),
-         grade_for_match = parse_number(enrlgrattst),
-         grade_for_match = ifelse(grade_for_match == 12, 
-                                  11, 
-                                  grade_for_match)) %>% 
-  gather(item, response, starts_with("item")) %>% 
-  mutate(item = parse_number(item)) 
+race_eth <- read_csv(here::here("data", "race_eth", "race_eth.csv"))
 
-item_ids <- map_df(dir_ls("data/tests"), 
-                     ~read_csv(.) %>% select(Item, `Item ID`), 
-                     .id = "file") %>% 
-  janitor::clean_names() %>% 
+d <- left_join(d, race_eth)
+
+item_ids <- map_df(dir_ls(here::here("data", "tests")), 
+                   ~read_csv(.) %>% select(test_item_no, item_id), 
+                   .id = "file") %>% 
+  clean_names() %>% 
   mutate(content = str_extract(file, "ELA|Math|Science"),
          grade_for_match = as.numeric(gsub(".+/G(\\d.?)(_.+)", "\\1", file))) %>% 
-  select(-file)
+  select(-file) %>%
+  rename(item_num = test_item_no)
 
-d <- left_join(d, item_ids) %>% 
-  select(-item) %>% 
+# Select only one test (if students have multiple accommodations, the test data is repeated)
+n_accoms <- d %>%
+  select(ssid, accomodation) %>%
+  distinct() %>%
+  drop_na(accomodation) %>%
+  group_by(ssid) %>%
+  mutate(accom_num = 1:n(),
+         n_accoms = max(accom_num)) 
+
+d <- left_join(d, n_accoms) %>%
+  filter(is.na(accom_num) | accom_num == 1) %>%
+  select(-accomodation, -accom_num, -n_accoms, -answer_date)
+
+by_form <- left_join(d, item_ids) %>% 
+  drop_na(item_id) %>%
+  select(-item_num, -answer) %>% 
   group_by(grade_for_match, content) %>% 
   nest() %>% 
-  mutate(data = map(data, ~spread(., item_id, response))) %>% 
+  mutate(data = map(data, ~spread(., item_id, score))) %>% 
   mutate(data  = map(data, ~remove_empty(., "cols")),
-         white = map(data, ~ifelse(.[["ethniccd"]] == "W", 1, 0)),
-         male = map(data, ~ifelse(.[["gndr"]] == "M", 1, 0)),
-         items = map(data, ~select(., -testeventid:-tstcmpltdt)),
+         white = map(data, ~ifelse(.[["race_eth"]] == "white", 1, 0)),
+         male = map(data, ~ifelse(.[["gndr_cd"]] == "M", 1, 0)),
+         items = map(data, ~select(., -ssid:-race_eth)),
          items = map(items, ~map_df(., ~ifelse(is.na(.), 0, .))))
 
-library(difR)
-dif <- d %>% 
+dif <- by_form %>% 
   mutate(gndr_dif = map2(items, male, ~difMH(.x, .y, 1, purify = TRUE)),
          eth_dif  = map2(items, white, ~difMH(.x, .y, 1, purify = TRUE)))
 
@@ -571,18 +598,20 @@ extract_grades <- function(dif_mod, items) {
   tibble(item = item_names, delta, grades) %>% 
     mutate(grades = as.character(grades))
 }
-#dir.create("dif")
+
+dir.create("dif")
+
 dif %>% 
   mutate(gndr_grades = map2(gndr_dif, items, extract_grades)) %>% 
   select(grade_for_match, content, gndr_grades) %>% 
   unnest() %>% 
-  write_csv("dif/gender_dif.csv")
+  write_csv(here::here("dif", "gender_dif19.csv"))
 
 dif %>% 
   mutate(eth_grades = map2(eth_dif, items, extract_grades)) %>% 
   select(grade_for_match, content, eth_grades) %>% 
   unnest() %>% 
-  write_csv("dif/minority_dif.csv")
+  write_csv(here::here("dif", "minority_dif19.csv"))
 
 gndr_tbls <- dif %>% 
   mutate(gndr_grades = map2(gndr_dif, items, extract_grades)) %>% 
@@ -651,25 +680,28 @@ higher for most students of color and generally lower for students who are Asian
 or White (see *Appendix* 4.2).
 
 ```{r eth_perc}
-d %>% 
-  mutate(grade = map(data, "ssidenrlgrdcd"),
-         ethniccd = map(data, "ethniccd")) %>% 
-  select(grade, content, ethniccd) %>% 
-  unnest() %>% 
+by_form %>% 
+  mutate(grade = map(data, "grade"),
+         race_eth = map(data, "race_eth"),
+         school_id = map(data, "school_id"),
+         ssid = map(data, "ssid")) %>% 
+  select(school_id, ssid, grade, content, race_eth) %>% 
+  unnest() %>%
   group_by(grade, content) %>% 
-  count(ethniccd) %>% 
+  count(race_eth) %>% 
   mutate(percent = (n/sum(n))*100) %>% 
   select(-n) %>% 
-  spread(ethniccd, percent, fill = 0) %>% 
+  spread(race_eth, percent, fill = 0) %>% 
   rename(Grade = grade, 
          Content = content,
-         Asian = A,
-         Black = B,
-         Hispanic = H,
-         `Am Ind` = I,
-         Multiethnic = M,
-         `Pac Isl` = P,
-         White = W) %>% 
+         Asian = asian,
+         Black = black,
+         Hispanic = Hispanic,
+         `Am Ind` = amer_indian_alskn_ntv,
+         Multiethnic = multiracial,
+         `Pac Isl` = pac_islndr,
+         White = white,
+         Missing = `<NA>`) %>% 
   kable("latex", 
         booktabs = TRUE,
         caption = "Race/Ethnicity Proportions",
@@ -691,16 +723,16 @@ total n-sizes per grade level displayed below.
 #### Exceptionality Percentages By Content Area and Grade Level
 
 ```{r disab_perc}
-ode %>% 
-  group_by(grade, content_area) %>% 
-  count(asmtprmrydsbltycd) %>% 
+d %>% 
+  group_by(grade, content) %>% 
+  distinct(ssid, .keep_all = TRUE) %>%
+  count(idea_elig_code1) %>% 
   mutate(percent = (n/sum(n))*100) %>% 
   select(-n) %>% 
-  spread(asmtprmrydsbltycd, percent, fill = 0) %>% 
-  filter(content_area != "rdg" &
-         content_area != "wri") %>% 
+  spread(idea_elig_code1, percent, fill = 0) %>% 
   rename(Grade = grade,
-         Content = content_area) %>% 
+         Content = content,
+         Missing = `<NA>`) %>% 
   kable("latex", 
         booktabs = TRUE,
         caption = "Disability Proportions",
@@ -773,13 +805,14 @@ rit_17 <- tibble::tribble(
       8L,    219.48,   24.28,     205.92,    16.26,        817.96,       24.36,
      11L,    922.05,   26.37,     903.07,    17.57,        919.41,       24.25
   )
-knitr::kable(rit_16, "latex", 
+knitr::kable(rit_17, "latex", 
         booktabs = TRUE,
         caption = "Means/SDs: 2016-17",
         digits = 2) %>% 
         kable_styling(full_width = TRUE,
                       latex_options = "hold_position")
 
+# Brock to enter in last years data here
 ```
 
 ```{r obs_means}
@@ -814,12 +847,11 @@ the ORExt. Significant differences based on a Welch two sample t-test are noted
 in Grades 5 and 12 in ELA, and Grade 8 in mathematics.
 
 ```{r obs_means_sex}
-eth_gndr <- d %>% 
-  mutate(new = map(data, ~select(., ssidenrlgrdcd, ssid, gndr, ethniccd))) %>% 
+eth_gndr <- by_form %>% 
+  mutate(new = map(data, ~select(., grade, ssid, gender, race_eth))) %>% 
   select(content, new) %>% 
   unnest() %>% 
-  rename(grade = ssidenrlgrdcd,
-         content_area = content) %>% 
+  rename(content_area = content) %>% 
   mutate(content_area = tolower(content_area),
          content_area = ifelse(content_area == "science", "sci", content_area),
          grade = as.numeric(grade)) 
@@ -833,14 +865,15 @@ ode %>%
   mutate(content_area = case_when(content_area == "ela" ~ "ELA",
                                   content_area == "math" ~ "Math",
                                   content_area == "sci" ~ "Sci")) %>% 
-  group_by(grade, content_area, gndr) %>% 
+  group_by(grade, content_area, gender) %>% 
   summarize(Mean = mean(rit),
             SD   = sd(rit)) %>% 
   gather(stat, val, Mean, SD) %>% 
   unite(spreader, content_area, stat, sep = " ") %>% 
   spread(spreader, val) %>% 
   rename(Grade = grade,
-         Sex   = gndr) %>% 
+         Sex   = gender) %>%
+  drop_na(Sex) %>% 
   kable("latex", 
         booktabs = TRUE,
         caption = "Means/SDs by Gender: 2017-18",
@@ -864,14 +897,14 @@ eth_descrip_tbls <- ode %>%
   mutate(content_area = case_when(content_area == "ela" ~ "ELA",
                                   content_area == "math" ~ "Math",
                                   content_area == "sci" ~ "Sci")) %>% 
-  group_by(grade, content_area, ethniccd) %>% 
+  group_by(grade, content_area, race_eth) %>% 
   summarize(Mn = mean(rit),
             SD   = sd(rit)) %>% 
   gather(stat, val, Mn, SD) %>% 
   unite(spreader, content_area, stat, sep = " ") %>% 
   spread(spreader, val) %>% 
   rename(Grade = grade,
-         `Eth Code` = ethniccd) %>% 
+         `Eth Code` = race_eth) %>% 
   split(.$Grade) %>% 
   map(~ungroup(.) %>% 
         select(-Grade) %>% 
@@ -918,20 +951,21 @@ though students with ED performed higher at certain grade levels/content
 areas. The lowest performing group was consistently students with VI.
 \FloatBarrier
 ```{r disab_means}
+# May want to add an *n* and drop descrips when n is too low
 disab_descrip_tbls <- ode %>% 
   filter(content_area != "rdg" &
          content_area != "wri") %>% 
   mutate(content_area = case_when(content_area == "ela" ~ "ELA",
                                   content_area == "math" ~ "Math",
                                   content_area == "sci" ~ "Sci")) %>% 
-  group_by(grade, content_area, asmtprmrydsbltycd) %>% 
+  group_by(grade, content_area, idea_elig_code1) %>% 
   summarize(Mean = mean(rit),
             SD   = sd(rit)) %>% 
   gather(stat, val, Mean, SD) %>% 
   unite(spreader, content_area, stat, sep = " ") %>% 
   spread(spreader, val) %>% 
   rename(Grade = grade,
-         `Dis Code` = asmtprmrydsbltycd) %>% 
+         `Dis Code` = idea_elig_code1) %>% 
   split(.$Grade) %>% 
   map(~ungroup(.) %>% 
         select(-Grade) %>% 
@@ -967,7 +1001,7 @@ lowest performing group, which led to concerns regarding test accessibility.
 excep_plots <- ode %>% 
   filter(content_area == "ela" |
          content_area == "math") %>% 
-  group_by(content_area, grade, asmtprmrydsbltycd) %>% 
+  group_by(content_area, grade, idea_elig_code1) %>% 
   summarize(mean = mean(rit),
             se   = sundry::se(rit)) %>% 
   mutate(lower_bound = mean + qnorm(0.025)*se,
@@ -977,10 +1011,10 @@ excep_plots <- ode %>%
   mutate(
     content_area = c("English/Language Arts", "Math"),
     plot38 = map2(data, content_area,
-      ~ggplot(filter(.x, grade < 11), aes(factor(asmtprmrydsbltycd), mean)) +
+      ~ggplot(filter(.x, grade < 11), aes(factor(idea_elig_code1), mean)) +
         geom_errorbar(aes(ymin = lower_bound, ymax = upper_bound),
                       color = "gray80") +
-        geom_point(aes(color = factor(asmtprmrydsbltycd))) +
+        geom_point(aes(color = factor(idea_elig_code1))) +
         facet_wrap(~grade) +
         scale_color_brewer("Disability Code", palette = "Set3") +
         labs(y = "Mean",
@@ -991,10 +1025,10 @@ excep_plots <- ode %>%
               axis.ticks.x=element_blank(),
               legend.position = "bottom")),
     plot12 = map2(data, content_area,
-      ~ggplot(filter(.x, grade > 8), aes(factor(asmtprmrydsbltycd), mean)) +
+      ~ggplot(filter(.x, grade > 8), aes(factor(idea_elig_code1), mean)) +
         geom_errorbar(aes(ymin = lower_bound, ymax = upper_bound),
                       color = "gray80") +
-        geom_point(aes(color = factor(asmtprmrydsbltycd))) +
+        geom_point(aes(color = factor(idea_elig_code1))) +
         facet_wrap(~grade) +
         scale_color_brewer("Disability Code", palette = "Set3") +
         labs(y = "Mean",
@@ -1020,7 +1054,7 @@ walk(excep_plots$plot12, print)
 ```{r sci_excep_plots}
 sci_excep_plots <- ode %>% 
   filter(content_area == "sci") %>% 
-  group_by(grade, asmtprmrydsbltycd) %>% 
+  group_by(grade, idea_elig_code1) %>% 
   summarize(mean = mean(rit),
             se   = sundry::se(rit)) %>% 
   mutate(lower_bound = mean + qnorm(0.025)*se,
@@ -1029,11 +1063,11 @@ sci_excep_plots <- ode %>%
   nest(-grade) %>% 
   mutate(
     plot = map2(data, grade,
-      ~ggplot(.x, aes(factor(asmtprmrydsbltycd), mean)) +
+      ~ggplot(.x, aes(factor(idea_elig_code1), mean)) +
         geom_errorbar(aes(ymin = lower_bound, 
                           ymax = upper_bound),
                       color = "gray80") +
-        geom_point(aes(color = factor(asmtprmrydsbltycd))) +
+        geom_point(aes(color = factor(idea_elig_code1))) +
         scale_color_brewer("Disability Code", palette = "Set3") +
         labs(y = "Mean",
              title = paste0("Means by Disability Category"),

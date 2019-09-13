@@ -24,51 +24,9 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={Oregon Extended Analyses: 2019},
-            pdfauthor={Brock Rowley; Sevrina Tindal; Philip Irvin; Daniel Anderson; Gerald Tindal},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -114,15 +72,28 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{Oregon Extended Analyses: 2019}
-    \pretitle{\vspace{\droptitle}\centering\huge}
-  \posttitle{\par}
-    \author{Brock Rowley \\ Sevrina Tindal \\ Philip Irvin \\ Daniel Anderson \\ Gerald Tindal}
-    \preauthor{\centering\large\emph}
-  \postauthor{\par}
-      \predate{\centering\large\emph}
-  \postdate{\par}
-    \date{6/29/2019}
+  \title{}
+    \pretitle{\vspace{\droptitle}}
+  \posttitle{}
+    \author{}
+    \preauthor{}\postauthor{}
+    \date{}
+    \predate{}\postdate{}
+  
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 
 \pagenumbering{gobble}
 \usepackage{placeins}
@@ -134,7 +105,6 @@
 \usepackage{booktabs}
 
 \begin{document}
-\maketitle
 
 {
 \setcounter{tocdepth}{5}
@@ -212,6 +182,7 @@ observation was composed of three sections:
   Exemplary (E):
 
   \begin{itemize}
+  \tightlist
   \item
     Inappropriate (I) denotes a level of concern that could clearly
     affect the accuracy of the test results gathered from the test
@@ -305,94 +276,57 @@ The following two tables (Table 21 and Table 22) display the percentage
 of reponses in the nine different domains and percentage of agreement
 between assessors and observers. \FloatBarrier
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(tidyverse)}
-\KeywordTok{library}\NormalTok{(fs)}
-\KeywordTok{library}\NormalTok{(rio)}
-\KeywordTok{library}\NormalTok{(RColorBrewer)}
+\begin{table}[!h]
 
-\NormalTok{d <-}\StringTok{ }\KeywordTok{import}\NormalTok{(}\StringTok{"data/irr/RaterReliability.csv"}\NormalTok{, }\DataTypeTok{setclass =} \StringTok{"tbl_df"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\NormalTok{janitor}\OperatorTok{::}\KeywordTok{clean_names}\NormalTok{()}
+\caption{\label{tab:irr}Percentage for responses}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+var & Exemplary & Appropriate & Somewhat Appropriate & Inappropriate\\
+\midrule
+accessibility\_supports & 40 & 56 & 4 & 0\\
+distraction\_free & 28 & 72 & 0 & 0\\
+level\_support & 52 & 48 & 0 & 0\\
+minimum\_participation & 48 & 48 & 4 & 0\\
+motivation & 44 & 56 & 0 & 0\\
+\addlinespace
+praise & 60 & 40 & 0 & 0\\
+printed\_materials & 56 & 44 & 0 & 0\\
+score\_interpretation & 28 & 48 & 16 & 8\\
+test\_security & 56 & 40 & 4 & 0\\
+\bottomrule
+\end{tabu}
+\end{table}
 
-\KeywordTok{theme_set}\NormalTok{(}\KeywordTok{theme_minimal}\NormalTok{())}
-  \CommentTok{# Percentage for responses    }
-\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{gather}\NormalTok{(var, response, test_security}\OperatorTok{:}\NormalTok{minimum_participation) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(var) }\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{count}\NormalTok{(response)}\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{tot =} \KeywordTok{sum}\NormalTok{(n),}
-         \DataTypeTok{percent =}\NormalTok{ (n}\OperatorTok{/}\NormalTok{tot)}\OperatorTok{*}\DecValTok{100}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n, }\OperatorTok{-}\NormalTok{tot) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(response, percent, }\DataTypeTok{fill =} \DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(Exemplary, Appropriate, }\StringTok{`}\DataTypeTok{Somewhat Appropriate}\StringTok{`}\NormalTok{, Inappropriate)}\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{kable}\NormalTok{(}\StringTok{"latex"}\NormalTok{, }
-        \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-        \DataTypeTok{caption =} \StringTok{"Percentage for responses"}\NormalTok{,}
-        \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{)}
-\CommentTok{# Proportion of respondents who provide a rating of "Mark As Disagree"}
-\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\KeywordTok{starts_with}\NormalTok{(}\StringTok{"item"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{gather}\NormalTok{(item, response) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{count}\NormalTok{(response) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{tot =} \KeywordTok{sum}\NormalTok{(n),}
-         \DataTypeTok{percent =}\NormalTok{ (n}\OperatorTok{/}\NormalTok{tot)}\OperatorTok{*}\DecValTok{100}\NormalTok{)}\OperatorTok{%>%}
-\KeywordTok{kable}\NormalTok{(}\StringTok{"latex"}\NormalTok{, }
-        \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-        \DataTypeTok{caption =} \StringTok{"Mark As Disagree"}\NormalTok{,}
-        \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\begin{table}[!h]
 
+\caption{\label{tab:irr}Mark As Disagree}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+response & n & tot & percent\\
+\midrule
+0 & 310 & 1200 & 25.83\\
+1 & 645 & 1200 & 53.75\\
+1, Mark As Disagree & 1 & 1200 & 0.08\\
+Not Administered & 244 & 1200 & 20.33\\
+\bottomrule
+\end{tabu}
+\end{table}
 \clearpage
 \FloatBarrier
 
 The following table provides a visual display of the responses from the
 nine differnt domains observed.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(tidyverse)}
-\KeywordTok{library}\NormalTok{(fs)}
-\KeywordTok{library}\NormalTok{(rio)}
-\KeywordTok{library}\NormalTok{(RColorBrewer)}
-
-
-\NormalTok{d <-}\StringTok{ }\KeywordTok{import}\NormalTok{(}\StringTok{"data/irr/RaterReliability.csv"}\NormalTok{, }\DataTypeTok{setclass =} \StringTok{"tbl_df"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\NormalTok{janitor}\OperatorTok{::}\KeywordTok{clean_names}\NormalTok{()}
-
-\KeywordTok{theme_set}\NormalTok{(}\KeywordTok{theme_minimal}\NormalTok{())}
-\CommentTok{# Counts for responses}
-\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{gather}\NormalTok{(var, response, test_security}\OperatorTok{:}\NormalTok{minimum_participation) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(var) }\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{count}\NormalTok{(response) }\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{response =} \KeywordTok{factor}\NormalTok{(response, }
-                           \DataTypeTok{levels =} \KeywordTok{c}\NormalTok{(}\StringTok{"Exemplary"}\NormalTok{, }
-                                      \StringTok{"Appropriate"}\NormalTok{, }
-                                      \StringTok{"Somewhat Appropriate"}\NormalTok{,}
-                                      \StringTok{"Inappropriate"}\NormalTok{))) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{aes}\NormalTok{(response, n)) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{geom_col}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{fill =}\NormalTok{ response)) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{scale_fill_brewer}\NormalTok{(}\DataTypeTok{palette =} \StringTok{"Set1"}\NormalTok{) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{var, }\DataTypeTok{labeller =}\NormalTok{ label_parsed) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{guides}\NormalTok{(}\DataTypeTok{fill =} \StringTok{"none"}\NormalTok{) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{""}\NormalTok{) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{y =} \StringTok{""}\NormalTok{) }\OperatorTok{+}
-\StringTok{  }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.text.x =} \KeywordTok{element_text}\NormalTok{(}\DataTypeTok{angle =} \DecValTok{45}\NormalTok{, }\DataTypeTok{vjust =} \FloatTok{0.5}\NormalTok{, }\DataTypeTok{hjust=}\DecValTok{1}\NormalTok{))}
-\end{Highlighting}
-\end{Shaded}
+\includegraphics{Critical_Element_4_files/figure-latex/unnamed-chunk-1-1.pdf}
 
 Results:
 
 ORExt's Selected response format provides for a high percentage of
 inter-rater reliability. One resonse out of the 1200 observed where
 observes disagreed with rateres was in the ELA Writing scoring. `Score
-Interpretation' appears to be a domain in need of additional training.
+Interpretation' appeared to be a domain in need of additional training.
 Qualified Trainers indicated that 16\% of observed Qualified Assessors
 were Somewhat Appropriate and 8\% were Inappropriate in their
 understanding of how to use cut scores and achievement level descriptors
@@ -400,15 +334,15 @@ to interpret scores.
 
 Next Steps and Recommendations:
 
-Additional training should be provided on the QT/QA training site to
-ensure QT's and QA's and using the scoring rubric provided for ELA
-Writing items and appropriately scoring ELA Writing. Samples from the
-different types of ELA Writing should itme promps should be use during
-the QT/QA proficiency assessment to ensure consistency between all who
-administer the ORExt. Score Interpretation training should be
-incoporated into QT training slides and disiminated in QA training. Any
-score interpretation guide section of QT training may need to be
-revisited to ensure clarity around achievement level descriptors.
+Additional training was provided on the QT/QA training site to ensure
+QT's and QA's and using the scoring rubric provided for ELA Writing
+items and appropriately scoring ELA Writing. Samples from the different
+types of ELA Writing itme promps are use during the QT/QA proficiency
+assessment to ensure consistency between all who administer the ORExt.
+Score Interpretation training is incoporated into QT training slides and
+disiminated in QA training. The score interpretation guide section of QT
+training has been revisited to ensure clarity around achievement level
+descriptors.
 
 \hypertarget{a-test-reliability}{%
 \paragraph{4.1A Test Reliability}\label{a-test-reliability}}
@@ -422,33 +356,101 @@ ranging from .67 to .91. Each table below provides the content area,
 grade, and the marginal reliabilities. All test forms were composed of
 36 operational and 12 embedded field-test items.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{marg_rel <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(theta, se) \{}
-\NormalTok{  s <-}\StringTok{ }\KeywordTok{var}\NormalTok{(theta)}
-\NormalTok{  e <-}\StringTok{ }\KeywordTok{mean}\NormalTok{((se)}\OperatorTok{^}\DecValTok{2}\NormalTok{)}
-\NormalTok{  s}\OperatorTok{/}\NormalTok{(s}\OperatorTok{+}\NormalTok{e)}
-\NormalTok{\}}
-\NormalTok{tbls <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(content_area, grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{marg_rel =} \KeywordTok{marg_rel}\NormalTok{(theta, se)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade, }
-         \StringTok{`}\DataTypeTok{Marginal Reliability Estimate}\StringTok{`}\NormalTok{ =}\StringTok{ }\NormalTok{marg_rel) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{split}\NormalTok{(.}\OperatorTok{$}\NormalTok{content_area) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{map}\NormalTok{(}\OperatorTok{~}\KeywordTok{ungroup}\NormalTok{(.) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{content_area))}
+\begin{table}[!h]
 
-\KeywordTok{walk2}\NormalTok{(tbls,}
-      \KeywordTok{paste0}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"ELA"}\NormalTok{, }\StringTok{"Math"}\NormalTok{, }\StringTok{"Reading"}\NormalTok{, }\StringTok{"Science"}\NormalTok{, }\StringTok{"Writing"}\NormalTok{),}
-             \StringTok{" Marginal Reliabilities"}\NormalTok{), }
-      \OperatorTok{~}\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(.x, }\StringTok{"latex"}\NormalTok{, }\DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-                     \DataTypeTok{caption =}\NormalTok{ .y,}
-                    \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:marginal_rel}ELA Marginal Reliabilities}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Marginal Reliability Estimate\\
+\midrule
+3 & 0.92\\
+4 & 0.92\\
+5 & 0.92\\
+6 & 0.92\\
+7 & 0.92\\
+\addlinespace
+8 & 0.91\\
+11 & 0.91\\
+12 & 0.85\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
+\caption{\label{tab:marginal_rel}Math Marginal Reliabilities}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Marginal Reliability Estimate\\
+\midrule
+3 & 0.90\\
+4 & 0.90\\
+5 & 0.90\\
+6 & 0.90\\
+7 & 0.89\\
+\addlinespace
+8 & 0.87\\
+11 & 0.89\\
+12 & 0.89\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:marginal_rel}Reading Marginal Reliabilities}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Marginal Reliability Estimate\\
+\midrule
+3 & 0.87\\
+4 & 0.87\\
+5 & 0.88\\
+6 & 0.88\\
+7 & 0.87\\
+\addlinespace
+8 & 0.86\\
+11 & 0.85\\
+12 & 0.76\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:marginal_rel}Science Marginal Reliabilities}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Marginal Reliability Estimate\\
+\midrule
+5 & 0.90\\
+8 & 0.91\\
+11 & 0.89\\
+12 & 0.84\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:marginal_rel}Writing Marginal Reliabilities}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Marginal Reliability Estimate\\
+\midrule
+3 & 0.82\\
+4 & 0.84\\
+5 & 0.83\\
+6 & 0.82\\
+7 & 0.82\\
+\addlinespace
+8 & 0.82\\
+11 & 0.85\\
+12 & 0.77\\
+\bottomrule
+\end{tabu}
+\end{table}
 \clearpage
 
 \hypertarget{test-information-functions}{%
@@ -501,7 +503,7 @@ TIFs}\label{english-language-arts-tifs}}
 \paragraph{Validation of ORExt Vertical
 Scales}\label{validation-of-orext-vertical-scales}}
 
-The test characteristic curves (TCCs) for the grade-level assessments in
+The Test Characteristic Curves (TCCs) for the grade-level assessments in
 ELA and mathematics demonstrate incrementally increasing growth and test
 demands across Grades 3-8, with the exception of Grade 7 mathematics.
 The Grade 7 mathematics assessment was revised to be more difficult last
@@ -511,8 +513,8 @@ scaled; TCCs are thus not presented for Grade 11 or science. All Rasch
 model scaling, as well as the data visualizations for the TCCs were
 conducted in the R software 3.3.2 environment (R Core Team, 2016) using
 the r2Winsteps package (Anderson, 2015). \FloatBarrier
-\includegraphics{tccs/019ELA_TCC.pdf}
-\includegraphics{tccs/019MathTCC.pdf} \clearpage
+\includegraphics{tccs/ela_tccs.pdf} \includegraphics{tccs/math_tccs.pdf}
+\clearpage
 
 \hypertarget{b-overall-and-conditional-standard-errors-of-measure}{%
 \paragraph{4.1B Overall and Conditional Standard Errors of
@@ -529,38 +531,109 @@ Meet (not included as the lowest level of proficiency) Level 2 = Nearly
 Meets Level 3 = Meets Level 4 = Exceeds
 
 \FloatBarrier
+\begin{table}[!h]
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{se_tbls <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_area }\OperatorTok{==}\StringTok{ "ela"} \OperatorTok{|}
-\StringTok{         }\NormalTok{content_area }\OperatorTok{==}\StringTok{ "math"} \OperatorTok{|}
-\StringTok{         }\NormalTok{content_area }\OperatorTok{==}\StringTok{ "sci"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(content_area, grade, amo_lvl) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\NormalTok{sundry}\OperatorTok{::}\KeywordTok{filter_by_funs}\NormalTok{(rit, min) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(content_area, grade, amo_lvl, rit, rit_se) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{distinct}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{arrange}\NormalTok{(content_area, grade, amo_lvl) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(amo_lvl }\OperatorTok{>}\StringTok{ }\DecValTok{1}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade,}
-         \DataTypeTok{AMO   =}\NormalTok{ amo_lvl, }
-         \DataTypeTok{RIT   =}\NormalTok{ rit, }
-         \DataTypeTok{SE    =}\NormalTok{ rit_se) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{split}\NormalTok{(.}\OperatorTok{$}\NormalTok{content_area) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{map}\NormalTok{(}\OperatorTok{~}\KeywordTok{ungroup}\NormalTok{(.) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{content_area))}
+\caption{\label{tab:cut_score_se}ELA Cut Score Standard Errors}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO & RIT & SE\\
+\midrule
+3 & 2 & 193 & 4.18\\
+3 & 3 & 213 & 3.98\\
+3 & 4 & 229 & 5.59\\
+4 & 2 & 201 & 3.88\\
+4 & 3 & 213 & 3.92\\
+\addlinespace
+4 & 4 & 228 & 5.21\\
+5 & 2 & 202 & 4.00\\
+5 & 3 & 220 & 4.02\\
+5 & 4 & 232 & 5.47\\
+6 & 2 & 205 & 3.83\\
+\addlinespace
+6 & 3 & 220 & 4.03\\
+6 & 4 & 233 & 5.50\\
+7 & 2 & 208 & 3.76\\
+7 & 3 & 222 & 4.03\\
+7 & 4 & 238 & 6.22\\
+\addlinespace
+8 & 2 & 213 & 3.64\\
+8 & 3 & 224 & 3.93\\
+8 & 4 & 237 & 5.43\\
+11 & 2 & 900 & 3.93\\
+11 & 3 & 921 & 4.34\\
+\addlinespace
+11 & 4 & 928 & 5.10\\
+12 & 2 & 901 & 3.87\\
+12 & 3 & 921 & 4.34\\
+12 & 4 & 930 & 5.56\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\KeywordTok{walk2}\NormalTok{(se_tbls,}
-      \KeywordTok{paste0}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"ELA"}\NormalTok{, }\StringTok{"Math"}\NormalTok{, }\StringTok{"Science"}\NormalTok{),}
-             \StringTok{" Cut Score Standard Errors"}\NormalTok{), }
-      \OperatorTok{~}\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(.x, }\StringTok{"latex"}\NormalTok{, }\DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-                     \DataTypeTok{caption =}\NormalTok{ .y,}
-                    \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:cut_score_se}Math Cut Score Standard Errors}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO & RIT & SE\\
+\midrule
+3 & 2 & 192 & 3.83\\
+3 & 3 & 201 & 3.87\\
+3 & 4 & 218 & 5.13\\
+4 & 2 & 194 & 3.86\\
+4 & 3 & 207 & 3.86\\
+\addlinespace
+4 & 4 & 219 & 4.76\\
+5 & 2 & 193 & 4.26\\
+5 & 3 & 207 & 4.00\\
+5 & 4 & 221 & 4.63\\
+6 & 2 & 204 & 3.63\\
+\addlinespace
+6 & 3 & 208 & 3.66\\
+6 & 4 & 222 & 4.67\\
+7 & 2 & 208 & 3.68\\
+7 & 3 & 209 & 3.69\\
+7 & 4 & 223 & 4.47\\
+\addlinespace
+8 & 2 & 208 & 3.79\\
+8 & 3 & 212 & 3.71\\
+8 & 4 & 227 & 4.22\\
+11 & 2 & 902 & 3.67\\
+11 & 3 & 907 & 3.72\\
+\addlinespace
+11 & 4 & 923 & 5.01\\
+12 & 2 & 903 & 3.66\\
+12 & 3 & 907 & 3.72\\
+12 & 4 & 923 & 5.01\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
+\caption{\label{tab:cut_score_se}Science Cut Score Standard Errors}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO & RIT & SE\\
+\midrule
+5 & 2 & 506 & 3.63\\
+5 & 3 & 518 & 4.10\\
+5 & 4 & 532 & 6.19\\
+8 & 2 & 810 & 3.73\\
+8 & 3 & 820 & 4.29\\
+\addlinespace
+8 & 4 & 832 & 6.25\\
+11 & 2 & 901 & 3.56\\
+11 & 3 & 914 & 3.92\\
+11 & 4 & 930 & 6.17\\
+12 & 2 & 901 & 3.56\\
+\addlinespace
+12 & 3 & 914 & 3.92\\
+12 & 4 & 930 & 6.17\\
+\bottomrule
+\end{tabu}
+\end{table}
 \FloatBarrier
 
 \hypertarget{c-classification-accuracy-consistency}{%
@@ -580,57 +653,99 @@ below. Results denote very high levels of classification accuracy and
 consistency.
 
 \FloatBarrier
+\begin{table}[!h]
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{cuts <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(content_area, grade, amo_lvl) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{cut =} \KeywordTok{min}\NormalTok{(theta)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(amo_lvl }\OperatorTok{>}\StringTok{ }\DecValTok{1}\NormalTok{)}
+\caption{\label{tab:class_acc}ELA Accuracy/Consistency}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO & Accuracy & Consistency\\
+\midrule
+11 & 2 & 0.97 & 0.96\\
+11 & 3 & 0.93 & 0.91\\
+11 & 4 & 0.92 & 0.89\\
+3 & 2 & 0.97 & 0.95\\
+3 & 3 & 0.91 & 0.88\\
+\addlinespace
+3 & 4 & 0.96 & 0.95\\
+4 & 2 & 0.94 & 0.91\\
+4 & 3 & 0.93 & 0.90\\
+4 & 4 & 0.94 & 0.92\\
+5 & 2 & 0.95 & 0.94\\
+\addlinespace
+5 & 3 & 0.94 & 0.92\\
+5 & 4 & 0.94 & 0.91\\
+6 & 2 & 0.95 & 0.93\\
+6 & 3 & 0.93 & 0.90\\
+6 & 4 & 0.93 & 0.91\\
+\addlinespace
+7 & 2 & 0.93 & 0.91\\
+7 & 3 & 0.93 & 0.91\\
+7 & 4 & 0.94 & 0.92\\
+8 & 2 & 0.94 & 0.92\\
+8 & 3 & 0.93 & 0.90\\
+\addlinespace
+8 & 4 & 0.95 & 0.94\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\NormalTok{diffs <-}\StringTok{ }\KeywordTok{map_df}\NormalTok{(}\KeywordTok{dir_ls}\NormalTok{(}\KeywordTok{file.path}\NormalTok{(}\StringTok{"data"}\NormalTok{, }\StringTok{"ifiles18"}\NormalTok{)), read_sub_files)}
+\caption{\label{tab:class_acc}Math Accuracy/Consistency}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO & Accuracy & Consistency\\
+\midrule
+11 & 2 & 0.92 & 0.88\\
+11 & 3 & 0.91 & 0.88\\
+11 & 4 & 0.96 & 0.94\\
+3 & 2 & 0.93 & 0.90\\
+3 & 3 & 0.91 & 0.87\\
+\addlinespace
+3 & 4 & 0.97 & 0.96\\
+4 & 2 & 0.91 & 0.87\\
+4 & 3 & 0.92 & 0.89\\
+4 & 4 & 0.96 & 0.95\\
+5 & 2 & 0.93 & 0.90\\
+\addlinespace
+5 & 3 & 0.90 & 0.86\\
+5 & 4 & 0.96 & 0.94\\
+6 & 2 & 0.93 & 0.90\\
+6 & 3 & 0.93 & 0.90\\
+6 & 4 & 0.96 & 0.94\\
+\addlinespace
+7 & 2 & 0.90 & 0.86\\
+7 & 3 & 0.91 & 0.87\\
+7 & 4 & 0.97 & 0.96\\
+8 & 2 & 0.89 & 0.85\\
+8 & 3 & 0.88 & 0.84\\
+\addlinespace
+8 & 4 & 0.99 & 0.98\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\NormalTok{cuts <-}\StringTok{ }\NormalTok{diffs }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(content_area, grade, difficulty) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{content_area, }\OperatorTok{-}\NormalTok{grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{ip =} \KeywordTok{map}\NormalTok{(data, }\OperatorTok{~}\KeywordTok{as.matrix}\NormalTok{(}\KeywordTok{data.frame}\NormalTok{(}\DecValTok{1}\NormalTok{, .}\OperatorTok{$}\NormalTok{difficulty, }\DecValTok{0}\NormalTok{))),}
-         \DataTypeTok{content_area =} \KeywordTok{tolower}\NormalTok{(content_area)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{left_join}\NormalTok{(cuts)}
-
-\NormalTok{abils <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{content_area, }\OperatorTok{-}\NormalTok{grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{persons =}\NormalTok{ data)}
-
-\NormalTok{cuts <-}\StringTok{ }\KeywordTok{left_join}\NormalTok{(cuts, abils)}
-
-\NormalTok{acc_con_tbls <-}\StringTok{ }\NormalTok{cuts }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{theta =} \KeywordTok{map}\NormalTok{(persons, }\StringTok{"theta"}\NormalTok{),}
-         \DataTypeTok{se    =} \KeywordTok{map}\NormalTok{(persons, }\StringTok{"se"}\NormalTok{),}
-         \DataTypeTok{marginal =} \KeywordTok{pmap}\NormalTok{(}\KeywordTok{list}\NormalTok{(cut, ip, theta, se), }
-                         \ControlFlowTok{function}\NormalTok{(cut, ip, theta, se)}
-                         \KeywordTok{class.Rud}\NormalTok{(cut, ip, theta, se, }\DataTypeTok{D =} \DecValTok{1}\NormalTok{)}\OperatorTok{$}\NormalTok{Marginal),}
-         \DataTypeTok{accuracy =} \KeywordTok{map_dbl}\NormalTok{(marginal, }\DecValTok{1}\NormalTok{),}
-         \DataTypeTok{consistency =} \KeywordTok{map_dbl}\NormalTok{(marginal, }\DecValTok{2}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(content_area, grade, amo_lvl, accuracy, consistency) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade,}
-         \DataTypeTok{AMO   =}\NormalTok{ amo_lvl,}
-         \DataTypeTok{Accuracy =}\NormalTok{ accuracy,}
-         \DataTypeTok{Consistency =}\NormalTok{ consistency) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{split}\NormalTok{(.}\OperatorTok{$}\NormalTok{content_area) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{map}\NormalTok{(}\OperatorTok{~}\KeywordTok{ungroup}\NormalTok{(.) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{content_area))}
-
-\KeywordTok{walk2}\NormalTok{(acc_con_tbls,}
-      \KeywordTok{paste0}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"ELA"}\NormalTok{, }\StringTok{"Math"}\NormalTok{, }\StringTok{"Science"}\NormalTok{),}
-             \StringTok{" Accuracy/Consistency"}\NormalTok{), }
-      \OperatorTok{~}\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(.x, }\StringTok{"latex"}\NormalTok{, }\DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-                     \DataTypeTok{caption =}\NormalTok{ .y,}
-                    \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
-
+\caption{\label{tab:class_acc}Science Accuracy/Consistency}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO & Accuracy & Consistency\\
+\midrule
+11 & 2 & 0.97 & 0.95\\
+11 & 3 & 0.95 & 0.92\\
+11 & 4 & 0.91 & 0.87\\
+5 & 2 & 0.94 & 0.92\\
+5 & 3 & 0.94 & 0.92\\
+\addlinespace
+5 & 4 & 0.93 & 0.90\\
+8 & 2 & 0.95 & 0.93\\
+8 & 3 & 0.92 & 0.89\\
+8 & 4 & 0.93 & 0.90\\
+\bottomrule
+\end{tabu}
+\end{table}
 \FloatBarrier
 
 The ORExt is not a computer-adaptive instrument so estimate precision
@@ -703,105 +818,58 @@ bases on race was relatively balanced, with 14 privileging students who
 were Non-White and 16 privileging students who were White.
 
 \FloatBarrier
+\begin{table}[!h]
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{raw <-}\StringTok{ }\KeywordTok{dir_ls}\NormalTok{(}\StringTok{"data/raw"}\NormalTok{, }\DataTypeTok{glob =} \StringTok{"*.txt"}\NormalTok{)}
-\NormalTok{raw <-}\StringTok{ }\NormalTok{raw[}\OperatorTok{-}\KeywordTok{grep}\NormalTok{(}\StringTok{"XO"}\NormalTok{, raw)]}
+\caption{\label{tab:dif1}ELA Differential Item Functioning Grades: White/Non-White}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & A & B & C\\
+\midrule
+3 & 43 & 5 & 0\\
+4 & 47 & 0 & 1\\
+5 & 40 & 8 & 0\\
+6 & 43 & 3 & 2\\
+7 & 44 & 4 & 0\\
+\addlinespace
+8 & 42 & 2 & 4\\
+11 & 37 & 7 & 4\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\NormalTok{d <-}\StringTok{ }\KeywordTok{map_df}\NormalTok{(raw, read_delim, }\DataTypeTok{delim =} \StringTok{"|"}\NormalTok{, }\DataTypeTok{na =} \StringTok{"N"}\NormalTok{, }\DataTypeTok{.id =} \StringTok{"content"}\NormalTok{) }\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{clean_names}\NormalTok{(}\StringTok{"old_janitor"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content =} \KeywordTok{str_extract}\NormalTok{(content, }\StringTok{"XE|XM|XS"}\NormalTok{),}
-         \DataTypeTok{content =} \KeywordTok{case_when}\NormalTok{(content }\OperatorTok{==}\StringTok{ "XE"} \OperatorTok{~}\StringTok{ "ELA"}\NormalTok{,}
-\NormalTok{                             content }\OperatorTok{==}\StringTok{ "XM"} \OperatorTok{~}\StringTok{ "Math"}\NormalTok{,}
-                             \OtherTok{TRUE} \OperatorTok{~}\StringTok{ "Science"}\NormalTok{),}
-         \DataTypeTok{grade_for_match =} \KeywordTok{parse_number}\NormalTok{(enrlgrattst),}
-         \DataTypeTok{grade_for_match =} \KeywordTok{ifelse}\NormalTok{(grade_for_match }\OperatorTok{==}\StringTok{ }\DecValTok{12}\NormalTok{, }
-                                  \DecValTok{11}\NormalTok{, }
-\NormalTok{                                  grade_for_match)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{gather}\NormalTok{(item, response, }\KeywordTok{starts_with}\NormalTok{(}\StringTok{"item"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{item =} \KeywordTok{parse_number}\NormalTok{(item)) }
+\caption{\label{tab:dif1}Math Differential Item Functioning Grades: White/Non-White}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & A & B & C\\
+\midrule
+3 & 42 & 4 & 2\\
+4 & 44 & 3 & 1\\
+5 & 45 & 2 & 1\\
+6 & 47 & 1 & 0\\
+7 & 45 & 2 & 1\\
+\addlinespace
+8 & 43 & 3 & 2\\
+11 & 46 & 2 & 0\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\NormalTok{item_ids <-}\StringTok{ }\KeywordTok{map_df}\NormalTok{(}\KeywordTok{dir_ls}\NormalTok{(}\StringTok{"data/tests"}\NormalTok{), }
-                     \OperatorTok{~}\KeywordTok{read_csv}\NormalTok{(.) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(Item, }\StringTok{`}\DataTypeTok{Item ID}\StringTok{`}\NormalTok{), }
-                     \DataTypeTok{.id =} \StringTok{"file"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\NormalTok{janitor}\OperatorTok{::}\KeywordTok{clean_names}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content =} \KeywordTok{str_extract}\NormalTok{(file, }\StringTok{"ELA|Math|Science"}\NormalTok{),}
-         \DataTypeTok{grade_for_match =} \KeywordTok{as.numeric}\NormalTok{(}\KeywordTok{gsub}\NormalTok{(}\StringTok{".+/G(}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{d.?)(_.+)"}\NormalTok{, }\StringTok{"}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{1"}\NormalTok{, file))) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{file)}
-
-\NormalTok{d <-}\StringTok{ }\KeywordTok{left_join}\NormalTok{(d, item_ids) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{item) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade_for_match, content) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{nest}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{data =} \KeywordTok{map}\NormalTok{(data, }\OperatorTok{~}\KeywordTok{spread}\NormalTok{(., item_id, response))) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{data  =} \KeywordTok{map}\NormalTok{(data, }\OperatorTok{~}\KeywordTok{remove_empty}\NormalTok{(., }\StringTok{"cols"}\NormalTok{)),}
-         \DataTypeTok{white =} \KeywordTok{map}\NormalTok{(data, }\OperatorTok{~}\KeywordTok{ifelse}\NormalTok{(.[[}\StringTok{"ethniccd"}\NormalTok{]] }\OperatorTok{==}\StringTok{ "W"}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{)),}
-         \DataTypeTok{male =} \KeywordTok{map}\NormalTok{(data, }\OperatorTok{~}\KeywordTok{ifelse}\NormalTok{(.[[}\StringTok{"gndr"}\NormalTok{]] }\OperatorTok{==}\StringTok{ "M"}\NormalTok{, }\DecValTok{1}\NormalTok{, }\DecValTok{0}\NormalTok{)),}
-         \DataTypeTok{items =} \KeywordTok{map}\NormalTok{(data, }\OperatorTok{~}\KeywordTok{select}\NormalTok{(., }\OperatorTok{-}\NormalTok{testeventid}\OperatorTok{:-}\NormalTok{tstcmpltdt)),}
-         \DataTypeTok{items =} \KeywordTok{map}\NormalTok{(items, }\OperatorTok{~}\KeywordTok{map_df}\NormalTok{(., }\OperatorTok{~}\KeywordTok{ifelse}\NormalTok{(}\KeywordTok{is.na}\NormalTok{(.), }\DecValTok{0}\NormalTok{, .))))}
-
-\KeywordTok{library}\NormalTok{(difR)}
-\NormalTok{dif <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{gndr_dif =} \KeywordTok{map2}\NormalTok{(items, male, }\OperatorTok{~}\KeywordTok{difMH}\NormalTok{(.x, .y, }\DecValTok{1}\NormalTok{, }\DataTypeTok{purify =} \OtherTok{TRUE}\NormalTok{)),}
-         \DataTypeTok{eth_dif  =} \KeywordTok{map2}\NormalTok{(items, white, }\OperatorTok{~}\KeywordTok{difMH}\NormalTok{(.x, .y, }\DecValTok{1}\NormalTok{, }\DataTypeTok{purify =} \OtherTok{TRUE}\NormalTok{)))}
-
-\NormalTok{extract_grades <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(dif_mod, items) \{}
-\NormalTok{  item_names <-}\StringTok{ }\KeywordTok{names}\NormalTok{(items)}
-\NormalTok{  delta  <-}\StringTok{ }\FloatTok{-2.35}\OperatorTok{*}\NormalTok{(}\KeywordTok{log}\NormalTok{(dif_mod}\OperatorTok{$}\NormalTok{alphaMH))}
-\NormalTok{  grades <-}\StringTok{ }\KeywordTok{symnum}\NormalTok{(}\KeywordTok{abs}\NormalTok{(delta), }
-                   \KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{1}\NormalTok{, }\FloatTok{1.5}\NormalTok{, }\OtherTok{Inf}\NormalTok{), }
-                   \DataTypeTok{symbols =} \KeywordTok{c}\NormalTok{(}\StringTok{"A"}\NormalTok{, }\StringTok{"B"}\NormalTok{, }\StringTok{"C"}\NormalTok{))}
-  \KeywordTok{tibble}\NormalTok{(}\DataTypeTok{item =}\NormalTok{ item_names, delta, grades) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{grades =} \KeywordTok{as.character}\NormalTok{(grades))}
-\NormalTok{\}}
-\CommentTok{#dir.create("dif")}
-\NormalTok{dif }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{gndr_grades =} \KeywordTok{map2}\NormalTok{(gndr_dif, items, extract_grades)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(grade_for_match, content, gndr_grades) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unnest}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{write_csv}\NormalTok{(}\StringTok{"dif/gender_dif.csv"}\NormalTok{)}
-
-\NormalTok{dif }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{eth_grades =} \KeywordTok{map2}\NormalTok{(eth_dif, items, extract_grades)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(grade_for_match, content, eth_grades) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unnest}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{write_csv}\NormalTok{(}\StringTok{"dif/minority_dif.csv"}\NormalTok{)}
-
-\NormalTok{gndr_tbls <-}\StringTok{ }\NormalTok{dif }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{gndr_grades =} \KeywordTok{map2}\NormalTok{(gndr_dif, items, extract_grades)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(grade_for_match, content, gndr_grades) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unnest}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade_for_match, content) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{count}\NormalTok{(grades) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(grades, n, }\DataTypeTok{fill =} \DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade_for_match) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{split}\NormalTok{(.}\OperatorTok{$}\NormalTok{content) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{map}\NormalTok{(}\OperatorTok{~}\KeywordTok{ungroup}\NormalTok{(.) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{content))}
-
-\NormalTok{minority_tbls <-}\StringTok{ }\NormalTok{dif }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{eth_grades =} \KeywordTok{map2}\NormalTok{(eth_dif, items, extract_grades)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(grade_for_match, content, eth_grades) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unnest}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade_for_match, content) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{count}\NormalTok{(grades) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(grades, n, }\DataTypeTok{fill =} \DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade_for_match) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{split}\NormalTok{(.}\OperatorTok{$}\NormalTok{content) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{map}\NormalTok{(}\OperatorTok{~}\KeywordTok{ungroup}\NormalTok{(.) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{content))}
-
-\KeywordTok{walk2}\NormalTok{(minority_tbls,}
-      \KeywordTok{paste0}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"ELA"}\NormalTok{, }\StringTok{"Math"}\NormalTok{, }\StringTok{"Science"}\NormalTok{),}
-             \StringTok{" Differential Item Functioning Grades: White/Non-White"}\NormalTok{), }
-      \OperatorTok{~}\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(.x, }\StringTok{"latex"}\NormalTok{, }\DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-                     \DataTypeTok{caption =}\NormalTok{ .y,}
-                    \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
-
+\caption{\label{tab:dif1}Science Differential Item Functioning Grades: White/Non-White}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & A & B & C\\
+\midrule
+5 & 44 & 4 & 0\\
+8 & 43 & 3 & 2\\
+11 & 40 & 6 & 2\\
+\bottomrule
+\end{tabu}
+\end{table}
 \FloatBarrier
 
 In terms of the Male/Female analyses, 10 out of 16 items flagged as
@@ -811,19 +879,58 @@ privileged Females in Science. Overall, DIF flagging based on sex was
 relatively balanced, with 22 privileging Females and 14 privileging
 Males.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{walk2}\NormalTok{(gndr_tbls,}
-      \KeywordTok{paste0}\NormalTok{(}\KeywordTok{c}\NormalTok{(}\StringTok{"ELA"}\NormalTok{, }\StringTok{"Math"}\NormalTok{, }\StringTok{"Science"}\NormalTok{),}
-             \StringTok{" Differential Item Functioning Grades: Male/Female"}\NormalTok{), }
-      \OperatorTok{~}\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(.x, }\StringTok{"latex"}\NormalTok{, }\DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-                     \DataTypeTok{caption =}\NormalTok{ .y,}
-                    \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
+\begin{table}[!h]
+
+\caption{\label{tab:gndr_dif}ELA Differential Item Functioning Grades: Male/Female}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & A & B & C\\
+\midrule
+3 & 34 & 10 & 4\\
+4 & 43 & 4 & 1\\
+5 & 43 & 5 & 0\\
+6 & 41 & 6 & 1\\
+7 & 42 & 5 & 1\\
+\addlinespace
+8 & 38 & 7 & 3\\
+11 & 37 & 7 & 4\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:gndr_dif}Math Differential Item Functioning Grades: Male/Female}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & A & B & C\\
+\midrule
+3 & 39 & 7 & 2\\
+4 & 42 & 6 & 0\\
+5 & 45 & 2 & 1\\
+6 & 38 & 9 & 1\\
+7 & 45 & 2 & 1\\
+\addlinespace
+8 & 42 & 6 & 0\\
+11 & 40 & 5 & 3\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:gndr_dif}Science Differential Item Functioning Grades: Male/Female}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & A & B & C\\
+\midrule
+5 & 42 & 5 & 1\\
+8 & 37 & 4 & 7\\
+11 & 36 & 8 & 4\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 \clearpage
 
@@ -843,35 +950,37 @@ assessments, though percentages taking the ORExt are slightly higher for
 most students of color and generally lower for students who are Asian or
 White (see \emph{Appendix} 4.2).
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{grade =} \KeywordTok{map}\NormalTok{(data, }\StringTok{"ssidenrlgrdcd"}\NormalTok{),}
-         \DataTypeTok{ethniccd =} \KeywordTok{map}\NormalTok{(data, }\StringTok{"ethniccd"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(grade, content, ethniccd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unnest}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade, content) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{count}\NormalTok{(ethniccd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{percent =}\NormalTok{ (n}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(n))}\OperatorTok{*}\DecValTok{100}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(ethniccd, percent, }\DataTypeTok{fill =} \DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade, }
-         \DataTypeTok{Content =}\NormalTok{ content,}
-         \DataTypeTok{Asian =}\NormalTok{ A,}
-         \DataTypeTok{Black =}\NormalTok{ B,}
-         \DataTypeTok{Hispanic =}\NormalTok{ H,}
-         \StringTok{`}\DataTypeTok{Am Ind}\StringTok{`}\NormalTok{ =}\StringTok{ }\NormalTok{I,}
-         \DataTypeTok{Multiethnic =}\NormalTok{ M,}
-         \StringTok{`}\DataTypeTok{Pac Isl}\StringTok{`}\NormalTok{ =}\StringTok{ }\NormalTok{P,}
-         \DataTypeTok{White =}\NormalTok{ W) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{kable}\NormalTok{(}\StringTok{"latex"}\NormalTok{, }
-        \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-        \DataTypeTok{caption =} \StringTok{"Race/Ethnicity Proportions"}\NormalTok{,}
-        \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\begin{table}[!h]
+
+\caption{\label{tab:eth_perc}Race/Ethnicity Proportions}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Content & Am Ind & Asian & Black & Hispanic & Multiethnic & Pac Isl & White & Missing\\
+\midrule
+3 & ELA & 0.82 & 3.70 & 4.32 & 25.93 & 5.97 & 0.62 & 54.12 & 4.53\\
+3 & Math & 0.85 & 3.81 & 3.59 & 25.79 & 5.92 & 0.63 & 54.76 & 4.65\\
+4 & ELA & 2.06 & 2.99 & 3.55 & 28.04 & 7.85 & 0.75 & 51.03 & 3.74\\
+4 & Math & 1.90 & 3.23 & 3.42 & 28.14 & 7.98 & 0.76 & 50.76 & 3.80\\
+5 & ELA & 1.95 & 3.19 & 2.48 & 27.96 & 6.90 & 1.42 & 52.74 & 3.36\\
+\addlinespace
+5 & Math & 1.82 & 3.10 & 2.37 & 28.05 & 6.92 & 1.46 & 52.82 & 3.46\\
+5 & Science & 1.82 & 2.91 & 2.37 & 27.69 & 6.92 & 1.46 & 53.01 & 3.83\\
+6 & ELA & 1.57 & 4.70 & 2.94 & 26.22 & 8.02 & 0.98 & 50.49 & 5.09\\
+6 & Math & 1.59 & 4.37 & 2.98 & 26.59 & 8.13 & 0.99 & 50.40 & 4.96\\
+7 & ELA & 1.14 & 3.43 & 2.86 & 22.67 & 5.71 & 0.76 & 56.38 & 7.05\\
+\addlinespace
+7 & Math & 1.15 & 3.44 & 2.87 & 21.80 & 5.74 & 0.76 & 57.17 & 7.07\\
+8 & ELA & 2.15 & 2.79 & 2.79 & 23.61 & 8.15 & 1.07 & 55.15 & 4.29\\
+8 & Math & 1.96 & 2.83 & 2.83 & 23.70 & 8.26 & 1.09 & 55.00 & 4.35\\
+8 & Science & 1.33 & 2.88 & 2.88 & 23.95 & 8.43 & 1.11 & 55.21 & 4.21\\
+11 & ELA & 2.00 & 2.40 & 2.60 & 26.00 & 5.80 & 0.60 & 55.20 & 5.40\\
+\addlinespace
+11 & Math & 2.02 & 2.42 & 2.42 & 26.06 & 5.86 & 0.61 & 55.56 & 5.05\\
+11 & Science & 1.90 & 2.33 & 2.11 & 25.16 & 5.92 & 0.63 & 56.87 & 5.07\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 The majority of students who participated in the ORExt were students
 with Intellectual Disability (30-45\%) and students with Autism Spectrum
@@ -888,26 +997,37 @@ grade level displayed below.
 \paragraph{Exceptionality Percentages By Content Area and Grade
 Level}\label{exceptionality-percentages-by-content-area-and-grade-level}}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade, content_area) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{count}\NormalTok{(asmtprmrydsbltycd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{percent =}\NormalTok{ (n}\OperatorTok{/}\KeywordTok{sum}\NormalTok{(n))}\OperatorTok{*}\DecValTok{100}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(asmtprmrydsbltycd, percent, }\DataTypeTok{fill =} \DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_area }\OperatorTok{!=}\StringTok{ "rdg"} \OperatorTok{&}
-\StringTok{         }\NormalTok{content_area }\OperatorTok{!=}\StringTok{ "wri"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade,}
-         \DataTypeTok{Content =}\NormalTok{ content_area) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{kable}\NormalTok{(}\StringTok{"latex"}\NormalTok{, }
-        \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-        \DataTypeTok{caption =} \StringTok{"Disability Proportions"}\NormalTok{,}
-        \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\begin{table}[!h]
+
+\caption{\label{tab:disab_perc}Disability Proportions}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Content & 0 & 10 & 20 & 40 & 43 & 50 & 60 & 70 & 74 & 80 & 82 & 90 & Missing\\
+\midrule
+3 & ELA & 0.00 & 31.71 & 0.20 & 0.41 & 0.20 & 5.89 & 1.83 & 2.24 & 1.22 & 17.68 & 36.18 & 2.44 & 0.00\\
+3 & Math & 0.00 & 31.94 & 0.21 & 0.42 & 0.21 & 5.85 & 1.88 & 2.30 & 1.25 & 16.70 & 36.74 & 2.51 & 0.00\\
+4 & ELA & 0.00 & 33.58 & 0.93 & 0.93 & 0.00 & 3.15 & 1.86 & 4.64 & 0.56 & 15.21 & 35.81 & 3.15 & 0.19\\
+4 & Math & 0.00 & 33.96 & 0.94 & 0.94 & 0.00 & 3.21 & 1.89 & 3.96 & 0.57 & 15.09 & 36.04 & 3.21 & 0.19\\
+5 & ELA & 0.00 & 42.71 & 0.53 & 0.35 & 0.00 & 4.22 & 0.88 & 2.99 & 0.35 & 13.36 & 29.88 & 4.57 & 0.18\\
+\addlinespace
+5 & Math & 0.00 & 42.96 & 0.54 & 0.36 & 0.00 & 4.33 & 0.90 & 2.89 & 0.36 & 13.54 & 29.24 & 4.69 & 0.18\\
+5 & Science & 0.00 & 43.14 & 0.54 & 0.18 & 0.00 & 4.33 & 0.90 & 2.89 & 0.36 & 13.54 & 29.24 & 4.69 & 0.18\\
+6 & ELA & 0.00 & 40.15 & 0.39 & 0.00 & 0.00 & 5.98 & 2.12 & 3.28 & 0.97 & 13.32 & 29.54 & 4.25 & 0.00\\
+6 & Math & 0.00 & 40.35 & 0.39 & 0.00 & 0.00 & 5.85 & 2.14 & 3.31 & 0.97 & 13.45 & 29.43 & 4.09 & 0.00\\
+7 & ELA & 0.19 & 48.02 & 0.38 & 0.00 & 0.00 & 2.82 & 1.51 & 2.82 & 0.94 & 10.55 & 29.19 & 3.39 & 0.19\\
+\addlinespace
+7 & Math & 0.19 & 47.92 & 0.19 & 0.00 & 0.00 & 2.84 & 1.52 & 2.84 & 0.95 & 10.61 & 29.36 & 3.41 & 0.19\\
+8 & ELA & 0.00 & 45.67 & 0.63 & 0.85 & 0.00 & 2.33 & 2.11 & 2.75 & 0.85 & 9.30 & 32.98 & 2.54 & 0.00\\
+8 & Math & 0.00 & 45.18 & 0.64 & 0.86 & 0.00 & 2.36 & 2.14 & 2.78 & 0.86 & 9.42 & 33.19 & 2.57 & 0.00\\
+8 & Science & 0.00 & 44.90 & 0.65 & 0.87 & 0.00 & 2.39 & 2.17 & 2.82 & 0.87 & 9.54 & 33.41 & 2.39 & 0.00\\
+11 & ELA & 0.00 & 52.65 & 0.20 & 0.20 & 0.20 & 2.16 & 1.77 & 2.75 & 0.79 & 8.45 & 27.90 & 2.95 & 0.00\\
+\addlinespace
+11 & Math & 0.00 & 53.07 & 0.20 & 0.20 & 0.20 & 2.18 & 1.58 & 2.77 & 0.79 & 8.51 & 27.52 & 2.97 & 0.00\\
+11 & Science & 0.00 & 52.80 & 0.21 & 0.21 & 0.21 & 2.07 & 1.66 & 2.69 & 0.62 & 8.28 & 28.36 & 2.90 & 0.00\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 \hypertarget{observed-means-and-standard-deviations}{%
 \paragraph{Observed Means and Standard
@@ -931,85 +1051,86 @@ eligibility guidelines. The scale from 2015-16 to 2016-17 appears to
 have stabilized because the student population tested was more
 consistent.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(datapasta)}
-\NormalTok{rit_}\DecValTok{15}\NormalTok{ <-}\StringTok{ }\NormalTok{tibble}\OperatorTok{::}\KeywordTok{tribble}\NormalTok{(}
-  \OperatorTok{~}\NormalTok{Grade, }\OperatorTok{~}\NormalTok{ELA.Mean, }\OperatorTok{~}\NormalTok{ELA.SD, }\OperatorTok{~}\NormalTok{Math.Mean, }\OperatorTok{~}\NormalTok{Math.SD, }\OperatorTok{~}\NormalTok{Sci.Mean, }\OperatorTok{~}\NormalTok{Sci.SD,}
-\NormalTok{      3L,     }\FloatTok{219.3}\NormalTok{,    }\FloatTok{24.6}\NormalTok{,      }\FloatTok{201.5}\NormalTok{,     }\FloatTok{20.8}\NormalTok{,        }\OtherTok{NA}\NormalTok{,      }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      4L,     }\FloatTok{222.8}\NormalTok{,    }\FloatTok{23.6}\NormalTok{,      }\FloatTok{204.8}\NormalTok{,     }\FloatTok{19.8}\NormalTok{,        }\OtherTok{NA}\NormalTok{,      }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      5L,     }\FloatTok{224.9}\NormalTok{,      }\DecValTok{25}\NormalTok{,      }\FloatTok{205.3}\NormalTok{,     }\FloatTok{18.1}\NormalTok{,     }\FloatTok{517.6}\NormalTok{,    }\FloatTok{25.6}\NormalTok{,}
-\NormalTok{      6L,     }\FloatTok{226.3}\NormalTok{,      }\DecValTok{24}\NormalTok{,      }\FloatTok{207.7}\NormalTok{,     }\FloatTok{17.7}\NormalTok{,        }\OtherTok{NA}\NormalTok{,      }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      7L,     }\FloatTok{226.4}\NormalTok{,      }\DecValTok{25}\NormalTok{,      }\FloatTok{207.9}\NormalTok{,       }\DecValTok{19}\NormalTok{,        }\OtherTok{NA}\NormalTok{,      }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      8L,     }\FloatTok{225.4}\NormalTok{,    }\FloatTok{24.1}\NormalTok{,      }\FloatTok{207.8}\NormalTok{,     }\FloatTok{17.3}\NormalTok{,     }\FloatTok{822.1}\NormalTok{,    }\FloatTok{25.8}\NormalTok{,}
-\NormalTok{     11L,     }\FloatTok{922.5}\NormalTok{,    }\FloatTok{28.5}\NormalTok{,      }\FloatTok{903.8}\NormalTok{,     }\FloatTok{21.1}\NormalTok{,     }\FloatTok{920.8}\NormalTok{,    }\FloatTok{27.7}
-\NormalTok{  )}
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(rit_}\DecValTok{15}\NormalTok{, }\StringTok{"latex"}\NormalTok{, }
-        \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-        \DataTypeTok{caption =} \StringTok{"Means/SDs: 2014-15"}\NormalTok{,}
-        \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{  }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{)}
+\begin{table}[!h]
 
-\NormalTok{rit_}\DecValTok{16}\NormalTok{ <-}\StringTok{ }\NormalTok{tibble}\OperatorTok{::}\KeywordTok{tribble}\NormalTok{(}
-  \OperatorTok{~}\NormalTok{Grade, }\OperatorTok{~}\NormalTok{ElA.Mean, }\OperatorTok{~}\NormalTok{ELA.SD, }\OperatorTok{~}\NormalTok{Math.Mean, }\OperatorTok{~}\NormalTok{Math.SD, }\OperatorTok{~}\NormalTok{Science.Mean, }\OperatorTok{~}\NormalTok{Science.SD,}
-\NormalTok{      3L,     }\FloatTok{210.3}\NormalTok{,      }\DecValTok{23}\NormalTok{,      }\FloatTok{197.6}\NormalTok{,     }\FloatTok{20.2}\NormalTok{,            }\OtherTok{NA}\NormalTok{,          }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      4L,     }\FloatTok{212.3}\NormalTok{,    }\FloatTok{22.9}\NormalTok{,      }\FloatTok{198.1}\NormalTok{,     }\FloatTok{18.7}\NormalTok{,            }\OtherTok{NA}\NormalTok{,          }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      5L,     }\FloatTok{217.1}\NormalTok{,    }\FloatTok{24.5}\NormalTok{,      }\FloatTok{201.2}\NormalTok{,     }\FloatTok{17.2}\NormalTok{,         }\FloatTok{514.2}\NormalTok{,        }\FloatTok{22.1}\NormalTok{,}
-\NormalTok{      6L,     }\FloatTok{220.1}\NormalTok{,    }\FloatTok{25.5}\NormalTok{,      }\FloatTok{204.8}\NormalTok{,     }\FloatTok{17.6}\NormalTok{,            }\OtherTok{NA}\NormalTok{,          }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      7L,     }\FloatTok{223.6}\NormalTok{,    }\FloatTok{28.9}\NormalTok{,      }\FloatTok{205.4}\NormalTok{,       }\DecValTok{19}\NormalTok{,            }\OtherTok{NA}\NormalTok{,          }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      8L,     }\FloatTok{221.2}\NormalTok{,    }\FloatTok{24.8}\NormalTok{,      }\FloatTok{206.7}\NormalTok{,     }\FloatTok{17.2}\NormalTok{,           }\DecValTok{819}\NormalTok{,        }\FloatTok{25.6}\NormalTok{,}
-\NormalTok{     11L,     }\FloatTok{920.7}\NormalTok{,    }\FloatTok{27.7}\NormalTok{,      }\FloatTok{902.3}\NormalTok{,       }\DecValTok{20}\NormalTok{,           }\DecValTok{918}\NormalTok{,        }\FloatTok{24.9}
-\NormalTok{  )}
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(rit_}\DecValTok{16}\NormalTok{, }\StringTok{"latex"}\NormalTok{, }
-        \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-        \DataTypeTok{caption =} \StringTok{"Means/SDs: 2015-16"}\NormalTok{,}
-        \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{)}
+\caption{\label{tab:unnamed-chunk-2}Means/SDs: 2014-15}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & ELA.Mean & ELA.SD & Math.Mean & Math.SD & Sci.Mean & Sci.SD\\
+\midrule
+3 & 219.3 & 24.6 & 201.5 & 20.8 &  & \\
+4 & 222.8 & 23.6 & 204.8 & 19.8 &  & \\
+5 & 224.9 & 25.0 & 205.3 & 18.1 & 517.6 & 25.6\\
+6 & 226.3 & 24.0 & 207.7 & 17.7 &  & \\
+7 & 226.4 & 25.0 & 207.9 & 19.0 &  & \\
+\addlinespace
+8 & 225.4 & 24.1 & 207.8 & 17.3 & 822.1 & 25.8\\
+11 & 922.5 & 28.5 & 903.8 & 21.1 & 920.8 & 27.7\\
+\bottomrule
+\end{tabu}
+\end{table}
 
-\NormalTok{rit_}\DecValTok{17}\NormalTok{ <-}\StringTok{ }\NormalTok{tibble}\OperatorTok{::}\KeywordTok{tribble}\NormalTok{(}
-  \OperatorTok{~}\NormalTok{Grade, }\OperatorTok{~}\NormalTok{ELA.Mean, }\OperatorTok{~}\NormalTok{ELA.SD, }\OperatorTok{~}\NormalTok{Math.Mean, }\OperatorTok{~}\NormalTok{Math.SD, }\OperatorTok{~}\NormalTok{Science.Mean, }\OperatorTok{~}\NormalTok{Science.SD,}
-\NormalTok{      3L,    }\FloatTok{209.64}\NormalTok{,   }\FloatTok{21.73}\NormalTok{,     }\FloatTok{196.16}\NormalTok{,    }\FloatTok{18.96}\NormalTok{,            }\OtherTok{NA}\NormalTok{,          }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      4L,    }\FloatTok{213.13}\NormalTok{,   }\FloatTok{23.38}\NormalTok{,     }\FloatTok{198.45}\NormalTok{,    }\FloatTok{17.98}\NormalTok{,            }\OtherTok{NA}\NormalTok{,          }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      5L,    }\FloatTok{213.85}\NormalTok{,   }\FloatTok{25.01}\NormalTok{,     }\FloatTok{198.37}\NormalTok{,    }\FloatTok{19.54}\NormalTok{,        }\FloatTok{513.65}\NormalTok{,       }\FloatTok{24.59}\NormalTok{,}
-\NormalTok{      6L,    }\FloatTok{216.65}\NormalTok{,   }\FloatTok{23.76}\NormalTok{,     }\FloatTok{203.29}\NormalTok{,    }\FloatTok{17.43}\NormalTok{,            }\OtherTok{NA}\NormalTok{,          }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      7L,    }\FloatTok{220.53}\NormalTok{,   }\FloatTok{23.88}\NormalTok{,     }\FloatTok{205.13}\NormalTok{,    }\FloatTok{19.87}\NormalTok{,            }\OtherTok{NA}\NormalTok{,          }\OtherTok{NA}\NormalTok{,}
-\NormalTok{      8L,    }\FloatTok{219.48}\NormalTok{,   }\FloatTok{24.28}\NormalTok{,     }\FloatTok{205.92}\NormalTok{,    }\FloatTok{16.26}\NormalTok{,        }\FloatTok{817.96}\NormalTok{,       }\FloatTok{24.36}\NormalTok{,}
-\NormalTok{     11L,    }\FloatTok{922.05}\NormalTok{,   }\FloatTok{26.37}\NormalTok{,     }\FloatTok{903.07}\NormalTok{,    }\FloatTok{17.57}\NormalTok{,        }\FloatTok{919.41}\NormalTok{,       }\FloatTok{24.25}
-\NormalTok{  )}
-\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(rit_}\DecValTok{16}\NormalTok{, }\StringTok{"latex"}\NormalTok{, }
-        \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-        \DataTypeTok{caption =} \StringTok{"Means/SDs: 2016-17"}\NormalTok{,}
-        \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\begin{table}[!h]
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_area }\OperatorTok{!=}\StringTok{ "rdg"} \OperatorTok{&}
-\StringTok{         }\NormalTok{content_area }\OperatorTok{!=}\StringTok{ "wri"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content_area =} \KeywordTok{case_when}\NormalTok{(content_area }\OperatorTok{==}\StringTok{ "ela"} \OperatorTok{~}\StringTok{ "ELA"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "math"} \OperatorTok{~}\StringTok{ "Math"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "sci"} \OperatorTok{~}\StringTok{ "Sci"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade, content_area) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{Mean =} \KeywordTok{mean}\NormalTok{(rit),}
-            \DataTypeTok{SD   =} \KeywordTok{sd}\NormalTok{(rit)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{gather}\NormalTok{(stat, val, Mean, SD) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unite}\NormalTok{(spreader, content_area, stat, }\DataTypeTok{sep =} \StringTok{" "}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(spreader, val) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{kable}\NormalTok{(}\StringTok{"latex"}\NormalTok{, }
-        \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-        \DataTypeTok{caption =} \StringTok{"Means/SDs: 2017-18"}\NormalTok{,}
-        \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:unnamed-chunk-2}Means/SDs: 2015-16}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & ElA.Mean & ELA.SD & Math.Mean & Math.SD & Science.Mean & Science.SD\\
+\midrule
+3 & 210.3 & 23.0 & 197.6 & 20.2 &  & \\
+4 & 212.3 & 22.9 & 198.1 & 18.7 &  & \\
+5 & 217.1 & 24.5 & 201.2 & 17.2 & 514.2 & 22.1\\
+6 & 220.1 & 25.5 & 204.8 & 17.6 &  & \\
+7 & 223.6 & 28.9 & 205.4 & 19.0 &  & \\
+\addlinespace
+8 & 221.2 & 24.8 & 206.7 & 17.2 & 819.0 & 25.6\\
+11 & 920.7 & 27.7 & 902.3 & 20.0 & 918.0 & 24.9\\
+\bottomrule
+\end{tabu}
+\end{table}
+
+\begin{table}[!h]
+
+\caption{\label{tab:unnamed-chunk-2}Means/SDs: 2016-17}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & ELA.Mean & ELA.SD & Math.Mean & Math.SD & Science.Mean & Science.SD\\
+\midrule
+3 & 209.64 & 21.73 & 196.16 & 18.96 &  & \\
+4 & 213.13 & 23.38 & 198.45 & 17.98 &  & \\
+5 & 213.85 & 25.01 & 198.37 & 19.54 & 513.65 & 24.59\\
+6 & 216.65 & 23.76 & 203.29 & 17.43 &  & \\
+7 & 220.53 & 23.88 & 205.13 & 19.87 &  & \\
+\addlinespace
+8 & 219.48 & 24.28 & 205.92 & 16.26 & 817.96 & 24.36\\
+11 & 922.05 & 26.37 & 903.07 & 17.57 & 919.41 & 24.25\\
+\bottomrule
+\end{tabu}
+\end{table}
+
+\begin{table}[!h]
+
+\caption{\label{tab:obs_means}Means/SDs: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & ELA Mean & ELA SD & Math Mean & Math SD & Sci Mean & Sci SD\\
+\midrule
+3 & 204.02 & 22.43 & 191.48 & 19.58 &  & \\
+4 & 207.16 & 22.21 & 196.06 & 17.95 &  & \\
+5 & 211.99 & 24.70 & 199.48 & 17.93 & 511.88 & 23.37\\
+6 & 212.78 & 23.02 & 199.69 & 18.96 &  & \\
+7 & 214.92 & 22.13 & 202.02 & 16.04 &  & \\
+\addlinespace
+8 & 212.87 & 22.92 & 202.96 & 15.45 & 810.26 & 23.90\\
+11 & 915.06 & 27.38 & 900.99 & 19.81 & 915.24 & 27.21\\
+12 & 926.74 & 22.59 & 908.82 & 19.81 & 925.26 & 26.88\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 \clearpage
 
@@ -1023,43 +1144,33 @@ areas assessed on the ORExt. Significant differences based on a Welch
 two sample t-test are noted in Grades 5 and 12 in ELA, and Grade 8 in
 mathematics.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{eth_gndr <-}\StringTok{ }\NormalTok{d }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{new =} \KeywordTok{map}\NormalTok{(data, }\OperatorTok{~}\KeywordTok{select}\NormalTok{(., ssidenrlgrdcd, ssid, gndr, ethniccd))) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(content, new) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unnest}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{grade =}\NormalTok{ ssidenrlgrdcd,}
-         \DataTypeTok{content_area =}\NormalTok{ content) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content_area =} \KeywordTok{tolower}\NormalTok{(content_area),}
-         \DataTypeTok{content_area =} \KeywordTok{ifelse}\NormalTok{(content_area }\OperatorTok{==}\StringTok{ "science"}\NormalTok{, }\StringTok{"sci"}\NormalTok{, content_area),}
-         \DataTypeTok{grade =} \KeywordTok{as.numeric}\NormalTok{(grade)) }
-  
+\begin{table}[!h]
 
-\NormalTok{ode <-}\StringTok{ }\KeywordTok{left_join}\NormalTok{(ode, eth_gndr)}
-
-\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_area }\OperatorTok{!=}\StringTok{ "rdg"} \OperatorTok{&}
-\StringTok{         }\NormalTok{content_area }\OperatorTok{!=}\StringTok{ "wri"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content_area =} \KeywordTok{case_when}\NormalTok{(content_area }\OperatorTok{==}\StringTok{ "ela"} \OperatorTok{~}\StringTok{ "ELA"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "math"} \OperatorTok{~}\StringTok{ "Math"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "sci"} \OperatorTok{~}\StringTok{ "Sci"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade, content_area, gndr) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{Mean =} \KeywordTok{mean}\NormalTok{(rit),}
-            \DataTypeTok{SD   =} \KeywordTok{sd}\NormalTok{(rit)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{gather}\NormalTok{(stat, val, Mean, SD) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unite}\NormalTok{(spreader, content_area, stat, }\DataTypeTok{sep =} \StringTok{" "}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(spreader, val) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade,}
-         \DataTypeTok{Sex   =}\NormalTok{ gndr) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{kable}\NormalTok{(}\StringTok{"latex"}\NormalTok{, }
-        \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-        \DataTypeTok{caption =} \StringTok{"Means/SDs by Gender: 2017-18"}\NormalTok{,}
-        \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{)}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:obs_means_sex}Means/SDs by Gender: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Sex & ELA Mean & ELA SD & Math Mean & Math SD & Sci Mean & Sci SD\\
+\midrule
+3 & F & 204.77 & 21.44 & 191.50 & 18.27 &  & \\
+3 & M & 204.69 & 21.81 & 192.37 & 19.15 &  & \\
+4 & F & 206.81 & 22.37 & 194.65 & 18.50 &  & \\
+4 & M & 207.94 & 21.47 & 197.21 & 16.99 &  & \\
+5 & F & 212.38 & 24.92 & 198.68 & 17.85 & 509.91 & 21.80\\
+\addlinespace
+5 & M & 212.45 & 23.94 & 200.56 & 16.95 & 513.55 & 23.19\\
+6 & F & 209.16 & 23.10 & 195.97 & 18.83 &  & \\
+6 & M & 215.96 & 21.31 & 202.96 & 17.12 &  & \\
+7 & F & 215.61 & 22.77 & 201.26 & 15.33 &  & \\
+7 & M & 215.56 & 20.56 & 203.19 & 15.43 &  & \\
+\addlinespace
+8 & F & 216.15 & 21.61 & 204.96 & 13.50 & 813.08 & 20.10\\
+8 & M & 212.33 & 22.36 & 202.92 & 15.12 & 810.69 & 23.86\\
+11 & F & 917.42 & 23.39 & 901.80 & 15.57 & 915.87 & 24.40\\
+11 & M & 915.51 & 27.76 & 902.03 & 20.23 & 916.76 & 26.69\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 \clearpage
 
@@ -1071,41 +1182,158 @@ The following table provides information regarding average student
 performance by grade level and race/ethnicity in each of the content
 areas assessed on the ORExt.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{eth_descrip_tbls <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_area }\OperatorTok{!=}\StringTok{ "rdg"} \OperatorTok{&}
-\StringTok{         }\NormalTok{content_area }\OperatorTok{!=}\StringTok{ "wri"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content_area =} \KeywordTok{case_when}\NormalTok{(content_area }\OperatorTok{==}\StringTok{ "ela"} \OperatorTok{~}\StringTok{ "ELA"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "math"} \OperatorTok{~}\StringTok{ "Math"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "sci"} \OperatorTok{~}\StringTok{ "Sci"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade, content_area, ethniccd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{Mn =} \KeywordTok{mean}\NormalTok{(rit),}
-            \DataTypeTok{SD   =} \KeywordTok{sd}\NormalTok{(rit)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{gather}\NormalTok{(stat, val, Mn, SD) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unite}\NormalTok{(spreader, content_area, stat, }\DataTypeTok{sep =} \StringTok{" "}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(spreader, val) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade,}
-         \StringTok{`}\DataTypeTok{Eth Code}\StringTok{`}\NormalTok{ =}\StringTok{ }\NormalTok{ethniccd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{split}\NormalTok{(.}\OperatorTok{$}\NormalTok{Grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{map}\NormalTok{(}\OperatorTok{~}\KeywordTok{ungroup}\NormalTok{(.) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{Grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{remove_empty}\NormalTok{(}\StringTok{"cols"}\NormalTok{))}
+\begin{table}[!h]
 
-\NormalTok{eth_descip_captions <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(}\StringTok{"Grade "}\NormalTok{, }
-                              \KeywordTok{names}\NormalTok{(eth_descrip_tbls),}
-                              \StringTok{" Means/SDs by Race/Ethnicity: 2017-18"}\NormalTok{)}
-\KeywordTok{walk2}\NormalTok{(eth_descrip_tbls, eth_descip_captions,}
-      \OperatorTok{~}\KeywordTok{kable}\NormalTok{(.x, }
-             \StringTok{"latex"}\NormalTok{, }
-             \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-             \DataTypeTok{caption =}\NormalTok{ .y,}
-             \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:eth_means}Grade 3 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Eth Code & ELA Mn & ELA SD & Math Mn & Math SD\\
+\midrule
+amer\_indian\_alskn\_ntv & 213.75 & 30.52 & 197.50 & 21.95\\
+asian & 204.61 & 19.68 & 191.61 & 17.06\\
+black & 204.19 & 23.26 & 191.35 & 20.38\\
+Hispanic & 206.12 & 21.58 & 192.66 & 17.60\\
+multiracial & 205.07 & 23.81 & 193.96 & 23.39\\
+\addlinespace
+pac\_islndr & 218.33 & 14.36 & 209.00 & 9.00\\
+white & 204.62 & 21.03 & 192.49 & 18.63\\
+ & 184.46 & 29.85 & 173.61 & 24.36\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:eth_means}Grade 4 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Eth Code & ELA Mn & ELA SD & Math Mn & Math SD\\
+\midrule
+amer\_indian\_alskn\_ntv & 206.64 & 19.19 & 193.60 & 20.31\\
+asian & 206.69 & 14.99 & 195.47 & 17.51\\
+black & 205.84 & 15.29 & 193.67 & 16.29\\
+Hispanic & 206.51 & 20.56 & 196.50 & 16.19\\
+multiracial & 209.83 & 22.14 & 199.14 & 18.29\\
+\addlinespace
+pac\_islndr & 194.25 & 19.14 & 183.75 & 14.66\\
+white & 209.47 & 22.77 & 197.31 & 17.71\\
+ & 184.04 & 24.36 & 180.73 & 23.56\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:eth_means}Grade 5 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Eth Code & ELA Mn & ELA SD & Math Mn & Math SD & Sci Mn & Sci SD\\
+\midrule
+amer\_indian\_alskn\_ntv & 231.09 & 18.63 & 211.00 & 11.22 & 532.60 & 16.59\\
+asian & 198.94 & 27.27 & 192.88 & 17.80 & 497.19 & 22.44\\
+black & 207.14 & 27.33 & 196.62 & 18.79 & 508.23 & 22.99\\
+Hispanic & 212.23 & 22.81 & 199.12 & 16.83 & 511.23 & 21.16\\
+multiracial & 214.00 & 25.90 & 199.87 & 18.27 & 514.76 & 22.44\\
+\addlinespace
+pac\_islndr & 225.62 & 26.36 & 208.38 & 9.53 & 516.25 & 21.17\\
+white & 213.41 & 23.87 & 200.79 & 17.60 & 513.82 & 23.13\\
+ & 186.77 & 26.80 & 183.09 & 23.09 & 490.60 & 28.70\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:eth_means}Grade 6 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Eth Code & ELA Mn & ELA SD & Math Mn & Math SD\\
+\midrule
+amer\_indian\_alskn\_ntv & 219.88 & 15.07 & 206.50 & 11.45\\
+asian & 205.71 & 22.12 & 195.05 & 19.52\\
+black & 217.07 & 24.69 & 201.13 & 17.68\\
+Hispanic & 210.60 & 18.64 & 199.24 & 15.01\\
+multiracial & 213.93 & 25.34 & 201.20 & 20.07\\
+\addlinespace
+pac\_islndr & 226.60 & 8.59 & 204.00 & 5.74\\
+white & 216.13 & 22.91 & 201.96 & 18.95\\
+ & 194.03 & 28.98 & 183.83 & 25.64\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:eth_means}Grade 7 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Eth Code & ELA Mn & ELA SD & Math Mn & Math SD\\
+\midrule
+amer\_indian\_alskn\_ntv & 199.00 & 24.86 & 195.67 & 13.13\\
+asian & 208.78 & 16.57 & 199.67 & 9.82\\
+black & 220.47 & 18.36 & 204.73 & 10.42\\
+Hispanic & 213.92 & 17.73 & 201.22 & 15.19\\
+multiracial & 226.50 & 20.55 & 209.50 & 14.05\\
+\addlinespace
+pac\_islndr & 210.50 & 11.93 & 203.50 & 6.76\\
+white & 215.82 & 22.34 & 202.63 & 16.00\\
+ & 206.63 & 30.83 & 195.40 & 21.58\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:eth_means}Grade 8 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Eth Code & ELA Mn & ELA SD & Math Mn & Math SD & Sci Mn & Sci SD\\
+\midrule
+amer\_indian\_alskn\_ntv & 217.50 & 9.89 & 203.56 & 11.42 & 817.17 & 14.62\\
+asian & 210.85 & 19.23 & 204.08 & 11.84 & 803.23 & 19.04\\
+black & 214.69 & 18.57 & 206.69 & 16.56 & 811.23 & 21.79\\
+Hispanic & 214.01 & 21.18 & 203.28 & 15.66 & 810.88 & 22.82\\
+multiracial & 210.08 & 22.42 & 200.66 & 16.72 & 807.71 & 23.40\\
+\addlinespace
+pac\_islndr & 208.60 & 9.53 & 196.60 & 11.06 & 804.60 & 13.74\\
+white & 214.14 & 22.96 & 204.10 & 14.02 & 812.86 & 22.72\\
+ & 199.19 & 33.65 & 193.14 & 23.56 & 791.77 & 34.31\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:eth_means}Grade 11 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Eth Code & ELA Mn & ELA SD & Math Mn & Math SD & Sci Mn & Sci SD\\
+\midrule
+amer\_indian\_alskn\_ntv & 903.10 & 25.26 & 892.80 & 18.24 & 904.22 & 29.09\\
+asian & 926.33 & 14.24 & 910.17 & 18.02 & 922.09 & 15.49\\
+black & 924.92 & 30.50 & 908.92 & 19.77 & 922.10 & 28.54\\
+Hispanic & 916.21 & 22.94 & 901.39 & 18.70 & 916.34 & 22.54\\
+multiracial & 917.83 & 28.56 & 902.03 & 19.23 & 922.39 & 27.15\\
+\addlinespace
+pac\_islndr & 911.00 & 11.36 & 896.00 & 7.21 & 918.33 & 22.59\\
+white & 916.81 & 27.73 & 902.91 & 18.54 & 916.94 & 27.05\\
+ & 892.79 & 31.34 & 881.59 & 24.07 & 891.86 & 34.14\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:eth_means}Grade 12 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+ELA Mn & ELA SD & Math Mn & Math SD & Sci Mn & Sci SD\\
+\midrule
+926.74 & 22.59 & 908.82 & 19.81 & 925.26 & 26.88\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 \clearpage
 
@@ -1153,42 +1381,188 @@ the highest performing group, though students with ED performed higher
 at certain grade levels/content areas. The lowest performing group was
 consistently students with VI. \FloatBarrier
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{disab_descrip_tbls <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_area }\OperatorTok{!=}\StringTok{ "rdg"} \OperatorTok{&}
-\StringTok{         }\NormalTok{content_area }\OperatorTok{!=}\StringTok{ "wri"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content_area =} \KeywordTok{case_when}\NormalTok{(content_area }\OperatorTok{==}\StringTok{ "ela"} \OperatorTok{~}\StringTok{ "ELA"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "math"} \OperatorTok{~}\StringTok{ "Math"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "sci"} \OperatorTok{~}\StringTok{ "Sci"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade, content_area, asmtprmrydsbltycd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{Mean =} \KeywordTok{mean}\NormalTok{(rit),}
-            \DataTypeTok{SD   =} \KeywordTok{sd}\NormalTok{(rit)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{gather}\NormalTok{(stat, val, Mean, SD) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{unite}\NormalTok{(spreader, content_area, stat, }\DataTypeTok{sep =} \StringTok{" "}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(spreader, val) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade,}
-         \StringTok{`}\DataTypeTok{Dis Code}\StringTok{`}\NormalTok{ =}\StringTok{ }\NormalTok{asmtprmrydsbltycd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{split}\NormalTok{(.}\OperatorTok{$}\NormalTok{Grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{map}\NormalTok{(}\OperatorTok{~}\KeywordTok{ungroup}\NormalTok{(.) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{Grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{remove_empty}\NormalTok{(}\StringTok{"cols"}\NormalTok{))}
+\begin{table}[!h]
 
-\NormalTok{disab_descrip_captions <-}\StringTok{ }\KeywordTok{paste0}\NormalTok{(}\StringTok{"Grade "}\NormalTok{, }
-                              \KeywordTok{names}\NormalTok{(disab_descrip_tbls),}
-                              \StringTok{" Means/SDs by Race/Ethnicity: 2017-18"}\NormalTok{)}
-\KeywordTok{walk2}\NormalTok{(disab_descrip_tbls, disab_descrip_captions,}
-      \OperatorTok{~}\KeywordTok{kable}\NormalTok{(.x, }
-             \StringTok{"latex"}\NormalTok{, }
-             \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-             \DataTypeTok{caption =}\NormalTok{ .y,}
-             \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:disab_means}Grade 3 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Dis Code & ELA Mean & ELA SD & Math Mean & Math SD\\
+\midrule
+10 & 205.19 & 17.81 & 192.58 & 15.59\\
+20 & 148.00 &  & 153.00 & \\
+40 & 148.00 & 0.00 & 147.00 & 8.49\\
+43 & 160.00 &  & 141.00 & \\
+50 & 207.59 & 15.64 & 197.57 & 12.39\\
+\addlinespace
+60 & 222.89 & 17.52 & 209.89 & 12.52\\
+70 & 168.36 & 29.22 & 159.64 & 26.70\\
+74 & 210.67 & 10.98 & 197.50 & 8.38\\
+80 & 200.31 & 23.72 & 189.35 & 20.69\\
+82 & 205.15 & 23.12 & 190.81 & 19.70\\
+\addlinespace
+90 & 223.25 & 9.80 & 214.58 & 10.26\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
+\caption{\label{tab:disab_means}Grade 4 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Dis Code & ELA Mean & ELA SD & Math Mean & Math SD\\
+\midrule
+10 & 208.88 & 18.10 & 197.16 & 15.38\\
+20 & 212.20 & 12.60 & 199.20 & 12.21\\
+40 & 173.60 & 33.08 & 171.20 & 18.19\\
+50 & 218.41 & 11.41 & 206.47 & 7.08\\
+60 & 230.30 & 14.74 & 214.70 & 8.51\\
+\addlinespace
+70 & 191.32 & 26.21 & 190.14 & 21.34\\
+74 & 213.33 & 15.50 & 195.67 & 7.77\\
+80 & 207.56 & 26.18 & 194.75 & 21.14\\
+82 & 204.88 & 22.07 & 193.79 & 18.09\\
+90 & 217.88 & 22.56 & 208.06 & 17.54\\
+\addlinespace
+ & 219.00 &  & 205.00 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:disab_means}Grade 5 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Dis Code & ELA Mean & ELA SD & Math Mean & Math SD & Sci Mean & Sci SD\\
+\midrule
+10 & 214.13 & 21.50 & 199.83 & 15.20 & 513.55 & 21.08\\
+20 & 179.33 & 26.63 & 179.00 & 29.46 & 471.33 & 30.02\\
+40 & 150.00 & 0.00 & 145.00 & 0.00 & 454.00 & \\
+50 & 222.38 & 20.87 & 207.54 & 7.44 & 524.04 & 16.75\\
+60 & 234.20 & 19.19 & 219.20 & 8.47 & 541.60 & 10.04\\
+\addlinespace
+70 & 190.47 & 23.62 & 184.56 & 20.73 & 498.06 & 18.38\\
+74 & 165.00 & 21.21 & 179.50 & 12.02 & 479.50 & 2.12\\
+80 & 211.01 & 25.75 & 197.85 & 19.07 & 513.49 & 25.84\\
+82 & 208.21 & 25.68 & 198.41 & 19.83 & 505.09 & 22.94\\
+90 & 232.85 & 17.15 & 214.27 & 7.74 & 535.42 & 13.21\\
+\addlinespace
+ & 186.00 &  & 181.00 &  & 509.00 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:disab_means}Grade 6 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Dis Code & ELA Mean & ELA SD & Math Mean & Math SD\\
+\midrule
+10 & 210.69 & 20.60 & 197.74 & 16.53\\
+20 & 215.50 & 24.75 & 204.50 & 21.92\\
+50 & 225.26 & 10.09 & 212.07 & 9.95\\
+60 & 233.82 & 10.20 & 215.73 & 8.30\\
+70 & 189.06 & 31.77 & 177.29 & 23.30\\
+\addlinespace
+74 & 224.20 & 22.70 & 206.20 & 14.96\\
+80 & 216.57 & 26.07 & 203.29 & 19.68\\
+82 & 209.12 & 23.09 & 196.85 & 20.15\\
+90 & 233.36 & 10.97 & 216.64 & 9.35\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:disab_means}Grade 7 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Dis Code & ELA Mean & ELA SD & Math Mean & Math SD\\
+\midrule
+0 & 177.00 &  & 191.00 & \\
+10 & 214.08 & 18.73 & 201.30 & 14.11\\
+20 & 194.50 & 53.03 & 215.00 & \\
+50 & 234.73 & 13.27 & 214.07 & 6.26\\
+60 & 235.50 & 9.53 & 219.12 & 3.94\\
+\addlinespace
+70 & 194.53 & 25.24 & 188.60 & 21.41\\
+74 & 217.00 & 22.12 & 200.20 & 22.35\\
+80 & 216.66 & 22.90 & 201.38 & 18.45\\
+82 & 212.06 & 24.23 & 200.95 & 16.96\\
+90 & 241.22 & 11.87 & 216.94 & 8.62\\
+\addlinespace
+ & 213.00 &  & 212.00 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:disab_means}Grade 8 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Dis Code & ELA Mean & ELA SD & Math Mean & Math SD & Sci Mean & Sci SD\\
+\midrule
+10 & 213.85 & 19.95 & 204.24 & 13.50 & 810.92 & 21.93\\
+20 & 226.33 & 17.21 & 220.67 & 2.08 & 830.67 & 10.97\\
+40 & 201.50 & 48.48 & 181.50 & 26.79 & 785.75 & 40.72\\
+50 & 232.55 & 15.50 & 214.45 & 5.28 & 831.82 & 12.37\\
+60 & 222.00 & 22.69 & 211.10 & 3.41 & 832.80 & 5.75\\
+\addlinespace
+70 & 191.46 & 28.92 & 187.31 & 17.26 & 789.08 & 24.77\\
+74 & 220.50 & 20.63 & 202.00 & 11.34 & 816.50 & 20.74\\
+80 & 218.27 & 19.86 & 206.34 & 13.46 & 817.50 & 23.22\\
+82 & 208.49 & 24.60 & 199.80 & 16.90 & 804.32 & 24.08\\
+90 & 227.75 & 23.82 & 211.58 & 17.25 & 836.45 & 9.31\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:disab_means}Grade 11 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Dis Code & ELA Mean & ELA SD & Math Mean & Math SD & Sci Mean & Sci SD\\
+\midrule
+10 & 914.42 & 26.00 & 900.05 & 18.53 & 916.03 & 25.92\\
+20 & 919.00 &  & 916.00 &  & 910.00 & \\
+40 & 958.00 &  & 929.00 &  & 954.00 & \\
+43 & 853.00 &  & 852.00 &  & 853.00 & \\
+50 & 931.82 & 14.75 & 915.82 & 15.36 & 937.60 & 15.74\\
+\addlinespace
+60 & 932.33 & 33.31 & 916.62 & 8.72 & 936.00 & 14.50\\
+70 & 895.36 & 31.61 & 885.36 & 22.03 & 890.15 & 31.87\\
+74 & 934.25 & 18.87 & 912.00 & 11.52 & 921.67 & 10.97\\
+80 & 919.19 & 28.49 & 903.84 & 20.93 & 921.02 & 30.03\\
+82 & 912.47 & 28.58 & 899.14 & 20.43 & 909.21 & 26.42\\
+\addlinespace
+90 & 931.00 & 12.01 & 919.73 & 13.52 & 939.93 & 14.75\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:disab_means}Grade 12 Means/SDs by Race/Ethnicity: 2017-18}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Dis Code & ELA Mean & ELA SD & Math Mean & Math SD & Sci Mean & Sci SD\\
+\midrule
+10 & 926.90 & 20.47 & 912.12 & 16.77 & 927.30 & 22.41\\
+50 & 896.00 &  & 900.00 &  & 853.00 & \\
+60 & 926.50 & 4.95 & 906.50 & 4.95 & 926.00 & \\
+70 & 872.00 & 26.87 & 871.00 & 26.87 & 871.50 & 26.16\\
+80 & 934.00 & 20.81 & 911.67 & 9.81 & 930.67 & 9.87\\
+\addlinespace
+82 & 929.82 & 13.48 & 901.00 & 23.03 & 937.50 & 20.75\\
+90 & 954.00 & 6.93 & 924.00 & 20.08 & 933.33 & 19.22\\
+\bottomrule
+\end{tabu}
+\end{table}
 \clearpage
 
 \hypertarget{graphs-of-observed-means-by-disability}{%
@@ -1206,105 +1580,24 @@ outperforming most peers. Students with VI are consistently the lowest
 performing group, which led to concerns regarding test accessibility.
 \FloatBarrier
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{excep_plots <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_area }\OperatorTok{==}\StringTok{ "ela"} \OperatorTok{|}
-\StringTok{         }\NormalTok{content_area }\OperatorTok{==}\StringTok{ "math"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(content_area, grade, asmtprmrydsbltycd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{mean =} \KeywordTok{mean}\NormalTok{(rit),}
-            \DataTypeTok{se   =}\NormalTok{ sundry}\OperatorTok{::}\KeywordTok{se}\NormalTok{(rit)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{lower_bound =}\NormalTok{ mean }\OperatorTok{+}\StringTok{ }\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.025}\NormalTok{)}\OperatorTok{*}\NormalTok{se,}
-         \DataTypeTok{upper_bound =}\NormalTok{ mean }\OperatorTok{+}\StringTok{ }\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{)}\OperatorTok{*}\NormalTok{se) }\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{content_area) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}
-    \DataTypeTok{content_area =} \KeywordTok{c}\NormalTok{(}\StringTok{"English/Language Arts"}\NormalTok{, }\StringTok{"Math"}\NormalTok{),}
-    \DataTypeTok{plot38 =} \KeywordTok{map2}\NormalTok{(data, content_area,}
-      \OperatorTok{~}\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{filter}\NormalTok{(.x, grade }\OperatorTok{<}\StringTok{ }\DecValTok{11}\NormalTok{), }\KeywordTok{aes}\NormalTok{(}\KeywordTok{factor}\NormalTok{(asmtprmrydsbltycd), mean)) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{geom_errorbar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{ymin =}\NormalTok{ lower_bound, }\DataTypeTok{ymax =}\NormalTok{ upper_bound),}
-                      \DataTypeTok{color =} \StringTok{"gray80"}\NormalTok{) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{color =} \KeywordTok{factor}\NormalTok{(asmtprmrydsbltycd))) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{grade) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{scale_color_brewer}\NormalTok{(}\StringTok{"Disability Code"}\NormalTok{, }\DataTypeTok{palette =} \StringTok{"Set3"}\NormalTok{) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{y =} \StringTok{"Mean"}\NormalTok{,}
-             \DataTypeTok{title =} \KeywordTok{paste0}\NormalTok{(}\StringTok{"Means by Disability Category"}\NormalTok{),}
-             \DataTypeTok{subtitle =}\NormalTok{ .y) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.title.x=}\KeywordTok{element_blank}\NormalTok{(),}
-              \DataTypeTok{axis.text.x=}\KeywordTok{element_blank}\NormalTok{(),}
-              \DataTypeTok{axis.ticks.x=}\KeywordTok{element_blank}\NormalTok{(),}
-              \DataTypeTok{legend.position =} \StringTok{"bottom"}\NormalTok{)),}
-    \DataTypeTok{plot12 =} \KeywordTok{map2}\NormalTok{(data, content_area,}
-      \OperatorTok{~}\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{filter}\NormalTok{(.x, grade }\OperatorTok{>}\StringTok{ }\DecValTok{8}\NormalTok{), }\KeywordTok{aes}\NormalTok{(}\KeywordTok{factor}\NormalTok{(asmtprmrydsbltycd), mean)) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{geom_errorbar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{ymin =}\NormalTok{ lower_bound, }\DataTypeTok{ymax =}\NormalTok{ upper_bound),}
-                      \DataTypeTok{color =} \StringTok{"gray80"}\NormalTok{) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{color =} \KeywordTok{factor}\NormalTok{(asmtprmrydsbltycd))) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{grade) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{scale_color_brewer}\NormalTok{(}\StringTok{"Disability Code"}\NormalTok{, }\DataTypeTok{palette =} \StringTok{"Set3"}\NormalTok{) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{y =} \StringTok{"Mean"}\NormalTok{,}
-             \DataTypeTok{title =} \KeywordTok{paste0}\NormalTok{(}\StringTok{"Means by Disability Category"}\NormalTok{),}
-             \DataTypeTok{subtitle =}\NormalTok{ .y) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.title.x=}\KeywordTok{element_blank}\NormalTok{(),}
-              \DataTypeTok{axis.text.x=}\KeywordTok{element_blank}\NormalTok{(),}
-              \DataTypeTok{axis.ticks.x=}\KeywordTok{element_blank}\NormalTok{(),}
-              \DataTypeTok{legend.position =} \StringTok{"bottom"}\NormalTok{)))}
-\end{Highlighting}
-\end{Shaded}
+\FloatBarrier
+
+\includegraphics{Critical_Element_4_files/figure-latex/plots38-1.pdf}
+\includegraphics{Critical_Element_4_files/figure-latex/plots38-2.pdf}
 
 \FloatBarrier
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{walk}\NormalTok{(excep_plots}\OperatorTok{$}\NormalTok{plot38, print)}
-\end{Highlighting}
-\end{Shaded}
+\includegraphics{Critical_Element_4_files/figure-latex/plots11-1.pdf}
+\includegraphics{Critical_Element_4_files/figure-latex/plots11-2.pdf}
 
 \FloatBarrier
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{walk}\NormalTok{(excep_plots}\OperatorTok{$}\NormalTok{plot12, print)}
-\end{Highlighting}
-\end{Shaded}
-
 \FloatBarrier
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{sci_excep_plots <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{filter}\NormalTok{(content_area }\OperatorTok{==}\StringTok{ "sci"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(grade, asmtprmrydsbltycd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{mean =} \KeywordTok{mean}\NormalTok{(rit),}
-            \DataTypeTok{se   =}\NormalTok{ sundry}\OperatorTok{::}\KeywordTok{se}\NormalTok{(rit)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{lower_bound =}\NormalTok{ mean }\OperatorTok{+}\StringTok{ }\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.025}\NormalTok{)}\OperatorTok{*}\NormalTok{se,}
-         \DataTypeTok{upper_bound =}\NormalTok{ mean }\OperatorTok{+}\StringTok{ }\KeywordTok{qnorm}\NormalTok{(}\FloatTok{0.975}\NormalTok{)}\OperatorTok{*}\NormalTok{se) }\OperatorTok{%>%}
-\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}
-    \DataTypeTok{plot =} \KeywordTok{map2}\NormalTok{(data, grade,}
-      \OperatorTok{~}\KeywordTok{ggplot}\NormalTok{(.x, }\KeywordTok{aes}\NormalTok{(}\KeywordTok{factor}\NormalTok{(asmtprmrydsbltycd), mean)) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{geom_errorbar}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{ymin =}\NormalTok{ lower_bound, }
-                          \DataTypeTok{ymax =}\NormalTok{ upper_bound),}
-                      \DataTypeTok{color =} \StringTok{"gray80"}\NormalTok{) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{geom_point}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{color =} \KeywordTok{factor}\NormalTok{(asmtprmrydsbltycd))) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{scale_color_brewer}\NormalTok{(}\StringTok{"Disability Code"}\NormalTok{, }\DataTypeTok{palette =} \StringTok{"Set3"}\NormalTok{) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{y =} \StringTok{"Mean"}\NormalTok{,}
-             \DataTypeTok{title =} \KeywordTok{paste0}\NormalTok{(}\StringTok{"Means by Disability Category"}\NormalTok{),}
-             \DataTypeTok{subtitle =} \KeywordTok{paste0}\NormalTok{(}\StringTok{"Science: Grade "}\NormalTok{, .y)) }\OperatorTok{+}
-\StringTok{        }\KeywordTok{theme}\NormalTok{(}\DataTypeTok{axis.title.x=}\KeywordTok{element_blank}\NormalTok{(),}
-              \DataTypeTok{axis.text.x=}\KeywordTok{element_blank}\NormalTok{(),}
-              \DataTypeTok{axis.ticks.x=}\KeywordTok{element_blank}\NormalTok{(),}
-              \DataTypeTok{legend.position =} \StringTok{"bottom"}\NormalTok{)))}
-\end{Highlighting}
-\end{Shaded}
-
-\FloatBarrier
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{walk}\NormalTok{(sci_excep_plots}\OperatorTok{$}\NormalTok{plot, print)}
-\end{Highlighting}
-\end{Shaded}
+\includegraphics{Critical_Element_4_files/figure-latex/sci_plots5811-1.pdf}
+\includegraphics{Critical_Element_4_files/figure-latex/sci_plots5811-2.pdf}
+\includegraphics{Critical_Element_4_files/figure-latex/sci_plots5811-3.pdf}
+\includegraphics{Critical_Element_4_files/figure-latex/sci_plots5811-4.pdf}
 
 \hypertarget{full-performance-continuum}{%
 \subsubsection{4.3 Full Performance
