@@ -1,13 +1,4 @@
 ---
-title: 'Oregon Extended Analyses: 2019'
-author: 
-- "Brock Rowley"
-- "Sevrina Tindal"
-- "Phillip Irvin"
-- "Daniel Anderson"
-- "Gerald Tindal"
-affiliation: "University of Oregon"
-date: "6/29/2019"
 output: 
   pdf_document:
     toc: yes
@@ -35,8 +26,23 @@ header-includes:
   - \usepackage{booktabs}
 ---
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, eval = FALSE)
+library(tidyverse)
+library(fs)
+library(purrr)
+library(janitor)
+library(knitr)
+library(kableExtra)
+
+opts_chunk$set(echo    = FALSE, 
+               warning = FALSE, 
+               error   = FALSE, 
+               message = FALSE,
+               results = "asis",
+               cache   = TRUE)
+options(knitr.kable.NA = '')
+dep_auto()
 ```
+
 ## Critical Element 3 - Technical Quality: Validity
 
 ### 3.1 Overall Validity, Including Validity Based on Content
@@ -376,17 +382,17 @@ overall score, while outfit mean square statistics closer to 1.0 denote minimal
 distortion of the measurement system. All items included in the 2017-18
 operational assessment are represented. Point measure correlations ranged from
 0.34 to 0.74 in ELA, 0.12 to 0.71 in Math, to 0.25 to 0.74 in Science. All data
-visualizations were conducted with ggplot in the tidyverse package (Wickham, H.,
+visualizations were conducted with *ggplot* in the *tidyverse* package (Wickham, H.,
 2017).
 
 ```{r ifiles}
-ifiles <- dir_ls(file.path("data", "ifiles18"))
+ifiles <- dir_ls(here::here("data", "ifiles19"))
 
 read_sub_files <- function(file) {
   read_csv(file) %>% 
     mutate(content_area = 
              str_extract(file, "[Ee][Ll][Aa]|[Rr]dg|[Ww]ri|[Mm]ath|[Ss]ci"),
-           grade = gsub(".+g(\\d\\d*).+", "\\1", file),
+           grade = gsub(".+g(\\d?\\d).+", "\\1", file),
            grade = as.numeric(grade)) %>% 
     select(content_area, grade, everything()) %>% 
     clean_names()
@@ -433,13 +439,13 @@ Math and one item in Grade 11 Science will also be removed.
 ```{r outfit}
 outfit_tbls <- ifiles %>% 
   group_by(content_area, grade) %>% 
-  summarize(mean_ptm = mean(outfit),
-            min_ptm  = min(outfit),
-            max_ptm  = max(outfit)) %>% 
+  summarize(mean_outfit = mean(outfit),
+            min_outfit  = min(outfit),
+            max_outfit  = max(outfit)) %>% 
   rename(Grade = grade,
-         Mean  = mean_ptm, 
-         Min   = min_ptm,
-         Max   = max_ptm) %>% 
+         Mean  = mean_outfit, 
+         Min   = min_outfit,
+         Max   = max_outfit) %>% 
   ungroup() %>% 
   nest(-content_area)
 
@@ -468,27 +474,35 @@ grades and content areas. The data visualizations presented below were
 conducted with ggplot in the tidyverse package (Wickham, H., 2017).
 
 ```{r ode_data}
-files <- dir_ls("data/ode18", glob = "*.csv")
-files <- files[is.na(str_extract(files, "Rdg|Wri"))]
+files <- dir_ls(here::here("data", "ode19"), glob = "*.csv")
+#files <- files[is.na(str_extract(files, "rdg|wri"))]
 
 ode <- map_df(files, read_sub_files)
 
-theme_set(theme_minimal())
+# join in dems from db-query file
+dems <- read_csv(here::here("data", "db-export", "query_result.csv"),
+                 na = "NULL") %>%
+  clean_names() %>%
+  drop_na(ssid)
+
+ode <- left_join(ode, distinct(select(dems, ssid, idea_elig_code1)))
+
+theme_set(theme_minimal(12))
 nested_perc <- ode %>% 
   ungroup() %>% 
   mutate(grade = factor(grade, 
                         levels = c(3:8, 11, 12),
                         labels = paste0("Grade ", c(3:8, 11, 12)))) %>% 
   nest(-content_area) %>% 
-  mutate(content_area = c("English/Language Arts", "Math", 
-                          "Reading", "Science", "Writing"),
+  mutate(content_area = c("English/Language Arts", "Math", "Reading", 
+                          "Science", "Writing"),
          perc_overall = map(data, 
                             ~group_by(., grade) %>% 
                               count(amo_lvl) %>% 
                               mutate(percent = round((n / sum(n))*100)) %>% 
                               select(-n)),
          perc_disab   = map(data, 
-                            ~group_by(., grade, asmtprmrydsbltycd) %>% 
+                            ~group_by(., grade, idea_elig_code1) %>% 
                               count(amo_lvl) %>% 
                               mutate(percent = round((n / sum(n))*100)) %>% 
                               select(-n)),
@@ -505,19 +519,19 @@ nested_perc <- ode %>%
                                      y = "Percentage",
                                      title = .y)))
 
-  walk2(nested_perc$perc_overall,
-        nested_perc$content_area, 
-        ~mutate(.x, amo_lvl = paste0("AMO Level ", amo_lvl)) %>% 
-          rename(Grade = grade) %>% 
-          spread(amo_lvl, percent) %>% 
-          knitr::kable("latex", 
-                       booktabs = TRUE,
-                       caption = paste0(stringr::str_to_title(.y),
-                                        " Percent Proficient By Grade"),
-                       digits = 2) %>% 
-        kable_styling(full_width = TRUE,
-                      latex_options = "hold_position") %>% 
-          print())
+walk2(nested_perc$perc_overall,
+      nested_perc$content_area, 
+      ~mutate(.x, amo_lvl = paste0("AMO Level ", amo_lvl)) %>% 
+        rename(Grade = grade) %>% 
+        spread(amo_lvl, percent) %>% 
+        knitr::kable("latex", 
+                     booktabs = TRUE,
+                     caption = paste0(stringr::str_to_title(.y),
+                                      " Percent Proficient By Grade"),
+                     digits = 2) %>% 
+      kable_styling(full_width = TRUE,
+                    latex_options = "hold_position") %>% 
+        print())
 ```
 
 \clearpage
@@ -628,7 +642,7 @@ cors <- ode %>%
   select(-ssid) %>% 
   nest(-grade) %>% 
   mutate(data = map(data, ~remove_empty(., "cols")),
-         cor  = map(data, ~correlate(.) %>% shave()),
+         cor  = map(data, ~corrr::correlate(.) %>% corrr::shave()),
          cor  = map(cor, ~rename(., Variable = rowname)))
 
 

@@ -24,51 +24,9 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
-            pdftitle={Oregon Extended Analyses: 2019},
-            pdfauthor={Brock Rowley; Sevrina Tindal; Phillip Irvin; Daniel Anderson; Gerald Tindal},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
-\usepackage{color}
-\usepackage{fancyvrb}
-\newcommand{\VerbBar}{|}
-\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
-\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
-% Add ',fontsize=\small' for more characters per line
-\usepackage{framed}
-\definecolor{shadecolor}{RGB}{248,248,248}
-\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
-\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
-\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
-\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\BuiltInTok}[1]{#1}
-\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
-\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
-\newcommand{\ExtensionTok}[1]{#1}
-\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
-\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\ImportTok}[1]{#1}
-\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
-\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
-\newcommand{\NormalTok}[1]{#1}
-\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
-\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
-\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
-\newcommand{\RegionMarkerTok}[1]{#1}
-\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
-\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
-\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{graphicx,grffile}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
@@ -114,15 +72,28 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{Oregon Extended Analyses: 2019}
-    \pretitle{\vspace{\droptitle}\centering\huge}
-  \posttitle{\par}
-    \author{Brock Rowley \\ Sevrina Tindal \\ Phillip Irvin \\ Daniel Anderson \\ Gerald Tindal}
-    \preauthor{\centering\large\emph}
-  \postauthor{\par}
-      \predate{\centering\large\emph}
-  \postdate{\par}
-    \date{6/29/2019}
+  \title{}
+    \pretitle{\vspace{\droptitle}}
+  \posttitle{}
+    \author{}
+    \preauthor{}\postauthor{}
+    \date{}
+    \predate{}\postdate{}
+  
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 
 \pagenumbering{gobble}
 \usepackage{placeins}
@@ -134,7 +105,6 @@
 \usepackage{booktabs}
 
 \begin{document}
-\maketitle
 
 {
 \setcounter{tocdepth}{5}
@@ -522,51 +492,61 @@ closer to 1.0 denote minimal distortion of the measurement system. All
 items included in the 2017-18 operational assessment are represented.
 Point measure correlations ranged from 0.34 to 0.74 in ELA, 0.12 to 0.71
 in Math, to 0.25 to 0.74 in Science. All data visualizations were
-conducted with ggplot in the tidyverse package (Wickham, H., 2017).
+conducted with \emph{ggplot} in the \emph{tidyverse} package (Wickham,
+H., 2017).
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{ifiles <-}\StringTok{ }\KeywordTok{dir_ls}\NormalTok{(}\KeywordTok{file.path}\NormalTok{(}\StringTok{"data"}\NormalTok{, }\StringTok{"ifiles18"}\NormalTok{))}
+\begin{table}[!h]
 
-\NormalTok{read_sub_files <-}\StringTok{ }\ControlFlowTok{function}\NormalTok{(file) \{}
-  \KeywordTok{read_csv}\NormalTok{(file) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{    }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content_area =} 
-             \KeywordTok{str_extract}\NormalTok{(file, }\StringTok{"[Ee][Ll][Aa]|[Rr]dg|[Ww]ri|[Mm]ath|[Ss]ci"}\NormalTok{),}
-           \DataTypeTok{grade =} \KeywordTok{gsub}\NormalTok{(}\StringTok{".+g(}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{d}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{d*).+"}\NormalTok{, }\StringTok{"}\CharTok{\textbackslash{}\textbackslash{}}\StringTok{1"}\NormalTok{, file),}
-           \DataTypeTok{grade =} \KeywordTok{as.numeric}\NormalTok{(grade)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{    }\KeywordTok{select}\NormalTok{(content_area, grade, }\KeywordTok{everything}\NormalTok{()) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{    }\KeywordTok{clean_names}\NormalTok{()}
-\NormalTok{\}}
+\caption{\label{tab:ifiles}Point Measure Correlations: English/Language Arts}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Mean & Min & Max\\
+\midrule
+3 & 0.57 & 0.37 & 0.70\\
+4 & 0.59 & 0.24 & 0.73\\
+5 & 0.63 & 0.46 & 0.71\\
+6 & 0.62 & 0.47 & 0.72\\
+7 & 0.60 & 0.35 & 0.69\\
+\addlinespace
+8 & 0.61 & 0.41 & 0.74\\
+11 & 0.68 & 0.57 & 0.76\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\NormalTok{ifiles <-}\StringTok{ }\KeywordTok{map_df}\NormalTok{(ifiles, read_sub_files)}
+\caption{\label{tab:ifiles}Point Measure Correlations: Math}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Mean & Min & Max\\
+\midrule
+3 & 0.49 & 0.06 & 0.68\\
+4 & 0.46 & 0.20 & 0.71\\
+5 & 0.45 & 0.23 & 0.65\\
+6 & 0.52 & 0.28 & 0.73\\
+7 & 0.46 & 0.04 & 0.71\\
+\addlinespace
+8 & 0.42 & 0.12 & 0.66\\
+11 & 0.54 & 0.42 & 0.71\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\NormalTok{ptm_tbls <-}\StringTok{ }\NormalTok{ifiles }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(content_area, grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{mean_ptm =} \KeywordTok{mean}\NormalTok{(point_measure_corr),}
-            \DataTypeTok{min_ptm  =} \KeywordTok{min}\NormalTok{(point_measure_corr),}
-            \DataTypeTok{max_ptm  =} \KeywordTok{max}\NormalTok{(point_measure_corr)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade,}
-         \DataTypeTok{Mean  =}\NormalTok{ mean_ptm, }
-         \DataTypeTok{Min   =}\NormalTok{ min_ptm,}
-         \DataTypeTok{Max   =}\NormalTok{ max_ptm) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{content_area)}
-
-\NormalTok{ptm_tbls}\OperatorTok{$}\NormalTok{content_area <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"English/Language Arts"}\NormalTok{, }\StringTok{"Math"}\NormalTok{, }\StringTok{"Science"}\NormalTok{)}
-
-\KeywordTok{walk2}\NormalTok{(ptm_tbls}\OperatorTok{$}\NormalTok{data, }
-      \KeywordTok{paste0}\NormalTok{(}\StringTok{"Point Measure Correlations: "}\NormalTok{, }
-\NormalTok{             ptm_tbls}\OperatorTok{$}\NormalTok{content_area), }
-      \OperatorTok{~}\KeywordTok{kable}\NormalTok{(.x, }
-             \StringTok{"latex"}\NormalTok{, }
-             \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{, }
-             \DataTypeTok{caption =}\NormalTok{ .y,}
-             \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:ifiles}Point Measure Correlations: Science}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Mean & Min & Max\\
+\midrule
+5 & 0.61 & 0.20 & 0.73\\
+8 & 0.64 & 0.38 & 0.72\\
+11 & 0.68 & 0.31 & 0.76\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 \hypertarget{outfit-mean-square-distributions}{%
 \paragraph{Outfit Mean Square
@@ -580,35 +560,58 @@ in ELA were between 0.5 and 1.5, one item in each Grade 6, 7, and 11 was
 above 2.0 and will be removed. One item in Grade 7 Math and one item in
 Grade 11 Science will also be removed.
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{outfit_tbls <-}\StringTok{ }\NormalTok{ifiles }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{group_by}\NormalTok{(content_area, grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{summarize}\NormalTok{(}\DataTypeTok{mean_ptm =} \KeywordTok{mean}\NormalTok{(outfit),}
-            \DataTypeTok{min_ptm  =} \KeywordTok{min}\NormalTok{(outfit),}
-            \DataTypeTok{max_ptm  =} \KeywordTok{max}\NormalTok{(outfit)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade,}
-         \DataTypeTok{Mean  =}\NormalTok{ mean_ptm, }
-         \DataTypeTok{Min   =}\NormalTok{ min_ptm,}
-         \DataTypeTok{Max   =}\NormalTok{ max_ptm) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{content_area)}
+\begin{table}[!h]
 
-\NormalTok{outfit_tbls}\OperatorTok{$}\NormalTok{content_area <-}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"English/Language Arts"}\NormalTok{, }\StringTok{"Math"}\NormalTok{, }\StringTok{"Science"}\NormalTok{)}
+\caption{\label{tab:outfit}Mean Square Outfit: English/Language Arts}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Mean & Min & Max\\
+\midrule
+3 & 0.96 & 0.56 & 1.67\\
+4 & 0.99 & 0.60 & 4.92\\
+5 & 1.03 & 0.61 & 3.31\\
+6 & 0.97 & 0.53 & 1.93\\
+7 & 1.00 & 0.63 & 2.20\\
+\addlinespace
+8 & 0.95 & 0.49 & 1.72\\
+11 & 0.96 & 0.43 & 2.86\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\KeywordTok{walk2}\NormalTok{(outfit_tbls}\OperatorTok{$}\NormalTok{data, }
-      \KeywordTok{paste0}\NormalTok{(}\StringTok{"Mean Square Outfit: "}\NormalTok{, }
-\NormalTok{             outfit_tbls}\OperatorTok{$}\NormalTok{content_area), }
-      \OperatorTok{~}\KeywordTok{kable}\NormalTok{(.x, }
-             \StringTok{"latex"}\NormalTok{, }
-             \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{, }
-             \DataTypeTok{caption =}\NormalTok{ .y,}
-             \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:outfit}Mean Square Outfit: Math}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Mean & Min & Max\\
+\midrule
+3 & 0.98 & 0.68 & 2.33\\
+4 & 0.97 & 0.70 & 1.33\\
+5 & 1.09 & 0.63 & 2.86\\
+6 & 0.91 & 0.49 & 1.58\\
+7 & 1.05 & 0.55 & 3.22\\
+\addlinespace
+8 & 1.00 & 0.64 & 1.71\\
+11 & 0.99 & 0.62 & 1.40\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:outfit}Mean Square Outfit: Science}
+\centering
+\begin{tabu} to \linewidth {>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & Mean & Min & Max\\
+\midrule
+5 & 1.00 & 0.49 & 2.73\\
+8 & 0.90 & 0.56 & 1.58\\
+11 & 0.88 & 0.45 & 2.28\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 \hypertarget{annual-measureable-objectives-frequencies-percentages}{%
 \paragraph{Annual Measureable Objectives Frequencies \&
@@ -622,68 +625,109 @@ achieving proficiency across grades and content areas. The data
 visualizations presented below were conducted with ggplot in the
 tidyverse package (Wickham, H., 2017).
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{files <-}\StringTok{ }\KeywordTok{dir_ls}\NormalTok{(}\StringTok{"data/ode18"}\NormalTok{, }\DataTypeTok{glob =} \StringTok{"*.csv"}\NormalTok{)}
-\NormalTok{files <-}\StringTok{ }\NormalTok{files[}\KeywordTok{is.na}\NormalTok{(}\KeywordTok{str_extract}\NormalTok{(files, }\StringTok{"Rdg|Wri"}\NormalTok{))]}
+\begin{table}[!h]
 
-\NormalTok{ode <-}\StringTok{ }\KeywordTok{map_df}\NormalTok{(files, read_sub_files)}
+\caption{\label{tab:ode_data}English/Language Arts Percent Proficient By Grade}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO Level 1 & AMO Level 2 & AMO Level 3 & AMO Level 4\\
+\midrule
+Grade 3 & 20 & 42 & 28 & 10\\
+Grade 4 & 29 & 27 & 26 & 18\\
+Grade 5 & 27 & 32 & 18 & 23\\
+Grade 6 & 30 & 28 & 23 & 19\\
+Grade 7 & 31 & 29 & 25 & 16\\
+\addlinespace
+Grade 8 & 41 & 24 & 24 & 11\\
+Grade 11 & 23 & 28 & 11 & 39\\
+Grade 12 & 12 & 19 & 12 & 57\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\KeywordTok{theme_set}\NormalTok{(}\KeywordTok{theme_minimal}\NormalTok{())}
-\NormalTok{nested_perc <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{grade =} \KeywordTok{factor}\NormalTok{(grade, }
-                        \DataTypeTok{levels =} \KeywordTok{c}\NormalTok{(}\DecValTok{3}\OperatorTok{:}\DecValTok{8}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{12}\NormalTok{),}
-                        \DataTypeTok{labels =} \KeywordTok{paste0}\NormalTok{(}\StringTok{"Grade "}\NormalTok{, }\KeywordTok{c}\NormalTok{(}\DecValTok{3}\OperatorTok{:}\DecValTok{8}\NormalTok{, }\DecValTok{11}\NormalTok{, }\DecValTok{12}\NormalTok{)))) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{content_area) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content_area =} \KeywordTok{c}\NormalTok{(}\StringTok{"English/Language Arts"}\NormalTok{, }\StringTok{"Math"}\NormalTok{, }
-                          \StringTok{"Reading"}\NormalTok{, }\StringTok{"Science"}\NormalTok{, }\StringTok{"Writing"}\NormalTok{),}
-         \DataTypeTok{perc_overall =} \KeywordTok{map}\NormalTok{(data, }
-                            \OperatorTok{~}\KeywordTok{group_by}\NormalTok{(., grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{                              }\KeywordTok{count}\NormalTok{(amo_lvl) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{                              }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{percent =} \KeywordTok{round}\NormalTok{((n }\OperatorTok{/}\StringTok{ }\KeywordTok{sum}\NormalTok{(n))}\OperatorTok{*}\DecValTok{100}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{                              }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n)),}
-         \DataTypeTok{perc_disab   =} \KeywordTok{map}\NormalTok{(data, }
-                            \OperatorTok{~}\KeywordTok{group_by}\NormalTok{(., grade, asmtprmrydsbltycd) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{                              }\KeywordTok{count}\NormalTok{(amo_lvl) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{                              }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{percent =} \KeywordTok{round}\NormalTok{((n }\OperatorTok{/}\StringTok{ }\KeywordTok{sum}\NormalTok{(n))}\OperatorTok{*}\DecValTok{100}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{                              }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n)),}
-         \DataTypeTok{perc_overall_p =} \KeywordTok{map2}\NormalTok{(perc_overall,}
-                               \KeywordTok{paste0}\NormalTok{(content_area, }\StringTok{" Percent Proficient"}\NormalTok{),}
-                              \OperatorTok{~}\KeywordTok{ggplot}\NormalTok{(.x, }\KeywordTok{aes}\NormalTok{(amo_lvl, percent)) }\OperatorTok{+}
-\StringTok{                                }\KeywordTok{geom_col}\NormalTok{(}\DataTypeTok{fill =} \StringTok{"cornflowerblue"}\NormalTok{) }\OperatorTok{+}
-\StringTok{                                }\KeywordTok{facet_wrap}\NormalTok{(}\OperatorTok{~}\NormalTok{grade) }\OperatorTok{+}
-\StringTok{                                }\KeywordTok{geom_text}\NormalTok{(}\KeywordTok{aes}\NormalTok{(}\DataTypeTok{label =} \KeywordTok{paste0}\NormalTok{(percent, }\StringTok{"%"}\NormalTok{)), }
-                                          \DataTypeTok{vjust =} \FloatTok{-0.5}\NormalTok{,}
-                                          \DataTypeTok{color =} \StringTok{"gray40"}\NormalTok{) }\OperatorTok{+}
-\StringTok{                                }\KeywordTok{ylim}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{100}\NormalTok{) }\OperatorTok{+}
-\StringTok{                                }\KeywordTok{labs}\NormalTok{(}\DataTypeTok{x =} \StringTok{"AMO Level"}\NormalTok{,}
-                                     \DataTypeTok{y =} \StringTok{"Percentage"}\NormalTok{,}
-                                     \DataTypeTok{title =}\NormalTok{ .y)))}
+\caption{\label{tab:ode_data}Math Percent Proficient By Grade}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO Level 1 & AMO Level 2 & AMO Level 3 & AMO Level 4\\
+\midrule
+Grade 3 & 42 & 18 & 35 & 5\\
+Grade 4 & 31 & 40 & 23 & 6\\
+Grade 5 & 25 & 34 & 34 & 7\\
+Grade 6 & 51 & 10 & 32 & 8\\
+Grade 7 & 57 & 7 & 31 & 5\\
+\addlinespace
+Grade 8 & 49 & 16 & 34 & 1\\
+Grade 11 & 42 & 16 & 32 & 10\\
+Grade 12 & 29 & 20 & 29 & 22\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-  \KeywordTok{walk2}\NormalTok{(nested_perc}\OperatorTok{$}\NormalTok{perc_overall,}
-\NormalTok{        nested_perc}\OperatorTok{$}\NormalTok{content_area, }
-        \OperatorTok{~}\KeywordTok{mutate}\NormalTok{(.x, }\DataTypeTok{amo_lvl =} \KeywordTok{paste0}\NormalTok{(}\StringTok{"AMO Level "}\NormalTok{, amo_lvl)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{          }\KeywordTok{rename}\NormalTok{(}\DataTypeTok{Grade =}\NormalTok{ grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{          }\KeywordTok{spread}\NormalTok{(amo_lvl, percent) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{          }\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(}\StringTok{"latex"}\NormalTok{, }
-                       \DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-                       \DataTypeTok{caption =} \KeywordTok{paste0}\NormalTok{(stringr}\OperatorTok{::}\KeywordTok{str_to_title}\NormalTok{(.y),}
-                                        \StringTok{" Percent Proficient By Grade"}\NormalTok{),}
-                       \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{          }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:ode_data}Reading Percent Proficient By Grade}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO Level 1 & AMO Level 2 & AMO Level 3 & AMO Level 4\\
+\midrule
+Grade 3 & 20 & 40 & 30 & 9\\
+Grade 4 & 24 & 30 & 28 & 18\\
+Grade 5 & 28 & 34 & 16 & 21\\
+Grade 6 & 32 & 22 & 26 & 20\\
+Grade 7 & 30 & 29 & 18 & 23\\
+\addlinespace
+Grade 8 & 41 & 25 & 25 & 9\\
+Grade 11 & 24 & 23 & 13 & 41\\
+Grade 12 & 12 & 21 & 12 & 55\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:ode_data}Science Percent Proficient By Grade}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO Level 1 & AMO Level 2 & AMO Level 3 & AMO Level 4\\
+\midrule
+Grade 5 & 37 & 20 & 23 & 21\\
+Grade 8 & 42 & 16 & 22 & 20\\
+Grade 11 & 23 & 17 & 26 & 34\\
+Grade 12 & 16 & 11 & 26 & 47\\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:ode_data}Writing Percent Proficient By Grade}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Grade & AMO Level 1 & AMO Level 2 & AMO Level 3 & AMO Level 4\\
+\midrule
+Grade 3 & 26 & 31 & 26 & 17\\
+Grade 4 & 33 & 20 & 34 & 14\\
+Grade 5 & 36 & 28 & 9 & 28\\
+Grade 6 & 29 & 27 & 24 & 19\\
+Grade 7 & 37 & 29 & 18 & 15\\
+\addlinespace
+Grade 8 & 46 & 14 & 19 & 21\\
+Grade 11 & 23 & 28 & 7 & 41\\
+Grade 12 & 14 & 21 & 5 & 60\\
+\bottomrule
+\end{tabu}
+\end{table}
 
 \clearpage
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{walk}\NormalTok{(nested_perc}\OperatorTok{$}\NormalTok{perc_overall_p, print)}
-\end{Highlighting}
-\end{Shaded}
+\includegraphics{Critical_Element_3_files/figure-latex/amo_plot-1.pdf}
+\includegraphics{Critical_Element_3_files/figure-latex/amo_plot-2.pdf}
+\includegraphics{Critical_Element_3_files/figure-latex/amo_plot-3.pdf}
+\includegraphics{Critical_Element_3_files/figure-latex/amo_plot-4.pdf}
+\includegraphics{Critical_Element_3_files/figure-latex/amo_plot-5.pdf}
 
 Some concerns are noted in mathematics, where relatively higher
 percentages of students are scoring at Level 1 and very few at Level 2.
@@ -795,37 +839,130 @@ constructs, with between-test scaled score correlations ranging from
 0.69 to 0.97.
 
 \newpage
+\begin{table}[!h]
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{cors <-}\StringTok{ }\NormalTok{ode }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(content_area, grade, ssid, theta) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{content_area =} \KeywordTok{case_when}\NormalTok{(content_area }\OperatorTok{==}\StringTok{ "ela"} \OperatorTok{~}\StringTok{ "ELA"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "math"} \OperatorTok{~}\StringTok{ "Math"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "rdg"} \OperatorTok{~}\StringTok{ "Reading"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "wri"} \OperatorTok{~}\StringTok{ "Writing"}\NormalTok{,}
-\NormalTok{                                  content_area }\OperatorTok{==}\StringTok{ "sci"} \OperatorTok{~}\StringTok{ "Science"}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{spread}\NormalTok{(content_area, theta) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{ssid) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{nest}\NormalTok{(}\OperatorTok{-}\NormalTok{grade) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{data =} \KeywordTok{map}\NormalTok{(data, }\OperatorTok{~}\KeywordTok{remove_empty}\NormalTok{(., }\StringTok{"cols"}\NormalTok{)),}
-         \DataTypeTok{cor  =} \KeywordTok{map}\NormalTok{(data, }\OperatorTok{~}\KeywordTok{correlate}\NormalTok{(.) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{shave}\NormalTok{()),}
-         \DataTypeTok{cor  =} \KeywordTok{map}\NormalTok{(cor, }\OperatorTok{~}\KeywordTok{rename}\NormalTok{(., }\DataTypeTok{Variable =}\NormalTok{ rowname)))}
+\caption{\label{tab:by_sub_corr}Grade 3 Content Area Correlations}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Variable & ELA & Math & Reading & Writing\\
+\midrule
+ELA &  &  &  & \\
+Math & 0.84 &  &  & \\
+Reading & 0.98 & 0.82 &  & \\
+Writing & 0.93 & 0.80 & 0.87 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
+\caption{\label{tab:by_sub_corr}Grade 4 Content Area Correlations}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Variable & ELA & Math & Reading & Writing\\
+\midrule
+ELA &  &  &  & \\
+Math & 0.83 &  &  & \\
+Reading & 0.97 & 0.81 &  & \\
+Writing & 0.93 & 0.74 & 0.84 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
-\KeywordTok{walk2}\NormalTok{(cors}\OperatorTok{$}\NormalTok{cor,}
-\NormalTok{      cors}\OperatorTok{$}\NormalTok{grade, }
-      \OperatorTok{~}\NormalTok{knitr}\OperatorTok{::}\KeywordTok{kable}\NormalTok{(.x, }\StringTok{"latex"}\NormalTok{, }\DataTypeTok{booktabs =} \OtherTok{TRUE}\NormalTok{,}
-                     \DataTypeTok{caption =} \KeywordTok{paste0}\NormalTok{(}\StringTok{"Grade "}\NormalTok{, }
-\NormalTok{                                      .y, }
-                                      \StringTok{" Content Area Correlations"}\NormalTok{),}
-                    \DataTypeTok{digits =} \DecValTok{2}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{kable_styling}\NormalTok{(}\DataTypeTok{full_width =} \OtherTok{TRUE}\NormalTok{,}
-                      \DataTypeTok{latex_options =} \StringTok{"hold_position"}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }
-\StringTok{        }\KeywordTok{print}\NormalTok{())}
-\end{Highlighting}
-\end{Shaded}
+\caption{\label{tab:by_sub_corr}Grade 5 Content Area Correlations}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Variable & ELA & Math & Reading & Science & Writing\\
+\midrule
+ELA &  &  &  &  & \\
+Math & 0.81 &  &  &  & \\
+Reading & 0.98 & 0.78 &  &  & \\
+Science & 0.81 & 0.77 & 0.79 &  & \\
+Writing & 0.92 & 0.74 & 0.85 & 0.76 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
 
+\caption{\label{tab:by_sub_corr}Grade 6 Content Area Correlations}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Variable & ELA & Math & Reading & Writing\\
+\midrule
+ELA &  &  &  & \\
+Math & 0.86 &  &  & \\
+Reading & 0.97 & 0.84 &  & \\
+Writing & 0.94 & 0.83 & 0.86 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:by_sub_corr}Grade 7 Content Area Correlations}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Variable & ELA & Math & Reading & Writing\\
+\midrule
+ELA &  &  &  & \\
+Math & 0.78 &  &  & \\
+Reading & 0.97 & 0.75 &  & \\
+Writing & 0.94 & 0.74 & 0.85 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:by_sub_corr}Grade 8 Content Area Correlations}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Variable & ELA & Math & Reading & Science & Writing\\
+\midrule
+ELA &  &  &  &  & \\
+Math & 0.81 &  &  &  & \\
+Reading & 0.97 & 0.78 &  &  & \\
+Science & 0.83 & 0.80 & 0.81 &  & \\
+Writing & 0.93 & 0.77 & 0.86 & 0.77 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:by_sub_corr}Grade 11 Content Area Correlations}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Variable & ELA & Math & Reading & Science & Writing\\
+\midrule
+ELA &  &  &  &  & \\
+Math & 0.87 &  &  &  & \\
+Reading & 0.96 & 0.86 &  &  & \\
+Science & 0.88 & 0.86 & 0.89 &  & \\
+Writing & 0.96 & 0.82 & 0.88 & 0.83 & \\
+\bottomrule
+\end{tabu}
+\end{table}
+\begin{table}[!h]
+
+\caption{\label{tab:by_sub_corr}Grade 12 Content Area Correlations}
+\centering
+\begin{tabu} to \linewidth {>{\raggedright}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X>{\raggedleft}X}
+\toprule
+Variable & ELA & Math & Reading & Science & Writing\\
+\midrule
+ELA &  &  &  &  & \\
+Math & 0.77 &  &  &  & \\
+Reading & 0.95 & 0.75 &  &  & \\
+Science & 0.86 & 0.61 & 0.89 &  & \\
+Writing & 0.95 & 0.71 & 0.86 & 0.81 & \\
+\bottomrule
+\end{tabu}
+\end{table}
 \FloatBarrier
 
 Results of the Pearson's product-moment correlation analysis within
