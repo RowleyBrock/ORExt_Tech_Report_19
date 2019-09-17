@@ -60,7 +60,6 @@ internal consistency estimates, split-half reliability analyses, as well as a
 small test-retest assessment of reliability comparisons by means of our pilot
 tablet administration study. There is only one test form for the ORExt, so test
 form comparisons are not possible.
-\newpage
 
 #### Inter-Rater-Reliability
 
@@ -266,7 +265,7 @@ Marginal reliability results (true score variance/true score variance + error
 variance) demonstrate that the tests are quite reliable at the total test level.
 Full reliability statistics for each of the operational tests administered this
 year are provided below. These results demonstrate that the total test
-reliabilities were quite high, ranging from .67 to .91. Each table below
+reliabilities were quite high, ranging from .76 to .92. Each table below
 provides the content area, grade, and the marginal reliabilities. All test forms
 were composed of 36 operational and 12 embedded field-test items.
 
@@ -369,7 +368,7 @@ for the TCCs were conducted in the R software 3.3.2 environment (R Core Team,
 
 #### 4.1B Overall and Conditional Standard Errors of Measure
 
-The average SEM associated with each cut score for 2017-18 student data are
+The average SEM associated with each cut score for 2018-19 student data are
 presented in the table below, supported by a KEY. The SEMs decreased in almost
 all cases compared to last year, suggesting that the measures are more reliable
 when student eligibility is more strictly controlled. See Section 4.2 below for
@@ -411,7 +410,7 @@ walk2(se_tbls,
 
 #### 4.1C Classification Accuracy & Consistency
 
-Results from the 2017-18 ORExt test administration were analyzed using Rudner's
+Results from the 2018-19 ORExt test administration were analyzed using Rudner's
 classification index (Rudner, 2005). Results closer to 1.0 indicate the
 likelihood that a student was appropriately classified as proficient or not
 proficient (accuracy) and the likelihood that the student would be classified in
@@ -516,13 +515,13 @@ and Thayer criteria for ∆_MH is as follows: --> <!-- |∆_MH |≤1.0 = "A" ite
 The Holland and Thayer criteria were used for all Mantel-Haenszel analyses.
 Items that were flagged as "C" level items were reviewed by BRT researchers for
 potential biases. If biases are identified, the item is removed from the item
-pool. DIF analyses were performed ex post facto on the 2015-16 ORExt operational
+pool. DIF analyses were performed ex post facto on the 2017-18 ORExt operational
 items to address longitudinal trends. Only three ELA items were identified as
-exhibiting a "C" level DIF across both 2017 and 2018. Those three ELA items, one
+exhibiting a "C" level DIF across both 2018 and 2019. Those three ELA items, one
 in Grade 5 that exhibited DIF that privileged White examinees, one in Grade 4
 that privileged Female examinees, and one in Grade 8 that privileged Female
 examinees, were removed and were not used in 2017-18 or thereafter. DIF
-analyses was also be performed in the 2017-18 school year to continue to
+analyses was also be performed in the 2018-19 school year to continue to
 address DIF longitudinally. All items, including field test items, were included
 in the analyses. There are a total of 48 items on each assessment.
 
@@ -665,16 +664,14 @@ walk2(gndr_tbls,
         print())
 ```
 
-\clearpage
-
 #### Race - Ethnicity Percentages and Totals by Content Area and Grade Level 
 
 The full ethnic and disability demographics for students taking the ORExt are
 reported below. Students ethnicity/race was reported in seven categories: (a)
 American Indian/Alaskan Native, (b) Asian, (c) Black or African-American, (d)
-Multi-ethnic, (e) Native Hawaiian or Other Pacific Islander, (f) Hispanic, or
-(g) White. The majority of students were reported as White (53-68%) or Hispanic
-(12-27%). These results are largely consistent with the demographics reported
+Hispanic, (e) Multiethnic, (f) Pacific Islander, or
+(g) White. The majority of students were reported as White (51-57%) or Hispanic
+(21-28%). These results are largely consistent with the demographics reported
 for the general assessments, though percentages taking the ORExt are slightly
 higher for most students of color and generally lower for students who are Asian
 or White (see *Appendix* 4.2).
@@ -711,14 +708,12 @@ by_form %>%
 ```
 
 The majority of students who participated in the ORExt were students with
-Intellectual Disability (30-45%) and students with Autism Spectrum Disorder (28
--34%), followed by students with Other Health Impairment (11-16%). ODE policy
+Intellectual Disability (32-53%) and students with Autism Spectrum Disorder (28
+-37%), followed by students with Other Health Impairment (8-18%). ODE policy
 for 2015-16 changed to require students who participate in the ORExt to take the
 assessment in all relevant content areas. There is thus very little change in
 terms of participation percentages across content areas, as evidenced by the
 total n-sizes per grade level displayed below.
-
-\clearpage
 
 #### Exceptionality Percentages By Content Area and Grade Level
 
@@ -812,10 +807,28 @@ knitr::kable(rit_17, "latex",
         kable_styling(full_width = TRUE,
                       latex_options = "hold_position")
 
-# Brock to enter in last years data here
+rit_18 <- tibble::tribble(
+  ~Grade, ~ELA.Mean, ~ELA.SD, ~Math.Mean, ~Math.SD, ~Science.Mean, ~Science.SD,
+      3L,    204.02,   22.43,     191.48,    19.58,            NA,          NA,
+      4L,    207.16,   22.21,     196.06,    17.95,            NA,          NA,
+      5L,    211.99,   24.70,     199.48,    17.93,        511.88,       23.37,
+      6L,    212.78,   23.02,     199.69,    18.96,            NA,          NA,
+      7L,    214.92,   22.13,     202.02,    16.04,            NA,          NA,
+      8L,    212.87,   22.92,     202.96,    15.45,        810.26,       23.90,
+     11L,    915.06,   27.38,     900.99,    19.81,        915.24,       27.21,
+     12L,    926.74,   22.59,     908.82,    19.81,        925.26,       26.88
+  )
+knitr::kable(rit_18, "latex", 
+        booktabs = TRUE,
+        caption = "Means/SDs: 2017-18",
+        digits = 2) %>% 
+        kable_styling(full_width = TRUE,
+                      latex_options = "hold_position")
 ```
 
 ```{r obs_means}
+
+
 ode %>% 
   filter(content_area != "rdg" &
          content_area != "wri") %>% 
@@ -831,7 +844,7 @@ ode %>%
   rename(Grade = grade) %>% 
   kable("latex", 
         booktabs = TRUE,
-        caption = "Means/SDs: 2017-18",
+        caption = "Means/SDs: 2018-19",
         digits = 2) %>% 
         kable_styling(full_width = TRUE,
                       latex_options = "hold_position")
@@ -876,13 +889,11 @@ ode %>%
   drop_na(Sex) %>% 
   kable("latex", 
         booktabs = TRUE,
-        caption = "Means/SDs by Gender: 2017-18",
+        caption = "Means/SDs by Gender: 2018-19",
         digits = 2) %>% 
         kable_styling(full_width = TRUE,
                       latex_options = "hold_position")
 ```
-
-\clearpage
 
 #### Observed Means Reported by Race 
 
@@ -912,7 +923,7 @@ eth_descrip_tbls <- ode %>%
 
 eth_descip_captions <- paste0("Grade ", 
                               names(eth_descrip_tbls),
-                              " Means/SDs by Race/Ethnicity: 2017-18")
+                              " Means/SDs by Race/Ethnicity: 2018-19")
 walk2(eth_descrip_tbls, eth_descip_captions,
       ~kable(.x, 
              "latex", 
@@ -923,9 +934,7 @@ walk2(eth_descrip_tbls, eth_descip_captions,
                       latex_options = "hold_position") %>% 
         print())
 ```
-
 \clearpage
-
 #### Observed Means Reported by Exceptionality Status 
 
 The following table is a number key for **Elibibility Codes:**
@@ -973,7 +982,7 @@ disab_descrip_tbls <- ode %>%
 
 disab_descrip_captions <- paste0("Grade ", 
                               names(disab_descrip_tbls),
-                              " Means/SDs by Race/Ethnicity: 2017-18")
+                              " Means/SDs by Race/Ethnicity: 2018-19")
 walk2(disab_descrip_tbls, disab_descrip_captions,
       ~kable(.x, 
              "latex", 
@@ -984,7 +993,6 @@ walk2(disab_descrip_tbls, disab_descrip_captions,
                       latex_options = "hold_position") %>% 
         print())
 ```
-\clearpage
 
 #### Graphs of Observed Means By Disability 
 
