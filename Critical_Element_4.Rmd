@@ -354,8 +354,8 @@ cutscores.
 
 The Test Characteristic Curves (TCCs) for the grade-level assessments in ELA and
 mathematics demonstrate incrementally increasing growth and test demands across
-Grades 3-8, with the exception of Grade 7 mathematics. The Grade 7 mathematics
-assessment was revised to be more difficult last year, but clearly more
+Grades 3-8, with the exception of Grade 5 mathematics. The Grade 5 mathematics
+assessment is proving to be more difficult this year, clearly more
 elaboration of this effort is needed to address its location on the TCC. Grade
 11 and science tests are not vertically scaled; TCCs are thus not presented for
 Grade 11 or science. All Rasch model scaling, as well as the data visualizations
