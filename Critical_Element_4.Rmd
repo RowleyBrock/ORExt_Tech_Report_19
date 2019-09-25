@@ -864,12 +864,12 @@ eth_gndr <- by_form %>%
   mutate(new = map(data, ~select(., grade, ssid, gender, race_eth))) %>% 
   select(content, new) %>% 
   unnest() %>% 
+  ungroup() %>% 
   rename(content_area = content) %>% 
   mutate(content_area = tolower(content_area),
          content_area = ifelse(content_area == "science", "sci", content_area),
          grade = as.numeric(grade)) 
   
-
 ode <- left_join(ode, eth_gndr)
 
 ode %>% 
