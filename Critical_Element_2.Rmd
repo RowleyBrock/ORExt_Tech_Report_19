@@ -417,7 +417,7 @@ in *Appendix* 2.3B.10.
 
 The ORExt was implemented using a technology-based platform as Phase 3 of the
 ORExt Tablet Administration. The 2017-18 testing window was the first year all
-grade level and subject area assessments were available on a tablet
+grade level and subject area assessments were available on the electronic
 application/web-based platform. Administration of the tablet application mirrors
 paper/pencil administration with each item read aloud to the student, and the
 student asked to select one of three answer choices. Tablet functionality
