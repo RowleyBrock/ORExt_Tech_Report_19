@@ -418,20 +418,20 @@ in *Appendix* 2.3B.10.
 The ORExt was implemented using a technology-based platform as Phase 3 of the
 ORExt Tablet Administration. The 2017-18 testing window was the first year all
 grade level and subject area assessments were available on the electronic
-application/web-based platform. Administration of the tablet application mirrors
-paper/pencil administration with each item read aloud to the student, and the
-student asked to select one of three answer choices. Tablet functionality
-includes optional discontinuation if the student misses 10 out of the first 15
-items, directing the assessor to administer the ORora. To support understanding
-of the system by both teachers and students, a separate practice test tablet
-application is available. Helpdesk inquiries and feedback from the field
-indicated much preference of the tablet administration versus paper/pencil.
-Qualified Trainers and Qualified Assessors reported their students' were more
-focused during tablet administration, and because the tablet application scores
-automatically it was much more efficient for assessors. Improvements will be
-made to the electronic test based on technology improvements and feedback from
-the field. Data entry for all platforms is now maintained and monitored by
-secure BRT servers.
+application/web-based platform. Administration of the electronic application
+mirrors paper/pencil administration with each item read aloud to the student,
+and the student asked to select one of three answer choices. Electronic based
+functionality includes optional discontinuation if the student misses 10 out of
+the first 15 items, directing the assessor to administer the ORora. To support
+understanding of the system by both teachers and students, a separate practice
+test application is available. Helpdesk inquiries and feedback from the
+field indicated much preference of the electronic administration versus
+paper/pencil. Qualified Trainers and Qualified Assessors reported their
+students' were more focused during electronic administration, and because the
+application scores automatically it was much more efficient for assessors.
+Improvements will be made to the electronic test based on technology
+improvements and feedback from the field. Data entry for all platforms is now
+maintained and monitored by secure BRT servers.
 
 ### 2.4 Monitoring Test Administration
 
