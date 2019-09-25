@@ -186,7 +186,7 @@ United States Department of Education's (USED's) Office of Special Education
 Programs (OSEP). Participation and performance summaries are provided below.
 Additional information regarding state performance is published in the 2017-18
 \color{link}[Statewide Report
-Card](https://www.oregon.gov/ode/schools-and-districts/reportcards/Documents/rptcard2018.pdf)
+Card](https://www.oregon.gov/ode/schools-and-districts/reportcards/reportcards/Pages/RC-Resource-Archives-1617-2021.aspx)
 \color{black} (see *Appendix* 1.5, pages 1-16 for student and teacher
 demographics and pages 38-41 for assessment information).\FloatBarrier
 ![](Figures/Participation/Participation.png)
