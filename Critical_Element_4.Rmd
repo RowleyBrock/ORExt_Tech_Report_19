@@ -1132,6 +1132,7 @@ across all grades and content areas. The item person distributions provided
 below demonstrate that the ORExt is providing a performance continuum for
 students who participate.
 
+\pagebreak
 #### English Language Arts Person/Item Distributions
 \FloatBarrier
 ![](ipdens/ela3ipdens.pdf){height=300px}
