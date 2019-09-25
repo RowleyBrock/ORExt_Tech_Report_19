@@ -1,13 +1,4 @@
 ---
-title: 'Oregon Extended Analyses: 2019'
-author: 
-- "Brock Rowley"
-- "Sevrina Tindal"
-- "Phillip"
-- "Daniel Anderson"
-- "Gerald Tindal"
-affiliation: "University of Oregon"
-date: "6/29/2019"
 output: 
   pdf_document:
     toc: yes
@@ -249,7 +240,7 @@ well-defined answers.
 #### 2.3B Comprehensive Training System
 
 Comprehensive information for ongoing training for all qualified assessors (QAs)
-and Qualified Trainers (QTs) is provided in *Appendices* 2.3B.1-2.3B.8. Through
+and Qualified Trainers (QTs) is provided in *Appendices* 2.3B.1-2.3B.7. Through
 an online distribution and assessment system, \color{link}[QA/QT Training and
 Proficiency](https://or.k12test.com/) \color{black} is determined anually. This
 website hosts all resources and information needed to administer, score, report,
