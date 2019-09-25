@@ -345,8 +345,6 @@ technical issues with individual tablet. All helpdesk inquiries will be taken
 into consideration as the training site is updated for the 2019-2020 testing
 year.
 
-The *HelpDesk* log is published in *Appendix* 2.3B.9. 
-
 Oregon monitors the quality of its system in several ways in order to support
 continuous improvement. In terms of the assessment quality, item statistics are
 reviewed each year and items that are not functioning as intended are removed
