@@ -10,3 +10,5 @@ tests/*
 .Ruserdata
 .DS_Store
 *.log
+*.tex
+*.pdf
