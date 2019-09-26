@@ -1,13 +1,4 @@
 ---
-title: 'Oregon Extended Analyses: 2019'
-author: 
-- "Brock Rowley"
-- "Sevrina Tindal"
-- "Phillip Irvin"
-- "Daniel Anderson"
-- "Gerald Tindal"
-affiliation: "University of Oregon"
-date: "6/29/2019"
 output: 
   pdf_document:
     toc: yes

@@ -24,6 +24,8 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{hyperref}
 \hypersetup{unicode=true,
+            pdftitle={Oregon Extended Analyses: 2019},
+            pdfauthor={Brock Rowley; Sevrina Tindal; Phillip Irvin; Daniel Anderson; Gerald Tindal},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -73,50 +75,32 @@
 
 \setlength{\droptitle}{-2em}
 
-  \title{}
-    \pretitle{\vspace{\droptitle}}
-  \posttitle{}
-    \author{}
-    \preauthor{}\postauthor{}
-    \date{}
-    \predate{}\postdate{}
-  
+  \title{Oregon Extended Analyses: 2019}
+    \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+    \author{Brock Rowley \\ Sevrina Tindal \\ Phillip Irvin \\ Daniel Anderson \\ Gerald Tindal}
+    \preauthor{\centering\large\emph}
+  \postauthor{\par}
+      \predate{\centering\large\emph}
+  \postdate{\par}
+    \date{6/29/2019}
+
+\pagenumbering{gobble}
+\usepackage{placeins}
+\usepackage{float}
+\usepackage{caption}
+\captionsetup[figure]{labelformat = empty}
+\usepackage{xcolor}
+\definecolor{link}{rgb}{0, 0, 238}
+\usepackage{booktabs}
 
 \begin{document}
+\maketitle
 
 {
 \setcounter{tocdepth}{5}
 \tableofcontents
 }
-\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
-
-output: pdf\_document: toc: yes toc\_depth: 5 keep\_tex: yes \# toc:
-true \# toc\_float: true \# toc\_depth: 4 \# html\_document:
-html\_document: toc: yes toc\_depth: 4 toc\_float: yes word\_document:
-toc: yes toc\_depth: `4' header-includes: - \pagenumbering{gobble} -
-
-\usepackage{placeins}
-
-\begin{itemize}
-\item
-  \usepackage{float}
-
-  \begin{itemize}
-  \item
-    \usepackage{caption}
-  \item
-    \captionsetup[figure]{labelformat = empty}
-  \item
-    \usepackage{xcolor}
-  \item
-    \definecolor{link}{rgb}{0, 0, 238}
-  \item
-    \usepackage{booktabs}
-
-    \begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
-  \end{itemize}
-\end{itemize}
-
 \hypertarget{critical-element-1-statewide-system-of-standards-and-assessments}{%
 \subsection{Critical Element 1: Statewide System of Standards and
 Assessments}\label{critical-element-1-statewide-system-of-standards-and-assessments}}
