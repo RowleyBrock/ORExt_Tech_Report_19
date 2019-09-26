@@ -236,9 +236,9 @@ classification consistency analyses demonstrate that the ORExt is appropriately
 categorizing students into the proficient category, and capable of doing so in a
 consistent manner. The vertical scale developed in 2014-15 appears to be
 modeling incremental growth across Grades 3-8 in ELA and mathematics, as
-intended. The Grade 7 mathematics test demonstrated sufficient item difficulties
+intended. The Grade 5 mathematics test demonstrated sufficient item difficulties
 across the ranges medium and high item complexity. However, low level items must
-again be amended in the 2018-19 school year. The ELA and science assessments
+again be amended in the 2019-20 school year. The ELA and science assessments
 could continue to benefit from the addition of more difficult items, as
 evidenced by comparisons of the average person abilities and item difficulties.
 Mathematics assessments appear to be functioning quite well in terms of person
@@ -274,15 +274,15 @@ continuous improvement. Respondents pointed to positive attributes of the ORExt,
 especially those involving test administration and design and felt somewhat
 positive regarding various educational impacts of the ORExt.
 
-During the 2017-18 ORExt testing window, feedback from the field and the number
+During the 2018-19 ORExt testing window, feedback from the field and the number
 of students administered the tablet based ORExt indicated assessors preferred
 administration of the tablet/web-based assessment versus paper/pencil. Benefits
 expressed by the field indicated increased student engagement, improved
 standardization, ease of use by teachers, and resource protection (i.e., time,
 printing, expense). Practice tests were available to familiarize teachers and
 students to the tablet format prior to administration of the secure tests. Based
-on the 2017-18 testing window, enhancements are in process to improve the
-tablet/web-based administration for the 2018-19 testing window. These
+on the 2018-19 testing window, enhancements are in process to improve the
+tablet/web-based administration for the 2019-20 testing window. These
 improvements include updates to make administration/data entry more efficient
 for assessors and additional alerts if devices are no longer online. The 2018-19
 testing window was the first year all data entry was held on the BRT
@@ -309,9 +309,4 @@ study, distributed item review, test blueprint, item writer training and
 demographics, and item reviewer training and demographics), ORExt test
 reliability evidence, and ORExt consequential validity evidence. Further
 analyses over the coming years are planned to continue the development of
-technical documentation for overall construct validity of the ORExt. The
-technical documentation plan for the 2017 through 2019 school years is provided
-below:
-
-\FloatBarrier
-![](tifs/techdocplan.png)
+technical documentation for overall construct validity of the ORExt. 
