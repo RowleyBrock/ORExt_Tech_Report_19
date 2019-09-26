@@ -7,7 +7,7 @@ author:
 - "Daniel Anderson"
 - "Gerald Tindal"
 affiliation: "University of Oregon"
-date: "6/29/2019"
+date: "10/11/2019"
 output: 
   pdf_document:
     toc: yes
@@ -38,21 +38,6 @@ header-includes:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Overview
-
-# Critical Element 1
-
-# Critical Element 2
-
-# Critical Element 3
-
-# Critical Element 4
-
-# Critical Element 5
-
-# Critical Element 6
-
-# Appendix
 It is the policy of the State Board of Education and a priority of the Oregon
 Department of Education that there will be no discrimination or harassment on
 the grounds of race, color, religion, sex, sexual orientation, national origin,
