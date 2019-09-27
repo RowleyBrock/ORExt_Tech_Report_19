@@ -889,7 +889,7 @@ ode %>%
   drop_na(Sex) %>% 
   kable("latex", 
         booktabs = TRUE,
-        caption = "Means/SDs by Gender: 2018-19",
+        caption = "Means/SDs by Sex: 2018-19",
         digits = 2) %>% 
         kable_styling(full_width = TRUE,
                       latex_options = "hold_position")
@@ -937,27 +937,32 @@ walk2(eth_descrip_tbls, eth_descip_captions,
 \clearpage
 #### Observed Means Reported by Exceptionality Status 
 
-The following table is a number key for **Elibibility Codes:**
+The following list is a number key for **Elibibility Codes** for identified student exceptionalities:
 
 ##### Eligibility Codes List
 *  0  Not Applicable
-* 10	Intellectual Disability
-* 20	Hearing Impairment
-* 40	Vision Impairment
-* 43	Deafblindness
-* 50	Communication Disorder
-* 60	Emotional Disturbance
-* 70	Orthopedic Impairment
-* 74	Traumatic Brain Injury
-* 80	Other Health Impairment
-* 82	Autism Spectrum Disorder
-* 90	Specific Learning Disability
+* 10	Intellectual Disability (ID)
+* 20	Hearing Impairment (HI)
+* 40	Vision Impairment (VI)
+* 43	Deafblindness (DB)
+* 50	Communication Disorder (CD)
+* 60	Emotional Disturbance (ED)
+* 70	Orthopedic Impairment (OI)
+* 74	Traumatic Brain Injury (TBI)
+* 80	Other Health Impairment (OHI)
+* 82	Autism Spectrum Disorder (ASD)
+* 90	Specific Learning Disability (SLD)
 
 The following tables provide information regarding average student performance
 by grade level and exceptionality category in each of the content areas assessed
-on the ORExt. Students with SLD were generally the highest performing group,
-though students with ED performed higher at certain grade levels/content
-areas. The lowest performing group was consistently students with VI.
+on the ORExt. In general, based on raw scores alone, students identfied as
+experiencing Emotional Disturbance (ED) and Specific Learning Disability (SLD)
+were generally the highest performing groups across greades and content areas,
+with students experiencing Communication Disorder (CD) performing closely to (or
+outperforming) these two groups as well. On the whole, students identified as
+experiencing Vision Impairment (VI) and Orthopedic Impairment (OI) were the
+lowest performing groups.
+
 \FloatBarrier
 ```{r disab_means}
 # May want to add an *n* and drop descrips when n is too low
@@ -993,17 +998,22 @@ walk2(disab_descrip_tbls, disab_descrip_captions,
                       latex_options = "hold_position") %>% 
         print())
 ```
+\FloatBarrier
 
-#### Graphs of Observed Means By Disability 
+#### Graphs of Observed Means by Exceptionality Status 
 
-The graphs below convey information similar to that shared above in graphic
-form. The graphics include 95% confidence interval error bars, so determining
-which subgroups performed in a manner that is significantly better than others
-is readily apparent by looking at the location of the error bars. Error bars
-that do not overlap in terms of the y-scale are significantly different.
-Students with VI are again the lowest performing group. Students with SLD are
-consistently outperforming most peers. Students with VI are consistently the
-lowest performing group, which led to concerns regarding test accessibility.
+The graphs below visually convey information similar to that shown in Tables
+36-43, above. The graphics include 95% confidence interval error bars, so
+determining which subgroups performed in a manner that is statistically
+significantly different (better or worse) than others is readily apparent by
+looking at the location of the error bars. Error bars that do not overlap in
+terms of the y-scale are significantly different, whereas those that do overlap
+are not. As noted above, while raw scores indicate that students identified with
+ED, SLD, and CD generally outperformed other groups across grades and content
+areas, and that students identified VI and OI generally underperformed relative
+to other groups, when measurment error is accounted for, few groups actually
+performed statistically different from one another.
+
 \FloatBarrier
 ```{r rit_excep_plots}
 excep_plots <- ode %>% 
@@ -1128,9 +1138,13 @@ ability and item difficulty distributions. In general, the descriptive
 statistics suggest that the test had an appropriate range of item difficulties
 represented, from easy to difficult, with item difficulties generally ranging
 from -4.0 to +4.0 on the Rasch scale. The assessments performed as expected
-across all grades and content areas. The item person distributions provided
-below demonstrate that the ORExt is providing a performance continuum for
-students who participate.
+across all grades and content areas. The item-person distributions, provided in
+the graphs below, demonstrate that grade-level ORExt assessments (within each of
+ELA, Math, and Science) are providing an appropriate amount of information
+across the student performance (ability) continuum (note the peaks of each
+distribution rather tightly aligning, except at the lowest end of each grade-
+and subject-level person distribution, where student ability [per the knowledge
+and skills tested] is quite low).
 
 \pagebreak
 #### English Language Arts Person/Item Distributions
