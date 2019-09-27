@@ -601,6 +601,11 @@ kids <- df %>%
   summarize(tot_score = sum(score)) %>% 
   ungroup()
 
+kids %>%
+  filter(form == "ELA_G3", "ELA_G4", "ELA_G5", "ELA_G6", "ELA_G7", 
+                  "ELA_G8", "ELA_G11", "ELA_G12") %>%
+  count(grade)
+
 kids %>% 
   filter(form == "ORora") %>% 
   count(grade)
