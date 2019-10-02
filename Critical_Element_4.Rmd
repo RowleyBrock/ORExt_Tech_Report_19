@@ -45,6 +45,9 @@ opts_chunk$set(echo    = FALSE,
 options(knitr.kable.NA = '')
 dep_auto()
 ```
+
+\pagebreak
+
 ## Critical Element 4 - Technical Quality: Other 
 
 ### 4.1 Reliability
@@ -161,7 +164,7 @@ Qualified Assessor Testing Preparation and Administration Rubric
 \FloatBarrier
 ![](Figures/irr/irr_domain.png)
 
-\FloatBarrier
+\pagebreak
 
 ##### Inter-rater Agreement Results
 Thirty-three Qualified Trainers from around Oregon participated in the
@@ -173,7 +176,7 @@ testing location. The study found a 99.3 Inter-Rater Reliability percentage
 agreement between the test observers and test administrators on student item
 (answer) selection.
 
-The following two tables (Table 21 and Table 22) display the percentage of
+The following two tables (Table 1 and Table 2) display the percentage of
 reponses in the nine different domains and percentage of agreement between
 assessors and observers.
 \FloatBarrier
@@ -214,10 +217,12 @@ kable("latex",
         kable_styling(full_width = TRUE,
                       latex_options = "hold_position")
 ```
-\clearpage
-\FloatBarrier
+
+\pagebreak
+
 The following table provides a visual display of the responses from the nine
 differnt domains observed.
+
 
 ```{r, fig.width = 8.5, fig.height= 11}
 d %>% 
@@ -253,7 +258,7 @@ use cut scores and achievement level descriptors to interpret scores.
 Additional training was provided on the QT/QA training site to ensure QT's
 and QA's and using the scoring rubric provided for ELA Writing items and
 appropriately scoring ELA Writing. Samples from the different types of ELA
-Writing itme promps are use during the QT/QA proficiency assessment
+Writing item promps are use during the QT/QA proficiency assessment
 to ensure consistency between all who administer the ORExt. Score Interpretation
 training is incoporated into QT training slides and disiminated in QA
 training. The score interpretation guide section of QT training has been
@@ -265,9 +270,14 @@ Marginal reliability results (true score variance/true score variance + error
 variance) demonstrate that the tests are quite reliable at the total test level.
 Full reliability statistics for each of the operational tests administered this
 year are provided below. These results demonstrate that the total test
-reliabilities were quite high, ranging from .76 to .92. Each table below
-provides the content area, grade, and the marginal reliabilities. All test forms
-were composed of 36 operational and 12 embedded field-test items.
+reliabilities were quite high, ranging from .76 to .92 across the three content
+areas and grades. Removing Grade 12 administrations, total test reliability
+improves, ranging from .85 to .92. Total test reliability for ELA ranged from
+.85 to .92 (Reading from .76 to .88 and Writing from .77 to 85); Math ranged
+from .87 to .90; andScience ranged from .84 to .88. Each table below provides
+the content area, grade, and total test marginal reliabilities. All test forms
+were composed of 36 operational and 12 embedded field-test items (48 items
+total).
 
 ```{r marginal_rel}
 read_sub_files <- function(file) {
@@ -318,9 +328,9 @@ walk2(tbls,
 
 #### Test Information Functions 
 
-The test information functions published below also indicate that the scales
+The test information functions displayed below indicate that the scales
 exhibit a reliability greater than or equal to .80 for all proficient-level
-cutscores.
+cutscores (Levels 3 and 4).
 
 #### English Language Arts TIFs
 \FloatBarrier
@@ -350,17 +360,19 @@ cutscores.
 ![](tifs/science8tif.pdf){height=300px}
 ![](tifs/science11tif.pdf){height=300px}
 
+\pagebreak
+
 #### Validation of ORExt Vertical Scales
 
 The Test Characteristic Curves (TCCs) for the grade-level assessments in ELA and
-mathematics demonstrate incrementally increasing growth and test demands across
-Grades 3-8, with the exception of Grade 5 mathematics. The Grade 5 mathematics
-assessment is proving to be more difficult this year, clearly more
-elaboration of this effort is needed to address its location on the TCC. Grade
-11 and science tests are not vertically scaled; TCCs are thus not presented for
-Grade 11 or science. All Rasch model scaling, as well as the data visualizations
-for the TCCs were conducted in the R software 3.3.2 environment (R Core Team,
-2016) using the r2Winsteps package (Anderson, 2015).
+Math demonstrate incrementally increasing growth and test demands across Grades
+3-8, with the exception of Grade 5 Math. The Grade 5 Math assessment is proving
+to be more difficult this year, clearly more elaboration of this effort is
+needed to address its location on the TCC. Grade 11 and all Science tests are not
+vertically scaled; TCCs are thus not presented for Grade 11 or Science. All
+Rasch model scaling, as well as the data visualizations for the TCCs were
+conducted in the R software 3.3.2 environment (R Core Team, 2016) using the
+r2Winsteps package (Anderson, 2015).
 \FloatBarrier
 ![](tccs/ela_tccs.pdf)
 ![](tccs/math_tccs.pdf)
@@ -368,14 +380,14 @@ for the TCCs were conducted in the R software 3.3.2 environment (R Core Team,
 
 #### 4.1B Overall and Conditional Standard Errors of Measure
 
-The average SEM associated with each cut score for 2018-19 student data are
-presented in the table below, supported by a KEY. The SEMs decreased in almost
-all cases compared to last year, suggesting that the measures are more reliable
-when student eligibility is more strictly controlled. See Section 4.2 below for
-means and standard deviations by grade and subject area. SEM = Standard Error of
-Measure associated with the cut score to the left; averaged to the tenths'
-place. Level 1 = Does Not Yet Meet (not included as the lowest level of
-proficiency) Level 2 = Nearly Meets Level 3	= Meets Level 4	= Exceeds
+The average standard error of measurment (SEM) associated with each proficiency
+level cut score for 2018-19 student data are presented in the table below,
+supported by a KEY. The SEM decreased in almost all cases compared to last year,
+suggesting that the measures are more reliable when student eligibility is more
+strictly controlled. See Section 4.2 below for means and standard deviations by
+grade and subject area. <br> KEY: AMO = Annual Measurable Objective, where: Level 1 =
+Does Not Yet Meet (not included as the lowest level of proficiency), Level 2 =
+Nearly Meets, Level 3	= Meets, and Level 4	= Exceeds.
 
 \FloatBarrier
 ```{r cut_score_se}
@@ -392,7 +404,7 @@ se_tbls <- ode %>%
   rename(Grade = grade,
          AMO   = amo_lvl, 
          RIT   = rit, 
-         SE    = rit_se) %>% 
+         SEM    = rit_se) %>% 
   split(.$content_area) %>% 
   map(~ungroup(.) %>% select(-content_area))
 
@@ -406,20 +418,23 @@ walk2(se_tbls,
                       latex_options = "hold_position") %>% 
         print())
 ```
-\FloatBarrier
+
+\clearpage
 
 #### 4.1C Classification Accuracy & Consistency
 
 Results from the 2018-19 ORExt test administration were analyzed using Rudner's
 classification index (Rudner, 2005). Results closer to 1.0 indicate the
-likelihood that a student was appropriately classified as proficient or not
-proficient (accuracy) and the likelihood that the student would be classified in
-the same category given an additional test administration. The calculation
-utilizes item difficulty and theta value distributions, as well as related
-standard errors of measurement, to generate probabilistic estimates based on one
-test administration. Complete results, generated from the cacIRT package in R,
-are provided below. Results denote very high levels of classification accuracy
-and consistency.
+likelihood that a student was appropriately classified as proficient (Annual
+Measurable Objective; AMO = 3 or 4) or not proficient (AMO = 1 or 2) and the
+likelihood that the student would be classified in the same AMO category given
+an additional test administration (Accuracy and Consistency, respectively). The
+calculation utilizes item difficulty and (student ability) theta value
+distributions, as well as related standard errors of measurement (SEM), to
+generate probabilistic estimates based on one test administration. Complete
+results for each content area and grade, generated from the cacIRT package in R,
+are provided below. Results denote very high levels of classification Accuracy
+and Consistency.
 
 \FloatBarrier
 ```{r class_acc}
@@ -473,6 +488,8 @@ walk2(acc_con_tbls,
 The ORExt is not a computer-adaptive instrument so estimate precision
 documentation based upon that test design is not provided.
 
+\pagebreak
+
 ### 4.2 Fairness and Accessibility 
 
 The state has taken steps to ensure fairness in the development of the
@@ -525,11 +542,11 @@ analyses was also be performed in the 2018-19 school year to continue to
 address DIF longitudinally. All items, including field test items, were included
 in the analyses. There are a total of 48 items on each assessment.
 
-Within the White/Non-White analysis, 10 out of 18 items flagged as "C" level
-items privileged Non-White test participants in ELA, 2 out of 5 privileged
-Non-White test participants in Mathematics, and 2 out of 7 privileged Non-White
+Within the White/Non-White analysis, XX out of 11 items flagged as "C" level
+items privileged Non-White test participants in ELA, XX out of 7 privileged
+Non-White test participants in Mathematics, and XX out of 4 privileged Non-White
 test participants in Science. Overall, DIF flagging bases on race was relatively
-balanced, with 14 privileging students who were Non-White and 16 privileging
+balanced, with XX privileging students who were Non-White and XX privileging
 students who were White.
 
 \FloatBarrier
@@ -646,11 +663,11 @@ walk2(minority_tbls,
 ```
 \FloatBarrier
 
-In terms of the Male/Female analyses, 10 out of 16 items flagged as "C" level
-items privileged Females in ELA, 4 out of 9 flagged items privileged Females in
-Mathematics, and 8 out of 11 flagged items privileged Females in Science.
-Overall, DIF flagging based on sex was relatively balanced, with 22 privileging
-Females and 14 privileging Males.
+In terms of the Male/Female analyses, XX out of 14 items flagged as "C" level
+items privileged Females in ELA, XX out of 8 flagged items privileged Females in
+Mathematics, and XX out of 12 flagged items privileged Females in Science.
+Overall, DIF flagging based on sex was relatively balanced, with XX privileging
+Females and XX privileging Males.
 
 ```{r gndr_dif}
 walk2(gndr_tbls,
@@ -664,17 +681,19 @@ walk2(gndr_tbls,
         print())
 ```
 
+\pagebreak
+
 #### Race - Ethnicity Percentages and Totals by Content Area and Grade Level 
 
-The full ethnic and disability demographics for students taking the ORExt are
-reported below. Students ethnicity/race was reported in seven categories: (a)
-American Indian/Alaskan Native, (b) Asian, (c) Black or African-American, (d)
-Hispanic, (e) Multiethnic, (f) Pacific Islander, or
-(g) White. The majority of students were reported as White (51-57%) or Hispanic
-(21-28%). These results are largely consistent with the demographics reported
-for the general assessments, though percentages taking the ORExt are slightly
-higher for most students of color and generally lower for students who are Asian
-or White (see *Appendix* 4.2).
+The full race and ethnic demographics for students taking the ORExt are reported
+below. Students ethnicity/race was reported in seven categories: (a) American
+Indian/Alaskan Native, (b) Asian, (c) Black or African-American, (d) Hispanic,
+(e) Multiethnic, (f) Pacific Islander, or (g) White. The majority of students
+were reported as White (50% to 57%) or Hispanic (22% to 28%). These results are
+largely consistent with the demographics reported for Oregon's general
+assessments, though percentages taking the ORExt are slightly higher for most
+students of color and generally lower for students who are Asian or White (see
+*Appendix* 4.2).
 
 ```{r eth_perc}
 by_form %>% 
@@ -707,15 +726,34 @@ by_form %>%
                       latex_options = "hold_position")
 ```
 
+\pagebreak
+
+#### Exceptionality Percentages By Content Area and Grade Level
+
+The following list is a number key for **Elibibility Codes** for identified student exceptionalities:
+
+##### Eligibility Codes List
+*  0  Not Applicable
+* 10	Intellectual Disability (ID)
+* 20	Hearing Impairment (HI)
+* 40	Vision Impairment (VI)
+* 43	Deafblindness (DB)
+* 50	Communication Disorder (CD)
+* 60	Emotional Disturbance (ED)
+* 70	Orthopedic Impairment (OI)
+* 74	Traumatic Brain Injury (TBI)
+* 80	Other Health Impairment (OHI)
+* 82	Autism Spectrum Disorder (ASD)
+* 90	Specific Learning Disability (SLD)
+
 The majority of students who participated in the ORExt were students with
-Intellectual Disability (32-53%) and students with Autism Spectrum Disorder (28
--37%), followed by students with Other Health Impairment (8-18%). ODE policy
+Intellectual Disability (ID; ranging from about 32% to 53% across grade and
+content areas), students with Autism Spectrum Disorder (ASD; 28% to 37%),
+followed by students with Other Health Impairment (OHI; 8% to 18%). ODE policy
 for 2015-16 changed to require students who participate in the ORExt to take the
 assessment in all relevant content areas. There is thus very little change in
 terms of participation percentages across content areas, as evidenced by the
-total n-sizes per grade level displayed below.
-
-#### Exceptionality Percentages By Content Area and Grade Level
+total n-sizes within each grade level displayed below.
 
 ```{r disab_perc}
 d %>% 
@@ -735,6 +773,8 @@ d %>%
         kable_styling(full_width = TRUE,
                       latex_options = "hold_position")
 ```
+
+\pagebreak
 
 #### Observed Means and Standard Deviations 
 
@@ -856,8 +896,7 @@ ode %>%
 
 The following tables provide information regarding average student performance
 by grade level and sex (Female/Male) in each of the content areas assessed on
-the ORExt. Significant differences based on a Welch two sample t-test are noted
-in Grades 5 and 12 in ELA, and Grade 8 in mathematics.
+the ORExt.
 
 ```{r obs_means_sex}
 eth_gndr <- by_form %>% 
@@ -937,7 +976,7 @@ walk2(eth_descrip_tbls, eth_descip_captions,
 \clearpage
 #### Observed Means Reported by Exceptionality Status 
 
-The following list is a number key for **Elibibility Codes** for identified student exceptionalities:
+The following rellists the number key for **Elibibility Codes** for identified student exceptionalities:
 
 ##### Eligibility Codes List
 *  0  Not Applicable
