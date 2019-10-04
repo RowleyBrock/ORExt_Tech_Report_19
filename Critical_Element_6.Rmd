@@ -245,7 +245,7 @@ Mathematics assessments appear to be functioning quite well in terms of person
 abilities and item difficulties.
 
 The Oregon Observational Rating Assessment (ORora) results demonstrate that
-approximately 17-25% of the SWSCD who participated in the ORExt also took the
+approximately 13-25% of the SWSCD who participated in the ORExt also took the
 ORora, depending upon grade level. A total of 850 students were administered the
 ORora in 2018-2019 school year. The participants were primarily students with
 multiple, severe disabilities with very limited communication systems. Analyses
@@ -255,14 +255,14 @@ total of 850 students across all tested grades were administered the ORora.
 Response patterns on the ORExt were compared to ORora results to determine what
 percentages of QAs were administering the ORora due to the minimum participation
 rule and what percentage were administering the ORora of their own volition.
-Analyses showed that 480 students were eligible to take the ORora in English
-language arts, 466 students were eligible to take the ORora in mathematics, and
-86 were eligible to take the ORora in science. This means that about 30 students
+Analyses showed that 416 students were eligible to take the ORora in English
+language arts, 320 students were eligible to take the ORora in mathematics, and
+114 were eligible to take the ORora in science. This means that about 30 students
 per grade, per content area received five or fewer correct responses within the
-first 15 items administered on the ORExt. Of the 600 test records that met ORora
-eligibility requirements, 71 were not administered the ORora. In addition, there
-were 62 students in ELA and Math, respectively, who were administered the ORora
-without having participated in the ORExt (54 of those students were the same
+first 15 items administered on the ORExt. Of the 932 test records that met ORora
+eligibility requirements, 82 were not administered the ORora. In addition, there
+were 52 students in ELA and Math, respectively, who were administered the ORora
+without having participated in the ORExt (44 of those students were the same
 students, across each content area, with eight students unique to each content
 area, respectively).
 

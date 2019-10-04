@@ -48,6 +48,7 @@ dep_auto()
 
 \pagebreak
 
+
 ## Critical Element 4 - Technical Quality: Other 
 
 ### 4.1 Reliability
@@ -542,13 +543,6 @@ analyses was also be performed in the 2018-19 school year to continue to
 address DIF longitudinally. All items, including field test items, were included
 in the analyses. There are a total of 48 items on each assessment.
 
-Within the White/Non-White analysis, XX out of 11 items flagged as "C" level
-items privileged Non-White test participants in ELA, XX out of 7 privileged
-Non-White test participants in Mathematics, and XX out of 4 privileged Non-White
-test participants in Science. Overall, DIF flagging bases on race was relatively
-balanced, with XX privileging students who were Non-White and XX privileging
-students who were White.
-
 \FloatBarrier
 ```{r dif1}
 d <- dems %>%
@@ -662,12 +656,6 @@ walk2(minority_tbls,
         print())
 ```
 \FloatBarrier
-
-In terms of the Male/Female analyses, XX out of 14 items flagged as "C" level
-items privileged Females in ELA, XX out of 8 flagged items privileged Females in
-Mathematics, and XX out of 12 flagged items privileged Females in Science.
-Overall, DIF flagging based on sex was relatively balanced, with XX privileging
-Females and XX privileging Males.
 
 ```{r gndr_dif}
 walk2(gndr_tbls,
@@ -943,11 +931,21 @@ ORExt.
 ```{r eth_means}
 eth_descrip_tbls <- ode %>% 
   filter(content_area != "rdg" &
-         content_area != "wri") %>% 
+         content_area != "wri" &
+         grade != "12") %>%
   mutate(content_area = case_when(content_area == "ela" ~ "ELA",
                                   content_area == "math" ~ "Math",
-                                  content_area == "sci" ~ "Sci")) %>% 
-  group_by(grade, content_area, race_eth) %>% 
+                                  content_area == "sci" ~ "Sci"),
+         race_eth = case_when(race_eth == "asian" ~ "Asian",
+                              race_eth == "black" ~ "Black",
+                              race_eth == "amer_indian_alskn_ntv" ~ "Am Ind",
+                              race_eth == "multiracial" ~ "Multiracial",
+                              race_eth == "pac_islndr" ~ "Pac Isl",
+                              race_eth == "white" ~ "White",
+                              race_eth == "Hispanic" ~ "Hispanic",
+                              is.na(race_eth) ~ "Missing")) %>% 
+  group_by(grade, content_area, race_eth) %>%
+
   summarize(Mn = mean(rit),
             SD   = sd(rit)) %>% 
   gather(stat, val, Mn, SD) %>% 
@@ -959,6 +957,7 @@ eth_descrip_tbls <- ode %>%
   map(~ungroup(.) %>% 
         select(-Grade) %>% 
         remove_empty("cols"))
+
 
 eth_descip_captions <- paste0("Grade ", 
                               names(eth_descrip_tbls),
@@ -1026,7 +1025,7 @@ disab_descrip_tbls <- ode %>%
 
 disab_descrip_captions <- paste0("Grade ", 
                               names(disab_descrip_tbls),
-                              " Means/SDs by Race/Ethnicity: 2018-19")
+                              " Means/Exceptionality Status: 2018-19")
 walk2(disab_descrip_tbls, disab_descrip_captions,
       ~kable(.x, 
              "latex", 

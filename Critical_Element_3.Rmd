@@ -585,33 +585,6 @@ relationship between the scores, as students whose ORExt testing is discontinued
 are generally unable to access the academic content on the ORExt, even with the
 requisite reductions in depth, breadth, and complexity.
 
-```{r ORora}
-library(tidyverse)
-library(here)
-df <- read_csv(here("data", "db-export", "query_result.csv")) %>% 
-  mutate(grade = parse_number(grade), 
-         score = parse_number(score))
-
-df %>% 
-  filter(form == "ORora") %>% 
-  View()
-
-kids <- df %>% 
-  group_by(SSID, grade, form) %>% 
-  summarize(tot_score = sum(score)) %>% 
-  ungroup()
-
-kids %>%
-  filter(form == "ELA_G3", "ELA_G4", "ELA_G5", "ELA_G6", "ELA_G7", 
-                  "ELA_G8", "ELA_G11", "ELA_G12") %>%
-  count(grade)
-
-kids %>% 
-  filter(form == "ORora") %>% 
-  count(grade)
-kids
-```
-
 Convergent evidence that the ORExt is assessing appropriate academic content is
 provided by QA and QT responses to the consequential validity survey.
 Respondents to the survey generally agree that, "The items in the Oregon
